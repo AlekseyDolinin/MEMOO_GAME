@@ -2,17 +2,17 @@ import UIKit
 
 extension GameViewController {
     
-    func randomTags() -> NSArray {
-        let mArray: NSMutableArray =  NSMutableArray()
-        while mArray.count < countCell {
-            let tag = arc4random() % UInt32(countCell)
-            let t = NSNumber(value: tag)
-            if !mArray.contains(t) {
-                mArray.add(t)
-            }
-        }
-        return mArray
-    }
+//    func randomTags() -> NSArray {
+//        let mArray: NSMutableArray =  NSMutableArray()
+//        while mArray.count < countCell {
+//            let tag = arc4random() % UInt32(countCell)
+//            let t = NSNumber(value: tag)
+//            if !mArray.contains(t) {
+//                mArray.add(t)
+//            }
+//        }
+//        return mArray
+//    }
     
     func randomImages() -> NSArray {
         let images = NSMutableArray()

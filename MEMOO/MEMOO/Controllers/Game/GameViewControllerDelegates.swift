@@ -14,28 +14,26 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        guard let selectCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
         /// нет открытой карты
-        if self.tempCard == nil {
-            self.tempCard = arrayCard[indexPath.row]
+        if self.tempCell == nil {
+            self.tempCell = selectCell
             
         } else { /// есть открытая карта
             /// исключение повторного нажатия
-            if tempCard.id == arrayCard[indexPath.row].id { return }
-            
-            if tempCard.tag == arrayCard[indexPath.row].tag {
-                print("Match")
-                tempCard = nil
+            if tempCell.card.id == selectCell.card.id { return }
+            ///
+            if tempCell.card.image == selectCell.card.image {
+                tempCell = nil
+                countMatch()
+                
             } else {
                 print("Dont Match")
                 tempCell.hide()
-                self.tempCard = arrayCard[indexPath.row]
+                tempCell = selectCell
             }
         }
-        tempCell = collectionView.cellForItem(at: indexPath) as? CardCell
-        guard let cardCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-        cardCell.show()
-        
+        selectCell.show()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

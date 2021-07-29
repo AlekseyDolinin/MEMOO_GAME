@@ -11,13 +11,12 @@ class GameViewController: UIViewController {
     var arrayCard = [Card]()
     
     var content: String!
-    var countAllCard: UInt32!
+//    var countAllCard: UInt32!
     
     var timer: Timer!
     var matchCount: Int = 0
-    var isGameOver: Bool = false
+//    var isGameOver: Bool = false
     
-    var tempCard: Card!
     var tempCell: CardCell!
     
     override func viewDidLoad() {
@@ -32,27 +31,26 @@ class GameViewController: UIViewController {
         reloadGame()
     }
     
-//    ///
-//    @objc func timeCount() {
-//        var timeCount = Int(gameView.timerLabel!.text!) ?? 0
-//        if timeCount <= 0 {
-//            self.timer.invalidate()
-//            self.gameOver()
-//        } else {
-//            timeCount = timeCount - 1
-//        }
-//        gameView.timerLabel.text = String(timeCount)
-//    }
+    ///
+    @objc func timeCount() {
+        var timeCount = Int(gameView.timerLabel!.text!) ?? 0
+        if timeCount <= 0 {
+            self.timer.invalidate()
+            self.gameOver()
+        } else {
+            timeCount = timeCount - 1
+        }
+        gameView.timerLabel.text = String(timeCount)
+    }
     
     ///
     func loadCards(completion: () -> ()) {
-        let tags = randomTags()
         let images = randomImages()
         var id = 0
         for i in 0...9 {
-            let cardFirst = Card(id: id, tag: tags[i] as! Int, image: images[i] as! UIImage, showCard: true)
+            let cardFirst = Card(id: id, image: images[i] as! UIImage, showCard: true)
             id += 1
-            let cardSecond = Card(id: id, tag: tags[i] as! Int, image: images[i] as! UIImage, showCard: true)
+            let cardSecond = Card(id: id, image: images[i] as! UIImage, showCard: true)
             id += 1
             arrayCard.append(cardFirst)
             arrayCard.append(cardSecond)
@@ -60,55 +58,49 @@ class GameViewController: UIViewController {
         completion()
     }
     
-//    ///
-//    func startTimer() {
-//        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeCount), userInfo: nil, repeats: true)
-//    }
+    ///
+    func startTimer() {
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeCount), userInfo: nil, repeats: true)
+    }
     
-//    ///
-//    func showAlert(title: String? = nil, message: String? = nil) {
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        let alertAction = UIAlertAction(title: "Close", style: .default) { (UIAlertAction) in
-//            self.reloadGame()
-//        }
-//        alert.addAction(alertAction)
-//        present(alert, animated: true)
-//    }
+    ///
+    func showAlert(title: String? = nil, message: String? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Close", style: .default) { (UIAlertAction) in
+            self.reloadGame()
+        }
+        alert.addAction(alertAction)
+        present(alert, animated: true)
+    }
     
-//    ///
-//    func gameOver() {
-//        self.isGameOver = true
-//        self.timer.invalidate()
-//        showAlert(title: "GAME OVER!")
-//    }
+    ///
+    func gameOver() {
+        self.timer.invalidate()
+        showAlert(title: "GAME OVER!")
+    }
     
-//    ///
-//    func gameWin() {
-//        showAlert(title: "WIN!")
-//        self.isGameOver = true
-//        self.timer.invalidate()
-//    }
+    ///
+    func gameWin() {
+        showAlert(title: "WIN!")
+        self.timer.invalidate()
+    }
     
     ///
     func reloadGame() {
-//        gameView.timerLabel.text = "60"
-//        matchCount = 0
-//        tempImageView = nil
-//
-//        if isGameOver == true || timer == nil {
-//            self.timer = Timer.scheduledTimer(timeInterval: 1,
-//                                              target: self,
-//                                              selector: #selector(self.timeCount),
-//                                              userInfo: nil,
-//                                              repeats: true)
-//            self.isGameOver = false
-//        }
         loadCards {
-            gameView.cardCollection.reloadData()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.hideAllCards()
-            }
+            startGame()
+            showAllCards()
         }
+    }
+    
+    func startGame() {
+        gameView.cardCollection.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.hideAllCards()
+            self.startTimer()
+        }
+        gameView.timerLabel.text = "60"
+        matchCount = 0
     }
     
     func hideAllCards() {
@@ -116,9 +108,22 @@ class GameViewController: UIViewController {
             self.arrayCard[i].showCard = false
         }
         gameView.cardCollection.reloadData()
-//        self.startTimer()
     }
     
+    func showAllCards() {
+        for i in 0..<self.arrayCard.count {
+            self.arrayCard[i].showCard = true
+        }
+        gameView.cardCollection.reloadData()
+    }
+    
+    func countMatch() {
+        matchCount = matchCount + 1
+        print("Match: \(matchCount)")
+        if matchCount == (countCell / 2) {
+            gameWin()
+        }
+    }
     
     ///
     @IBAction func back(sender: UIButton?) {
