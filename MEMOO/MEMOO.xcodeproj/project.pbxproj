@@ -8,20 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229D626B0D4A50063433E /* AppDelegate.swift */; };
-		10D229D926B0D4A50063433E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229D826B0D4A50063433E /* ViewController.swift */; };
 		10D229DC26B0D4A50063433E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DA26B0D4A50063433E /* Main.storyboard */; };
 		10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DD26B0D4A60063433E /* Assets.xcassets */; };
 		10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DF26B0D4A60063433E /* LaunchScreen.storyboard */; };
+		10D22A0526B3293C0063433E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229EC26B328740063433E /* Game.swift */; };
+		10D22A0626B3293E0063433E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229ED26B328740063433E /* Card.swift */; };
+		10D22A0726B329420063433E /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229EF26B3287A0063433E /* CardCell.swift */; };
+		10D22A0826B329440063433E /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F026B3287A0063433E /* GameCell.swift */; };
+		10D22A0926B329470063433E /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F226B328800063433E /* StartView.swift */; };
+		10D22A0A26B329490063433E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F326B328800063433E /* GameView.swift */; };
+		10D22A0B26B3294C0063433E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F426B328800063433E /* CardView.swift */; };
+		10D22A0C26B3294E0063433E /* GameView_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F526B328800063433E /* GameView_.swift */; };
+		10D22A0D26B3298A0063433E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F826B328840063433E /* GameViewController.swift */; };
+		10D22A0E26B3298A0063433E /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F926B328840063433E /* Random.swift */; };
+		10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229FA26B328840063433E /* GameViewControllerDelegates.swift */; };
+		10D22A1126B3298F0063433E /* OldGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229FD26B328840063433E /* OldGameViewController.swift */; };
+		10D22A1226B3298F0063433E /* Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229FE26B328840063433E /* Touch.swift */; };
+		10D22A1326B329940063433E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229FF26B328840063433E /* StartViewController.swift */; };
+		10D22A1426B329940063433E /* ScrollDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0026B328840063433E /* ScrollDelegates.swift */; };
+		10D22A1526B329940063433E /* StartDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0126B328840063433E /* StartDelegates.swift */; };
+		10D22A1626B329970063433E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0326B328900063433E /* UIColor.swift */; };
+		10D22A1726B329970063433E /* SnapPagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0426B328900063433E /* SnapPagingLayout.swift */; };
+		10D22A1826B3299C0063433E /* Crayon.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10D229EA26B3285C0063433E /* Crayon.otf */; };
+		10D22A1926B3299E0063433E /* ROKIKO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10D229E926B3285C0063433E /* ROKIKO.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10D229D326B0D4A50063433E /* MEMOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEMOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D229D626B0D4A50063433E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10D229D826B0D4A50063433E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10D229DB26B0D4A50063433E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10D229DD26B0D4A60063433E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10D229E026B0D4A60063433E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D229E226B0D4A60063433E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D229E926B3285C0063433E /* ROKIKO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ROKIKO.otf; sourceTree = "<group>"; };
+		10D229EA26B3285C0063433E /* Crayon.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crayon.otf; sourceTree = "<group>"; };
+		10D229EC26B328740063433E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		10D229ED26B328740063433E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		10D229EF26B3287A0063433E /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		10D229F026B3287A0063433E /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		10D229F226B328800063433E /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		10D229F326B328800063433E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		10D229F426B328800063433E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		10D229F526B328800063433E /* GameView_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView_.swift; sourceTree = "<group>"; };
+		10D229F826B328840063433E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		10D229F926B328840063433E /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		10D229FA26B328840063433E /* GameViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerDelegates.swift; sourceTree = "<group>"; };
+		10D229FD26B328840063433E /* OldGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldGameViewController.swift; sourceTree = "<group>"; };
+		10D229FE26B328840063433E /* Touch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch.swift; sourceTree = "<group>"; };
+		10D229FF26B328840063433E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		10D22A0026B328840063433E /* ScrollDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDelegates.swift; sourceTree = "<group>"; };
+		10D22A0126B328840063433E /* StartDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDelegates.swift; sourceTree = "<group>"; };
+		10D22A0326B328900063433E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		10D22A0426B328900063433E /* SnapPagingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapPagingLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +93,96 @@
 			isa = PBXGroup;
 			children = (
 				10D229D626B0D4A50063433E /* AppDelegate.swift */,
-				10D229D826B0D4A50063433E /* ViewController.swift */,
 				10D229DA26B0D4A50063433E /* Main.storyboard */,
-				10D229DD26B0D4A60063433E /* Assets.xcassets */,
+				10D229EB26B328740063433E /* Models */,
+				10D229EE26B3287A0063433E /* Cells */,
+				10D229F126B328800063433E /* Views */,
+				10D229F626B328840063433E /* Controllers */,
+				10D22A0226B328900063433E /* HelpClasses */,
+				10D229E826B328510063433E /* Resourses */,
 				10D229DF26B0D4A60063433E /* LaunchScreen.storyboard */,
 				10D229E226B0D4A60063433E /* Info.plist */,
 			);
 			path = MEMOO;
+			sourceTree = "<group>";
+		};
+		10D229E826B328510063433E /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				10D229DD26B0D4A60063433E /* Assets.xcassets */,
+				10D229EA26B3285C0063433E /* Crayon.otf */,
+				10D229E926B3285C0063433E /* ROKIKO.otf */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		10D229EB26B328740063433E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10D229EC26B328740063433E /* Game.swift */,
+				10D229ED26B328740063433E /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10D229EE26B3287A0063433E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				10D229EF26B3287A0063433E /* CardCell.swift */,
+				10D229F026B3287A0063433E /* GameCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		10D229F126B328800063433E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10D229F226B328800063433E /* StartView.swift */,
+				10D229F326B328800063433E /* GameView.swift */,
+				10D229F426B328800063433E /* CardView.swift */,
+				10D229F526B328800063433E /* GameView_.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		10D229F626B328840063433E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				10D229F726B328840063433E /* Game */,
+				10D229FB26B328840063433E /* OldGameViewController */,
+				10D229FF26B328840063433E /* StartViewController.swift */,
+				10D22A0126B328840063433E /* StartDelegates.swift */,
+				10D22A0026B328840063433E /* ScrollDelegates.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		10D229F726B328840063433E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				10D229F826B328840063433E /* GameViewController.swift */,
+				10D229FA26B328840063433E /* GameViewControllerDelegates.swift */,
+				10D229F926B328840063433E /* Random.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		10D229FB26B328840063433E /* OldGameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10D229FD26B328840063433E /* OldGameViewController.swift */,
+				10D229FE26B328840063433E /* Touch.swift */,
+			);
+			path = OldGameViewController;
+			sourceTree = "<group>";
+		};
+		10D22A0226B328900063433E /* HelpClasses */ = {
+			isa = PBXGroup;
+			children = (
+				10D22A0326B328900063433E /* UIColor.swift */,
+				10D22A0426B328900063433E /* SnapPagingLayout.swift */,
+			);
+			path = HelpClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D22A1926B3299E0063433E /* ROKIKO.otf in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
+				10D22A1826B3299C0063433E /* Crayon.otf in Resources */,
 				10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */,
 				10D229DC26B0D4A50063433E /* Main.storyboard in Resources */,
 			);
@@ -135,8 +258,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10D229D926B0D4A50063433E /* ViewController.swift in Sources */,
+				10D22A1126B3298F0063433E /* OldGameViewController.swift in Sources */,
+				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
+				10D22A1326B329940063433E /* StartViewController.swift in Sources */,
+				10D22A0826B329440063433E /* GameCell.swift in Sources */,
+				10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */,
+				10D22A1226B3298F0063433E /* Touch.swift in Sources */,
 				10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */,
+				10D22A1726B329970063433E /* SnapPagingLayout.swift in Sources */,
+				10D22A0626B3293E0063433E /* Card.swift in Sources */,
+				10D22A1626B329970063433E /* UIColor.swift in Sources */,
+				10D22A0926B329470063433E /* StartView.swift in Sources */,
+				10D22A0526B3293C0063433E /* Game.swift in Sources */,
+				10D22A1426B329940063433E /* ScrollDelegates.swift in Sources */,
+				10D22A0726B329420063433E /* CardCell.swift in Sources */,
+				10D22A0C26B3294E0063433E /* GameView_.swift in Sources */,
+				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,
+				10D22A0D26B3298A0063433E /* GameViewController.swift in Sources */,
+				10D22A0A26B329490063433E /* GameView.swift in Sources */,
+				10D22A0E26B3298A0063433E /* Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
