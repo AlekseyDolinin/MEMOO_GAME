@@ -55,6 +55,7 @@ class GameViewController: UIViewController {
             arrayCard.append(cardFirst)
             arrayCard.append(cardSecond)
         }
+        arrayCard = arrayCard.shuffled()
         completion()
     }
     
