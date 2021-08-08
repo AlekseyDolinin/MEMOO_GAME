@@ -28,8 +28,6 @@ class StartViewController: UIViewController {
     @IBAction func startGame(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         vc.contentGame = currentContentGame
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
-//        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

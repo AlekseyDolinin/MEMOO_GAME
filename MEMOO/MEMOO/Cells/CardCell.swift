@@ -21,7 +21,7 @@ class CardCell: UICollectionViewCell {
     
     func hide() {
         UIView.transition(with: self.contentView, duration: 0.3, options: .transitionFlipFromLeft, animations: {
-            self.imageView.image = UIImage(named: "stone")
+            self.imageView.image = UIImage(named: "buttonBack")
         })
     }
     
