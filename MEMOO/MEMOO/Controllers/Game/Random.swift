@@ -15,10 +15,25 @@ extension GameViewController {
 //    }
     
     func randomImages() -> NSArray {
+        
+        var nameCard: String!
+        switch contentGame {
+        case "fruits":
+            nameCard = "fruit"
+        case "dinosaurs":
+            nameCard = "dinoCad_"
+        case "monsters":
+            nameCard = "monster_"
+        default:
+            break
+        }
+
+        
+        
         let images = NSMutableArray()
         while images.count < 10 {
             let i = arc4random() % 18 + 1
-            let image: UIImage = UIImage(named: "fruit\(i).png")!
+            let image: UIImage = UIImage(named: "\(nameCard!)\(i)")!
             if !images.contains(image) {
                 images.add(image)
             }

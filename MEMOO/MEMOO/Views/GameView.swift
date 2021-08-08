@@ -1,28 +1,21 @@
 import UIKit
 
 class GameView: UIView {
-
-    @IBOutlet var timeCountLabel : UILabel!
+    
+    @IBOutlet weak var backImageBlur: UIImageView!
+    @IBOutlet weak var cardCollection: UICollectionView!
+    @IBOutlet weak var timerLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        backImageBlur.alpha = 0
+    }
+    
+    func showBackBlure() {
+        UIView.animate(withDuration: 0.5) {
+            self.backImageBlur.alpha = 1
+        }
+    }
 
-    }
-    
-    func showCards() {
-        print("showCards")
-        for i in 100...119 {
-            let cardView = viewWithTag(i) as! CardView
-            cardView.showCard()
-        }
-    }
-    
-    func hideCards() {
-        print("hideCards")
-        for i in 100...119 {
-            let cardView  = viewWithTag(i) as! CardView
-            cardView.hideCard()
-        }
-    }
-    
 }

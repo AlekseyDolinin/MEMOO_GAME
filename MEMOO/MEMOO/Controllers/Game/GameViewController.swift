@@ -2,27 +2,23 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var gameView: GameView_! {
+    var viewSelf: GameView! {
         guard isViewLoaded else {return nil}
-        return (view as! GameView_)
+        return (view as! GameView)
     }
     
+    var contentGame: String!
     var countCell = 20
     var arrayCard = [Card]()
-    
-    var content: String!
-//    var countAllCard: UInt32!
-    
     var timer: Timer!
     var matchCount: Int = 0
-//    var isGameOver: Bool = false
-    
     var tempCell: CardCell!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gameView.cardCollection.delegate = self
-        gameView.cardCollection.dataSource = self
+        viewSelf.cardCollection.delegate = self
+        viewSelf.cardCollection.dataSource = self
     }
     
     ///
@@ -32,15 +28,23 @@ class GameViewController: UIViewController {
     }
     
     ///
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewSelf.showBackBlure()
+    }
+    
+    ///
     @objc func timeCount() {
-        var timeCount = Int(gameView.timerLabel!.text!) ?? 0
+        var timeCount = Int(viewSelf.timerLabel!.text!) ?? 0
         if timeCount <= 0 {
             self.timer.invalidate()
             self.gameOver()
         } else {
             timeCount = timeCount - 1
         }
-        gameView.timerLabel.text = String(timeCount)
+        DispatchQueue.main.async {
+            self.viewSelf.timerLabel.text = String(timeCount)
+        }
     }
     
     ///
@@ -95,12 +99,12 @@ class GameViewController: UIViewController {
     }
     
     func startGame() {
-        gameView.cardCollection.reloadData()
+        viewSelf.cardCollection.reloadData()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.hideAllCards()
             self.startTimer()
         }
-        gameView.timerLabel.text = "60"
+        viewSelf.timerLabel.text = "60"
         matchCount = 0
     }
     
@@ -108,14 +112,14 @@ class GameViewController: UIViewController {
         for i in 0..<self.arrayCard.count {
             self.arrayCard[i].showCard = false
         }
-        gameView.cardCollection.reloadData()
+        viewSelf.cardCollection.reloadData()
     }
     
     func showAllCards() {
         for i in 0..<self.arrayCard.count {
             self.arrayCard[i].showCard = true
         }
-        gameView.cardCollection.reloadData()
+        viewSelf.cardCollection.reloadData()
     }
     
     func countMatch() {
@@ -128,6 +132,7 @@ class GameViewController: UIViewController {
     
     ///
     @IBAction func back(sender: UIButton?) {
+        
         let alert = UIAlertController(title: "Закончить игру?", message: nil, preferredStyle: .alert)
         let endGameAction = UIAlertAction(title: "Закончить", style: .default) { (UIAlertAction) in
             self.navigationController?.popViewController(animated: true)
