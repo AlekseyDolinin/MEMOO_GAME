@@ -148,7 +148,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Coo-jF-bnj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Coo-jF-bnj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp" translatesAutoresizingMaskIntoConstraints="NO" id="F6l-2t-ygl">
@@ -205,8 +205,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonBack" translatesAutoresizingMaskIntoConstraints="NO" id="99Q-wp-GK4">
                                         <rect key="frame" x="4" y="4" width="42.5" height="42.5"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-9y-wjh">
-                                        <rect key="frame" x="12" y="0.0" width="26.5" height="50.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-9y-wjh">
+                                        <rect key="frame" x="12" y="14.5" width="26.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Shadow-Regular" family="Shadow" pointSize="22"/>
                                         <color key="textColor" red="0.99215686274509807" green="0.92156862745098034" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -217,12 +217,12 @@
                                     <constraint firstItem="o4Q-9y-wjh" firstAttribute="leading" secondItem="wc8-kb-nBV" secondAttribute="leading" constant="12" id="1xI-ie-bsp"/>
                                     <constraint firstItem="99Q-wp-GK4" firstAttribute="top" secondItem="wc8-kb-nBV" secondAttribute="top" constant="4" id="2Ff-3H-IHQ"/>
                                     <constraint firstItem="99Q-wp-GK4" firstAttribute="leading" secondItem="wc8-kb-nBV" secondAttribute="leading" constant="4" id="HzP-J9-GNf"/>
+                                    <constraint firstItem="o4Q-9y-wjh" firstAttribute="centerY" secondItem="wc8-kb-nBV" secondAttribute="centerY" id="O7Q-r3-IRX"/>
                                     <constraint firstAttribute="trailing" secondItem="99Q-wp-GK4" secondAttribute="trailing" constant="4" id="PHM-PL-JsF"/>
-                                    <constraint firstAttribute="bottom" secondItem="o4Q-9y-wjh" secondAttribute="bottom" id="WA1-LM-aF5"/>
+                                    <constraint firstItem="o4Q-9y-wjh" firstAttribute="centerX" secondItem="wc8-kb-nBV" secondAttribute="centerX" id="So8-94-fe0"/>
                                     <constraint firstAttribute="width" secondItem="wc8-kb-nBV" secondAttribute="height" multiplier="1:1" id="ahc-Vp-Gyt"/>
                                     <constraint firstAttribute="trailing" secondItem="o4Q-9y-wjh" secondAttribute="trailing" constant="12" id="anK-bW-vMP"/>
                                     <constraint firstAttribute="bottom" secondItem="99Q-wp-GK4" secondAttribute="bottom" constant="4" id="e0H-3n-Qno"/>
-                                    <constraint firstItem="o4Q-9y-wjh" firstAttribute="top" secondItem="wc8-kb-nBV" secondAttribute="top" id="nC6-sv-5jC"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-1l-dAC">
@@ -274,7 +274,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="F0n-NY-qak" firstAttribute="leading" secondItem="eHO-Xd-MB2" secondAttribute="leading" constant="40" id="2OR-77-2co"/>
                             <constraint firstItem="F0n-NY-qak" firstAttribute="top" secondItem="qiQ-11-rGT" secondAttribute="bottom" constant="-20" id="3BC-KR-WC6"/>
@@ -311,6 +311,7 @@
                         <connections>
                             <outlet property="cardCollection" destination="qbe-1l-dAC" id="hzA-WA-8oa"/>
                             <outlet property="timerLabel" destination="o4Q-9y-wjh" id="bqo-ax-jg3"/>
+                            <outlet property="viewForTimer" destination="wc8-kb-nBV" id="8Cd-ol-Iac"/>
                         </connections>
                     </view>
                 </viewController>
