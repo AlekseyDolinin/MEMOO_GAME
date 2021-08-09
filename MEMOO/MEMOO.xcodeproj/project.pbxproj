@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		104DD2FF26BF0C580042A324 /* Fantazyor.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 104DD2FE26BF0C580042A324 /* Fantazyor.ttf */; };
+		1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046E7C926C1DB0D00624CAA /* MenuViewController.swift */; };
 		104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */; };
-		104DD30326BF0D3E0042A324 /* Firenight-Regular_(graphicsland.ru).otf in Resources */ = {isa = PBXBuildFile; fileRef = 104DD30226BF0D3B0042A324 /* Firenight-Regular_(graphicsland.ru).otf */; };
 		10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229D626B0D4A50063433E /* AppDelegate.swift */; };
 		10D229DC26B0D4A50063433E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DA26B0D4A50063433E /* Main.storyboard */; };
 		10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DD26B0D4A60063433E /* Assets.xcassets */; };
@@ -28,14 +27,11 @@
 		10D22A1526B329940063433E /* StartDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0126B328840063433E /* StartDelegates.swift */; };
 		10D22A1626B329970063433E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0326B328900063433E /* UIColor.swift */; };
 		10D22A1726B329970063433E /* SnapPagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0426B328900063433E /* SnapPagingLayout.swift */; };
-		10D22A1826B3299C0063433E /* Crayon.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10D229EA26B3285C0063433E /* Crayon.otf */; };
-		10D22A1926B3299E0063433E /* ROKIKO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10D229E926B3285C0063433E /* ROKIKO.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		104DD2FE26BF0C580042A324 /* Fantazyor.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fantazyor.ttf; sourceTree = "<group>"; };
+		1046E7C926C1DB0D00624CAA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shadow_regular.ttf; sourceTree = "<group>"; };
-		104DD30226BF0D3B0042A324 /* Firenight-Regular_(graphicsland.ru).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Firenight-Regular_(graphicsland.ru).otf"; sourceTree = "<group>"; };
 		104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RF-Krabuler-Regular.otf"; sourceTree = "<group>"; };
 		10D229D326B0D4A50063433E /* MEMOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEMOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D229D626B0D4A50063433E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +39,6 @@
 		10D229DD26B0D4A60063433E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10D229E026B0D4A60063433E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D229E226B0D4A60063433E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10D229E926B3285C0063433E /* ROKIKO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ROKIKO.otf; sourceTree = "<group>"; };
-		10D229EA26B3285C0063433E /* Crayon.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crayon.otf; sourceTree = "<group>"; };
 		10D229ED26B328740063433E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		10D229EF26B3287A0063433E /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		10D229F026B3287A0063433E /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
@@ -119,12 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				10D229DD26B0D4A60063433E /* Assets.xcassets */,
-				10D229EA26B3285C0063433E /* Crayon.otf */,
-				10D229E926B3285C0063433E /* ROKIKO.otf */,
-				104DD2FE26BF0C580042A324 /* Fantazyor.ttf */,
 				104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */,
 				104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */,
-				104DD30226BF0D3B0042A324 /* Firenight-Regular_(graphicsland.ru).otf */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -140,8 +130,8 @@
 		10D229EE26B3287A0063433E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				10D229EF26B3287A0063433E /* CardCell.swift */,
 				10D229F026B3287A0063433E /* GameCell.swift */,
+				10D229EF26B3287A0063433E /* CardCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -161,6 +151,7 @@
 			children = (
 				104DD30526BF2AA40042A324 /* StartViewController */,
 				10D229F726B328840063433E /* Game */,
+				1046E7C926C1DB0D00624CAA /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -242,11 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10D22A1926B3299E0063433E /* ROKIKO.otf in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
-				104DD30326BF0D3E0042A324 /* Firenight-Regular_(graphicsland.ru).otf in Resources */,
-				10D22A1826B3299C0063433E /* Crayon.otf in Resources */,
-				104DD2FF26BF0C580042A324 /* Fantazyor.ttf in Resources */,
 				104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */,
 				10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */,
 				10D229DC26B0D4A50063433E /* Main.storyboard in Resources */,
@@ -267,6 +254,7 @@
 				10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */,
 				10D22A1726B329970063433E /* SnapPagingLayout.swift in Sources */,
 				10D22A0626B3293E0063433E /* Card.swift in Sources */,
+				1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */,
 				10D22A1626B329970063433E /* UIColor.swift in Sources */,
 				10D22A0926B329470063433E /* StartView.swift in Sources */,
 				10D22A1426B329940063433E /* ScrollDelegates.swift in Sources */,

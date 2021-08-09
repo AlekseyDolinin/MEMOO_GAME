@@ -7,8 +7,8 @@ class StartViewController: UIViewController {
         return (view as! StartView)
     }
     
-    var listGame = ["fruits", "animals", "emoji", "dinosaurs", "monsters"]
-    var currentContentGame = "fruits"
+    var listGame = ["fruit", "animal_", "emoji_", "dinoCad_", "monster_"]
+    var currentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +24,9 @@ class StartViewController: UIViewController {
         )
     }
     
-    
     @IBAction func startGame(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
-        vc.contentGame = currentContentGame
+        vc.nameCard = listGame[currentIndex]
         navigationController?.pushViewController(vc, animated: true)
     }
 }

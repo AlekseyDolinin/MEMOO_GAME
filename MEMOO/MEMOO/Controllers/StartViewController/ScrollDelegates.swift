@@ -6,7 +6,7 @@ extension StartViewController {
         let visibleRect = CGRect(origin: startView.contentGameCollection.contentOffset, size: startView.contentGameCollection.bounds.size)
         let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
         let indexPath = startView.contentGameCollection.indexPathForItem(at: visiblePoint)        
-        currentContentGame = listGame[indexPath?.row ?? 0]
+        currentIndex = indexPath?.row ?? 0
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {

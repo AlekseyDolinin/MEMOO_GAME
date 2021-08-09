@@ -7,7 +7,7 @@ class GameViewController: UIViewController {
         return (view as! GameView)
     }
     
-    var contentGame: String!
+    var nameCard: String!
     var countCell = 20
     var arrayCard = [Card]()
     var timer: Timer!
@@ -32,6 +32,8 @@ class GameViewController: UIViewController {
         super.viewDidAppear(animated)
         
         viewSelf.showTopBar()
+        
+        print("home")
     }
     
     ///
@@ -148,5 +150,11 @@ class GameViewController: UIViewController {
         alert.addAction(continueAction)
         alert.addAction(reloadAction)
         present(alert, animated: true)
+    }
+    
+    @IBAction func showMenu(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
     }
 }

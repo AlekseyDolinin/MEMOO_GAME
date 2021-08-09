@@ -5,7 +5,8 @@ class GameView: UIView {
     @IBOutlet weak var cardCollection: UICollectionView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var viewForTimer: UIView!
-     @IBOutlet weak var topBar: UIView!
+    @IBOutlet weak var topBar: UIView!
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
