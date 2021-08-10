@@ -46,27 +46,16 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiu-9N-Zpb">
                                                     <rect key="frame" x="0.0" y="0.0" width="301" height="300"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruit_im" translatesAutoresizingMaskIntoConstraints="NO" id="bnF-5u-3n9">
-                                                            <rect key="frame" x="60" y="27.5" width="181" height="181"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="bnF-5u-3n9" secondAttribute="height" multiplier="1:1" id="rsf-ye-TSO"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruit_l" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-aQ-Vnb">
-                                                            <rect key="frame" x="16" y="232.5" width="269" height="67.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="Ahy-aQ-Vnb" secondAttribute="height" multiplier="4:1" id="2X3-TX-y13"/>
-                                                            </constraints>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board_2" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-Sl-dNA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="301" height="300"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="Ahy-aQ-Vnb" firstAttribute="top" secondItem="bnF-5u-3n9" secondAttribute="bottom" constant="24" id="7By-mk-KaW"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Ahy-aQ-Vnb" secondAttribute="trailing" constant="16" id="Hoe-oC-FRU"/>
-                                                        <constraint firstItem="Ahy-aQ-Vnb" firstAttribute="leading" secondItem="xiu-9N-Zpb" secondAttribute="leading" constant="16" id="HwN-Wg-d7v"/>
-                                                        <constraint firstItem="bnF-5u-3n9" firstAttribute="centerY" secondItem="xiu-9N-Zpb" secondAttribute="centerY" constant="-32" id="Olf-e9-uoL"/>
-                                                        <constraint firstAttribute="trailing" secondItem="bnF-5u-3n9" secondAttribute="trailing" constant="60" id="Zhr-m5-zUW"/>
-                                                        <constraint firstItem="bnF-5u-3n9" firstAttribute="leading" secondItem="xiu-9N-Zpb" secondAttribute="leading" constant="60" id="dCZ-y3-omX"/>
+                                                        <constraint firstItem="8G6-Sl-dNA" firstAttribute="top" secondItem="xiu-9N-Zpb" secondAttribute="top" id="59z-uY-T9X"/>
+                                                        <constraint firstItem="8G6-Sl-dNA" firstAttribute="leading" secondItem="xiu-9N-Zpb" secondAttribute="leading" id="EHG-bf-PhY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8G6-Sl-dNA" secondAttribute="trailing" id="SVV-u8-6BG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="8G6-Sl-dNA" secondAttribute="bottom" id="lFc-Q1-QFb"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -79,8 +68,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="back" destination="xiu-9N-Zpb" id="9J1-TH-pXw"/>
-                                            <outlet property="imageContent" destination="bnF-5u-3n9" id="wsn-fA-F0l"/>
-                                            <outlet property="imageNameContent" destination="Ahy-aQ-Vnb" id="XUq-bG-2LH"/>
+                                            <outlet property="imageContent" destination="8G6-Sl-dNA" id="5CH-iY-XCi"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -440,11 +428,10 @@
     <resources>
         <image name="bg" width="1080" height="1920"/>
         <image name="board" width="320" height="236"/>
+        <image name="board_2" width="166" height="221"/>
         <image name="buttonBack" width="70" height="70"/>
         <image name="buttonClose" width="70" height="70"/>
         <image name="buttonMenu" width="70" height="70"/>
-        <image name="fruit_im" width="180" height="180"/>
-        <image name="fruit_l" width="215" height="45"/>
         <image name="leftPlant" width="80" height="125"/>
         <image name="playButton" width="150" height="150"/>
         <image name="rightPlant" width="88.5" height="124.5"/>
