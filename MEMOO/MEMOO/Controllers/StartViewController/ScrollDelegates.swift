@@ -5,7 +5,7 @@ extension StartViewController {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let visibleRect = CGRect(origin: startView.contentGameCollection.contentOffset, size: startView.contentGameCollection.bounds.size)
         let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-        let indexPath = startView.contentGameCollection.indexPathForItem(at: visiblePoint)        
+        let indexPath = startView.contentGameCollection.indexPathForItem(at: visiblePoint)
         currentIndex = indexPath?.row ?? 0
     }
     

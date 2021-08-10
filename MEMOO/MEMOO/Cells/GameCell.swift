@@ -4,10 +4,11 @@ class GameCell: UICollectionViewCell {
 
     @IBOutlet weak var imageContent: UIImageView!
     @IBOutlet weak var imageNameContent: UIImageView!
+    @IBOutlet weak var back: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        back.layer.cornerRadius = 16
     }
 
     func setCell(content: String) {
@@ -17,7 +18,7 @@ class GameCell: UICollectionViewCell {
             imageContent.image = UIImage(named: "fruit_im")
             imageNameContent.image = UIImage(named: "fruit_l")
         case "animal_":
-            imageContent.image = UIImage(named: "animal_19")
+            imageContent.image = UIImage(named: "animal_im")
             imageNameContent.image = UIImage(named: "animals_l")
         case "emoji_":
             imageContent.image = UIImage(named: "emoji_im")
