@@ -7,7 +7,7 @@ struct Card {
     
     init(id: Int,
          image: UIImage,
-         showCard: Bool = false
+         showCard: Bool
         ){
         self.id = id
         self.image = image

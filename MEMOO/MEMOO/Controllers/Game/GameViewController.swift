@@ -12,7 +12,7 @@ class GameViewController: UIViewController {
     var arrayCard = [Card]()
     var timer: Timer!
     var matchCount: Int = 0
-    var tempCell: CardCell!
+    var tempIndexPath: Int!
     
     
     override func viewDidLoad() {
@@ -30,10 +30,7 @@ class GameViewController: UIViewController {
     ///
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         viewSelf.showTopBar()
-        
-        print("home")
     }
     
     ///
@@ -52,17 +49,22 @@ class GameViewController: UIViewController {
     
     ///
     func loadCards(completion: () -> ()) {
-        let images = randomImages()
-        var id = 0
-        for i in 0...9 {
-            let cardFirst = Card(id: id, image: images[i] as! UIImage, showCard: true)
-            id += 1
-            let cardSecond = Card(id: id, image: images[i] as! UIImage, showCard: true)
-            id += 1
-            arrayCard.append(cardFirst)
-            arrayCard.append(cardSecond)
+        
+        arrayCard = []
+        
+        while arrayCard.count < countCell {
+            let index: Int = Int(arc4random() % 20 + 1) // 20 - количество изображений в папке
+            let image = UIImage(named: "\(nameCard!)\(index)")!
+            let card = Card(id: index, image: image, showCard: false)
+            
+            let indexes = arrayCard.map { $0.id }
+            if !indexes.contains(index) {
+                arrayCard.append(card)
+                arrayCard.append(card)
+            }
         }
-        arrayCard = arrayCard.shuffled()
+//        arrayCard = arrayCard.shuffled()
+
         completion()
     }
     
@@ -154,8 +156,9 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func showMenu(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: false)
+        reloadGame()
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+//        vc.modalPresentationStyle = .overFullScreen
+//        present(vc, animated: false)
     }
 }

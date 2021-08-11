@@ -14,29 +14,32 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let selectCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-        
-        if self.arrayCard[indexPath.row].showCard == true { return }
         
         /// нет открытой карты
-        if self.tempCell == nil {
-            self.tempCell = selectCell
-            
+        if self.tempIndexPath == nil {
+            self.tempIndexPath = indexPath.row
+            arrayCard[indexPath.row].showCard = true
+            guard let selectCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
+            selectCell.show()
         } else { /// есть открытая карта
-//            /// исключение повторного нажатия
-//            if tempCell.card.id == selectCell.card.id { return }
-            ///
-            if tempCell.card.image == selectCell.card.image {
-                tempCell = nil
+            /// исключение повторного нажатия
+            if tempIndexPath == indexPath.row { return }
+            
+            guard let selectCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
+            selectCell.show()
+            
+            /// совпадение
+            if arrayCard[tempIndexPath].id == arrayCard[indexPath.row].id {
+                tempIndexPath = nil
                 countMatch()
-                
             } else {
-                print("Dont Match")
+                guard let tempCell = collectionView.cellForItem(at: IndexPath(item: tempIndexPath, section: 0)) as? CardCell else { return }
                 tempCell.hide()
-                tempCell = selectCell
+                arrayCard[tempIndexPath].showCard = false
+                tempIndexPath = indexPath.row
             }
         }
-        selectCell.show()
+
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
