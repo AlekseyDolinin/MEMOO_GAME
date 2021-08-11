@@ -103,12 +103,13 @@ class GameViewController: UIViewController {
     
     func startGame() {
         viewSelf.cardCollection.reloadData()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             self.hideAllCards()
-            self.startTimer()
+//            self.startTimer()
         }
-        viewSelf.timerLabel.text = "60"
         matchCount = 0
+        viewSelf.scoreLabel.text = "SCORE: \(matchCount)"
+        viewSelf.timerLabel.text = "60"
     }
     
     func hideAllCards() {
@@ -127,9 +128,9 @@ class GameViewController: UIViewController {
     
     func countMatch() {
         matchCount = matchCount + 1
-        print("Match: \(matchCount)")
+        viewSelf.scoreLabel.text = "SCORE: \(matchCount)"
         if matchCount == (countCell / 2) {
-            gameWin()
+//            gameWin()
         }
     }
     

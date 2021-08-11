@@ -7,6 +7,8 @@ class GameView: UIView {
     @IBOutlet weak var viewForTimer: UIView!
     @IBOutlet weak var topBar: UIView!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var recordLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -12,13 +12,13 @@ class GameCell: UICollectionViewCell {
     func setCell(content: String) {
         
         switch content {
-        case "fruit":
+        case "fruit_":
             imageContent.image = UIImage(named: "fruit_im")
         case "animal_":
             imageContent.image = UIImage(named: "animal_im")
         case "emoji_":
             imageContent.image = UIImage(named: "emoji_im")
-        case "dinoCad_":
+        case "dinosaur_":
             imageContent.image = UIImage(named: "dino_im")
         case "monster_":
             imageContent.image = UIImage(named: "monster_im")

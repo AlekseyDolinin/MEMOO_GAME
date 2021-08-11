@@ -311,6 +311,8 @@
                         <viewLayoutGuide key="safeArea" id="eHO-Xd-MB2"/>
                         <connections>
                             <outlet property="cardCollection" destination="qbe-1l-dAC" id="hzA-WA-8oa"/>
+                            <outlet property="recordLabel" destination="k5i-Ip-z9d" id="Yu0-0t-MQq"/>
+                            <outlet property="scoreLabel" destination="RNe-T7-Sga" id="FJz-wO-1Aw"/>
                             <outlet property="timerLabel" destination="o4Q-9y-wjh" id="bqo-ax-jg3"/>
                             <outlet property="topBar" destination="bwQ-V6-pXZ" id="IhI-3K-zcK"/>
                             <outlet property="topConstraint" destination="HXY-6G-UnD" id="fbh-Fn-ozL"/>

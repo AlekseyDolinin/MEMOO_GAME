@@ -7,7 +7,7 @@ class StartViewController: UIViewController {
         return (view as! StartView)
     }
     
-    var listGame = ["fruit", "animal_", "emoji_", "dinoCad_", "monster_"]
+    var listGame = ["fruit_", "animal_", "emoji_", "dinosaur_", "monster_"]
     var currentIndex = 0
     
     override func viewDidLoad() {

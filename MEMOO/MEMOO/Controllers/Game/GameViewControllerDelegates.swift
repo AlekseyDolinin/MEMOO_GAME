@@ -15,13 +15,16 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let selectCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
+        
+        if self.arrayCard[indexPath.row].showCard == true { return }
+        
         /// нет открытой карты
         if self.tempCell == nil {
             self.tempCell = selectCell
             
         } else { /// есть открытая карта
-            /// исключение повторного нажатия
-            if tempCell.card.id == selectCell.card.id { return }
+//            /// исключение повторного нажатия
+//            if tempCell.card.id == selectCell.card.id { return }
             ///
             if tempCell.card.image == selectCell.card.image {
                 tempCell = nil
