@@ -15,31 +15,37 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
+        
         /// нет открытой карты
-        if self.tempIndexPath == nil {
-            self.tempIndexPath = indexPath.row
-            arrayCard[indexPath.row].showCard = true
-            guard let selectCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-            selectCell.show()
-        } else { /// есть открытая карта
-            /// исключение повторного нажатия
-            if tempIndexPath == indexPath.row { return }
-            
-            guard let selectCell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-            selectCell.show()
-            
-            /// совпадение
-            if arrayCard[tempIndexPath].id == arrayCard[indexPath.row].id {
-                tempIndexPath = nil
-                countMatch()
-            } else {
-                guard let tempCell = collectionView.cellForItem(at: IndexPath(item: tempIndexPath, section: 0)) as? CardCell else { return }
-                tempCell.hide()
-                arrayCard[tempIndexPath].showCard = false
-                tempIndexPath = indexPath.row
+        if tempIndexPath == nil {
+            print("нет открытой карты")
+            if arrayCard[indexPath.row].showCard == false {
+                arrayCard[indexPath.row].showCard = true
+                tempIndexPath = indexPath
+                cell.show()
+                return
             }
         }
-
+        
+        
+        if arrayCard[indexPath.row].showCard == true {
+            print("нажали на открытую карту")
+        } else {
+            print("нажали на не открытую карту")
+            cell.show()
+            arrayCard[indexPath.row].showCard = true
+            
+            /// предыдущая карта
+            if arrayCard[tempIndexPath.row].id != arrayCard[indexPath.row].id {
+                guard let cell = collectionView.cellForItem(at: tempIndexPath) as? CardCell else { return }
+                cell.hide()
+                arrayCard[tempIndexPath.row].showCard = false
+                tempIndexPath = indexPath
+            } else {
+                tempIndexPath = nil
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

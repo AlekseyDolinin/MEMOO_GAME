@@ -12,7 +12,7 @@ class GameViewController: UIViewController {
     var arrayCard = [Card]()
     var timer: Timer!
     var matchCount: Int = 0
-    var tempIndexPath: Int!
+    var tempIndexPath: IndexPath!
     
     
     override func viewDidLoad() {
