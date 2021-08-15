@@ -18,32 +18,28 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
         
         /// нет открытой карты
-        if tempIndexPath == nil {
-            print("нет открытой карты")
-            if arrayCard[indexPath.row].showCard == false {
-                arrayCard[indexPath.row].showCard = true
-                tempIndexPath = indexPath
-                cell.show()
-                return
-            }
+        if tempIndexPath == nil && arrayCard[indexPath.row].showCard == false {
+            arrayCard[indexPath.row].showCard = true
+            tempIndexPath = indexPath
+            cell.show()
+            return
         }
-        
-        
-        if arrayCard[indexPath.row].showCard == true {
-            print("нажали на открытую карту")
-        } else {
-            print("нажали на не открытую карту")
+
+        ///
+        if arrayCard[indexPath.row].showCard != true {
             cell.show()
             arrayCard[indexPath.row].showCard = true
             
-            /// предыдущая карта
+            ///
             if arrayCard[tempIndexPath.row].id != arrayCard[indexPath.row].id {
                 guard let cell = collectionView.cellForItem(at: tempIndexPath) as? CardCell else { return }
                 cell.hide()
                 arrayCard[tempIndexPath.row].showCard = false
                 tempIndexPath = indexPath
             } else {
+                print("match")
                 tempIndexPath = nil
+                countMatch()
             }
         }
     }

@@ -9,11 +9,12 @@ class GameView: UIView {
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var recordLabel: UILabel!
+    @IBOutlet weak var menuButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         topBar.transform = CGAffineTransform(translationX: 0, y: -140)
+        menuButton.isUserInteractionEnabled = false
     }
 
     override func draw(_ rect: CGRect) {
@@ -21,16 +22,11 @@ class GameView: UIView {
     }
     
     func showTopBar() {
-//        UIView.animate(withDuration: 0.3) {
-//            self.topBar.transform = .identity
-//        }
-        
         UIView.animate(withDuration: 0.5, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
             self.topBar.transform = .identity
-        })
-        
-        
+        }) { (true) in
+            self.menuButton.isUserInteractionEnabled = true
+        }
     }
-    
     
 }

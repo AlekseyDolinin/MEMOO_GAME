@@ -19,6 +19,10 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         viewSelf.cardCollection.delegate = self
         viewSelf.cardCollection.dataSource = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadGame), name: NSNotification.Name(rawValue: "restart"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(back), name: NSNotification.Name(rawValue: "back"), object: nil)
+
     }
     
     ///
@@ -34,10 +38,21 @@ class GameViewController: UIViewController {
     }
     
     ///
+    @objc func back() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    ///
+    @objc func reloadGame() {
+        loadCards {
+            startGame()
+        }
+    }
+    
+    ///
     @objc func timeCount() {
         var timeCount = Int(viewSelf.timerLabel!.text!) ?? 0
         if timeCount <= 0 {
-            self.timer.invalidate()
             self.gameOver()
         } else {
             timeCount = timeCount - 1
@@ -63,7 +78,7 @@ class GameViewController: UIViewController {
                 arrayCard.append(card)
             }
         }
-//        arrayCard = arrayCard.shuffled()
+        arrayCard = arrayCard.shuffled()
 
         completion()
     }
@@ -86,28 +101,25 @@ class GameViewController: UIViewController {
     ///
     func gameOver() {
         self.timer.invalidate()
-        showAlert(title: "GAME OVER!")
+        DispatchQueue.main.async {
+            self.showAlert(title: "GAME OVER!")
+        }
+        
     }
     
     ///
     func gameWin() {
-        showAlert(title: "WIN!")
         self.timer.invalidate()
-    }
-    
-    ///
-    func reloadGame() {
-        loadCards {
-            startGame()
-            showAllCards()
+        DispatchQueue.main.async {
+            self.showAlert(title: "WIN!")
         }
     }
     
     func startGame() {
-        viewSelf.cardCollection.reloadData()
+        showAllCards()
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             self.hideAllCards()
-//            self.startTimer()
+            self.startTimer()
         }
         matchCount = 0
         viewSelf.scoreLabel.text = "SCORE: \(matchCount)"
@@ -125,40 +137,19 @@ class GameViewController: UIViewController {
         for i in 0..<self.arrayCard.count {
             self.arrayCard[i].showCard = true
         }
-        viewSelf.cardCollection.reloadData()
     }
     
     func countMatch() {
         matchCount = matchCount + 1
         viewSelf.scoreLabel.text = "SCORE: \(matchCount)"
         if matchCount == (countCell / 2) {
-//            gameWin()
+            gameWin()
         }
-    }
-    
-    ///
-    @IBAction func back(sender: UIButton?) {
-        
-        let alert = UIAlertController(title: "Закончить игру?", message: nil, preferredStyle: .alert)
-        let endGameAction = UIAlertAction(title: "Закончить", style: .default) { (UIAlertAction) in
-            self.navigationController?.popViewController(animated: true)
-        }
-        let continueAction = UIAlertAction(title: "Продолжить", style: .default) { (UIAlertAction) in
-            self.view.endEditing(true)
-        }
-        let reloadAction = UIAlertAction(title: "Начать заново", style: .default) { (UIAlertAction) in
-            self.reloadGame()
-        }
-        alert.addAction(endGameAction)
-        alert.addAction(continueAction)
-        alert.addAction(reloadAction)
-        present(alert, animated: true)
     }
     
     @IBAction func showMenu(_ sender: UIButton) {
-        reloadGame()
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-//        vc.modalPresentationStyle = .overFullScreen
-//        present(vc, animated: false)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
     }
 }

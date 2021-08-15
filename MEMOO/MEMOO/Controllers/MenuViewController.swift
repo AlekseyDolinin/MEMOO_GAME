@@ -8,16 +8,22 @@ class MenuViewController: UIViewController {
 
     }
     
-
-    
+    ///
     @IBAction func close(_ sender: UIButton) {
         dismiss(animated: false)
     }
     
-    @IBAction func home(_ sender: UIButton) {
+    ///
+    @IBAction func restart(_ sender: UIButton) {
         dismiss(animated: false) {
-            self.navigationController?.popViewController(animated: true)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "restart"), object: self)
         }
     }
-
+    
+    ///
+    @IBAction func back(_ sender: UIButton) {
+        dismiss(animated: false) {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "back"), object: self)
+        }
+    }
 }
