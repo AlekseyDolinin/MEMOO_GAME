@@ -26,7 +26,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="wMP-dM-i8J">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-h9-5K2">
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-h9-5K2">
                                 <rect key="frame" x="0.0" y="80" width="320" height="308"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jzh-Xa-3gX">
@@ -36,7 +36,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GameCell" id="Wcv-4u-lld" customClass="GameCell" customModule="MEMOO" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GameCell" id="Wcv-4u-lld" customClass="GameCell" customModule="MEMOO" customModuleProvider="target">
                                         <rect key="frame" x="9.5" y="0.0" width="301" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -49,13 +49,23 @@
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board_2" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-Sl-dNA">
                                                             <rect key="frame" x="0.0" y="0.0" width="301" height="300"/>
                                                         </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ca3-7h-V8f">
+                                                            <rect key="frame" x="105.5" y="105" width="90" height="90"/>
+                                                            <color key="backgroundColor" red="1" green="0.46274509800000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="90" id="1mn-lS-eOv"/>
+                                                                <constraint firstAttribute="width" constant="90" id="QVJ-4s-ko8"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="8G6-Sl-dNA" firstAttribute="top" secondItem="xiu-9N-Zpb" secondAttribute="top" id="59z-uY-T9X"/>
                                                         <constraint firstItem="8G6-Sl-dNA" firstAttribute="leading" secondItem="xiu-9N-Zpb" secondAttribute="leading" id="EHG-bf-PhY"/>
                                                         <constraint firstAttribute="trailing" secondItem="8G6-Sl-dNA" secondAttribute="trailing" id="SVV-u8-6BG"/>
+                                                        <constraint firstItem="Ca3-7h-V8f" firstAttribute="centerY" secondItem="xiu-9N-Zpb" secondAttribute="centerY" id="Y4E-Ow-euO"/>
                                                         <constraint firstAttribute="bottom" secondItem="8G6-Sl-dNA" secondAttribute="bottom" id="lFc-Q1-QFb"/>
+                                                        <constraint firstItem="Ca3-7h-V8f" firstAttribute="centerX" secondItem="xiu-9N-Zpb" secondAttribute="centerX" id="xlV-G0-NCr"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -68,21 +78,19 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="back" destination="xiu-9N-Zpb" id="9J1-TH-pXw"/>
+                                            <outlet property="imageBlockedContent" destination="Ca3-7h-V8f" id="ZmM-ck-8zS"/>
                                             <outlet property="imageContent" destination="8G6-Sl-dNA" id="5CH-iY-XCi"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cg-D0-07l">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cg-D0-07l">
                                 <rect key="frame" x="115" y="418" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="dOo-dV-Pgc"/>
                                     <constraint firstAttribute="height" constant="90" id="i7M-P9-2EO"/>
                                 </constraints>
                                 <state key="normal" image="playButton"/>
-                                <connections>
-                                    <action selector="startGame:" destination="rhs-Bl-AUs" eventType="touchUpInside" id="f6Y-yP-d46"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -265,17 +273,37 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvn-wO-37y">
                                                     <rect key="frame" x="2" y="2" width="163" height="162"/>
                                                     <subviews>
+                                                        <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRl-dP-fUl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="163" height="162"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Icz-l4-bPy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="163" height="162"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            </view>
+                                                            <blurEffect style="light"/>
+                                                        </visualEffectView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sLW-3B-dar" customClass="CardView" customModule="MEMOO" customModuleProvider="target">
+                                                            <rect key="frame" x="4" y="4" width="155" height="154"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gT-nC-uPM" customClass="CardView" customModule="MEMOO" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="163" height="162"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="sLW-3B-dar" secondAttribute="bottom" id="f8v-p4-hQg"/>
-                                                        <constraint firstItem="sLW-3B-dar" firstAttribute="leading" secondItem="Mvn-wO-37y" secondAttribute="leading" id="fSn-ye-KSL"/>
-                                                        <constraint firstAttribute="trailing" secondItem="sLW-3B-dar" secondAttribute="trailing" id="xwd-ea-2tq"/>
-                                                        <constraint firstItem="sLW-3B-dar" firstAttribute="top" secondItem="Mvn-wO-37y" secondAttribute="top" id="zVK-as-5Ox"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3gT-nC-uPM" secondAttribute="bottom" id="AUc-HI-Zas"/>
+                                                        <constraint firstItem="yRl-dP-fUl" firstAttribute="leading" secondItem="Mvn-wO-37y" secondAttribute="leading" id="C24-F3-bPD"/>
+                                                        <constraint firstItem="3gT-nC-uPM" firstAttribute="leading" secondItem="Mvn-wO-37y" secondAttribute="leading" id="Jkd-QH-4yf"/>
+                                                        <constraint firstItem="yRl-dP-fUl" firstAttribute="top" secondItem="Mvn-wO-37y" secondAttribute="top" id="Jqf-hO-NRb"/>
+                                                        <constraint firstItem="3gT-nC-uPM" firstAttribute="top" secondItem="Mvn-wO-37y" secondAttribute="top" id="XZ3-Dx-TaD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sLW-3B-dar" secondAttribute="bottom" constant="4" id="f8v-p4-hQg"/>
+                                                        <constraint firstItem="sLW-3B-dar" firstAttribute="leading" secondItem="Mvn-wO-37y" secondAttribute="leading" constant="4" id="fSn-ye-KSL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3gT-nC-uPM" secondAttribute="trailing" id="mmR-Ii-KfL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yRl-dP-fUl" secondAttribute="bottom" id="u9T-PJ-yow"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yRl-dP-fUl" secondAttribute="trailing" id="uKQ-2K-bOK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sLW-3B-dar" secondAttribute="trailing" constant="4" id="xwd-ea-2tq"/>
+                                                        <constraint firstItem="sLW-3B-dar" firstAttribute="top" secondItem="Mvn-wO-37y" secondAttribute="top" constant="4" id="zVK-as-5Ox"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -288,7 +316,9 @@
                                             <constraint firstItem="Mvn-wO-37y" firstAttribute="top" secondItem="3k7-mf-eu2" secondAttribute="top" constant="2" id="f9n-A1-GOl"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imageView" destination="sLW-3B-dar" id="rtP-eL-40Z"/>
+                                            <outlet property="backCard" destination="3gT-nC-uPM" id="kXz-kB-yaa"/>
+                                            <outlet property="blure" destination="yRl-dP-fUl" id="IUx-5i-JDg"/>
+                                            <outlet property="imageCard" destination="sLW-3B-dar" id="d1r-Sg-8xe"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

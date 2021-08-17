@@ -2,14 +2,15 @@ import UIKit
 
 class CardCell: UICollectionViewCell {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var backCard: UIImageView!
+    @IBOutlet weak var imageCard: UIImageView!
+    @IBOutlet weak var blure: UIVisualEffectView!
     
     var card: Card!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageView.layer.cornerRadius = 4.0
-        imageView.clipsToBounds = true
+        setUI()
     }
     
     func setCell() {
@@ -22,15 +23,27 @@ class CardCell: UICollectionViewCell {
     
     func hide() {
         UIView.transition(with: self.contentView, duration: 0.3, options: .transitionFlipFromLeft, animations: {
-            self.imageView.backgroundColor = .clear
-            self.imageView.image = UIImage(named: "buttonBack")
+            self.backCard.isHidden = false
+            self.imageCard.isHidden = true
+            self.blure.isHidden = true
         })
     }
     
     func show() {
         UIView.transition(with: self.contentView, duration: 0.3, options: .transitionFlipFromLeft, animations: {
-            self.imageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.1007918793)
-            self.imageView.image = self.card.image
+            self.backCard.isHidden = true
+            self.imageCard.isHidden = false
+            self.blure.isHidden = false
+            self.imageCard.image = self.card.image
         })
+    }
+}
+
+extension CardCell {
+    func setUI() {
+        ///
+        blure.layer.cornerRadius = 6
+        blure.clipsToBounds = true
+        backCard.image = UIImage(named: "buttonBack")
     }
 }

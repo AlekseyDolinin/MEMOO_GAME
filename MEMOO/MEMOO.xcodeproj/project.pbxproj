@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1017239B26CC55EC002A7BF5 /* ADSDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017239A26CC55EC002A7BF5 /* ADSDelegates.swift */; };
 		1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046E7C926C1DB0D00624CAA /* MenuViewController.swift */; };
 		104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */; };
 		10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229D626B0D4A50063433E /* AppDelegate.swift */; };
@@ -27,9 +28,11 @@
 		10D22A1526B329940063433E /* StartDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0126B328840063433E /* StartDelegates.swift */; };
 		10D22A1626B329970063433E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0326B328900063433E /* UIColor.swift */; };
 		10D22A1726B329970063433E /* SnapPagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0426B328900063433E /* SnapPagingLayout.swift */; };
+		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1017239A26CC55EC002A7BF5 /* ADSDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSDelegates.swift; sourceTree = "<group>"; };
 		1046E7C926C1DB0D00624CAA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shadow_regular.ttf; sourceTree = "<group>"; };
 		104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RF-Krabuler-Regular.otf"; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		10D22A0126B328840063433E /* StartDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDelegates.swift; sourceTree = "<group>"; };
 		10D22A0326B328900063433E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		10D22A0426B328900063433E /* SnapPagingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapPagingLayout.swift; sourceTree = "<group>"; };
+		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
+		9354FB220677EB786CD16283 /* Pods_MEMOO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMOO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F10E4978DD465BD4F1EACE /* Pods-MEMOO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.debug.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,7 @@
 				10D229FF26B328840063433E /* StartViewController.swift */,
 				10D22A0126B328840063433E /* StartDelegates.swift */,
 				10D22A0026B328840063433E /* ScrollDelegates.swift */,
+				1017239A26CC55EC002A7BF5 /* ADSDelegates.swift */,
 			);
 			path = StartViewController;
 			sourceTree = "<group>";
@@ -81,6 +89,8 @@
 			children = (
 				10D229D526B0D4A50063433E /* MEMOO */,
 				10D229D426B0D4A50063433E /* Products */,
+				C57C399C672A492C3D8B9BD4 /* Pods */,
+				78FB2AFC69C641D02496C844 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +185,23 @@
 			path = HelpClasses;
 			sourceTree = "<group>";
 		};
+		78FB2AFC69C641D02496C844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9354FB220677EB786CD16283 /* Pods_MEMOO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C57C399C672A492C3D8B9BD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1F10E4978DD465BD4F1EACE /* Pods-MEMOO.debug.xcconfig */,
+				679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10D229E526B0D4A60063433E /* Build configuration list for PBXNativeTarget "MEMOO" */;
 			buildPhases = (
+				672ABCC24D987B61D83F4DF2 /* [CP] Check Pods Manifest.lock */,
 				10D229CF26B0D4A50063433E /* Sources */,
 				10D229D026B0D4A50063433E /* Frameworks */,
 				10D229D126B0D4A50063433E /* Resources */,
+				B85E7C079F4233DC8B6EC25C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +271,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		672ABCC24D987B61D83F4DF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MEMOO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B85E7C079F4233DC8B6EC25C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEMOO/Pods-MEMOO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEMOO/Pods-MEMOO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEMOO/Pods-MEMOO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		10D229CF26B0D4A50063433E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +331,7 @@
 				10D22A1426B329940063433E /* ScrollDelegates.swift in Sources */,
 				10D22A0726B329420063433E /* CardCell.swift in Sources */,
 				10D22A0C26B3294E0063433E /* GameView.swift in Sources */,
+				1017239B26CC55EC002A7BF5 /* ADSDelegates.swift in Sources */,
 				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,
 				10D22A0D26B3298A0063433E /* GameViewController.swift in Sources */,
 				10D22A0E26B3298A0063433E /* Random.swift in Sources */,
@@ -406,6 +478,7 @@
 		};
 		10D229E626B0D4A60063433E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1F10E4978DD465BD4F1EACE /* Pods-MEMOO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +497,7 @@
 		};
 		10D229E726B0D4A60063433E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
