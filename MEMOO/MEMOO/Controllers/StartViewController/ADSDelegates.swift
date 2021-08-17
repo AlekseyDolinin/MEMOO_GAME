@@ -2,11 +2,15 @@ import UIKit
 import GoogleMobileAds
 
 extension StartViewController {
+    
+    ///
     func showADS() {
         if GADRewardBasedVideoAd.sharedInstance().isReady {
             GADRewardBasedVideoAd.sharedInstance().present(fromRootViewController: self)
         }
     }
+    
+    ///
     func rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
         print("rewardBasedVideoAdDidClose")
         print("GADRequest")
@@ -15,11 +19,28 @@ extension StartViewController {
         viewSelf.contentGameCollection.reloadData()
         
         GADRewardBasedVideoAd.sharedInstance().load(GADRequest(), withAdUnitID: AdUnitID)
+        
+        switch listGame[currentIndex].name {
+        case "dinosaur_":
+            UserDefaults.standard.set(Date(), forKey: "dateSeeADSDinosaur")
+            
+        case "monster_":
+            UserDefaults.standard.set(Date(), forKey: "dateSeeADSMonster")
+            
+        default:
+            break
+        }
     }
+    
+    ///
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didRewardUserWith reward: GADAdReward) {
         print(reward.type)
         print(reward.amount)
     }
+    
+    
+    
+    
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didFailToLoadWithError error: Error) {
         //        print("rewardBasedVideoAd")
     }
