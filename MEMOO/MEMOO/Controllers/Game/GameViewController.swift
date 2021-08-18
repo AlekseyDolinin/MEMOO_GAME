@@ -87,7 +87,6 @@ class GameViewController: UIViewController {
     ///
     func startTimer() {
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeCount), userInfo: nil, repeats: true)
-        print(self.timer.timeInterval)
     }
     
     ///
