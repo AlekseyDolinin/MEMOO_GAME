@@ -7,13 +7,15 @@ class GameViewController: UIViewController {
         return (view as! GameView)
     }
     
-    var nameCard: String!
     var countCell = 20
     var arrayCard = [Card]()
     var timer: Timer!
-    var matchCount: Int = 0
-    var tempIndexPath: IndexPath!
     
+    var matchCount: Int = 0
+    var score: Int = 0
+    
+    var tempIndexPath: IndexPath!
+    var gameContent = (name: String(), blocked: Bool(), record: Int())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,8 @@ class GameViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(restart), name: NSNotification.Name(rawValue: "restart"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(back), name: NSNotification.Name(rawValue: "back"), object: nil)
 
+        viewSelf.gameContent = self.gameContent
+        viewSelf.setRecordLabel()        
     }
     
     ///
@@ -58,6 +62,15 @@ class GameViewController: UIViewController {
         var timeCount = Int(viewSelf.timerLabel!.text!) ?? 0
         if timeCount <= 0 {
             self.gameOver()
+            
+            print("SCORE: \(score)")
+            
+            if score > StartViewController.fruitRecord {
+                StartViewController.fruitRecord = score
+                /// запись рекорда
+                UserDefaults.standard.set(score, forKey: gameContent.name)
+            }
+            
         } else {
             timeCount = timeCount - 1
         }
@@ -71,7 +84,7 @@ class GameViewController: UIViewController {
         arrayCard = []
         while arrayCard.count < countCell {
             let index: Int = Int(arc4random() % 20 + 1) // 20 - количество изображений в папке
-            let image = UIImage(named: "\(nameCard!)\(index)")!
+            let image = UIImage(named: "\(gameContent.name)\(index)")!
             let card = Card(id: index, image: image, showCard: false)
             
             let indexes = arrayCard.map { $0.id }
@@ -140,7 +153,8 @@ class GameViewController: UIViewController {
     }
     
     func countMatch() {
-        matchCount = matchCount + 1
+        matchCount += 1
+        score += 1
         viewSelf.scoreLabel.text = "SCORE: \(matchCount)"
         if matchCount == (countCell / 2) {
             gameWin()

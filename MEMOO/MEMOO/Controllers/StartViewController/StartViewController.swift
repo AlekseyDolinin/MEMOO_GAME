@@ -8,11 +8,18 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
         return (view as! StartView)
     }
     
-    var listGame: [(name: String, blocked: Bool)] = []
+    var listGame: [(name: String, blocked: Bool, record: Int)] = []
     var currentIndex = 0
     var AdUnitID: String!
     
     let valuePeriodWithooutADVInSeconds = 60
+    
+    static var fruitRecord = 0
+    static var emojiRecord = 0
+    static var animalRecord = 0
+    static var dinossaurRecord = 0
+    static var monsterRecord = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,20 +41,32 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
         AdUnitID = "ca-app-pub-8093774413708674/3028809513"
         #endif
         GADRewardBasedVideoAd.sharedInstance().load(GADRequest(), withAdUnitID: AdUnitID)
+    }
+    
+    ///
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        StartViewController.fruitRecord = UserDefaults.standard.integer(forKey: "fruit_")
+        StartViewController.emojiRecord = UserDefaults.standard.integer(forKey: "emoji_")
+        StartViewController.animalRecord = UserDefaults.standard.integer(forKey: "animal_")
+        StartViewController.dinossaurRecord = UserDefaults.standard.integer(forKey: "dinosaur_")
+        StartViewController.monsterRecord = UserDefaults.standard.integer(forKey: "monster_")
         
         createListGame()
+        viewSelf.contentGameCollection.reloadData()
     }
     
     ///
     func createListGame() {
         
-        listGame = [(name: "fruit_", blocked: false),
-                    (name: "emoji_", blocked: false),
-                    (name: "animal_", blocked: setBlocked(key: "animal_")),
-                    (name: "dinosaur_", blocked: setBlocked(key: "dinosaur_")),
-                    (name: "monster_", blocked: setBlocked(key: "monster_"))]
+        listGame = [(name: "fruit_", blocked: false, record: StartViewController.fruitRecord),
+                    (name: "emoji_", blocked: false, record: StartViewController.emojiRecord),
+                    (name: "animal_", blocked: setBlocked(key: "animal_"), record: StartViewController.animalRecord),
+                    (name: "dinosaur_", blocked: setBlocked(key: "dinosaur_"), record: StartViewController.dinossaurRecord),
+                    (name: "monster_", blocked: setBlocked(key: "monster_"), record: StartViewController.monsterRecord)]
     }
-    
+
     ///
     func setBlocked(key: String) -> Bool {
         
