@@ -12,8 +12,7 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
     var currentIndex = 0
     var AdUnitID: String!
     
-    var blockedDinosaurValue: Bool!
-    var blockedMonsterValue: Bool!
+    let valuePeriodWithooutADVInSeconds = 60
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,13 +43,13 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
         
         listGame = [(name: "fruit_", blocked: false),
                     (name: "emoji_", blocked: false),
-                    (name: "animal_", blocked: false),
-                    (name: "dinosaur_", blocked: setBlockedMonster(key: "dateSeeADSDinosaur")),
-                    (name: "monster_", blocked: setBlockedMonster(key: "dateSeeADSMonster"))]
+                    (name: "animal_", blocked: setBlocked(key: "animal_")),
+                    (name: "dinosaur_", blocked: setBlocked(key: "dinosaur_")),
+                    (name: "monster_", blocked: setBlocked(key: "monster_"))]
     }
     
     ///
-    func setBlockedMonster(key: String) -> Bool {
+    func setBlocked(key: String) -> Bool {
         
         let dateSee: Date? = UserDefaults.standard.object(forKey: key) as? Date
         
@@ -63,7 +62,7 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
         
         print(">>>>> \(key): \(secondsCount)")
         
-        if secondsCount >= 60 {
+        if secondsCount >= valuePeriodWithooutADVInSeconds {
             UserDefaults.standard.set(nil, forKey: key)
             return true
         } else {

@@ -49,12 +49,11 @@
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board_2" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-Sl-dNA">
                                                             <rect key="frame" x="0.0" y="0.0" width="301" height="300"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ca3-7h-V8f">
-                                                            <rect key="frame" x="105.5" y="105" width="90" height="90"/>
-                                                            <color key="backgroundColor" red="1" green="0.46274509800000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ads" translatesAutoresizingMaskIntoConstraints="NO" id="Ca3-7h-V8f">
+                                                            <rect key="frame" x="75.5" y="75" width="150.5" height="150.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="90" id="1mn-lS-eOv"/>
-                                                                <constraint firstAttribute="width" constant="90" id="QVJ-4s-ko8"/>
+                                                                <constraint firstAttribute="width" secondItem="Ca3-7h-V8f" secondAttribute="height" multiplier="1:1" id="ana-Y7-zCR"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
@@ -62,6 +61,7 @@
                                                     <constraints>
                                                         <constraint firstItem="8G6-Sl-dNA" firstAttribute="top" secondItem="xiu-9N-Zpb" secondAttribute="top" id="59z-uY-T9X"/>
                                                         <constraint firstItem="8G6-Sl-dNA" firstAttribute="leading" secondItem="xiu-9N-Zpb" secondAttribute="leading" id="EHG-bf-PhY"/>
+                                                        <constraint firstItem="Ca3-7h-V8f" firstAttribute="width" secondItem="xiu-9N-Zpb" secondAttribute="width" multiplier="0.5" id="RGe-r3-bdw"/>
                                                         <constraint firstAttribute="trailing" secondItem="8G6-Sl-dNA" secondAttribute="trailing" id="SVV-u8-6BG"/>
                                                         <constraint firstItem="Ca3-7h-V8f" firstAttribute="centerY" secondItem="xiu-9N-Zpb" secondAttribute="centerY" id="Y4E-Ow-euO"/>
                                                         <constraint firstAttribute="bottom" secondItem="8G6-Sl-dNA" secondAttribute="bottom" id="lFc-Q1-QFb"/>
@@ -466,6 +466,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ads" width="200" height="200"/>
         <image name="bg" width="1080" height="1920"/>
         <image name="board" width="320" height="236"/>
         <image name="board_2" width="166" height="221"/>
