@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
         viewSelf.cardCollection.delegate = self
         viewSelf.cardCollection.dataSource = self
         
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadGame), name: NSNotification.Name(rawValue: "restart"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(restart), name: NSNotification.Name(rawValue: "restart"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(back), name: NSNotification.Name(rawValue: "back"), object: nil)
 
     }
@@ -28,7 +28,7 @@ class GameViewController: UIViewController {
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        reloadGame()
+        restart()
     }
     
     ///
@@ -43,7 +43,11 @@ class GameViewController: UIViewController {
     }
     
     ///
-    @objc func reloadGame() {
+    @objc func restart() {
+        if self.timer != nil {
+            self.timer.invalidate()
+        }
+        hideAllCards()
         loadCards {
             startGame()
         }
@@ -64,9 +68,7 @@ class GameViewController: UIViewController {
     
     ///
     func loadCards(completion: () -> ()) {
-        
         arrayCard = []
-        
         while arrayCard.count < countCell {
             let index: Int = Int(arc4random() % 20 + 1) // 20 - количество изображений в папке
             let image = UIImage(named: "\(nameCard!)\(index)")!
@@ -79,20 +81,20 @@ class GameViewController: UIViewController {
             }
         }
         arrayCard = arrayCard.shuffled()
-
         completion()
     }
     
     ///
     func startTimer() {
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeCount), userInfo: nil, repeats: true)
+        print(self.timer.timeInterval)
     }
     
     ///
     func showAlert(title: String? = nil, message: String? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Close", style: .default) { (UIAlertAction) in
-            self.reloadGame()
+            self.back()
         }
         alert.addAction(alertAction)
         present(alert, animated: true)
@@ -104,7 +106,6 @@ class GameViewController: UIViewController {
         DispatchQueue.main.async {
             self.showAlert(title: "GAME OVER!")
         }
-        
     }
     
     ///
