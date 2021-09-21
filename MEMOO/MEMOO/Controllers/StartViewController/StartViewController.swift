@@ -1,7 +1,7 @@
 import UIKit
 import GoogleMobileAds
 
-class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
+class StartViewController: UIViewController, GADFullScreenContentDelegate {
     
     var viewSelf: StartView! {
         guard isViewLoaded else {return nil}
@@ -10,21 +10,23 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
     
     var listGame: [(name: String, blocked: Bool, record: Int)] = []
     var currentIndex = 0
-    var AdUnitID: String!
     
-    let valuePeriodWithooutADVInSeconds = 60
+    var AdUnitID: String!
+    var rewardedAd: GADRewardedAd?
+    
+    let valuePeriodWithooutADVInSeconds = 10800 /// 3 часа - 10800
     
     static var fruitRecord = 0
     static var emojiRecord = 0
     static var animalRecord = 0
     static var dinossaurRecord = 0
     static var monsterRecord = 0
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        GADRewardBasedVideoAd.sharedInstance().delegate = self
         viewSelf.contentGameCollection.delegate = self
         viewSelf.contentGameCollection.dataSource = self
         
@@ -34,19 +36,14 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
             spacing: 20,
             inset: 40
         )
-        
-        #if DEBUG
-        AdUnitID = "ca-app-pub-3940256099942544/1712485313"
-        #else
-        AdUnitID = "ca-app-pub-8093774413708674/3028809513"
-        #endif
-        GADRewardBasedVideoAd.sharedInstance().load(GADRequest(), withAdUnitID: AdUnitID)
+
+        self.gadRequest()
     }
     
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-
+        
         StartViewController.fruitRecord = UserDefaults.standard.integer(forKey: "fruit_")
         StartViewController.emojiRecord = UserDefaults.standard.integer(forKey: "emoji_")
         StartViewController.animalRecord = UserDefaults.standard.integer(forKey: "animal_")
@@ -66,7 +63,7 @@ class StartViewController: UIViewController, GADRewardBasedVideoAdDelegate {
                     (name: "dinosaur_", blocked: setBlocked(key: "dinosaur_"), record: StartViewController.dinossaurRecord),
                     (name: "monster_", blocked: setBlocked(key: "monster_"), record: StartViewController.monsterRecord)]
     }
-
+    
     ///
     func setBlocked(key: String) -> Bool {
         
