@@ -30,6 +30,10 @@
 		10D22A1626B329970063433E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0326B328900063433E /* UIColor.swift */; };
 		10D22A1726B329970063433E /* SnapPagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0426B328900063433E /* SnapPagingLayout.swift */; };
 		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
+		91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8D2709E33D00F9DD46 /* WinViewController.swift */; };
+		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
+		91C88D922709E59900F9DD46 /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D912709E59900F9DD46 /* LoseViewController.swift */; };
+		91C88D942709E5BC00F9DD46 /* LoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D932709E5BC00F9DD46 /* LoseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		10D22A0326B328900063433E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		10D22A0426B328900063433E /* SnapPagingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapPagingLayout.swift; sourceTree = "<group>"; };
 		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
+		91C88D8D2709E33D00F9DD46 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
+		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
+		91C88D912709E59900F9DD46 /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
+		91C88D932709E5BC00F9DD46 /* LoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseView.swift; sourceTree = "<group>"; };
 		9354FB220677EB786CD16283 /* Pods_MEMOO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMOO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F10E4978DD465BD4F1EACE /* Pods-MEMOO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.debug.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +162,8 @@
 				10D229F226B328800063433E /* StartView.swift */,
 				10D229F426B328800063433E /* CardView.swift */,
 				10D229F526B328800063433E /* GameView.swift */,
+				91C88D8F2709E38200F9DD46 /* WinView.swift */,
+				91C88D932709E5BC00F9DD46 /* LoseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +174,8 @@
 				104DD30526BF2AA40042A324 /* StartViewController */,
 				10D229F726B328840063433E /* Game */,
 				1046E7C926C1DB0D00624CAA /* MenuViewController.swift */,
+				91C88D8D2709E33D00F9DD46 /* WinViewController.swift */,
+				91C88D912709E59900F9DD46 /* LoseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,16 +336,20 @@
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
 				10D22A1326B329940063433E /* StartViewController.swift in Sources */,
 				10D22A0826B329440063433E /* GameCell.swift in Sources */,
+				91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */,
 				10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */,
+				91C88D922709E59900F9DD46 /* LoseViewController.swift in Sources */,
 				10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */,
 				10D22A1726B329970063433E /* SnapPagingLayout.swift in Sources */,
 				10D22A0626B3293E0063433E /* Card.swift in Sources */,
 				1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */,
 				10D22A1626B329970063433E /* UIColor.swift in Sources */,
+				91C88D942709E5BC00F9DD46 /* LoseView.swift in Sources */,
 				10D22A0926B329470063433E /* StartView.swift in Sources */,
 				10D22A1426B329940063433E /* ScrollDelegates.swift in Sources */,
 				10D22A0726B329420063433E /* CardCell.swift in Sources */,
 				1099280226CD9FBF00F9771F /* Records.swift in Sources */,
+				91C88D902709E38200F9DD46 /* WinView.swift in Sources */,
 				10D22A0C26B3294E0063433E /* GameView.swift in Sources */,
 				1017239B26CC55EC002A7BF5 /* ADSDelegates.swift in Sources */,
 				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,

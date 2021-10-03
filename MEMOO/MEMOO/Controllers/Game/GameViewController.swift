@@ -13,6 +13,9 @@ class GameViewController: UIViewController {
     
     var matchCount: Int = 0
     var score: Int = 0
+    var timeCountValue: Int = 0
+    var timeDelayHideContent = 3.0
+    var speedTimer = 0.1
     
     var tempIndexPath: IndexPath!
     var gameContent = (name: String(), blocked: Bool(), record: Int())
@@ -32,6 +35,7 @@ class GameViewController: UIViewController {
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        print("Выбрана: \(gameContent.name)")
         restart()
     }
     
@@ -59,23 +63,14 @@ class GameViewController: UIViewController {
     
     ///
     @objc func timeCount() {
-        var timeCount = Int(viewSelf.timerLabel!.text!) ?? 0
-        if timeCount <= 0 {
-            self.gameOver()
-            
-            print("SCORE: \(score)")
-            
-            if score > StartViewController.fruitRecord {
-                StartViewController.fruitRecord = score
-                /// запись рекорда
-                UserDefaults.standard.set(score, forKey: gameContent.name)
-            }
-            
+        timeCountValue = Int(viewSelf.timerLabel!.text!) ?? 0
+        if timeCountValue <= 0 {
+            gameLose()
         } else {
-            timeCount = timeCount - 1
+            timeCountValue = timeCountValue - 1
         }
         DispatchQueue.main.async {
-            self.viewSelf.timerLabel.text = String(timeCount)
+            self.viewSelf.timerLabel.text = String(self.timeCountValue)
         }
     }
     
@@ -99,38 +94,45 @@ class GameViewController: UIViewController {
     
     ///
     func startTimer() {
-        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeCount), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: speedTimer, target: self, selector: #selector(timeCount), userInfo: nil, repeats: true)
     }
     
     ///
-    func showAlert(title: String? = nil, message: String? = nil) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Close", style: .default) { (UIAlertAction) in
-            self.back()
-        }
-        alert.addAction(alertAction)
-        present(alert, animated: true)
-    }
-    
-    ///
-    func gameOver() {
+    func gameLose() {
         self.timer.invalidate()
         DispatchQueue.main.async {
-            self.showAlert(title: "GAME OVER!")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoseViewController") as! LoseViewController
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true)
         }
     }
     
     ///
     func gameWin() {
         self.timer.invalidate()
+        let totalScore = score + timeCountValue
+        print("game: \(gameContent.name)")
+        print("score: \(score)")
+        print("total score: \(totalScore)")
+        print("preRecord: \(gameContent.record)")
+        
+        if totalScore > gameContent.record {
+            print("Рекорд побит")
+            StartViewController.fruitRecord = totalScore
+            /// запись рекорда
+            print("save record: \(totalScore) in \(gameContent.name)")
+            UserDefaults.standard.set(totalScore, forKey: gameContent.name)
+        }
         DispatchQueue.main.async {
-            self.showAlert(title: "WIN!")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "WinViewController") as! WinViewController
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true)
         }
     }
     
     func startGame() {
         showAllCards()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + timeDelayHideContent) {
             self.hideAllCards()
             self.startTimer()
         }

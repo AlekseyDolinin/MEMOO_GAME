@@ -3,6 +3,7 @@ import UIKit
 extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("___________________________________________________")
         return listGame.count
     }
     
