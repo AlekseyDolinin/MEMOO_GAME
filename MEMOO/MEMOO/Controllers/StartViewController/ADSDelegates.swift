@@ -11,6 +11,7 @@ extension StartViewController {
         #else
         AdUnitID = "ca-app-pub-8093774413708674/3028809513"
         #endif
+                
         GADRewardedAd.load(withAdUnitID: AdUnitID, request: request, completionHandler: { (ad, error) in
             if let error = error {
                 print("Rewarded ad failed to load with error: \(error.localizedDescription)")

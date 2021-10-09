@@ -4,7 +4,7 @@ class GameCell: UICollectionViewCell {
 
     @IBOutlet weak var imageContent: UIImageView!
     @IBOutlet weak var back: UIView!
-    @IBOutlet weak var imageBlockedContent: UIImageView!
+    @IBOutlet weak var viewBlockedContent: UIView!
     @IBOutlet weak var stateRecord: UIStackView!
     @IBOutlet weak var valueRecordLabel: UILabel!
     
@@ -40,7 +40,7 @@ class GameCell: UICollectionViewCell {
     
     ///
     func setBlocked() {
-        imageBlockedContent.isHidden = !gameContent.blocked
+        viewBlockedContent.isHidden = !gameContent.blocked
     }
     
     ///

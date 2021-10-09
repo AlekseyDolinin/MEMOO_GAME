@@ -12,7 +12,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     var currentIndex = 0
     var AdUnitID: String!
     var rewardedAd: GADRewardedAd?
-    let valuePeriodWithooutADVInSeconds = 30 /// 3 часа - 10800
+    let valuePeriodWithooutADVInSeconds = 10800 /// 3 часа - 10800
     
     static var fruitRecord = 0
     static var emojiRecord = 0
