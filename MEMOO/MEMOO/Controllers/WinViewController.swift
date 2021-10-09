@@ -7,9 +7,13 @@ class WinViewController: UIViewController {
         return (view as! WinView)
     }
     
+    var totalscore: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let score = totalscore {
+            viewSelf.scoreLabel.text = "\(score)"
+        }
     }
     
     ///

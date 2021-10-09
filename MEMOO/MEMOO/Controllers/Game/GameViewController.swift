@@ -15,7 +15,7 @@ class GameViewController: UIViewController {
     var score: Int = 0
     var timeCountValue: Int = 0
     var timeDelayHideContent = 3.0
-    var speedTimer = 0.1
+    var speedTimer = 1.0
     
     var tempIndexPath: IndexPath!
     var gameContent = (name: String(), blocked: Bool(), record: Int())
@@ -118,13 +118,14 @@ class GameViewController: UIViewController {
         
         if totalScore > gameContent.record {
             print("Рекорд побит")
-            StartViewController.fruitRecord = totalScore
-            /// запись рекорда
+//            StartViewController.fruitRecord = totalScore
+            /// запись рекордаr
             print("save record: \(totalScore) in \(gameContent.name)")
             UserDefaults.standard.set(totalScore, forKey: gameContent.name)
         }
         DispatchQueue.main.async {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "WinViewController") as! WinViewController
+            vc.totalscore = totalScore
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true)
         }

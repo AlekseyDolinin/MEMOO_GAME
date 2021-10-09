@@ -14,11 +14,11 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 30 /// 3 часа - 10800
     
-    static var fruitRecord = UserDefaults.standard.integer(forKey: "fruit_")
-    static var emojiRecord = UserDefaults.standard.integer(forKey: "emoji_")
-    static var animalRecord = UserDefaults.standard.integer(forKey: "animal_")
-    static var dinossaurRecord = UserDefaults.standard.integer(forKey: "dinosaur_")
-    static var monsterRecord = UserDefaults.standard.integer(forKey: "monster_")
+    static var fruitRecord = 0
+    static var emojiRecord = 0
+    static var animalRecord = 0
+    static var dinossaurRecord = 0
+    static var monsterRecord = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         super.viewWillAppear(true)
         createListGame()
         viewSelf.contentGameCollection.reloadData()
+        print("reload_1")
     }
     
     ///
@@ -50,6 +51,13 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     
     ///
     func createListGame() {
+        
+        StartViewController.fruitRecord = UserDefaults.standard.integer(forKey: "fruit_")
+        StartViewController.emojiRecord = UserDefaults.standard.integer(forKey: "emoji_")
+        StartViewController.animalRecord = UserDefaults.standard.integer(forKey: "animal_")
+        StartViewController.dinossaurRecord = UserDefaults.standard.integer(forKey: "dinosaur_")
+        StartViewController.monsterRecord = UserDefaults.standard.integer(forKey: "monster_")
+        
         listGame = [(name: "fruit_", blocked: false, record: StartViewController.fruitRecord),
                     (name: "emoji_", blocked: false, record: StartViewController.emojiRecord),
                     (name: "animal_", blocked: setBlocked(key: "animal_"), record: StartViewController.animalRecord),

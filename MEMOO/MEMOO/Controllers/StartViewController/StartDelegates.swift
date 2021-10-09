@@ -10,6 +10,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let gameCell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! GameCell
         gameCell.gameContent = listGame[indexPath.row]
+        print("\(listGame[indexPath.row].name), \(listGame[indexPath.row].record)")
         gameCell.setCell()
         return gameCell
     }
