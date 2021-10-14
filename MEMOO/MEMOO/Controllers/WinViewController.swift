@@ -6,12 +6,10 @@ class WinViewController: UIViewController {
         guard isViewLoaded else {return nil}
         return (view as! WinView)
     }
-    
-    var nameGame: String!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        let record = UserDefaults.standard.integer(forKey: nameGame + "record")
+        let record = UserDefaults.standard.integer(forKey: StartViewController.nameGame + "record")
         viewSelf.scoreLabel.text = "\(record)"
     }
     

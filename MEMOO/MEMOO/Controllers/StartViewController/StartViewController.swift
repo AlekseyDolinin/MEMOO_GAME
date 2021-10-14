@@ -7,10 +7,11 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         guard isViewLoaded else {return nil}
         return (view as! StartView)
     }
+
+    static var nameGame: String!
     
-    var listGame = [String]()
+    var listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_"]
     var currentIndex = 0
-    var AdUnitID: String!
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 10800 /// 3 часа - 10800
 
@@ -32,19 +33,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        createListGame()
         viewSelf.contentGameCollection.reloadData()
-    }
-    
-    ///
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        viewSelf.contentGameCollection.reloadData()
-    }
-    
-    ///
-    func createListGame() {
-        listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_"]
     }
     
     ///

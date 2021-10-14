@@ -19,7 +19,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
 //            showADS()
 //            return
 //        }
-        vc.nameGame = listGame[indexPath.row]
+        StartViewController.nameGame = listGame[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
 }

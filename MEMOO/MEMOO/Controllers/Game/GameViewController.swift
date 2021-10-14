@@ -10,15 +10,12 @@ class GameViewController: UIViewController {
     var countCell = 20
     var arrayCard = [Card]()
     var timer: Timer!
-    
     var matchCount: Int = 0
     var score: Int = 0
     var timeCountValue: Int = 0
     var timeDelayHideContent = 3.0
     var speedTimer = 1.0
-    
     var tempIndexPath: IndexPath!
-    var nameGame: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,15 +24,12 @@ class GameViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(restart), name: NSNotification.Name(rawValue: "restart"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(back), name: NSNotification.Name(rawValue: "back"), object: nil)
-
-        viewSelf.nameGame = self.nameGame
-        viewSelf.setRecordLabel()        
     }
     
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        print("Выбрана: \(nameGame!)")
+        print("Выбрана: \(StartViewController.nameGame!)")
         restart()
     }
     
@@ -79,7 +73,7 @@ class GameViewController: UIViewController {
         arrayCard = []
         while arrayCard.count < countCell {
             let index: Int = Int(arc4random() % 20 + 1) // 20 - количество изображений в папке
-            let image = UIImage(named: "\(nameGame!)\(index)")!
+            let image = UIImage(named: "\(StartViewController.nameGame!)\(index)")!
             let card = Card(id: index, image: image, showCard: false)
             
             let indexes = arrayCard.map { $0.id }
@@ -111,20 +105,19 @@ class GameViewController: UIViewController {
     func gameWin() {
         self.timer.invalidate()
         let totalScore = score + timeCountValue
-        print("game: \(nameGame!)")
+        print("game: \(StartViewController.nameGame!)")
         print("score: \(score)")
         print("total score: \(totalScore)")
         
-        let oldRecord = UserDefaults.standard.integer(forKey: nameGame + "record")
+        let oldRecord = UserDefaults.standard.integer(forKey: StartViewController.nameGame + "record")
         
         if totalScore > oldRecord {
             print("Рекорд побит")
             /// запись рекорда
-            UserDefaults.standard.set(totalScore, forKey: (nameGame + "record"))
+            UserDefaults.standard.set(totalScore, forKey: (StartViewController.nameGame + "record"))
         }
         DispatchQueue.main.async {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "WinViewController") as! WinViewController
-            vc.nameGame = self.nameGame
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true)
         }

@@ -6,6 +6,8 @@ extension StartViewController {
     ///
     func gadRequest() {
         let request = GADRequest()
+        var AdUnitID: String!
+        
 //        #if DEBUG
 //        AdUnitID = "ca-app-pub-3940256099942544/1712485313"
 //        #else

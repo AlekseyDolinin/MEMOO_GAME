@@ -8,6 +8,5 @@ class LoseView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 }

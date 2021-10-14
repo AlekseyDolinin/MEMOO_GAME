@@ -10,9 +10,7 @@ class GameView: UIView {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var recordLabel: UILabel!
     @IBOutlet weak var menuButton: UIButton!
-    
-    var nameGame: String!
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         topBar.transform = CGAffineTransform(translationX: 0, y: -140)
@@ -29,10 +27,5 @@ class GameView: UIView {
         }) { (true) in
             self.menuButton.isUserInteractionEnabled = true
         }
-    }
-    
-    func setRecordLabel() {
-//        recordLabel.isHidden = gameContent.record == 0 ? true : false
-//        recordLabel.text = "record: \(gameContent.record)"
     }
 }
