@@ -13,7 +13,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     var listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_"]
     var currentIndex = 0
     var rewardedAd: GADRewardedAd?
-    let valuePeriodWithooutADVInSeconds = 10800 /// 3 часа - 10800
+    let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,31 +28,36 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
             inset: 40
         )
         self.gadRequest()
+        self.chekLockedGame()
     }
     
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         viewSelf.contentGameCollection.reloadData()
+        chekLockedGame()
     }
     
     ///
-    func setBlocked(key: String) -> Bool {
-        let dateSee: Date? = UserDefaults.standard.object(forKey: key) as? Date
-        
-        print(">>>>> \(key): \(dateSee)")
-        
-        if dateSee == nil {
-            return true
+    func chekLockedGame() {
+        let listGameAdv = ["animal_", "dinosaur_", "monster_"]
+        for nameGame in listGameAdv {
+            let dateSeeADV: Date? = UserDefaults.standard.object(forKey: nameGame + "date") as? Date
+            print(">>>>>>>>>>>>\(nameGame) - \(String(describing: dateSeeADV))")
+            if dateSeeADV != nil {
+                /// проверка как давно был просмотр рекламы
+                let secondsCount = Int(Date().timeIntervalSince1970 - dateSeeADV!.timeIntervalSince1970)
+                print(secondsCount)
+                if secondsCount >= valuePeriodWithooutADVInSeconds {
+                    UserDefaults.standard.set(nil, forKey: nameGame + "date")
+                }
+            }
         }
-        /// проверка как давно был просмотр рекламы
-        let secondsCount = Int(Date().timeIntervalSince1970 - dateSee!.timeIntervalSince1970)
-        print(">>>>> \(key): \(secondsCount)")
-        if secondsCount >= valuePeriodWithooutADVInSeconds {
-            UserDefaults.standard.set(nil, forKey: key)
-            return true
-        } else {
-            return false
-        }
+    }
+    
+    ///
+    func openGame() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

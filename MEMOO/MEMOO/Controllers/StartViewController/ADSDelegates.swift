@@ -32,20 +32,8 @@ extension StartViewController {
         if let ad = rewardedAd {
             ad.present(fromRootViewController: self, userDidEarnRewardHandler: {
                 print("просмотрена реклама для \(self.listGame[self.currentIndex])")
-//                self.listGame[self.currentIndex].blocked = false
-//                self.viewSelf.contentGameCollection.reloadData()
-                
-//                self.gadRequest()
-                
-//                UserDefaults.standard.set(Date(), forKey: self.listGame[self.currentIndex].name + "_ad")
-                
-//                switch self.listGame[self.currentIndex].name {
-//                case "animal_", "dinosaur_", "monster_":
-//                    UserDefaults.standard.set(Date(), forKey: self.listGame[self.currentIndex].name)
-//                default:
-//                    break
-//                }
-                
+                self.gadRequest()
+                UserDefaults.standard.set(Date(), forKey: StartViewController.nameGame + "date")
             })
         } else {
             print("Ad wasn't ready")

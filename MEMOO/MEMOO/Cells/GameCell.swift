@@ -27,8 +27,15 @@ class GameCell: UICollectionViewCell {
     
     ///
     func setBlocked() {
-        viewBlockedContent.isHidden = true
-//        viewBlockedContent.isHidden = !gameContent.blocked
+        /// free content
+        if (["fruit_", "emoji_"]).contains(nameGame) {
+            viewBlockedContent.isHidden = true
+            return
+        }
+        
+        let dateSeeADVString = UserDefaults.standard.object(forKey: nameGame + "date")
+        /// nil - игра заблокирована
+        viewBlockedContent.isHidden = dateSeeADVString == nil ? false : true
     }
     
     ///

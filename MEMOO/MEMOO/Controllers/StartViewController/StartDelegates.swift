@@ -14,12 +14,23 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
-//        if listGame[indexPath.row].blocked {
-//            showADS()
-//            return
-//        }
+        
         StartViewController.nameGame = listGame[indexPath.row]
-        navigationController?.pushViewController(vc, animated: true)
+        
+        /// free content
+        if (["fruit_", "emoji_"]).contains(StartViewController.nameGame) {
+            openGame()
+        } else {
+            /// проверка есть ли запись о просмотре рекламы
+            /// если записи нет - показ рекламы
+            /// если запись есть - переход к игре
+            let dateSeeADVString = UserDefaults.standard.object(forKey: StartViewController.nameGame + "date")
+            print(dateSeeADVString ?? "Игра заблокирована")
+            if dateSeeADVString == nil {
+                showADS()
+            } else {
+                openGame()
+            }
+        }
     }
 }
