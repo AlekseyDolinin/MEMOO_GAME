@@ -9,12 +9,13 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     }
 
     static var nameGame: String!
+    static var unlockAllGame: Bool!
     
     var listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_"]
     var currentIndex = 0
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

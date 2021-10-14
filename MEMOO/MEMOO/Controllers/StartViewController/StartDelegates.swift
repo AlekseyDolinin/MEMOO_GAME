@@ -18,7 +18,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
         StartViewController.nameGame = listGame[indexPath.row]
         
         /// free content
-        if (["fruit_", "emoji_"]).contains(StartViewController.nameGame) {
+        if (["fruit_", "emoji_"]).contains(StartViewController.nameGame) || StartViewController.unlockAllGame == true {
             openGame()
         } else {
             /// проверка есть ли запись о просмотре рекламы

@@ -33,6 +33,11 @@ class GameCell: UICollectionViewCell {
             return
         }
         
+        if StartViewController.unlockAllGame == true {
+            viewBlockedContent.isHidden = true
+            return
+        }
+        
         let dateSeeADVString = UserDefaults.standard.object(forKey: nameGame + "date")
         /// nil - игра заблокирована
         viewBlockedContent.isHidden = dateSeeADVString == nil ? false : true
