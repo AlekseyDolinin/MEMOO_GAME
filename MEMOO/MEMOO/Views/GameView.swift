@@ -11,7 +11,7 @@ class GameView: UIView {
     @IBOutlet weak var recordLabel: UILabel!
     @IBOutlet weak var menuButton: UIButton!
     
-    var gameContent = (name: String(), blocked: Bool(), record: Int())
+    var nameGame: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,7 +32,7 @@ class GameView: UIView {
     }
     
     func setRecordLabel() {
-        recordLabel.isHidden = gameContent.record == 0 ? true : false
-        recordLabel.text = "record: \(gameContent.record)"
+//        recordLabel.isHidden = gameContent.record == 0 ? true : false
+//        recordLabel.text = "record: \(gameContent.record)"
     }
 }

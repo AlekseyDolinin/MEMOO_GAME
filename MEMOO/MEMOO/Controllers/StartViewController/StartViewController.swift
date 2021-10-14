@@ -8,17 +8,11 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         return (view as! StartView)
     }
     
-    var listGame: [(name: String, blocked: Bool, record: Int)] = []
+    var listGame = [String]()
     var currentIndex = 0
     var AdUnitID: String!
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 10800 /// 3 часа - 10800
-    
-    static var fruitRecord = 0
-    static var emojiRecord = 0
-    static var animalRecord = 0
-    static var dinossaurRecord = 0
-    static var monsterRecord = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +34,6 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         super.viewWillAppear(true)
         createListGame()
         viewSelf.contentGameCollection.reloadData()
-        print("reload_1")
     }
     
     ///
@@ -51,26 +44,15 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     
     ///
     func createListGame() {
-        
-        StartViewController.fruitRecord = UserDefaults.standard.integer(forKey: "fruit_")
-        StartViewController.emojiRecord = UserDefaults.standard.integer(forKey: "emoji_")
-        StartViewController.animalRecord = UserDefaults.standard.integer(forKey: "animal_")
-        StartViewController.dinossaurRecord = UserDefaults.standard.integer(forKey: "dinosaur_")
-        StartViewController.monsterRecord = UserDefaults.standard.integer(forKey: "monster_")
-        
-        listGame = [(name: "fruit_", blocked: false, record: StartViewController.fruitRecord),
-                    (name: "emoji_", blocked: false, record: StartViewController.emojiRecord),
-                    (name: "animal_", blocked: setBlocked(key: "animal_"), record: StartViewController.animalRecord),
-                    (name: "dinosaur_", blocked: setBlocked(key: "dinosaur_"), record: StartViewController.dinossaurRecord),
-                    (name: "monster_", blocked: setBlocked(key: "monster_"), record: StartViewController.monsterRecord)]
-        for game in listGame {
-            print("Рекорд \(game.name): \(game.record)")
-        }
+        listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_"]
     }
     
     ///
     func setBlocked(key: String) -> Bool {
         let dateSee: Date? = UserDefaults.standard.object(forKey: key) as? Date
+        
+        print(">>>>> \(key): \(dateSee)")
+        
         if dateSee == nil {
             return true
         }

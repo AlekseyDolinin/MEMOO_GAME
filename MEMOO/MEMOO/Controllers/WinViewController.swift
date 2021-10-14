@@ -7,13 +7,12 @@ class WinViewController: UIViewController {
         return (view as! WinView)
     }
     
-    var totalscore: Int!
+    var nameGame: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let score = totalscore {
-            viewSelf.scoreLabel.text = "\(score)"
-        }
+        let record = UserDefaults.standard.integer(forKey: nameGame + "record")
+        viewSelf.scoreLabel.text = "\(record)"
     }
     
     ///

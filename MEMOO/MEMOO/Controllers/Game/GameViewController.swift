@@ -18,7 +18,7 @@ class GameViewController: UIViewController {
     var speedTimer = 1.0
     
     var tempIndexPath: IndexPath!
-    var gameContent = (name: String(), blocked: Bool(), record: Int())
+    var nameGame: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +28,14 @@ class GameViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(restart), name: NSNotification.Name(rawValue: "restart"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(back), name: NSNotification.Name(rawValue: "back"), object: nil)
 
-        viewSelf.gameContent = self.gameContent
+        viewSelf.nameGame = self.nameGame
         viewSelf.setRecordLabel()        
     }
     
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        print("Выбрана: \(gameContent.name)")
+        print("Выбрана: \(nameGame!)")
         restart()
     }
     
@@ -79,7 +79,7 @@ class GameViewController: UIViewController {
         arrayCard = []
         while arrayCard.count < countCell {
             let index: Int = Int(arc4random() % 20 + 1) // 20 - количество изображений в папке
-            let image = UIImage(named: "\(gameContent.name)\(index)")!
+            let image = UIImage(named: "\(nameGame!)\(index)")!
             let card = Card(id: index, image: image, showCard: false)
             
             let indexes = arrayCard.map { $0.id }
@@ -111,21 +111,20 @@ class GameViewController: UIViewController {
     func gameWin() {
         self.timer.invalidate()
         let totalScore = score + timeCountValue
-        print("game: \(gameContent.name)")
+        print("game: \(nameGame!)")
         print("score: \(score)")
         print("total score: \(totalScore)")
-        print("preRecord: \(gameContent.record)")
         
-        if totalScore > gameContent.record {
+        let oldRecord = UserDefaults.standard.integer(forKey: nameGame + "record")
+        
+        if totalScore > oldRecord {
             print("Рекорд побит")
-//            StartViewController.fruitRecord = totalScore
-            /// запись рекордаr
-            print("save record: \(totalScore) in \(gameContent.name)")
-            UserDefaults.standard.set(totalScore, forKey: gameContent.name)
+            /// запись рекорда
+            UserDefaults.standard.set(totalScore, forKey: (nameGame + "record"))
         }
         DispatchQueue.main.async {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "WinViewController") as! WinViewController
-            vc.totalscore = totalScore
+            vc.nameGame = self.nameGame
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true)
         }

@@ -8,7 +8,7 @@ class GameCell: UICollectionViewCell {
     @IBOutlet weak var stateRecord: UIStackView!
     @IBOutlet weak var valueRecordLabel: UILabel!
     
-    var gameContent = (name: String(), blocked: Bool(), record: Int())
+    var nameGame: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,30 +22,19 @@ class GameCell: UICollectionViewCell {
     
     ///
     func setImage() {
-        switch gameContent.name {
-        case "fruit_":
-            imageContent.image = UIImage(named: "fruit_im")
-        case "animal_":
-            imageContent.image = UIImage(named: "animal_im")
-        case "emoji_":
-            imageContent.image = UIImage(named: "emoji_im")
-        case "dinosaur_":
-            imageContent.image = UIImage(named: "dino_im")
-        case "monster_":
-            imageContent.image = UIImage(named: "monster_im")
-        default:
-            break
-        }
+        imageContent.image = UIImage(named: nameGame)
     }
     
     ///
     func setBlocked() {
-        viewBlockedContent.isHidden = !gameContent.blocked
+        viewBlockedContent.isHidden = true
+//        viewBlockedContent.isHidden = !gameContent.blocked
     }
     
     ///
     func setrecord() {
-        stateRecord.isHidden = gameContent.record == 0 ? true : false
-        valueRecordLabel.text = "\(gameContent.record)"
+        let valueRecord = UserDefaults.standard.integer(forKey: nameGame + "record")
+        stateRecord.isHidden = valueRecord == 0 ? true : false
+        valueRecordLabel.text = "\(valueRecord)"
     }
 }
