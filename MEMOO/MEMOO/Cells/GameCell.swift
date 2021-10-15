@@ -17,7 +17,7 @@ class GameCell: UICollectionViewCell {
     func setCell() {
         setImage()
         setBlocked()
-        setrecord()
+        setRecord()
     }
     
     ///
@@ -44,7 +44,7 @@ class GameCell: UICollectionViewCell {
     }
     
     ///
-    func setrecord() {
+    func setRecord() {
         let valueRecord = UserDefaults.standard.integer(forKey: nameGame + "record")
         stateRecord.isHidden = valueRecord == 0 ? true : false
         valueRecordLabel.text = "\(valueRecord)"
