@@ -1,6 +1,6 @@
 import UIKit
 
-extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return listGame.count
@@ -14,9 +14,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         StartViewController.nameGame = listGame[indexPath.row]
-        
         /// free content
         if (["fruit_", "emoji_"]).contains(StartViewController.nameGame) || StartViewController.unlockAllGame == true {
             openGame()
@@ -32,5 +30,10 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
                 openGame()
             }
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width / 2 - 20
+        return CGSize(width: width, height: width)
     }
 }

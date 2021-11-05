@@ -9,8 +9,7 @@ class WinViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        let record = UserDefaults.standard.integer(forKey: StartViewController.nameGame + "record")
-        viewSelf.scoreLabel.text = "\(record)"
+
     }
     
     ///

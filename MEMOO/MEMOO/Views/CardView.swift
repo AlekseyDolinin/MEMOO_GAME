@@ -14,7 +14,6 @@ class CardView: UIImageView {
         print("showCard")
         self.image = UIImage(named: "fruit1.png")
         UIView.transition(with: self, duration: 0.5, options: .transitionFlipFromRight, animations: {
-//            self.image = self.cardImage
             self.image = UIImage(named: "fruit1")
         }, completion: { (finished) in
             self.isUserInteractionEnabled = false

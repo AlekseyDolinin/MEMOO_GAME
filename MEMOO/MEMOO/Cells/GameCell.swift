@@ -5,8 +5,6 @@ class GameCell: UICollectionViewCell {
     @IBOutlet weak var imageContent: UIImageView!
     @IBOutlet weak var back: UIView!
     @IBOutlet weak var viewBlockedContent: UIView!
-    @IBOutlet weak var stateRecord: UIStackView!
-    @IBOutlet weak var valueRecordLabel: UILabel!
     
     var nameGame: String!
     
@@ -17,7 +15,6 @@ class GameCell: UICollectionViewCell {
     func setCell() {
         setImage()
         setBlocked()
-        setRecord()
     }
     
     ///
@@ -41,12 +38,5 @@ class GameCell: UICollectionViewCell {
         let dateSeeADVString = UserDefaults.standard.object(forKey: nameGame + "date")
         /// nil - игра заблокирована
         viewBlockedContent.isHidden = dateSeeADVString == nil ? false : true
-    }
-    
-    ///
-    func setRecord() {
-        let valueRecord = UserDefaults.standard.integer(forKey: nameGame + "record")
-        stateRecord.isHidden = valueRecord == 0 ? true : false
-        valueRecordLabel.text = "\(valueRecord)"
     }
 }

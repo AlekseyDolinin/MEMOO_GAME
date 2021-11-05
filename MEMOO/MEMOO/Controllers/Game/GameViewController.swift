@@ -9,12 +9,8 @@ class GameViewController: UIViewController {
     
     var countCell = 20
     var arrayCard = [Card]()
-    var timer: Timer!
     var matchCount: Int = 0
-    var score: Int = 0
-    var timeCountValue: Int = 0
     var timeDelayHideContent = 3.0
-    var speedTimer = 1.0
     var tempIndexPath: IndexPath!
     
     override func viewDidLoad() {
@@ -46,25 +42,9 @@ class GameViewController: UIViewController {
     
     ///
     @objc func restart() {
-        if self.timer != nil {
-            self.timer.invalidate()
-        }
         hideAllCards()
         loadCards {
             startGame()
-        }
-    }
-    
-    ///
-    @objc func timeCount() {
-        timeCountValue = Int(viewSelf.timerLabel!.text!) ?? 0
-        if timeCountValue <= 0 {
-            gameLose()
-        } else {
-            timeCountValue = timeCountValue - 1
-        }
-        DispatchQueue.main.async {
-            self.viewSelf.timerLabel.text = String(self.timeCountValue)
         }
     }
     
@@ -87,35 +67,7 @@ class GameViewController: UIViewController {
     }
     
     ///
-    func startTimer() {
-        self.timer = Timer.scheduledTimer(timeInterval: speedTimer, target: self, selector: #selector(timeCount), userInfo: nil, repeats: true)
-    }
-    
-    ///
-    func gameLose() {
-        self.timer.invalidate()
-        DispatchQueue.main.async {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoseViewController") as! LoseViewController
-            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: true)
-        }
-    }
-    
-    ///
     func gameWin() {
-        self.timer.invalidate()
-        let totalScore = score + timeCountValue
-        print("game: \(StartViewController.nameGame!)")
-        print("score: \(score)")
-        print("total score: \(totalScore)")
-        
-        let oldRecord = UserDefaults.standard.integer(forKey: StartViewController.nameGame + "record")
-        
-        if totalScore > oldRecord {
-            print("Рекорд побит")
-            /// запись рекорда
-            UserDefaults.standard.set(totalScore, forKey: (StartViewController.nameGame + "record"))
-        }
         DispatchQueue.main.async {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "WinViewController") as! WinViewController
             vc.modalPresentationStyle = .overFullScreen
@@ -127,11 +79,8 @@ class GameViewController: UIViewController {
         showAllCards()
         DispatchQueue.main.asyncAfter(deadline: .now() + timeDelayHideContent) {
             self.hideAllCards()
-            self.startTimer()
         }
         matchCount = 0
-        viewSelf.scoreLabel.text = "SCORE: \(matchCount)"
-        viewSelf.timerLabel.text = "60"
     }
     
     func hideAllCards() {
@@ -149,8 +98,6 @@ class GameViewController: UIViewController {
     
     func countMatch() {
         matchCount += 1
-        score += 1
-        viewSelf.scoreLabel.text = "SCORE: \(matchCount)"
         if matchCount == (countCell / 2) {
             gameWin()
         }

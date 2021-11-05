@@ -18,16 +18,8 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         viewSelf.contentGameCollection.delegate = self
         viewSelf.contentGameCollection.dataSource = self
-        
-        viewSelf.contentGameCollection.collectionViewLayout = SnapPagingLayout(
-            centerPosition: true,
-            peekWidth: 40,
-            spacing: 20,
-            inset: 40
-        )
         self.gadRequest()
         self.chekLockedGame()
     }
