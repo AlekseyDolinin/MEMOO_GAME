@@ -11,7 +11,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     static var nameGame: String!
     static var unlockAllGame: Bool!
     
-    var listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_"]
+    var listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_", "alfred_", "animall_", "color_", "mandala_",  "ninja_",  "sport_",  "summer_",  "toy_",  "word_",  "wordd_"]
     var currentIndex = 0
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800
@@ -21,7 +21,6 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         viewSelf.contentGameCollection.delegate = self
         viewSelf.contentGameCollection.dataSource = self
         self.gadRequest()
-        self.chekLockedGame()
     }
     
     ///
