@@ -29,6 +29,7 @@
 		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
 		91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8D2709E33D00F9DD46 /* WinViewController.swift */; };
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
+		91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E5588E273D2ABF009DCB68 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
 		91C88D8D2709E33D00F9DD46 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
+		91E5588E273D2ABF009DCB68 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9354FB220677EB786CD16283 /* Pods_MEMOO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMOO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F10E4978DD465BD4F1EACE /* Pods-MEMOO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.debug.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				10D229DD26B0D4A60063433E /* Assets.xcassets */,
+				91E5588E273D2ABF009DCB68 /* Colors.xcassets */,
 				104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */,
 				104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */,
 			);
@@ -262,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
 				104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */,
 				10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */,

@@ -4,14 +4,13 @@ class ModeCell: UICollectionViewCell {
 
     @IBOutlet weak var imageContent: UIImageView!
     @IBOutlet weak var back: UIView!
-    @IBOutlet weak var viewBlockedContent: UIView!
+    @IBOutlet weak var lockImage: UIImageView!
     
     var nameGame: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        back.layer.cornerRadius = 16
-        back.clipsToBounds = true
+        setUI()
     }
 
     func setCell() {
@@ -42,4 +41,20 @@ class ModeCell: UICollectionViewCell {
 //        /// nil - игра заблокирована
 //        viewBlockedContent.isHidden = dateSeeADVString == nil ? false : true
     }
+}
+
+extension ModeCell {
+    ///
+    func setUI() {
+        /// color
+        
+        ///
+        lockImage.image = UIImage(named: "lock")?.withRenderingMode(.alwaysTemplate)
+        lockImage.tintColor = .Brown_
+        
+        ///
+        back.layer.cornerRadius = 16
+        back.clipsToBounds = true
+    }
+
 }

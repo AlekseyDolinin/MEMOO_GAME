@@ -11,7 +11,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
         gameCell.nameGame = listGame[indexPath.row]
         gameCell.setCell()
         /// разблокировка первых 2-х ячеек
-        gameCell.viewBlockedContent.isHidden = [0, 1].contains(indexPath.row)
+        gameCell.lockImage.isHidden = [0, 1].contains(indexPath.row)
         return gameCell
     }
     
