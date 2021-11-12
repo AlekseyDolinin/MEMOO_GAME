@@ -11,7 +11,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
         roundCell.nameGame = listGame[indexPath.row]
         roundCell.setCell()
         /// разблокировка первых 2-х ячеек
-        roundCell.lockImage.isHidden = [0, 1].contains(indexPath.row)
+        roundCell.lockImage.isHidden = [0, 1, 2, 3].contains(indexPath.row)
         return roundCell
     }
     
@@ -37,7 +37,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width / 2 - 20
+        let width = collectionView.frame.width / 2 - 40
         return CGSize(width: width, height: width)
     }
 }

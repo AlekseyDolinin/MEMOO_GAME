@@ -7,6 +7,9 @@ class StartView: UIView {
     @IBOutlet weak var easilyView: UIView!
     @IBOutlet weak var mediumView: UIView!
     @IBOutlet weak var hardView: UIView!
+    @IBOutlet weak var easilyLabel: UILabel!
+    @IBOutlet weak var mediumLabel: UILabel!
+    @IBOutlet weak var hardLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +24,5 @@ extension StartView {
         easilyView.layer.cornerRadius = easilyView.frame.height / 2
         mediumView.layer.cornerRadius = mediumView.frame.height / 2
         hardView.layer.cornerRadius = hardView.frame.height / 2
-
     }
 }
