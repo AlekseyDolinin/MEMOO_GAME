@@ -11,7 +11,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     static var nameGame: String!
     static var unlockAllGame: Bool!
     
-    var listGame = ["fruit_", "emoji_", "color_", "letterr_", "animal_", "dinosaur_", "monster_", "alfred_", "animall_", "mandala_",  "ninja_",  "sport_",  "summer_",  "toy_",  "word_",  "wordd_", "dog_", "toyy_", "vegetable_", "animalll_", "letter_", "farm_", "flower_", "fauna_", "flag_"]
+    var listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_", "alfred_", "animall_", "color_", "mandala_",  "ninja_",  "sport_",  "summer_",  "toy_",  "word_",  "wordd_", "dog_", "toyy_", "vegetable_", "animalll_", "letter_"]
     var currentIndex = 0
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800

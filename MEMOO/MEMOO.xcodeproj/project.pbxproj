@@ -16,7 +16,7 @@
 		10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DF26B0D4A60063433E /* LaunchScreen.storyboard */; };
 		10D22A0626B3293E0063433E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229ED26B328740063433E /* Card.swift */; };
 		10D22A0726B329420063433E /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229EF26B3287A0063433E /* CardCell.swift */; };
-		10D22A0826B329440063433E /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F026B3287A0063433E /* RoundCell.swift */; };
+		10D22A0826B329440063433E /* ModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F026B3287A0063433E /* ModeCell.swift */; };
 		10D22A0926B329470063433E /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F226B328800063433E /* StartView.swift */; };
 		10D22A0B26B3294C0063433E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F426B328800063433E /* CardView.swift */; };
 		10D22A0C26B3294E0063433E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229F526B328800063433E /* GameView.swift */; };
@@ -27,7 +27,6 @@
 		10D22A1526B329940063433E /* StartDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0126B328840063433E /* StartDelegates.swift */; };
 		10D22A1626B329970063433E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0326B328900063433E /* UIColor.swift */; };
 		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
-		91A1D11D273E42CB003C22E2 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A1D11C273E42CB003C22E2 /* Round.swift */; };
 		91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8D2709E33D00F9DD46 /* WinViewController.swift */; };
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
 		91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E5588E273D2ABF009DCB68 /* Colors.xcassets */; };
@@ -46,7 +45,7 @@
 		10D229E226B0D4A60063433E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D229ED26B328740063433E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		10D229EF26B3287A0063433E /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		10D229F026B3287A0063433E /* RoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
+		10D229F026B3287A0063433E /* ModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCell.swift; sourceTree = "<group>"; };
 		10D229F226B328800063433E /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		10D229F426B328800063433E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		10D229F526B328800063433E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -57,7 +56,6 @@
 		10D22A0126B328840063433E /* StartDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDelegates.swift; sourceTree = "<group>"; };
 		10D22A0326B328900063433E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
-		91A1D11C273E42CB003C22E2 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 		91C88D8D2709E33D00F9DD46 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		91E5588E273D2ABF009DCB68 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		10D229EB26B328740063433E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				91A1D11C273E42CB003C22E2 /* Round.swift */,
 				10D229ED26B328740063433E /* Card.swift */,
 			);
 			path = Models;
@@ -145,7 +142,7 @@
 		10D229EE26B3287A0063433E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				10D229F026B3287A0063433E /* RoundCell.swift */,
+				10D229F026B3287A0063433E /* ModeCell.swift */,
 				10D229EF26B3287A0063433E /* CardCell.swift */,
 			);
 			path = Cells;
@@ -327,7 +324,7 @@
 			files = (
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
 				10D22A1326B329940063433E /* StartViewController.swift in Sources */,
-				10D22A0826B329440063433E /* RoundCell.swift in Sources */,
+				10D22A0826B329440063433E /* ModeCell.swift in Sources */,
 				91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */,
 				10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */,
 				10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */,
@@ -342,7 +339,6 @@
 				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,
 				10D22A0D26B3298A0063433E /* GameViewController.swift in Sources */,
 				10D22A0E26B3298A0063433E /* Random.swift in Sources */,
-				91A1D11D273E42CB003C22E2 /* Round.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,12 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let roundCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RoundCell", for: indexPath) as! RoundCell
-        roundCell.nameGame = listGame[indexPath.row]
-        roundCell.setCell()
+        let gameCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModeCell", for: indexPath) as! ModeCell
+        gameCell.nameGame = listGame[indexPath.row]
+        gameCell.setCell()
         /// разблокировка первых 2-х ячеек
-        roundCell.lockImage.isHidden = [0, 1, 2, 3].contains(indexPath.row)
-        return roundCell
+        gameCell.lockImage.isHidden = [0, 1].contains(indexPath.row)
+        return gameCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -37,7 +37,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width / 2 - 50
+        let width = collectionView.frame.width / 2 - 20
         return CGSize(width: width, height: width)
     }
 }
