@@ -7,12 +7,12 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let gameCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModeCell", for: indexPath) as! ModeCell
-        gameCell.nameGame = listGame[indexPath.row]
-        gameCell.setCell()
+        let roundCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RoundCell", for: indexPath) as! RoundCell
+        roundCell.nameGame = listGame[indexPath.row]
+        roundCell.setCell()
         /// разблокировка первых 2-х ячеек
-        gameCell.lockImage.isHidden = [0, 1].contains(indexPath.row)
-        return gameCell
+        roundCell.lockImage.isHidden = [0, 1].contains(indexPath.row)
+        return roundCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

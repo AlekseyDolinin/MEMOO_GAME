@@ -1,6 +1,6 @@
 import UIKit
 
-class ModeCell: UICollectionViewCell {
+class RoundCell: UICollectionViewCell {
 
     @IBOutlet weak var imageContent: UIImageView!
     @IBOutlet weak var back: UIView!
@@ -43,7 +43,7 @@ class ModeCell: UICollectionViewCell {
     }
 }
 
-extension ModeCell {
+extension RoundCell {
     ///
     func setUI() {
         /// color
