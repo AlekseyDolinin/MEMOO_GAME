@@ -55,7 +55,6 @@ class GameViewController: UIViewController {
             let index: Int = Int(arc4random() % 20 + 1) // 20 - количество изображений в папке
             let image = UIImage(named: "\(StartViewController.nameGame!)\(index)")!
             let card = Card(id: index, image: image, showCard: false)
-            
             let indexes = arrayCard.map { $0.id }
             if !indexes.contains(index) {
                 arrayCard.append(card)

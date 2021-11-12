@@ -65,11 +65,9 @@ extension RoundCell {
         ///
         lockImage.image = UIImage(named: "lock")?.withRenderingMode(.alwaysTemplate)
         lockImage.tintColor = .Brown_
-        
         ///
         back.layer.cornerRadius = 16
         back.clipsToBounds = true
         complexityView.layer.cornerRadius = complexityView.frame.height / 2
     }
-
 }

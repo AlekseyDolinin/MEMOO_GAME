@@ -2,7 +2,6 @@ import UIKit
 import GoogleMobileAds
 
 extension StartViewController {
-    
     ///
     func gadRequest() {
         let request = GADRequest()

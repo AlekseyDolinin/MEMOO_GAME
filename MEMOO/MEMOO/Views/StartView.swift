@@ -17,11 +17,8 @@ class StartView: UIView {
     }
 }
 
-
 extension StartView {
     func setUI() {
-        
-        
         ///
         descriptionView.layer.cornerRadius = descriptionView.frame.height / 2
         easilyView.layer.cornerRadius = easilyView.frame.height / 2

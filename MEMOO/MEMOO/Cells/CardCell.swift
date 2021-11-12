@@ -14,11 +14,7 @@ class CardCell: UICollectionViewCell {
     }
     
     func setCell() {
-        if card.showCard == true {
-            show()
-        } else {
-            hide()
-        }
+        card.showCard == true ? show() : hide()
     }
     
     func hide() {
