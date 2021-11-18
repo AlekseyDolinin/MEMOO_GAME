@@ -24,7 +24,7 @@ class ViewController_2: UIViewController {
 extension ViewController_2: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 26
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -35,7 +35,8 @@ extension ViewController_2: UICollectionViewDelegate, UICollectionViewDelegateFl
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 300, height: 500)
+        let width = collectionView.frame.width - 100
+        return CGSize(width: width, height: collectionView.frame.height)
     }
     
 }
@@ -54,10 +55,9 @@ extension ViewController_2: UIScrollViewDelegate {
         // update the new position acquired
         self.lastContentOffset = scrollView.contentOffset.x
         
-        print(self.lastContentOffset)
-        layer_1.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.4, y: 0)
-        layer_2.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.6, y: 0)
-        layer_3.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.8, y: 0)
+        layer_1.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.6, y: 0)
+        layer_2.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.3, y: 0)
+        layer_3.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.15, y: 0)
     }
     
     
