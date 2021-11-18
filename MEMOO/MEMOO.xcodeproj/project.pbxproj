@@ -30,6 +30,7 @@
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
 		91CAA05127463589002CA6E1 /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05027463589002CA6E1 /* ViewController_2.swift */; };
 		91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05427463696002CA6E1 /* RoundCell.swift */; };
+		91CAA057274646A7002CA6E1 /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91CAA056274646A7002CA6E1 /* magic.sks */; };
 		91DC1874273E6E59000D1CBB /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DC1873273E6E59000D1CBB /* Round.swift */; };
 		91DCC20F2745535B008AA9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DCC20E2745535B008AA9A3 /* ViewController.swift */; };
 		91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E5588E273D2ABF009DCB68 /* Colors.xcassets */; };
@@ -62,6 +63,7 @@
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		91CAA05027463589002CA6E1 /* ViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2.swift; sourceTree = "<group>"; };
 		91CAA05427463696002CA6E1 /* RoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
+		91CAA056274646A7002CA6E1 /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
 		91DC1873273E6E59000D1CBB /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 		91DCC20E2745535B008AA9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91E5588E273D2ABF009DCB68 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				91E5588E273D2ABF009DCB68 /* Colors.xcassets */,
 				104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */,
 				104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */,
+				91CAA056274646A7002CA6E1 /* magic.sks */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
 				104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */,
+				91CAA057274646A7002CA6E1 /* magic.sks in Resources */,
 				10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */,
 				10D229DC26B0D4A50063433E /* Main.storyboard in Resources */,
 			);
