@@ -8,10 +8,10 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let roundCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RoundCell", for: indexPath) as! RoundCell
-        roundCell.nameGame = listGame[indexPath.row]
-        roundCell.setCell()
-        /// разблокировка первых 2-х ячеек
-        roundCell.lockImage.isHidden = [0, 1, 2, 3].contains(indexPath.row)
+//        roundCell.nameGame = listGame[indexPath.row]
+//        roundCell.setCell()
+//        /// разблокировка первых 2-х ячеек
+//        roundCell.lockImage.isHidden = [0, 1, 2, 3].contains(indexPath.row)
         return roundCell
     }
     

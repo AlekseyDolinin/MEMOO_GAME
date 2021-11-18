@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wOX-bK-gRf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0DP-EJ-cld">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -490,21 +491,98 @@
             </objects>
             <point key="canvasLocation" x="2031" y="277"/>
         </scene>
+        <!--View Controller2-->
+        <scene sceneID="mcg-Hx-Jb3">
+            <objects>
+                <viewController id="0DP-EJ-cld" customClass="ViewController_2" customModule="MEMOO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hBK-jm-Xp1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="layer_3" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-eE-Tc2">
+                                <rect key="frame" x="-3790" y="-164" width="7900" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer2" translatesAutoresizingMaskIntoConstraints="NO" id="G6K-7n-tDg">
+                                <rect key="frame" x="0.0" y="0.0" width="7700" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7700" id="5DM-OY-hKd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_1" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-ou-CM8">
+                                <rect key="frame" x="0.0" y="0.0" width="7700" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="7700" id="8Ev-X0-Meo"/>
+                                    <constraint firstAttribute="width" constant="7700" id="jWR-B1-Xb9"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-OT-vB7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bSF-Vi-VV4">
+                                    <size key="itemSize" width="268" height="336"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoundCell" id="Xnj-8T-EBP" customClass="RoundCell" customModule="MEMOO" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="116" width="268" height="336"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="T0J-ch-fDT">
+                                            <rect key="frame" x="0.0" y="0.0" width="268" height="336"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="Orange_"/>
+                                        <size key="customSize" width="268" height="336"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mjp-uc-VGE"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="G6K-7n-tDg" secondAttribute="bottom" id="8KO-5C-3C8"/>
+                            <constraint firstItem="tfM-ou-CM8" firstAttribute="top" secondItem="hBK-jm-Xp1" secondAttribute="top" id="E9x-gK-cov"/>
+                            <constraint firstItem="G6K-7n-tDg" firstAttribute="top" secondItem="hBK-jm-Xp1" secondAttribute="top" id="Ehb-YP-vfj"/>
+                            <constraint firstItem="6ed-OT-vB7" firstAttribute="top" secondItem="Mjp-uc-VGE" secondAttribute="top" id="ILY-OC-ed1"/>
+                            <constraint firstItem="6ed-OT-vB7" firstAttribute="trailing" secondItem="Mjp-uc-VGE" secondAttribute="trailing" id="LLP-SB-JBu"/>
+                            <constraint firstItem="6ed-OT-vB7" firstAttribute="leading" secondItem="Mjp-uc-VGE" secondAttribute="leading" id="PuA-Wl-dGa"/>
+                            <constraint firstItem="tfM-ou-CM8" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" id="QQe-DU-IA4"/>
+                            <constraint firstItem="G6K-7n-tDg" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" id="QsM-uE-dwg"/>
+                            <constraint firstItem="6ed-OT-vB7" firstAttribute="bottom" secondItem="Mjp-uc-VGE" secondAttribute="bottom" id="hgb-Os-dDP"/>
+                            <constraint firstItem="tfM-ou-CM8" firstAttribute="bottom" secondItem="Mjp-uc-VGE" secondAttribute="bottom" id="iBZ-qm-FO3"/>
+                            <constraint firstItem="tfM-ou-CM8" firstAttribute="leading" secondItem="Mjp-uc-VGE" secondAttribute="leading" id="neU-GU-tgh"/>
+                            <constraint firstAttribute="bottom" secondItem="tfM-ou-CM8" secondAttribute="bottom" id="ozu-Uw-7w0"/>
+                            <constraint firstItem="tfM-ou-CM8" firstAttribute="top" secondItem="Mjp-uc-VGE" secondAttribute="top" id="zhk-zb-eMK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionRound" destination="6ed-OT-vB7" id="x3o-QV-tT3"/>
+                        <outlet property="layer_1" destination="tfM-ou-CM8" id="qnZ-Md-G5S"/>
+                        <outlet property="layer_2" destination="G6K-7n-tDg" id="9JG-ll-5Q6"/>
+                        <outlet property="layer_3" destination="KKd-eE-Tc2" id="JXQ-LP-Ndo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6P-py-56E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575.625" y="-1807.3943661971832"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="i9d-dH-sYd">
             <objects>
-                <viewController id="wOX-bK-gRf" customClass="ViewController" customModule="MEMOO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wOX-bK-gRf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UeH-Mb-bZR">
                         <rect key="frame" x="0.0" y="0.0" width="7500" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 1" translatesAutoresizingMaskIntoConstraints="NO" id="FXh-lX-V66">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_3" translatesAutoresizingMaskIntoConstraints="NO" id="FXh-lX-V66">
                                 <rect key="frame" x="-200" y="0.0" width="7900" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 2" translatesAutoresizingMaskIntoConstraints="NO" id="ZfD-Ag-7eU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer2" translatesAutoresizingMaskIntoConstraints="NO" id="ZfD-Ag-7eU">
                                 <rect key="frame" x="-200" y="0.0" width="7900" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 3" translatesAutoresizingMaskIntoConstraints="NO" id="H4t-pb-PgM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_1" translatesAutoresizingMaskIntoConstraints="NO" id="H4t-pb-PgM">
                                 <rect key="frame" x="-200" y="0.0" width="7900" height="896"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tM6-9N-rcw">
@@ -766,12 +844,6 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="7500" height="896"/>
-                    <connections>
-                        <outlet property="layer_1" destination="FXh-lX-V66" id="g5A-e3-Uzd"/>
-                        <outlet property="layer_2" destination="ZfD-Ag-7eU" id="wfc-m0-fWi"/>
-                        <outlet property="layer_3" destination="H4t-pb-PgM" id="i6L-VU-NQk"/>
-                        <outlet property="scroll" destination="tM6-9N-rcw" id="sMO-7B-8B5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgF-mI-Uml" sceneMemberID="firstResponder"/>
             </objects>
@@ -779,17 +851,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Frame 1" width="6133" height="1837"/>
-        <image name="Frame 2" width="7308" height="1837"/>
-        <image name="Frame 3" width="8674" height="1837"/>
         <image name="bg" width="1080" height="1920"/>
         <image name="board" width="320" height="236"/>
         <image name="board_2" width="166" height="221"/>
         <image name="buttonClose" width="70" height="70"/>
+        <image name="layer2" width="7701" height="569"/>
+        <image name="layer_1" width="7701" height="569"/>
+        <image name="layer_3" width="7701" height="568"/>
         <image name="lock" width="90" height="90"/>
         <image name="stone" width="100" height="100"/>
         <namedColor name="Green_">
             <color red="0.41200000047683716" green="0.72200000286102295" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange_">
+            <color red="0.97600001096725464" green="0.28200000524520874" blue="0.21799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Rose_">
             <color red="1" green="0.20000000298023224" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
