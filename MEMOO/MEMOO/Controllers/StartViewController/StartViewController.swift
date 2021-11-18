@@ -11,22 +11,23 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     static var nameGame: String!
     static var unlockAllGame: Bool!
     
-    var listGame = ["fruit_", "emoji_", "animal_", "dinosaur_", "monster_", "alfred_", "animall_", "mandala_", "ninja_",  "sport_", "summer_", "toy_", "word_", "wordd_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "letterr_", "animalll_", "farm_", "flower_", "fauna_", "flag_"]
+    var lastContentOffset: CGFloat = 0
+    var listGame = ["fruit_", "animal_", "alfred_", "animall_", "mandala_", "ninja_",  "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "farm_", "flower_", "fauna_", "flag_"]
     var currentIndex = 0
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800
     
     override func viewDidLoad() {
         super.viewDidLoad() 
-        viewSelf.contentGameCollection.delegate = self
-        viewSelf.contentGameCollection.dataSource = self
+        viewSelf.collectionRound.delegate = self
+        viewSelf.collectionRound.dataSource = self
         self.gadRequest()
     }
     
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        viewSelf.contentGameCollection.reloadData()
+        viewSelf.collectionRound.reloadData()
         chekLockedGame()
     }
     

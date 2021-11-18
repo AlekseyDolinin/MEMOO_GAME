@@ -28,11 +28,9 @@
 		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
 		91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8D2709E33D00F9DD46 /* WinViewController.swift */; };
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
-		91CAA05127463589002CA6E1 /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05027463589002CA6E1 /* ViewController_2.swift */; };
 		91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05427463696002CA6E1 /* RoundCell.swift */; };
 		91CAA057274646A7002CA6E1 /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91CAA056274646A7002CA6E1 /* magic.sks */; };
 		91DC1874273E6E59000D1CBB /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DC1873273E6E59000D1CBB /* Round.swift */; };
-		91DCC20F2745535B008AA9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DCC20E2745535B008AA9A3 /* ViewController.swift */; };
 		91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E5588E273D2ABF009DCB68 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -61,11 +59,9 @@
 		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
 		91C88D8D2709E33D00F9DD46 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
-		91CAA05027463589002CA6E1 /* ViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2.swift; sourceTree = "<group>"; };
 		91CAA05427463696002CA6E1 /* RoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
 		91CAA056274646A7002CA6E1 /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
 		91DC1873273E6E59000D1CBB /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
-		91DCC20E2745535B008AA9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91E5588E273D2ABF009DCB68 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9354FB220677EB786CD16283 /* Pods_MEMOO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMOO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F10E4978DD465BD4F1EACE /* Pods-MEMOO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.debug.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,8 +112,6 @@
 			children = (
 				10D229D626B0D4A50063433E /* AppDelegate.swift */,
 				10D229DA26B0D4A50063433E /* Main.storyboard */,
-				91DCC20E2745535B008AA9A3 /* ViewController.swift */,
-				91CAA05027463589002CA6E1 /* ViewController_2.swift */,
 				10D229EB26B328740063433E /* Models */,
 				10D229EE26B3287A0063433E /* Cells */,
 				10D229F126B328800063433E /* Views */,
@@ -336,8 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
-				91DCC20F2745535B008AA9A3 /* ViewController.swift in Sources */,
-				91CAA05127463589002CA6E1 /* ViewController_2.swift in Sources */,
 				10D22A1326B329940063433E /* StartViewController.swift in Sources */,
 				91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */,
 				10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */,

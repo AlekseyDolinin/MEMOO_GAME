@@ -19,7 +19,7 @@ extension StartViewController {
             if let error = error {
                 print("Rewarded ad failed to load with error: \(error.localizedDescription)")
                 StartViewController.unlockAllGame = true
-                self.viewSelf.contentGameCollection.reloadData()
+                self.viewSelf.collectionRound.reloadData()
                 return
             }
             self.rewardedAd = ad
