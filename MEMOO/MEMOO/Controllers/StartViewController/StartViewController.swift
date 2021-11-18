@@ -12,10 +12,12 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     static var unlockAllGame: Bool!
     
     var lastContentOffset: CGFloat = 0
-    var listGame = ["fruit_", "animal_", "alfred_", "animall_", "mandala_", "ninja_",  "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "farm_", "flower_", "fauna_", "flag_"]
+    var freeListRound: Set<String> = ["fruit_", "flag_", "farm_", "animal_"]
+    var paidListRound: Set<String> = ["alfred_", "animall_", "mandala_", "ninja_",  "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "flower_", "fauna_"]
     var currentIndex = 0
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800
+    let priceManager = PriceManager()
     
     override func viewDidLoad() {
         super.viewDidLoad() 
@@ -29,10 +31,18 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         super.viewWillAppear(true)
         viewSelf.collectionRound.reloadData()
         chekLockedGame()
+
+        /// получение цен покупок
+        priceManager.getPricesForInApps(inAppsIDs: self.paidListRound)
     }
     
     ///
     func chekLockedGame() {
+        for nameGame in paidListRound {
+            let productIsBuy = UserDefaults.standard.bool(forKey: nameGame)
+            print("nameGame: \(productIsBuy)")
+        }
+        
 //        let listGameAdv = ["animal_", "dinosaur_", "monster_"]
 //        for nameGame in listGameAdv {
 //            let dateSeeADV: Date? = UserDefaults.standard.object(forKey: nameGame + "date") as? Date

@@ -3,12 +3,13 @@ import UIKit
 extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listGame.count
+        return freeListRound.count + paidListRound.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let roundCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RoundCell", for: indexPath) as! RoundCell
-        roundCell.nameGame = listGame[indexPath.row]
+        let allRound =
+        roundCell.nameGame = (freeListRound + paidListRound)[indexPath.row]
         roundCell.setCell()
         /// разблокировка первых 2-х ячеек
         roundCell.lockImage.isHidden = [0, 1, 2, 3].contains(indexPath.row)
@@ -16,7 +17,7 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        StartViewController.nameGame = listGame[indexPath.row]
+        StartViewController.nameGame = listRound[indexPath.row]
         openGame()
         
 //        /// free content

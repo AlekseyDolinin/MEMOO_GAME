@@ -30,6 +30,8 @@
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
 		91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05427463696002CA6E1 /* RoundCell.swift */; };
 		91CAA057274646A7002CA6E1 /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91CAA056274646A7002CA6E1 /* magic.sks */; };
+		91CAA05B27468DEA002CA6E1 /* PriceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05927468D37002CA6E1 /* PriceManager.swift */; };
+		91CAA05C27468DED002CA6E1 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05A27468D3C002CA6E1 /* StoreManager.swift */; };
 		91DC1874273E6E59000D1CBB /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DC1873273E6E59000D1CBB /* Round.swift */; };
 		91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E5588E273D2ABF009DCB68 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		91CAA05427463696002CA6E1 /* RoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
 		91CAA056274646A7002CA6E1 /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
+		91CAA05927468D37002CA6E1 /* PriceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceManager.swift; sourceTree = "<group>"; };
+		91CAA05A27468D3C002CA6E1 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		91DC1873273E6E59000D1CBB /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 		91E5588E273D2ABF009DCB68 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9354FB220677EB786CD16283 /* Pods_MEMOO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMOO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,7 @@
 				10D229F126B328800063433E /* Views */,
 				10D229F626B328840063433E /* Controllers */,
 				10D22A0226B328900063433E /* HelpClasses */,
+				91CAA05827468D2C002CA6E1 /* Managers */,
 				10D229E826B328510063433E /* Resourses */,
 				10D229DF26B0D4A60063433E /* LaunchScreen.storyboard */,
 				10D229E226B0D4A60063433E /* Info.plist */,
@@ -200,6 +205,15 @@
 				9354FB220677EB786CD16283 /* Pods_MEMOO.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91CAA05827468D2C002CA6E1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				91CAA05927468D37002CA6E1 /* PriceManager.swift */,
+				91CAA05A27468D3C002CA6E1 /* StoreManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		C57C399C672A492C3D8B9BD4 /* Pods */ = {
@@ -333,6 +347,7 @@
 				10D22A1326B329940063433E /* StartViewController.swift in Sources */,
 				91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */,
 				10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */,
+				91CAA05B27468DEA002CA6E1 /* PriceManager.swift in Sources */,
 				10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */,
 				10D22A0626B3293E0063433E /* Card.swift in Sources */,
 				1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */,
@@ -345,6 +360,7 @@
 				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,
 				10D22A0D26B3298A0063433E /* GameViewController.swift in Sources */,
 				10D22A0E26B3298A0063433E /* Random.swift in Sources */,
+				91CAA05C27468DED002CA6E1 /* StoreManager.swift in Sources */,
 				91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */,
 				91DC1874273E6E59000D1CBB /* Round.swift in Sources */,
 			);
