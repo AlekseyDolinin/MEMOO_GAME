@@ -25,6 +25,7 @@ class StartViewController: UIViewController {
         
         /// получение цен покупок
         priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound))
+        priceManager.getPricesForInApps(inAppsIDs: Set<String>(["unlockAllContentID"]))
         
         ///
         NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
@@ -33,8 +34,6 @@ class StartViewController: UIViewController {
 //            var priceAlfred = UserDefaults.standard.object(forKey: "alfred_")
             self.createRoundes()
         }
-        
-        
     }
     
     ///
