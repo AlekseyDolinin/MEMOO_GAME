@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1017239B26CC55EC002A7BF5 /* ADSDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017239A26CC55EC002A7BF5 /* ADSDelegates.swift */; };
 		1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046E7C926C1DB0D00624CAA /* MenuViewController.swift */; };
 		104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */; };
 		10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229D626B0D4A50063433E /* AppDelegate.swift */; };
@@ -32,13 +31,12 @@
 		91CAA057274646A7002CA6E1 /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91CAA056274646A7002CA6E1 /* magic.sks */; };
 		91CAA05B27468DEA002CA6E1 /* PriceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05927468D37002CA6E1 /* PriceManager.swift */; };
 		91CAA05C27468DED002CA6E1 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05A27468D3C002CA6E1 /* StoreManager.swift */; };
-		91CAA06027478CC8002CA6E1 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91CAA05F27478CC8002CA6E1 /* snow.sks */; };
+		91CAA0662747E5E7002CA6E1 /* ModalLockedRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA0652747E5E7002CA6E1 /* ModalLockedRoundViewController.swift */; };
 		91DC1874273E6E59000D1CBB /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DC1873273E6E59000D1CBB /* Round.swift */; };
 		91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E5588E273D2ABF009DCB68 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1017239A26CC55EC002A7BF5 /* ADSDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSDelegates.swift; sourceTree = "<group>"; };
 		1046E7C926C1DB0D00624CAA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shadow_regular.ttf; sourceTree = "<group>"; };
 		104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RF-Krabuler-Regular.otf"; sourceTree = "<group>"; };
@@ -66,7 +64,7 @@
 		91CAA056274646A7002CA6E1 /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
 		91CAA05927468D37002CA6E1 /* PriceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceManager.swift; sourceTree = "<group>"; };
 		91CAA05A27468D3C002CA6E1 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
-		91CAA05F27478CC8002CA6E1 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
+		91CAA0652747E5E7002CA6E1 /* ModalLockedRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLockedRoundViewController.swift; sourceTree = "<group>"; };
 		91DC1873273E6E59000D1CBB /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 		91E5588E273D2ABF009DCB68 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9354FB220677EB786CD16283 /* Pods_MEMOO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMOO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +88,6 @@
 			children = (
 				10D229FF26B328840063433E /* StartViewController.swift */,
 				10D22A0126B328840063433E /* StartDelegates.swift */,
-				1017239A26CC55EC002A7BF5 /* ADSDelegates.swift */,
 			);
 			path = StartViewController;
 			sourceTree = "<group>";
@@ -139,7 +136,6 @@
 				104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */,
 				104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */,
 				91CAA056274646A7002CA6E1 /* magic.sks */,
-				91CAA05F27478CC8002CA6E1 /* snow.sks */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -180,6 +176,7 @@
 				10D229F726B328840063433E /* Game */,
 				1046E7C926C1DB0D00624CAA /* MenuViewController.swift */,
 				91C88D8D2709E33D00F9DD46 /* WinViewController.swift */,
+				91CAA0652747E5E7002CA6E1 /* ModalLockedRoundViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */,
-				91CAA06027478CC8002CA6E1 /* snow.sks in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
 				104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */,
 				91CAA057274646A7002CA6E1 /* magic.sks in Resources */,
@@ -360,7 +356,7 @@
 				10D22A0726B329420063433E /* CardCell.swift in Sources */,
 				91C88D902709E38200F9DD46 /* WinView.swift in Sources */,
 				10D22A0C26B3294E0063433E /* GameView.swift in Sources */,
-				1017239B26CC55EC002A7BF5 /* ADSDelegates.swift in Sources */,
+				91CAA0662747E5E7002CA6E1 /* ModalLockedRoundViewController.swift in Sources */,
 				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,
 				10D22A0D26B3298A0063433E /* GameViewController.swift in Sources */,
 				10D22A0E26B3298A0063433E /* Random.swift in Sources */,

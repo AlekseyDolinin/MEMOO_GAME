@@ -1,7 +1,6 @@
 import UIKit
-import GoogleMobileAds
 
-class StartViewController: UIViewController, GADFullScreenContentDelegate {
+class StartViewController: UIViewController {
     
     var viewSelf: StartView! {
         guard isViewLoaded else {return nil}
@@ -9,58 +8,70 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     }
 
     static var nameGame: String!
-    static var unlockAllGame: Bool!
     
+    ///  смещение колекции (для паралакса)
     var lastContentOffset: CGFloat = 0
     var freeListRound = ["fruit_", "flag_", "farm_", "animal_"]
-    var paidListRound = ["alfred_", "animall_", "mandala_", "ninja_",  "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "flower_", "fauna_"]
-    var currentIndex = 0
-    var rewardedAd: GADRewardedAd?
-    let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800
+    var paidListRound = ["alfred_", "animall_", "mandala_", "ninja_", "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "flower_", "fauna_"]
+    
+    var listRounds = [Round]()
+    
     let priceManager = PriceManager()
     
     override func viewDidLoad() {
         super.viewDidLoad() 
         viewSelf.collectionRound.delegate = self
         viewSelf.collectionRound.dataSource = self
-        self.gadRequest()
+        
+        /// получение цен покупок
+        priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound))
+        
+        ///
+        NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
+            print("Обновление цен")
+//            var priceAllContent = UserDefaults.standard.object(forKey: "unlockAllContentID")
+//            var priceAlfred = UserDefaults.standard.object(forKey: "alfred_")
+            self.createRoundes()
+        }
+        
+        
     }
     
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        viewSelf.collectionRound.reloadData()
-        chekLockedGame()
 
-        /// получение цен покупок
-        priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound))
     }
     
     ///
-    func chekLockedGame() {
-        for nameGame in paidListRound {
-            let productIsBuy = UserDefaults.standard.bool(forKey: nameGame)
-            print("nameGame: \(productIsBuy)")
+    func createRoundes() {
+        for (index, value) in (freeListRound + paidListRound).enumerated() {
+            var status: RoundStatus!
+            if (0...3).contains(index) {
+                status = .free
+            } else {
+                status = .lock
+            }
+            listRounds.append(Round(name: value, status: status))
         }
-        
-//        let listGameAdv = ["animal_", "dinosaur_", "monster_"]
-//        for nameGame in listGameAdv {
-//            let dateSeeADV: Date? = UserDefaults.standard.object(forKey: nameGame + "date") as? Date
-//            print(">>>>>>>>>>>>\(nameGame) - \(String(describing: dateSeeADV))")
-//            if dateSeeADV != nil {
-//                /// проверка как давно был просмотр рекламы
-//                let secondsCount = Int(Date().timeIntervalSince1970 - dateSeeADV!.timeIntervalSince1970)
-//                print(secondsCount)
-//                if secondsCount >= valuePeriodWithooutADVInSeconds {
-//                    UserDefaults.standard.set(nil, forKey: nameGame + "date")
-//                }
-//            }
-//        }
+        if listRounds.count == (freeListRound + paidListRound).count {
+            DispatchQueue.main.async {
+                self.viewSelf.collectionRound.reloadData()
+            }
+        }
     }
+    
     
     ///
     func openGame() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    ///
+    func openModalLockedRound() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ModalLockedRoundViewController") as! ModalLockedRoundViewController
+        vc.modalPresentationStyle = .pageSheet
+        present(vc, animated: true)
     }
 }

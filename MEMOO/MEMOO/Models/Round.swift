@@ -1,13 +1,21 @@
 import UIKit
 
 struct Round {
-    var id: Int
-    var imageCover: String
+    var name: String
+    var status: RoundStatus
     
-    init(id: Int,
-         imageCover: String
-        ){
-        self.id = id
-        self.imageCover = imageCover
+    init(name: String,
+         status: RoundStatus
+    ){
+        self.name = name
+        self.status = status
     }
+}
+
+
+
+enum RoundStatus {
+    case free
+    case lock
+    case buy
 }
