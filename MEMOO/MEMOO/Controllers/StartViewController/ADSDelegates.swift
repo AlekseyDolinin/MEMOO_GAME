@@ -31,7 +31,7 @@ extension StartViewController {
     func showADS() {
         if let ad = rewardedAd {
             ad.present(fromRootViewController: self, userDidEarnRewardHandler: {
-                print("просмотрена реклама для \(self.listRound[self.currentIndex])")
+//                print("просмотрена реклама для \(self.listRound[self.currentIndex])")
                 self.gadRequest()
                 UserDefaults.standard.set(Date(), forKey: StartViewController.nameGame + "date")
             })

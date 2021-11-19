@@ -505,7 +505,7 @@
                                     <constraint firstAttribute="width" constant="7700" id="ZYo-Lf-4u7"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer2" translatesAutoresizingMaskIntoConstraints="NO" id="G6K-7n-tDg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_2" translatesAutoresizingMaskIntoConstraints="NO" id="G6K-7n-tDg">
                                 <rect key="frame" x="-200" y="0.0" width="7700" height="568"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="7700" id="5DM-OY-hKd"/>
@@ -519,10 +519,9 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_1" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-ou-CM8">
-                                <rect key="frame" x="-200" y="200" width="6000" height="368"/>
+                                <rect key="frame" x="-200" y="-1" width="3134" height="569"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="368" id="9t9-pQ-8Zz"/>
-                                    <constraint firstAttribute="width" constant="6000" id="hjv-9C-e11"/>
+                                    <constraint firstAttribute="width" secondItem="tfM-ou-CM8" secondAttribute="height" multiplier="3134:569" id="vta-TG-PZl"/>
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-OT-vB7">
@@ -597,6 +596,7 @@
                             <constraint firstItem="6ed-OT-vB7" firstAttribute="top" secondItem="Mjp-uc-VGE" secondAttribute="top" id="ILY-OC-ed1"/>
                             <constraint firstItem="6ed-OT-vB7" firstAttribute="trailing" secondItem="Mjp-uc-VGE" secondAttribute="trailing" id="LLP-SB-JBu"/>
                             <constraint firstItem="tfM-ou-CM8" firstAttribute="bottom" secondItem="hBK-jm-Xp1" secondAttribute="bottom" id="O5V-UU-amn"/>
+                            <constraint firstAttribute="top" secondItem="tfM-ou-CM8" secondAttribute="top" constant="1" id="Omp-jU-cdG"/>
                             <constraint firstItem="6ed-OT-vB7" firstAttribute="leading" secondItem="Mjp-uc-VGE" secondAttribute="leading" id="PuA-Wl-dGa"/>
                             <constraint firstItem="G6K-7n-tDg" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" constant="-200" id="QsM-uE-dwg"/>
                             <constraint firstItem="GTe-Un-1g1" firstAttribute="leading" secondItem="Mjp-uc-VGE" secondAttribute="leading" constant="-200" id="fFu-vO-UaW"/>
@@ -625,9 +625,9 @@
         <image name="board" width="320" height="236"/>
         <image name="board_2" width="166" height="221"/>
         <image name="buttonClose" width="70" height="70"/>
-        <image name="layer2" width="7701" height="569"/>
-        <image name="layer_1" width="7701" height="569"/>
-        <image name="layer_3" width="7701" height="568"/>
+        <image name="layer_1" width="3134" height="569"/>
+        <image name="layer_2" width="5601" height="569"/>
+        <image name="layer_3" width="5601" height="569"/>
         <image name="lock" width="90" height="90"/>
         <image name="stone" width="100" height="100"/>
         <namedColor name="Green_">
