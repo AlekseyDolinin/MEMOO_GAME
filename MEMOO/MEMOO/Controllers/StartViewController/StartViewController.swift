@@ -12,8 +12,8 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     static var unlockAllGame: Bool!
     
     var lastContentOffset: CGFloat = 0
-    var freeListRound: Set<String> = ["fruit_", "flag_", "farm_", "animal_"]
-    var paidListRound: Set<String> = ["alfred_", "animall_", "mandala_", "ninja_",  "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "flower_", "fauna_"]
+    var freeListRound = ["fruit_", "flag_", "farm_", "animal_"]
+    var paidListRound = ["alfred_", "animall_", "mandala_", "ninja_",  "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "flower_", "fauna_"]
     var currentIndex = 0
     var rewardedAd: GADRewardedAd?
     let valuePeriodWithooutADVInSeconds = 50 /// 3 часа - 10800
@@ -33,7 +33,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         chekLockedGame()
 
         /// получение цен покупок
-        priceManager.getPricesForInApps(inAppsIDs: self.paidListRound)
+        priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound))
     }
     
     ///

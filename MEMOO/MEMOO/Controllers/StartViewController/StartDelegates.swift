@@ -8,17 +8,16 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let roundCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RoundCell", for: indexPath) as! RoundCell
-//        let allRound =
-//        roundCell.nameGame = (freeListRound + paidListRound)[indexPath.row]
-//        roundCell.setCell()
-//        /// разблокировка первых 2-х ячеек
-//        roundCell.lockImage.isHidden = [0, 1, 2, 3].contains(indexPath.row)
+        roundCell.nameGame = (freeListRound + paidListRound)[indexPath.row]
+        roundCell.setCell()
+        /// разблокировка первых 2-х ячеек
+        roundCell.lockImage.isHidden = [0, 1, 2, 3].contains(indexPath.row)
         return roundCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        StartViewController.nameGame = listRound[indexPath.row]
-//        openGame()
+        StartViewController.nameGame = (freeListRound + paidListRound)[indexPath.row]
+        openGame()
         
 //        /// free content
 //        if (["fruit_", "emoji_"]).contains(StartViewController.nameGame) || StartViewController.unlockAllGame == true {
@@ -45,10 +44,8 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
 
 extension StartViewController: UIScrollViewDelegate {
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.lastContentOffset = scrollView.contentOffset.x
-        
         viewSelf.layer_1.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.6, y: 0)
         viewSelf.viewForSKEmitter.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.35, y: 0)
         viewSelf.layer_2.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.3, y: 0)
