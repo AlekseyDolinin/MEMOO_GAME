@@ -24,8 +24,7 @@ class StartViewController: UIViewController {
         viewSelf.collectionRound.dataSource = self
         
         /// получение цен покупок
-        priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound))
-        priceManager.getPricesForInApps(inAppsIDs: Set<String>(["unlockAllContentID"]))
+        priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound + ["unlockAllContentID"]))
         
         ///
         NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
@@ -39,12 +38,15 @@ class StartViewController: UIViewController {
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-
+        let widthCell = view.frame.width - 140
+        let leftInset = (view.frame.width - widthCell) / 3
+        viewSelf.collectionRound.contentInset = UIEdgeInsets(top: 0, left: leftInset, bottom: 0, right: leftInset)
     }
     
     ///
     func createRoundes() {
-        for (index, value) in (freeListRound + paidListRound).enumerated() {
+        let allRounds = freeListRound + paidListRound
+        for (index, value) in allRounds.enumerated() {
             var status: RoundStatus!
             if (0...3).contains(index) {
                 status = .free

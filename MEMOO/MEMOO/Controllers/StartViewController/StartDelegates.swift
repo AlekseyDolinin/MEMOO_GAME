@@ -23,8 +23,8 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.frame.width - 100
-        return CGSize(width: width, height: collectionView.frame.height)
+        let widthCell = view.frame.width - 200
+        return CGSize(width: widthCell, height: collectionView.frame.height)
     }
 }
 
