@@ -7,7 +7,7 @@ class StartViewController: UIViewController {
         return (view as! StartView)
     }
 
-    static var nameGame: String!
+    static var selectRound: Round!
     
     ///  смещение колекции (для паралакса)
     var lastContentOffset: CGFloat = 0
@@ -72,6 +72,7 @@ class StartViewController: UIViewController {
     ///
     func openModalLockedRound() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ModalLockedRoundViewController") as! ModalLockedRoundViewController
+        vc.selectRound = StartViewController.selectRound
         vc.modalPresentationStyle = .pageSheet
         present(vc, animated: true)
     }

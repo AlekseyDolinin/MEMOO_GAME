@@ -28,7 +28,7 @@ class StartView: UIView {
         viewForSKEmitter.addSubview(skView)
         let emitter = SKEmitterNode(fileNamed: "magic.sks")
         emitter?.position = skView.center
-        emitter?.particleBirthRate = 100
+        emitter?.particleBirthRate = 80
         emitter?.particlePositionRange.dx = viewForSKEmitter.frame.width
         emitter?.particlePositionRange.dy = viewForSKEmitter.frame.height
         let scene: SKScene = SKScene(size: self.viewForSKEmitter.bounds.size)

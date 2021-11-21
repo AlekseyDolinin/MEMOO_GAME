@@ -25,7 +25,7 @@ class GameViewController: UIViewController {
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        print("Выбрана: \(StartViewController.nameGame!)")
+        print("Выбрана: \(StartViewController.selectRound.name)")
         restart()
     }
     
@@ -53,7 +53,7 @@ class GameViewController: UIViewController {
         arrayCard = []
         while arrayCard.count < countCell {
             let index: Int = Int(arc4random() % 20 + 1) // 20 - количество изображений в папке
-            let image = UIImage(named: "\(StartViewController.nameGame!)\(index)")!
+            let image = UIImage(named: "\(StartViewController.selectRound.name)\(index)")!
             let card = Card(id: index, image: image, showCard: false)
             let indexes = arrayCard.map { $0.id }
             if !indexes.contains(index) {
