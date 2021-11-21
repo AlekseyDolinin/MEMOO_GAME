@@ -15,6 +15,10 @@ class StartView: UIView {
         super.awakeFromNib()
         setUI()
         setAnimation()
+        
+        
+        let width = collectionRound.collectionViewLayout.collectionViewContentSize.width
+        print("width: \(width)")
     }
     
     ///

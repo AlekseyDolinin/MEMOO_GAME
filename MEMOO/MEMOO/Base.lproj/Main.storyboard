@@ -47,7 +47,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiu-9N-Zpb">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board_2" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-Sl-dNA">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-Sl-dNA">
                                                             <rect key="frame" x="16" y="16" width="96" height="96"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
@@ -218,7 +218,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Coo-jF-bnj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Coo-jF-bnj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-1l-dAC">
@@ -516,22 +516,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_3" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-eE-Tc2">
-                                <rect key="frame" x="-200" y="0.0" width="7700" height="568"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_3" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-eE-Tc2">
+                                <rect key="frame" x="-100" y="0.0" width="1597" height="568"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="7700" id="ZYo-Lf-4u7"/>
+                                    <constraint firstAttribute="width" secondItem="KKd-eE-Tc2" secondAttribute="height" multiplier="1600:569" id="OTM-Xt-2dh"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_2" translatesAutoresizingMaskIntoConstraints="NO" id="G6K-7n-tDg">
-                                <rect key="frame" x="-200" y="0.0" width="7700" height="568"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_2" translatesAutoresizingMaskIntoConstraints="NO" id="G6K-7n-tDg">
+                                <rect key="frame" x="-100" y="0.0" width="2795" height="568"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="7700" id="5DM-OY-hKd"/>
+                                    <constraint firstAttribute="width" secondItem="G6K-7n-tDg" secondAttribute="height" multiplier="2800:569" id="W70-nd-jnE"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_1" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-ou-CM8">
-                                <rect key="frame" x="-200" y="-1" width="3134" height="569"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer_1" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-ou-CM8">
+                                <rect key="frame" x="-100" y="-1" width="3600" height="569"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="tfM-ou-CM8" secondAttribute="height" multiplier="3134:569" id="vta-TG-PZl"/>
+                                    <constraint firstAttribute="width" secondItem="tfM-ou-CM8" secondAttribute="height" multiplier="3600:569" id="vta-TG-PZl"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTe-Un-1g1">
@@ -615,12 +615,12 @@
                             <constraint firstItem="tfM-ou-CM8" firstAttribute="bottom" secondItem="hBK-jm-Xp1" secondAttribute="bottom" id="O5V-UU-amn"/>
                             <constraint firstAttribute="top" secondItem="tfM-ou-CM8" secondAttribute="top" constant="1" id="Omp-jU-cdG"/>
                             <constraint firstItem="6ed-OT-vB7" firstAttribute="leading" secondItem="Mjp-uc-VGE" secondAttribute="leading" id="PuA-Wl-dGa"/>
-                            <constraint firstItem="G6K-7n-tDg" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" constant="-200" id="QsM-uE-dwg"/>
+                            <constraint firstItem="G6K-7n-tDg" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" constant="-100" id="QsM-uE-dwg"/>
                             <constraint firstItem="GTe-Un-1g1" firstAttribute="leading" secondItem="Mjp-uc-VGE" secondAttribute="leading" constant="-200" id="fFu-vO-UaW"/>
                             <constraint firstItem="6ed-OT-vB7" firstAttribute="bottom" secondItem="Mjp-uc-VGE" secondAttribute="bottom" id="hgb-Os-dDP"/>
-                            <constraint firstItem="KKd-eE-Tc2" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" constant="-200" id="ige-gX-DOg"/>
+                            <constraint firstItem="KKd-eE-Tc2" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" constant="-100" id="ige-gX-DOg"/>
                             <constraint firstItem="KKd-eE-Tc2" firstAttribute="top" secondItem="hBK-jm-Xp1" secondAttribute="top" id="jgL-RI-VJj"/>
-                            <constraint firstItem="tfM-ou-CM8" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" constant="-200" id="xOC-YH-IGq"/>
+                            <constraint firstItem="tfM-ou-CM8" firstAttribute="leading" secondItem="hBK-jm-Xp1" secondAttribute="leading" constant="-100" id="xOC-YH-IGq"/>
                         </constraints>
                         <connections>
                             <outlet property="collectionRound" destination="6ed-OT-vB7" id="1nD-fi-689"/>
@@ -638,13 +638,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="1080" height="1920"/>
+        <image name="bg" width="721" height="1137"/>
         <image name="board" width="320" height="236"/>
-        <image name="board_2" width="166" height="221"/>
         <image name="buttonClose" width="70" height="70"/>
-        <image name="layer_1" width="3134" height="569"/>
-        <image name="layer_2" width="5601" height="569"/>
-        <image name="layer_3" width="5601" height="569"/>
+        <image name="layer_1" width="5601" height="1137"/>
+        <image name="layer_2" width="5601" height="1137"/>
+        <image name="layer_3" width="5601" height="1137"/>
         <image name="lock" width="90" height="90"/>
         <namedColor name="Green_">
             <color red="0.41200000047683716" green="0.72200000286102295" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
