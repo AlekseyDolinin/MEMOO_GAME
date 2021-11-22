@@ -73,7 +73,15 @@ class StartViewController: UIViewController {
     func openModalLockedRound() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ModalLockedRoundViewController") as! ModalLockedRoundViewController
         vc.selectRound = StartViewController.selectRound
-        vc.modalPresentationStyle = .pageSheet
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
+    ///
+    @IBAction func openArtefactCollection() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ArtefactViewController") as! ArtefactViewController
+        vc.selectRound = StartViewController.selectRound
+        vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
 }

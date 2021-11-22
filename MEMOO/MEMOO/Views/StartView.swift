@@ -8,17 +8,12 @@ class StartView: UIView {
     @IBOutlet weak var layer_2: UIImageView!
     @IBOutlet weak var layer_3: UIImageView!
     @IBOutlet weak var viewForSKEmitter: UIView!
-    
-    var showAnimation = false
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
         setAnimation()
-        
-        
-        let width = collectionRound.collectionViewLayout.collectionViewContentSize.width
-        print("width: \(width)")
+        setAnimationClouds()
     }
     
     ///
@@ -41,10 +36,18 @@ class StartView: UIView {
 
 extension StartView {
     func setUI() {
-//        ///
-//        descriptionView.layer.cornerRadius = descriptionView.frame.height / 2
-//        easilyView.layer.cornerRadius = easilyView.frame.height / 2
-//        mediumView.layer.cornerRadius = mediumView.frame.height / 2
-//        hardView.layer.cornerRadius = hardView.frame.height / 2
+
+    }
+}
+
+extension StartView {
+    func setAnimationClouds() {
+        
+        UIView.animate(withDuration: 100.0) {
+            self.layer_3.transform = CGAffineTransform(translationX: -2500, y: 0)
+        } completion: { bool in
+            self.layer_3.transform = .identity
+            self.setAnimationClouds()
+        }
     }
 }

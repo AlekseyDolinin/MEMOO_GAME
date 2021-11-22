@@ -34,7 +34,7 @@ extension StartViewController: UIScrollViewDelegate {
         self.lastContentOffset = scrollView.contentOffset.x
         viewSelf.layer_1.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.6, y: 0)
         viewSelf.layer_2.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.4, y: 0)
-        viewSelf.layer_3.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.1, y: 0)
+        viewSelf.layer_3.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.05, y: 0)
         viewSelf.viewForSKEmitter.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.30, y: 0)
     }
 }

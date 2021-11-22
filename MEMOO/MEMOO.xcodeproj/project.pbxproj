@@ -25,6 +25,8 @@
 		10D22A1526B329940063433E /* StartDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0126B328840063433E /* StartDelegates.swift */; };
 		10D22A1626B329970063433E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D22A0326B328900063433E /* UIColor.swift */; };
 		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
+		9109E420274BD18D006784FC /* ArtefactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E41F274BD18D006784FC /* ArtefactViewController.swift */; };
+		9109E422274BD408006784FC /* ArtefactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E421274BD408006784FC /* ArtefactCell.swift */; };
 		91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8D2709E33D00F9DD46 /* WinViewController.swift */; };
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
 		91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05427463696002CA6E1 /* RoundCell.swift */; };
@@ -59,6 +61,8 @@
 		10D22A0126B328840063433E /* StartDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDelegates.swift; sourceTree = "<group>"; };
 		10D22A0326B328900063433E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
+		9109E41F274BD18D006784FC /* ArtefactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactViewController.swift; sourceTree = "<group>"; };
+		9109E421274BD408006784FC /* ArtefactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactCell.swift; sourceTree = "<group>"; };
 		91C88D8D2709E33D00F9DD46 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		91CAA05427463696002CA6E1 /* RoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 			children = (
 				10D229EF26B3287A0063433E /* CardCell.swift */,
 				91CAA067274A78A8002CA6E1 /* PreviewRoundCell.swift */,
+				9109E421274BD408006784FC /* ArtefactCell.swift */,
 				91CAA05427463696002CA6E1 /* RoundCell.swift */,
 			);
 			path = Cells;
@@ -179,6 +184,7 @@
 				10D229F726B328840063433E /* Game */,
 				1046E7C926C1DB0D00624CAA /* MenuViewController.swift */,
 				91C88D8D2709E33D00F9DD46 /* WinViewController.swift */,
+				9109E41F274BD18D006784FC /* ArtefactViewController.swift */,
 				91CAA0652747E5E7002CA6E1 /* ModalLockedRoundViewController.swift */,
 			);
 			path = Controllers;
@@ -348,6 +354,7 @@
 			files = (
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
+				9109E422274BD408006784FC /* ArtefactCell.swift in Sources */,
 				10D22A1326B329940063433E /* StartViewController.swift in Sources */,
 				91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */,
 				10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */,
@@ -355,6 +362,7 @@
 				10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */,
 				10D22A0626B3293E0063433E /* Card.swift in Sources */,
 				1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */,
+				9109E420274BD18D006784FC /* ArtefactViewController.swift in Sources */,
 				10D22A1626B329970063433E /* UIColor.swift in Sources */,
 				10D22A0926B329470063433E /* StartView.swift in Sources */,
 				10D22A0726B329420063433E /* CardCell.swift in Sources */,
