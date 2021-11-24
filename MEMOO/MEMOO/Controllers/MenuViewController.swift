@@ -14,14 +14,14 @@ class MenuViewController: UIViewController {
     ///
     @IBAction func restart(_ sender: UIButton) {
         dismiss(animated: false) {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "restart"), object: self)
+            NotificationCenter.default.post(name: nRestart, object: nil)
         }
     }
     
     ///
     @IBAction func back(_ sender: UIButton) {
         dismiss(animated: false) {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "back"), object: self)
+            NotificationCenter.default.post(name: nBack, object: nil)
         }
     }
 }

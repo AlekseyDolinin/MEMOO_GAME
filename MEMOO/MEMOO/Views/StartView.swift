@@ -8,7 +8,8 @@ class StartView: UIView {
     @IBOutlet weak var layer_2: UIImageView!
     @IBOutlet weak var layer_3: UIImageView!
     @IBOutlet weak var viewForSKEmitter: UIView!
-        
+    @IBOutlet weak var showCollectionButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()

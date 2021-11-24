@@ -36,5 +36,34 @@ extension StartViewController: UIScrollViewDelegate {
         viewSelf.layer_2.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.4, y: 0)
         viewSelf.layer_3.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.05, y: 0)
         viewSelf.viewForSKEmitter.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.30, y: 0)
+        
+//        if(scrollView.panGestureRecognizer.translation(in: scrollView.superview).x > 0) {
+//            UIView.animate(withDuration: 0.3) {
+//                self.viewSelf.showCollectionButton.transform = CGAffineTransform(translationX: 40, y: 0)
+//            }
+////            UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
+////                self.viewSelf.showCollectionButton.transform = CGAffineTransform(translationX: 40, y: 0)
+////            }) { _ in
+////                self.viewSelf.showCollectionButton.transform = .identity
+////            }
+//        } else {
+//            UIView.animate(withDuration: 0.3) {
+//                self.viewSelf.showCollectionButton.transform = CGAffineTransform(translationX: -40, y: 0)
+//            }
+////            UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
+////                self.viewSelf.showCollectionButton.transform = CGAffineTransform(translationX: -40, y: 0)
+////            }) { _ in
+////                self.viewSelf.showCollectionButton.transform = .identity
+////            }
+//        }
     }
+    
+
+    
+    
+//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
+//            self.viewSelf.showCollectionButton.transform = .identity
+//        })
+//    }
 }
