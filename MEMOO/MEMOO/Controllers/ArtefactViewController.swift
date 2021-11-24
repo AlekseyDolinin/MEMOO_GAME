@@ -8,7 +8,7 @@ class ArtefactViewController: UIViewController {
     }
     
     var selectRound: Round!
-    var countCell = 20
+    var countCell = 33
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,6 @@ class ArtefactViewController: UIViewController {
             
         }
     }
-    
 }
 
 
@@ -37,16 +36,15 @@ extension ArtefactViewController: UICollectionViewDelegate, UICollectionViewData
         return artefactCell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let widthCell = (collectionView.frame.width / 4)
-        return CGSize(width: widthCell, height: widthCell)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PreviewArtefactViewController") as! PreviewArtefactViewController
+        vc.modalPresentationStyle = .pageSheet
+        present(vc, animated: true)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let heightCell = (collectionView.frame.width / 4)
-        let totalCellHeight = CGFloat(countCell / 4) * heightCell
-        let inset  = (collectionView.layer.frame.size.height - totalCellHeight) / 2
-        return UIEdgeInsets(top: inset, left: 0, bottom: inset, right: 0)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let widthCell = (collectionView.frame.width / 3 - 20)
+        return CGSize(width: widthCell, height: widthCell)
     }
 }
 
