@@ -490,11 +490,8 @@
                                 <blurEffect style="systemThinMaterialLight"/>
                             </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-cE-8CO">
-                                <rect key="frame" x="24" y="134" width="327" height="463"/>
+                                <rect key="frame" x="24" y="68" width="327" height="470"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1GL-cE-8CO" secondAttribute="height" multiplier="77:109" id="jSX-au-Wn3"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="BUY-yb-NiV">
                                     <size key="itemSize" width="166" height="166"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -552,42 +549,55 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWt-NT-Zko">
-                                <rect key="frame" x="152.66666666666666" y="684" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Dmh-wf-Cyn"/>
-                                    <constraint firstAttribute="width" constant="70" id="KCm-1k-b26"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                <state key="normal" image="stone"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-cR-EC6">
-                                <rect key="frame" x="321" y="44" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="PD2-ge-wIZ"/>
-                                    <constraint firstAttribute="height" constant="50" id="etj-5V-6Hs"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                <state key="normal" image="buttonClose"/>
-                                <connections>
-                                    <action selector="back:" destination="jyT-Bg-dgG" eventType="touchUpInside" id="xls-hr-kOp"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-e8-QwM">
+                                <rect key="frame" x="52.666666666666657" y="554" width="270" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-wc-Qg9">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="APV-0V-b41"/>
+                                            <constraint firstAttribute="width" constant="270" id="l38-yq-Qed"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                        <state key="normal" image="btnMedium"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK0-fw-0SQ">
+                                        <rect key="frame" x="0.0" y="78" width="270" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="2tg-PO-7PS"/>
+                                            <constraint firstAttribute="width" constant="270" id="DHO-6e-IPC"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                        <state key="normal" image="btnMedium"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWt-NT-Zko">
+                                        <rect key="frame" x="0.0" y="156" width="270" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Dmh-wf-Cyn"/>
+                                            <constraint firstAttribute="width" constant="270" id="KCm-1k-b26"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                        <state key="normal" image="btnMedium"/>
+                                        <connections>
+                                            <action selector="back:" destination="jyT-Bg-dgG" eventType="touchUpInside" id="EzA-aA-bs1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ool-v0-IWZ"/>
                         <color key="backgroundColor" white="1" alpha="0.50271626655629142" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gy2-bF-pew" firstAttribute="leading" secondItem="8OX-Bc-r18" secondAttribute="leading" id="4yY-WG-z6j"/>
-                            <constraint firstItem="1GL-cE-8CO" firstAttribute="top" secondItem="Ool-v0-IWZ" secondAttribute="top" constant="90" id="AOp-sv-8Fe"/>
-                            <constraint firstItem="rWt-NT-Zko" firstAttribute="centerX" secondItem="8OX-Bc-r18" secondAttribute="centerX" id="Ohu-lZ-oAP"/>
+                            <constraint firstItem="1GL-cE-8CO" firstAttribute="top" secondItem="Ool-v0-IWZ" secondAttribute="top" constant="24" id="AOp-sv-8Fe"/>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="leading" secondItem="Ool-v0-IWZ" secondAttribute="leading" constant="24" id="ShO-ef-7sg"/>
+                            <constraint firstAttribute="bottom" secondItem="Rge-e8-QwM" secondAttribute="bottom" constant="32" id="XNo-kI-ak9"/>
                             <constraint firstAttribute="bottom" secondItem="gy2-bF-pew" secondAttribute="bottom" id="Z63-6f-gff"/>
-                            <constraint firstItem="WnA-cR-EC6" firstAttribute="top" secondItem="Ool-v0-IWZ" secondAttribute="top" id="apk-B9-Jy6"/>
+                            <constraint firstItem="Rge-e8-QwM" firstAttribute="centerX" secondItem="8OX-Bc-r18" secondAttribute="centerX" id="aHG-RO-0Cb"/>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="trailing" secondItem="Ool-v0-IWZ" secondAttribute="trailing" constant="-24" id="eoG-wh-u3V"/>
                             <constraint firstAttribute="trailing" secondItem="gy2-bF-pew" secondAttribute="trailing" id="nhf-cS-v8G"/>
                             <constraint firstItem="gy2-bF-pew" firstAttribute="top" secondItem="8OX-Bc-r18" secondAttribute="top" id="r8U-e8-Rfy"/>
-                            <constraint firstItem="Ool-v0-IWZ" firstAttribute="bottom" secondItem="rWt-NT-Zko" secondAttribute="bottom" constant="24" id="u0b-qt-VfO"/>
-                            <constraint firstItem="Ool-v0-IWZ" firstAttribute="trailing" secondItem="WnA-cR-EC6" secondAttribute="trailing" constant="4" id="wKl-jc-GuX"/>
+                            <constraint firstItem="Rge-e8-QwM" firstAttribute="top" secondItem="1GL-cE-8CO" secondAttribute="bottom" constant="16" id="vd1-V6-E81"/>
                         </constraints>
                         <connections>
                             <outlet property="previewCardCollection" destination="1GL-cE-8CO" id="W4e-qa-V6v"/>
@@ -735,6 +745,7 @@
     <resources>
         <image name="bgGame" width="641" height="1138"/>
         <image name="board" width="320" height="236"/>
+        <image name="btnMedium" width="211" height="68"/>
         <image name="btnSmall" width="152" height="68"/>
         <image name="buttonClose" width="61" height="61"/>
         <image name="layer_1" width="7200" height="1139"/>
@@ -743,7 +754,6 @@
         <image name="layer_4" width="7200" height="1139"/>
         <image name="lock" width="90" height="90"/>
         <image name="pin" width="512" height="512"/>
-        <image name="stone" width="100" height="100"/>
         <namedColor name="Brown_">
             <color red="0.50196078431372548" green="0.15686274509803921" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
