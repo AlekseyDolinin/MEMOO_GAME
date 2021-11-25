@@ -40,6 +40,6 @@ extension CardCell {
         ///
         blure.layer.cornerRadius = 6
         blure.clipsToBounds = true
-        backCard.image = UIImage(named: "buttonBack")
+        backCard.image = UIImage(named: "stone")
     }
 }

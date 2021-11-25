@@ -112,7 +112,7 @@
                                     <constraint firstAttribute="height" constant="50" id="dfn-3g-cyp"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                <state key="normal" image="buttonClose"/>
+                                <state key="normal" image="closeBtn"/>
                                 <connections>
                                     <action selector="showMenu:" destination="fu1-rO-RQc" eventType="touchUpInside" id="7Ni-9L-bwY"/>
                                 </connections>
@@ -419,13 +419,13 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Od-fW-hew">
-                                <rect key="frame" x="112.66666666666669" y="684" width="150" height="70"/>
+                                <rect key="frame" x="117.66666666666669" y="614" width="140" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="BVC-t7-BJE"/>
-                                    <constraint firstAttribute="width" constant="150" id="QLp-GL-UDG"/>
+                                    <constraint firstAttribute="height" constant="140" id="BVC-t7-BJE"/>
+                                    <constraint firstAttribute="width" constant="140" id="QLp-GL-UDG"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                <state key="normal" image="btnSmall"/>
+                                <state key="normal" image="artefactBtn"/>
                                 <connections>
                                     <action selector="openArtefactCollection" destination="0DP-EJ-cld" eventType="touchUpInside" id="pFV-28-5Wg"/>
                                 </connections>
@@ -559,7 +559,7 @@
                                             <constraint firstAttribute="width" constant="270" id="l38-yq-Qed"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                        <state key="normal" image="btnMedium"/>
+                                        <state key="normal" image="unlockAllContentBtn"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK0-fw-0SQ">
                                         <rect key="frame" x="0.0" y="78" width="270" height="70"/>
@@ -568,7 +568,7 @@
                                             <constraint firstAttribute="width" constant="270" id="DHO-6e-IPC"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                        <state key="normal" image="btnMedium"/>
+                                        <state key="normal" image="restoreBtn"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWt-NT-Zko">
                                         <rect key="frame" x="0.0" y="156" width="270" height="70"/>
@@ -577,7 +577,7 @@
                                             <constraint firstAttribute="width" constant="270" id="KCm-1k-b26"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                        <state key="normal" image="btnMedium"/>
+                                        <state key="normal" image="cancelBtn"/>
                                         <connections>
                                             <action selector="back:" destination="jyT-Bg-dgG" eventType="touchUpInside" id="EzA-aA-bs1"/>
                                         </connections>
@@ -712,7 +712,7 @@
                                     <constraint firstAttribute="height" constant="70" id="ax9-0C-AP0"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                <state key="normal" image="buttonClose"/>
+                                <state key="normal" image="closeBtn"/>
                                 <connections>
                                     <action selector="back:" destination="f5j-0q-9FW" eventType="touchUpInside" id="13v-eJ-cRL"/>
                                 </connections>
@@ -743,17 +743,20 @@
         </scene>
     </scenes>
     <resources>
+        <image name="artefactBtn" width="201" height="201"/>
         <image name="bgGame" width="641" height="1138"/>
-        <image name="board" width="320" height="236"/>
-        <image name="btnMedium" width="211" height="68"/>
-        <image name="btnSmall" width="152" height="68"/>
+        <image name="board" width="401" height="401"/>
         <image name="buttonClose" width="61" height="61"/>
+        <image name="cancelBtn" width="271" height="68"/>
+        <image name="closeBtn" width="121" height="121"/>
         <image name="layer_1" width="7200" height="1139"/>
         <image name="layer_2" width="7200" height="1139"/>
         <image name="layer_3" width="7200" height="1139"/>
         <image name="layer_4" width="7200" height="1139"/>
         <image name="lock" width="90" height="90"/>
         <image name="pin" width="512" height="512"/>
+        <image name="restoreBtn" width="271" height="68"/>
+        <image name="unlockAllContentBtn" width="271" height="69"/>
         <namedColor name="Brown_">
             <color red="0.50196078431372548" green="0.15686274509803921" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
