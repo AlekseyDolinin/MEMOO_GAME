@@ -13,9 +13,7 @@ class StartViewController: UIViewController {
     var lastContentOffset: CGFloat = 0
     var freeListRound = ["fruit", "flag", "farm", "animal"]
     var paidListRound = ["alfred", "animall", "mandala", "ninja", "sport", "summer", "toy", "dog", "toyy", "vegetable", "space", "letter", "origami", "animalll", "flower", "fauna"]
-    
     var listRounds = [Round]()
-    
     let priceManager = PriceManager()
     
     override func viewDidLoad() {
@@ -27,11 +25,14 @@ class StartViewController: UIViewController {
         priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound + ["unlockAllContentID"]))
         
         ///
+        self.createRoundes(arrayNamedRound: freeListRound)
+        
+        ///
         NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
             print("Обновление цен")
 //            var priceAllContent = UserDefaults.standard.object(forKey: "unlockAllContentID")
 //            var priceAlfred = UserDefaults.standard.object(forKey: "alfred_")
-            self.createRoundes()
+            self.createRoundes(arrayNamedRound: self.freeListRound + self.paidListRound)
         }
     }
     
@@ -44,33 +45,22 @@ class StartViewController: UIViewController {
     }
     
     ///
-    func createRoundes() {
-        let allRounds = freeListRound + paidListRound
-        for (index, value) in allRounds.enumerated() {
-            var status: RoundStatus!
-            if (0...3).contains(index) {
-                status = .free
-            } else {
-                status = .notFree
-            }
+    func createRoundes(arrayNamedRound: [String]) {
+        listRounds = []
+        for (index, value) in arrayNamedRound.enumerated() {
+            let status: RoundStatus = (0...3).contains(index) ? .free : .notFree
             listRounds.append(Round(name: value, status: status))
         }
-        if listRounds.count == (freeListRound + paidListRound).count {
-            DispatchQueue.main.async {
-                self.viewSelf.collectionRound.reloadData()
-            }
+        DispatchQueue.main.async {
+            self.viewSelf.collectionRound.reloadData()
         }
     }
-    
     
     ///
     func openGame() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true) {
-            
-        }
-//        navigationController?.pushViewController(vc, animated: true)
+        present(vc, animated: true)
     }
     
     ///

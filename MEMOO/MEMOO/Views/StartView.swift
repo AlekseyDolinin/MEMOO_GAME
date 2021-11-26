@@ -37,9 +37,9 @@ class StartView: UIView {
     ///
     func setAnimationLeftFire() {
         let emitter = SKEmitterNode(fileNamed: "fire.sks")
-        emitter?.position = CGPoint(x: 25, y: 15)
+        emitter?.position = CGPoint(x: 25, y: 10)
         let scene: SKScene = SKScene(size: self.viewLeftFire.frame.size)
-        scene.scaleMode = .aspectFit
+        scene.scaleMode = .aspectFill
         scene.backgroundColor = .clear
         scene.addChild(emitter!)
         viewLeftFire.presentScene(scene)

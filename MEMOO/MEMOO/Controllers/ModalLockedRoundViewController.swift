@@ -9,6 +9,8 @@ class ModalLockedRoundViewController: UIViewController {
     
     var selectRound: Round!
     var countCell = 20
+    var storeManager = StoreManager()
+    var roundID: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +20,14 @@ class ModalLockedRoundViewController: UIViewController {
     }
 
     ///
-    @IBAction func back(_ sender: UIButton) {
-        dismiss(animated: true) {
-            
-        }
+    @IBAction func buyRound(_ sender: UIButton) {
+        storeManager.buyInApp(inAppID: roundID ?? "")
     }
     
+    ///
+    @IBAction func back(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
 }
 
 
@@ -34,7 +38,7 @@ extension ModalLockedRoundViewController: UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let previewRoundCell = collectionView.dequeueReusableCell(withReuseIdentifier: "PreviewRoundCell", for: indexPath) as! PreviewRoundCell
-        previewRoundCell.imageCard.image = UIImage(named: "\(selectRound.name)" + "\(indexPath.row + 1)")
+        previewRoundCell.imageCard.image = UIImage(named: "\(selectRound.name)_\(indexPath.row + 1)")
         return previewRoundCell
     }
     

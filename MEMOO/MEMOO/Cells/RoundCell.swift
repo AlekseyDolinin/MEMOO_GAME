@@ -24,10 +24,11 @@ class RoundCell: UICollectionViewCell {
     
     ///
     func setBlocked() {
+        print(round.status)
         if round.status == .free {
         
         } else {
-        
+            imageRound.image = self.imageRound.image?.noir
         }
     }
 }

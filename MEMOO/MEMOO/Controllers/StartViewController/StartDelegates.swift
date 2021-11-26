@@ -34,7 +34,7 @@ extension StartViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.lastContentOffset = scrollView.contentOffset.x
         viewSelf.layer_1.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.45, y: 0)
-        viewSelf.layer_2.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.25, y: 0)
+        viewSelf.layer_2.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.17, y: 0)
         viewSelf.layer_3.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.05, y: 0)
     }
 }

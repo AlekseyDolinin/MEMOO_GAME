@@ -27,6 +27,7 @@
 		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
 		9109E420274BD18D006784FC /* ArtefactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E41F274BD18D006784FC /* ArtefactViewController.swift */; };
 		9109E422274BD408006784FC /* ArtefactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E421274BD408006784FC /* ArtefactCell.swift */; };
+		9141946827510B540087BBD3 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141946727510B540087BBD3 /* UIImage.swift */; };
 		9190F8C5274E427B0097F5E4 /* alfred_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83D274E427A0097F5E4 /* alfred_18.png */; };
 		9190F8C6274E427B0097F5E4 /* alfred_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83E274E427A0097F5E4 /* alfred_8.png */; };
 		9190F8C7274E427B0097F5E4 /* alfred_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83F274E427A0097F5E4 /* alfred_9.png */; };
@@ -486,6 +487,7 @@
 		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
 		9109E41F274BD18D006784FC /* ArtefactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactViewController.swift; sourceTree = "<group>"; };
 		9109E421274BD408006784FC /* ArtefactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactCell.swift; sourceTree = "<group>"; };
+		9141946727510B540087BBD3 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9190F83D274E427A0097F5E4 /* alfred_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_18.png; sourceTree = "<group>"; };
 		9190F83E274E427A0097F5E4 /* alfred_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_8.png; sourceTree = "<group>"; };
 		9190F83F274E427A0097F5E4 /* alfred_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_9.png; sourceTree = "<group>"; };
@@ -1008,10 +1010,10 @@
 		10D229EE26B3287A0063433E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				91CAA05427463696002CA6E1 /* RoundCell.swift */,
 				10D229EF26B3287A0063433E /* CardCell.swift */,
 				91CAA067274A78A8002CA6E1 /* PreviewRoundCell.swift */,
 				9109E421274BD408006784FC /* ArtefactCell.swift */,
-				91CAA05427463696002CA6E1 /* RoundCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1055,6 +1057,7 @@
 			isa = PBXGroup;
 			children = (
 				10D22A0326B328900063433E /* UIColor.swift */,
+				9141946727510B540087BBD3 /* UIImage.swift */,
 			);
 			path = HelpClasses;
 			sourceTree = "<group>";
@@ -2220,6 +2223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
+				9141946827510B540087BBD3 /* UIImage.swift in Sources */,
 				9190F93E274E85500097F5E4 /* PreviewArtefactViewController.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
 				9109E422274BD408006784FC /* ArtefactCell.swift in Sources */,

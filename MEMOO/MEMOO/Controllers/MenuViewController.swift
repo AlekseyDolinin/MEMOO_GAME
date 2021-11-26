@@ -7,19 +7,19 @@ class MenuViewController: UIViewController {
     }
     
     ///
-    @IBAction func close(_ sender: UIButton) {
+    @IBAction func backToGame(_ sender: UIButton) {
         dismiss(animated: false)
     }
     
     ///
-    @IBAction func restart(_ sender: UIButton) {
+    @IBAction func restartRound(_ sender: UIButton) {
         dismiss(animated: false) {
             NotificationCenter.default.post(name: nRestart, object: nil)
         }
     }
     
     ///
-    @IBAction func back(_ sender: UIButton) {
+    @IBAction func finishRound(_ sender: UIButton) {
         dismiss(animated: false) {
             NotificationCenter.default.post(name: nBack, object: nil)
         }
