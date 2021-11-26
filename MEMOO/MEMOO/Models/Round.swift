@@ -3,12 +3,15 @@ import UIKit
 struct Round {
     var name: String
     var status: RoundStatus
+    var state: RoundState
     
     init(name: String,
-         status: RoundStatus
+         status: RoundStatus,
+         state: RoundState = .notBuy
     ){
         self.name = name
         self.status = status
+        self.state = state
     }
 }
 
@@ -16,6 +19,10 @@ struct Round {
 
 enum RoundStatus {
     case free
-    case lock
+    case notFree
+}
+
+enum RoundState {
     case buy
+    case notBuy
 }

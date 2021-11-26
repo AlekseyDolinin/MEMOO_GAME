@@ -11,8 +11,8 @@ class StartViewController: UIViewController {
     
     ///  смещение колекции (для паралакса)
     var lastContentOffset: CGFloat = 0
-    var freeListRound = ["fruit_", "flag_", "farm_", "animal_"]
-    var paidListRound = ["alfred_", "animall_", "mandala_", "ninja_", "sport_", "summer_", "toy_", "dog_", "toyy_", "vegetable_", "space_", "letter_", "origami_", "animalll_", "flower_", "fauna_"]
+    var freeListRound = ["fruit", "flag", "farm", "animal"]
+    var paidListRound = ["alfred", "animall", "mandala", "ninja", "sport", "summer", "toy", "dog", "toyy", "vegetable", "space", "letter", "origami", "animalll", "flower", "fauna"]
     
     var listRounds = [Round]()
     
@@ -51,7 +51,7 @@ class StartViewController: UIViewController {
             if (0...3).contains(index) {
                 status = .free
             } else {
-                status = .lock
+                status = .notFree
             }
             listRounds.append(Round(name: value, status: status))
         }

@@ -4,7 +4,6 @@ class RoundCell: UICollectionViewCell {
     
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var imageRound: UIImageView!
-    @IBOutlet weak var lockImage: UIImageView!
     
     var round: Round!
     
@@ -20,15 +19,15 @@ class RoundCell: UICollectionViewCell {
     
     ///
     func setImage() {
-//        imageRound.image = UIImage(named: round.name + "1")
+        imageRound.image = UIImage(named: round.name)
     }
     
     ///
     func setBlocked() {
         if round.status == .free {
-            lockImage.isHidden = true
+        
         } else {
-            lockImage.isHidden = false
+        
         }
     }
 }
@@ -38,8 +37,6 @@ extension RoundCell {
         /// color
         
         ///
-        lockImage.image = UIImage(named: "lock")?.withRenderingMode(.alwaysTemplate)
-        lockImage.tintColor = .Brown_
         ///
     }
 }
