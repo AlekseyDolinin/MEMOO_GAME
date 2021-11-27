@@ -5,4 +5,5 @@ extension UIColor {
     static var White_: UIColor {return UIColor(named: #function)!}
     static var Green_: UIColor {return UIColor(named: #function)!}
     static var Brown_: UIColor {return UIColor(named: #function)!}
+    static var DarkGray_: UIColor {return UIColor(named: #function)!}
 }

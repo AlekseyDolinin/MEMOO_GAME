@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046E7C926C1DB0D00624CAA /* MenuViewController.swift */; };
-		104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */; };
+		1046E7CA26C1DB0D00624CAA /* GameMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046E7C926C1DB0D00624CAA /* GameMenuViewController.swift */; };
 		10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D229D626B0D4A50063433E /* AppDelegate.swift */; };
 		10D229DC26B0D4A50063433E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DA26B0D4A50063433E /* Main.storyboard */; };
 		10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D229DD26B0D4A60063433E /* Assets.xcassets */; };
@@ -27,7 +26,12 @@
 		73F374B638604FBB38E202D7 /* Pods_MEMOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354FB220677EB786CD16283 /* Pods_MEMOO.framework */; };
 		9109E420274BD18D006784FC /* ArtefactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E41F274BD18D006784FC /* ArtefactViewController.swift */; };
 		9109E422274BD408006784FC /* ArtefactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E421274BD408006784FC /* ArtefactCell.swift */; };
+		9128A0302752397B0030359C /* Shadow_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02D2752397B0030359C /* Shadow_regular.ttf */; };
+		9128A0312752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02E2752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf */; };
+		9128A0322752397B0030359C /* RF-Krabuler-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */; };
 		9141946827510B540087BBD3 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141946727510B540087BBD3 /* UIImage.swift */; };
+		9141946C275234E40087BBD3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141946B275234E40087BBD3 /* UIButton.swift */; };
+		918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7BE827523DD300E1F230 /* MenuViewController copy.swift */; };
 		9190F8C5274E427B0097F5E4 /* alfred_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83D274E427A0097F5E4 /* alfred_18.png */; };
 		9190F8C6274E427B0097F5E4 /* alfred_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83E274E427A0097F5E4 /* alfred_8.png */; };
 		9190F8C7274E427B0097F5E4 /* alfred_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83F274E427A0097F5E4 /* alfred_9.png */; };
@@ -464,9 +468,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1046E7C926C1DB0D00624CAA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shadow_regular.ttf; sourceTree = "<group>"; };
-		104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RF-Krabuler-Regular.otf"; sourceTree = "<group>"; };
+		1046E7C926C1DB0D00624CAA /* GameMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuViewController.swift; sourceTree = "<group>"; };
 		10D229D326B0D4A50063433E /* MEMOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEMOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D229D626B0D4A50063433E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10D229DB26B0D4A50063433E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -487,7 +489,12 @@
 		679D999DBC3A1A01205E12E4 /* Pods-MEMOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMOO.release.xcconfig"; path = "Target Support Files/Pods-MEMOO/Pods-MEMOO.release.xcconfig"; sourceTree = "<group>"; };
 		9109E41F274BD18D006784FC /* ArtefactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactViewController.swift; sourceTree = "<group>"; };
 		9109E421274BD408006784FC /* ArtefactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactCell.swift; sourceTree = "<group>"; };
+		9128A02D2752397B0030359C /* Shadow_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shadow_regular.ttf; sourceTree = "<group>"; };
+		9128A02E2752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gill Sans Ultra Bold Condensed.ttf"; sourceTree = "<group>"; };
+		9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RF-Krabuler-Regular.otf"; sourceTree = "<group>"; };
 		9141946727510B540087BBD3 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		9141946B275234E40087BBD3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		918E7BE827523DD300E1F230 /* MenuViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController copy.swift"; sourceTree = "<group>"; };
 		9190F83D274E427A0097F5E4 /* alfred_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_18.png; sourceTree = "<group>"; };
 		9190F83E274E427A0097F5E4 /* alfred_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_8.png; sourceTree = "<group>"; };
 		9190F83F274E427A0097F5E4 /* alfred_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_9.png; sourceTree = "<group>"; };
@@ -985,12 +992,12 @@
 		10D229E826B328510063433E /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				918E7BEA275248D200E1F230 /* artefacts */,
 				91F080162750A8F400BFCDCB /* posters */,
 				912152AE274E3BF200507FE4 /* Rounds */,
 				10D229DD26B0D4A60063433E /* Assets.xcassets */,
 				91E5588E273D2ABF009DCB68 /* Colors.xcassets */,
-				104DD30426BF0D750042A324 /* RF-Krabuler-Regular.otf */,
-				104DD30026BF0CDB0042A324 /* Shadow_regular.ttf */,
+				9128A033275239890030359C /* Fonts */,
 				91CAA056274646A7002CA6E1 /* magic.sks */,
 				91F080452750B8CE00BFCDCB /* fire.sks */,
 				91F080412750B33500BFCDCB /* smoke.sks */,
@@ -1034,7 +1041,8 @@
 			children = (
 				104DD30526BF2AA40042A324 /* StartViewController */,
 				10D229F726B328840063433E /* Game */,
-				1046E7C926C1DB0D00624CAA /* MenuViewController.swift */,
+				1046E7C926C1DB0D00624CAA /* GameMenuViewController.swift */,
+				918E7BE827523DD300E1F230 /* MenuViewController copy.swift */,
 				91C88D8D2709E33D00F9DD46 /* WinViewController.swift */,
 				9109E41F274BD18D006784FC /* ArtefactViewController.swift */,
 				91CAA0652747E5E7002CA6E1 /* ModalLockedRoundViewController.swift */,
@@ -1058,6 +1066,7 @@
 			children = (
 				10D22A0326B328900063433E /* UIColor.swift */,
 				9141946727510B540087BBD3 /* UIImage.swift */,
+				9141946B275234E40087BBD3 /* UIButton.swift */,
 			);
 			path = HelpClasses;
 			sourceTree = "<group>";
@@ -1095,6 +1104,23 @@
 				9190F8C3274E427B0097F5E4 /* vegetable */,
 			);
 			path = Rounds;
+			sourceTree = "<group>";
+		};
+		9128A033275239890030359C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9128A02E2752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf */,
+				9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */,
+				9128A02D2752397B0030359C /* Shadow_regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		918E7BEA275248D200E1F230 /* artefacts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = artefacts;
 			sourceTree = "<group>";
 		};
 		9190F839274E427A0097F5E4 /* fruit */ = {
@@ -1815,6 +1841,7 @@
 				9190F9A4274E89880097F5E4 /* fruit_18.png in Resources */,
 				9190FA50274E89AF0097F5E4 /* origami_6.png in Resources */,
 				9190FA4C274E89AF0097F5E4 /* origami_10.png in Resources */,
+				9128A0302752397B0030359C /* Shadow_regular.ttf in Resources */,
 				9190F91B274E427B0097F5E4 /* animall_16.png in Resources */,
 				9190FABF274E89CA0097F5E4 /* summer_9.png in Resources */,
 				9190FB44274E89DC0097F5E4 /* vegetable_4.png in Resources */,
@@ -1825,6 +1852,7 @@
 				91F080362750A90B00BFCDCB /* vegetable.png in Resources */,
 				9190F938274E427B0097F5E4 /* flag_10.png in Resources */,
 				9190F9F8274E89980097F5E4 /* mandala_6.png in Resources */,
+				9128A0322752397B0030359C /* RF-Krabuler-Regular.otf in Resources */,
 				9190FB0E274E89D50097F5E4 /* toyy_13.png in Resources */,
 				9190FA21274E89A80097F5E4 /* ninja_18.png in Resources */,
 				9190FB34274E89DC0097F5E4 /* vegetable_15.png in Resources */,
@@ -1868,6 +1896,7 @@
 				9190FABE274E89CA0097F5E4 /* summer_3.png in Resources */,
 				9190F8EF274E427B0097F5E4 /* farm_9.png in Resources */,
 				9190FA9A274E89C40097F5E4 /* sport_7.png in Resources */,
+				9128A0312752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
 				9190F9D9274E89920097F5E4 /* letter_6.png in Resources */,
 				9190F8DC274E427B0097F5E4 /* animalll_7.png in Resources */,
@@ -1916,7 +1945,6 @@
 				9190F9FE274E89980097F5E4 /* mandala_12.png in Resources */,
 				9190F8E4274E427B0097F5E4 /* animalll_9.png in Resources */,
 				9190F8C7274E427B0097F5E4 /* alfred_9.png in Resources */,
-				104DD30126BF0CDE0042A324 /* Shadow_regular.ttf in Resources */,
 				9190F9FB274E89980097F5E4 /* mandala_15.png in Resources */,
 				9190F917274E427B0097F5E4 /* animall_10.png in Resources */,
 				9190FAF6274E89CF0097F5E4 /* toy_7.png in Resources */,
@@ -2223,6 +2251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
+				918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */,
+				9141946C275234E40087BBD3 /* UIButton.swift in Sources */,
 				9141946827510B540087BBD3 /* UIImage.swift in Sources */,
 				9190F93E274E85500097F5E4 /* PreviewArtefactViewController.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
@@ -2233,7 +2263,7 @@
 				91CAA05B27468DEA002CA6E1 /* PriceManager.swift in Sources */,
 				10D229D726B0D4A50063433E /* AppDelegate.swift in Sources */,
 				10D22A0626B3293E0063433E /* Card.swift in Sources */,
-				1046E7CA26C1DB0D00624CAA /* MenuViewController.swift in Sources */,
+				1046E7CA26C1DB0D00624CAA /* GameMenuViewController.swift in Sources */,
 				9109E420274BD18D006784FC /* ArtefactViewController.swift in Sources */,
 				10D22A1626B329970063433E /* UIColor.swift in Sources */,
 				10D22A0926B329470063433E /* StartView.swift in Sources */,

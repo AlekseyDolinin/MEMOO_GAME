@@ -112,7 +112,7 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func showMenu(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "GameMenuViewController") as! GameMenuViewController
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: false)
     }

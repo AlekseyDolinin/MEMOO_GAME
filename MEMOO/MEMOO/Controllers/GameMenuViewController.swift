@@ -1,6 +1,6 @@
 import UIKit
 
-class MenuViewController: UIViewController {
+class GameMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

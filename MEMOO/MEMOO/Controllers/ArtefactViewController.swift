@@ -18,7 +18,7 @@ class ArtefactViewController: UIViewController {
     }
 
     ///
-    @IBAction func back(_ sender: UIButton) {
+    @IBAction func close(_ sender: UIButton) {
         dismiss(animated: true) {
             
         }
