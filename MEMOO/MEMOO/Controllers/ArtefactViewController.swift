@@ -8,7 +8,7 @@ class ArtefactViewController: UIViewController {
     }
     
     var selectRound: Round!
-    var countCell = 33
+    var countCell = 40
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,8 @@ extension ArtefactViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let artefactCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtefactCell", for: indexPath) as! ArtefactCell
+        artefactCell.index = indexPath.row
+        artefactCell.setCell()
         return artefactCell
     }
     

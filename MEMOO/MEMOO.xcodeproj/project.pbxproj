@@ -72,6 +72,7 @@
 		918E7C382752496900E1F230 /* artefact_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 918E7C102752496800E1F230 /* artefact_29.png */; };
 		918E7C392752496900E1F230 /* artefact_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 918E7C112752496800E1F230 /* artefact_17.png */; };
 		918E7C3A2752496900E1F230 /* artefact_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 918E7C122752496800E1F230 /* artefact_30.png */; };
+		918E7C3C27524B0C00E1F230 /* Artefact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7C3B27524B0C00E1F230 /* Artefact.swift */; };
 		9190F8C5274E427B0097F5E4 /* alfred_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83D274E427A0097F5E4 /* alfred_18.png */; };
 		9190F8C6274E427B0097F5E4 /* alfred_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83E274E427A0097F5E4 /* alfred_8.png */; };
 		9190F8C7274E427B0097F5E4 /* alfred_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83F274E427A0097F5E4 /* alfred_9.png */; };
@@ -575,6 +576,7 @@
 		918E7C102752496800E1F230 /* artefact_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_29.png; sourceTree = "<group>"; };
 		918E7C112752496800E1F230 /* artefact_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_17.png; sourceTree = "<group>"; };
 		918E7C122752496800E1F230 /* artefact_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_30.png; sourceTree = "<group>"; };
+		918E7C3B27524B0C00E1F230 /* Artefact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artefact.swift; sourceTree = "<group>"; };
 		9190F83D274E427A0097F5E4 /* alfred_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_18.png; sourceTree = "<group>"; };
 		9190F83E274E427A0097F5E4 /* alfred_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_8.png; sourceTree = "<group>"; };
 		9190F83F274E427A0097F5E4 /* alfred_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_9.png; sourceTree = "<group>"; };
@@ -1089,6 +1091,7 @@
 			isa = PBXGroup;
 			children = (
 				91DC1873273E6E59000D1CBB /* Round.swift */,
+				918E7C3B27524B0C00E1F230 /* Artefact.swift */,
 				10D229ED26B328740063433E /* Card.swift */,
 			);
 			path = Models;
@@ -2413,6 +2416,7 @@
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
 				918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */,
 				9141946C275234E40087BBD3 /* UIButton.swift in Sources */,
+				918E7C3C27524B0C00E1F230 /* Artefact.swift in Sources */,
 				9141946827510B540087BBD3 /* UIImage.swift in Sources */,
 				9190F93E274E85500097F5E4 /* PreviewArtefactViewController.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
