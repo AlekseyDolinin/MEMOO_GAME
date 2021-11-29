@@ -8,7 +8,6 @@ extension ModalLockedRoundViewController: UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let previewRoundCell = collectionView.dequeueReusableCell(withReuseIdentifier: "PreviewRoundCell", for: indexPath) as! PreviewRoundCell
         previewRoundCell.imageCard.image = UIImage(named: "\(selectRound.name)_\(indexPath.row + 1)")
-        print("\(selectRound.name)_\(indexPath.row + 1)")
         return previewRoundCell
     }
     

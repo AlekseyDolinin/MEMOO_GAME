@@ -14,12 +14,9 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        StartViewController.selectRound = listRounds[indexPath.row]
-        if listRounds[indexPath.row].status == .free {
-            openGame()
-        } else {
-            openModalLockedRound()
-        }
+        let round = listRounds[indexPath.row]
+        StartViewController.selectRound = round
+        round.state == .buy ? openGame() : openModalLockedRound()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

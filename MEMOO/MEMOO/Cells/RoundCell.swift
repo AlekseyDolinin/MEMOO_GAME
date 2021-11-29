@@ -14,21 +14,14 @@ class RoundCell: UICollectionViewCell {
     
     func setCell() {
         setImage()
-        setBlocked()
     }
     
     ///
     func setImage() {
-        imageRound.image = UIImage(named: round.name)
-    }
-    
-    ///
-    func setBlocked() {
-        print(round.status)
-        if round.status == .free {
-        
+        if round.state == .buy {
+            imageRound.image = UIImage(named: round.name)
         } else {
-            imageRound.image = self.imageRound.image?.noir
+            imageRound.image = UIImage(named: round.name)?.noir
         }
     }
 }

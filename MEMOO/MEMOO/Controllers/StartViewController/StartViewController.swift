@@ -26,12 +26,12 @@ class StartViewController: UIViewController {
         priceManager.getPricesForInApps(inAppsIDs: productIDs)
         
         ///
-        self.createRoundes(arrayNamedRound: freeListRound)
+        self.createFreeRoundes(arrayNamedFreeRound: freeListRound)
         
         ///
         NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
             print("Обновление цен")
-            self.createRoundes(arrayNamedRound: self.freeListRound + self.paidListRound)
+            self.createNotFreeRoundes(arrayNamedRound: self.freeListRound + self.paidListRound)
         }
     }
     
@@ -44,11 +44,32 @@ class StartViewController: UIViewController {
     }
     
     ///
-    func createRoundes(arrayNamedRound: [String]) {
+    func createFreeRoundes(arrayNamedFreeRound: [String]) {
         listRounds = []
-        for (index, value) in arrayNamedRound.enumerated() {
-            let status: RoundStatus = (0...3).contains(index) ? .free : .notFree
-            listRounds.append(Round(name: value, status: status))
+        for name in arrayNamedFreeRound {
+            listRounds.append(Round(name: name, state: .buy))
+        }
+        DispatchQueue.main.async {
+            self.viewSelf.collectionRound.reloadData()
+        }
+    }
+    
+    ///
+    func createNotFreeRoundes(arrayNamedRound: [String]) {
+        
+        for (index, nameRound) in arrayNamedRound.enumerated() {
+            
+            var productIDs: [String] = ProductIDs.allCases.map { $0.rawValue }
+            productIDs.removeFirst()
+            let productID: String = productIDs[index]
+            /// здесь проверять в дефолте покупку раунда
+            let state: RoundState = .notBuy
+            
+            print(productID)
+            print(nameRound)
+            
+            
+            listRounds.append(Round(idRound: productID, name: nameRound, state: state))
         }
         DispatchQueue.main.async {
             self.viewSelf.collectionRound.reloadData()

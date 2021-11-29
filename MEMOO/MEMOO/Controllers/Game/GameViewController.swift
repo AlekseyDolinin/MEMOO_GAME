@@ -33,7 +33,6 @@ class GameViewController: UIViewController {
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        print("Выбрана: \(StartViewController.selectRound.name)")
         restart()
     }
     

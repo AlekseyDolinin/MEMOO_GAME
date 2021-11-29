@@ -517,7 +517,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-cE-8CO">
-                                <rect key="frame" x="24" y="68" width="327" height="420"/>
+                                <rect key="frame" x="24" y="68" width="327" height="396"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="BUY-yb-NiV">
                                     <size key="itemSize" width="166" height="166"/>
@@ -576,8 +576,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-e8-QwM">
-                                <rect key="frame" x="37.666666666666657" y="504" width="300" height="234"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-e8-QwM">
+                                <rect key="frame" x="37.666666666666657" y="480" width="300" height="258"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-wc-Qg9">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
@@ -591,13 +591,13 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diH-kG-Jy5">
-                                        <rect key="frame" x="0.0" y="82" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="94" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="WY6-2L-tev"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Unlock the round forever" image="btnEmpty">
+                                        <state key="normal" title="Unlock the round" image="btnEmpty">
                                             <color key="titleColor" name="DarkGray_"/>
                                         </state>
                                         <connections>
@@ -605,7 +605,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTH-9d-ewp">
-                                        <rect key="frame" x="0.0" y="164" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="188" width="300" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-n7-F0X">
                                                 <rect key="frame" x="115" y="0.0" width="70" height="70"/>

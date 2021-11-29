@@ -1,25 +1,18 @@
 import UIKit
 
 struct Round {
+    var idRound: String?
     var name: String
-    var status: RoundStatus
     var state: RoundState
     
-    init(name: String,
-         status: RoundStatus,
+    init(idRound: String? = "",
+         name: String,
          state: RoundState = .notBuy
     ){
+        self.idRound = idRound
         self.name = name
-        self.status = status
         self.state = state
     }
-}
-
-
-
-enum RoundStatus {
-    case free
-    case notFree
 }
 
 enum RoundState {
