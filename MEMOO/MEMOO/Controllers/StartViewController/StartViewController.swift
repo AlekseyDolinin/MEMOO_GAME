@@ -26,12 +26,12 @@ class StartViewController: UIViewController {
         priceManager.getPricesForInApps(inAppsIDs: productIDs)
         
         ///
-        self.createFreeRoundes(arrayNamedFreeRound: freeListRound)
+        self.createRoundes(nameList: freeListRound)
         
         ///
         NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
             print("Обновление цен")
-            self.createNotFreeRoundes(arrayNamedRound: self.freeListRound + self.paidListRound)
+            self.createRoundes(nameList: self.paidListRound)
         }
     }
     
@@ -44,23 +44,14 @@ class StartViewController: UIViewController {
     }
     
     ///
-    func createFreeRoundes(arrayNamedFreeRound: [String]) {
-        listRounds = []
-        for name in arrayNamedFreeRound {
-            listRounds.append(Round(name: name, state: .buy))
+    func createRoundes(nameList: [String]) {
+        for name in nameList {
+            CreateRound.create(nameRound: name, freeListRound: freeListRound) { round in
+                listRounds.append(round)
+            }
         }
         DispatchQueue.main.async {
             self.viewSelf.collectionRound.reloadData()
-        }
-    }
-    
-    ///
-    func createNotFreeRoundes(arrayNamedRound: [String]) {
-        CreateNotFreeRound.create(paidListRound: paidListRound) { round in
-            listRounds.append(round)
-            DispatchQueue.main.async {
-                self.viewSelf.collectionRound.reloadData()
-            }
         }
     }
     
