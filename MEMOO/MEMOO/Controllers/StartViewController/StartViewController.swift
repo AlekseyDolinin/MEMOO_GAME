@@ -22,7 +22,8 @@ class StartViewController: UIViewController {
         viewSelf.collectionRound.dataSource = self
         
         /// получение цен покупок
-        priceManager.getPricesForInApps(inAppsIDs: Set<String>(self.paidListRound + ["unlockAllContentID"]))
+        let productIDs = Set<String>(ProductIDs.allCases.map { $0.rawValue })
+        priceManager.getPricesForInApps(inAppsIDs: productIDs)
         
         ///
         self.createRoundes(arrayNamedRound: freeListRound)
@@ -30,8 +31,6 @@ class StartViewController: UIViewController {
         ///
         NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
             print("Обновление цен")
-//            var priceAllContent = UserDefaults.standard.object(forKey: "unlockAllContentID")
-//            var priceAlfred = UserDefaults.standard.object(forKey: "alfred_")
             self.createRoundes(arrayNamedRound: self.freeListRound + self.paidListRound)
         }
     }

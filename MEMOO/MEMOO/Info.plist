@@ -26,7 +26,6 @@
 	<array>
 		<string>Shadow_regular.ttf</string>
 		<string>RF-Krabuler-Regular.otf</string>
-		<string>Gill Sans Ultra Bold Condensed.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

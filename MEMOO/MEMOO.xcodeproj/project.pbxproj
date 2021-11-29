@@ -27,8 +27,13 @@
 		9109E420274BD18D006784FC /* ArtefactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E41F274BD18D006784FC /* ArtefactViewController.swift */; };
 		9109E422274BD408006784FC /* ArtefactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E421274BD408006784FC /* ArtefactCell.swift */; };
 		9128A0302752397B0030359C /* Shadow_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02D2752397B0030359C /* Shadow_regular.ttf */; };
-		9128A0312752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02E2752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf */; };
 		9128A0322752397B0030359C /* RF-Krabuler-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */; };
+		913351A62754ADC60044CEC1 /* ProductIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351A52754ADC60044CEC1 /* ProductIDs.swift */; };
+		913351A82754ADEB0044CEC1 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351A72754ADEB0044CEC1 /* MenuView.swift */; };
+		913351AA2754AE380044CEC1 /* ArtefactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351A92754AE380044CEC1 /* ArtefactView.swift */; };
+		913351AC2754AE4D0044CEC1 /* ModalLockedRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351AB2754AE4D0044CEC1 /* ModalLockedRoundView.swift */; };
+		913351AF2754AE8E0044CEC1 /* ArtefactDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351AE2754AE8E0044CEC1 /* ArtefactDelegates.swift */; };
+		913351B22754AEB70044CEC1 /* ModalLockedRoundDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351B12754AEB70044CEC1 /* ModalLockedRoundDelegates.swift */; };
 		9141946827510B540087BBD3 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141946727510B540087BBD3 /* UIImage.swift */; };
 		9141946C275234E40087BBD3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141946B275234E40087BBD3 /* UIButton.swift */; };
 		918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7BE827523DD300E1F230 /* MenuViewController copy.swift */; };
@@ -531,8 +536,13 @@
 		9109E41F274BD18D006784FC /* ArtefactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactViewController.swift; sourceTree = "<group>"; };
 		9109E421274BD408006784FC /* ArtefactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactCell.swift; sourceTree = "<group>"; };
 		9128A02D2752397B0030359C /* Shadow_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shadow_regular.ttf; sourceTree = "<group>"; };
-		9128A02E2752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gill Sans Ultra Bold Condensed.ttf"; sourceTree = "<group>"; };
 		9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RF-Krabuler-Regular.otf"; sourceTree = "<group>"; };
+		913351A52754ADC60044CEC1 /* ProductIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductIDs.swift; sourceTree = "<group>"; };
+		913351A72754ADEB0044CEC1 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		913351A92754AE380044CEC1 /* ArtefactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactView.swift; sourceTree = "<group>"; };
+		913351AB2754AE4D0044CEC1 /* ModalLockedRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLockedRoundView.swift; sourceTree = "<group>"; };
+		913351AE2754AE8E0044CEC1 /* ArtefactDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactDelegates.swift; sourceTree = "<group>"; };
+		913351B12754AEB70044CEC1 /* ModalLockedRoundDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLockedRoundDelegates.swift; sourceTree = "<group>"; };
 		9141946727510B540087BBD3 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9141946B275234E40087BBD3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		918E7BE827523DD300E1F230 /* MenuViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController copy.swift"; sourceTree = "<group>"; };
@@ -1111,9 +1121,11 @@
 		10D229F126B328800063433E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				10D229F226B328800063433E /* StartView.swift */,
-				10D229F426B328800063433E /* CardView.swift */,
+				913351A92754AE380044CEC1 /* ArtefactView.swift */,
 				10D229F526B328800063433E /* GameView.swift */,
+				913351A72754ADEB0044CEC1 /* MenuView.swift */,
+				913351AB2754AE4D0044CEC1 /* ModalLockedRoundView.swift */,
+				10D229F226B328800063433E /* StartView.swift */,
 				91C88D8F2709E38200F9DD46 /* WinView.swift */,
 			);
 			path = Views;
@@ -1122,13 +1134,13 @@
 		10D229F626B328840063433E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				104DD30526BF2AA40042A324 /* StartViewController */,
+				913351AD2754AE7B0044CEC1 /* ArtefactViewController */,
 				10D229F726B328840063433E /* Game */,
+				913351B02754AEAA0044CEC1 /* ModalLockedRound */,
+				104DD30526BF2AA40042A324 /* StartViewController */,
 				1046E7C926C1DB0D00624CAA /* GameMenuViewController.swift */,
 				918E7BE827523DD300E1F230 /* MenuViewController copy.swift */,
 				91C88D8D2709E33D00F9DD46 /* WinViewController.swift */,
-				9109E41F274BD18D006784FC /* ArtefactViewController.swift */,
-				91CAA0652747E5E7002CA6E1 /* ModalLockedRoundViewController.swift */,
 				9190F93D274E85500097F5E4 /* PreviewArtefactViewController.swift */,
 			);
 			path = Controllers;
@@ -1147,9 +1159,11 @@
 		10D22A0226B328900063433E /* HelpClasses */ = {
 			isa = PBXGroup;
 			children = (
+				10D229F426B328800063433E /* CardView.swift */,
 				10D22A0326B328900063433E /* UIColor.swift */,
 				9141946727510B540087BBD3 /* UIImage.swift */,
 				9141946B275234E40087BBD3 /* UIButton.swift */,
+				913351A52754ADC60044CEC1 /* ProductIDs.swift */,
 			);
 			path = HelpClasses;
 			sourceTree = "<group>";
@@ -1192,11 +1206,28 @@
 		9128A033275239890030359C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9128A02E2752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf */,
 				9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */,
 				9128A02D2752397B0030359C /* Shadow_regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		913351AD2754AE7B0044CEC1 /* ArtefactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9109E41F274BD18D006784FC /* ArtefactViewController.swift */,
+				913351AE2754AE8E0044CEC1 /* ArtefactDelegates.swift */,
+			);
+			name = ArtefactViewController;
+			sourceTree = "<group>";
+		};
+		913351B02754AEAA0044CEC1 /* ModalLockedRound */ = {
+			isa = PBXGroup;
+			children = (
+				91CAA0652747E5E7002CA6E1 /* ModalLockedRoundViewController.swift */,
+				913351B12754AEB70044CEC1 /* ModalLockedRoundDelegates.swift */,
+			);
+			path = ModalLockedRound;
 			sourceTree = "<group>";
 		};
 		918E7BEA275248D200E1F230 /* artefacts */ = {
@@ -2030,7 +2061,6 @@
 				9190FABE274E89CA0097F5E4 /* summer_3.png in Resources */,
 				9190F8EF274E427B0097F5E4 /* farm_9.png in Resources */,
 				9190FA9A274E89C40097F5E4 /* sport_7.png in Resources */,
-				9128A0312752397B0030359C /* Gill Sans Ultra Bold Condensed.ttf in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
 				9190F9D9274E89920097F5E4 /* letter_6.png in Resources */,
 				9190F8DC274E427B0097F5E4 /* animalll_7.png in Resources */,
@@ -2418,9 +2448,11 @@
 				9141946C275234E40087BBD3 /* UIButton.swift in Sources */,
 				918E7C3C27524B0C00E1F230 /* Artefact.swift in Sources */,
 				9141946827510B540087BBD3 /* UIImage.swift in Sources */,
+				913351AA2754AE380044CEC1 /* ArtefactView.swift in Sources */,
 				9190F93E274E85500097F5E4 /* PreviewArtefactViewController.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
 				9109E422274BD408006784FC /* ArtefactCell.swift in Sources */,
+				913351AF2754AE8E0044CEC1 /* ArtefactDelegates.swift in Sources */,
 				10D22A1326B329940063433E /* StartViewController.swift in Sources */,
 				91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */,
 				10D22A0F26B3298A0063433E /* GameViewControllerDelegates.swift in Sources */,
@@ -2434,9 +2466,13 @@
 				10D22A0726B329420063433E /* CardCell.swift in Sources */,
 				91C88D902709E38200F9DD46 /* WinView.swift in Sources */,
 				10D22A0C26B3294E0063433E /* GameView.swift in Sources */,
+				913351B22754AEB70044CEC1 /* ModalLockedRoundDelegates.swift in Sources */,
 				91CAA0662747E5E7002CA6E1 /* ModalLockedRoundViewController.swift in Sources */,
+				913351AC2754AE4D0044CEC1 /* ModalLockedRoundView.swift in Sources */,
 				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,
+				913351A62754ADC60044CEC1 /* ProductIDs.swift in Sources */,
 				10D22A0D26B3298A0063433E /* GameViewController.swift in Sources */,
+				913351A82754ADEB0044CEC1 /* MenuView.swift in Sources */,
 				10D22A0E26B3298A0063433E /* Random.swift in Sources */,
 				91CAA05C27468DED002CA6E1 /* StoreManager.swift in Sources */,
 				91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */,
