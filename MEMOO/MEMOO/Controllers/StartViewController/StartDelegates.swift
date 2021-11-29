@@ -27,7 +27,6 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
 
 extension StartViewController: UIScrollViewDelegate {
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.lastContentOffset = scrollView.contentOffset.x
         viewSelf.layer_1.transform = CGAffineTransform(translationX: -self.lastContentOffset * 0.45, y: 0)

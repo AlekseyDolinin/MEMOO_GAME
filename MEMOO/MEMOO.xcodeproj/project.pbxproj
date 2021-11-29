@@ -36,6 +36,7 @@
 		913351B22754AEB70044CEC1 /* ModalLockedRoundDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351B12754AEB70044CEC1 /* ModalLockedRoundDelegates.swift */; };
 		9141946827510B540087BBD3 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141946727510B540087BBD3 /* UIImage.swift */; };
 		9141946C275234E40087BBD3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141946B275234E40087BBD3 /* UIButton.swift */; };
+		916FCCA927551ACA002CD0F5 /* CreateNotFreeRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916FCCA827551ACA002CD0F5 /* CreateNotFreeRound.swift */; };
 		918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7BE827523DD300E1F230 /* MenuViewController copy.swift */; };
 		918E7C132752496900E1F230 /* artefact_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 918E7BEB2752496500E1F230 /* artefact_37.png */; };
 		918E7C142752496900E1F230 /* artefact_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 918E7BEC2752496500E1F230 /* artefact_19.png */; };
@@ -545,6 +546,7 @@
 		913351B12754AEB70044CEC1 /* ModalLockedRoundDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLockedRoundDelegates.swift; sourceTree = "<group>"; };
 		9141946727510B540087BBD3 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9141946B275234E40087BBD3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		916FCCA827551ACA002CD0F5 /* CreateNotFreeRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotFreeRound.swift; sourceTree = "<group>"; };
 		918E7BE827523DD300E1F230 /* MenuViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController copy.swift"; sourceTree = "<group>"; };
 		918E7BEB2752496500E1F230 /* artefact_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_37.png; sourceTree = "<group>"; };
 		918E7BEC2752496500E1F230 /* artefact_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_19.png; sourceTree = "<group>"; };
@@ -1164,6 +1166,7 @@
 				9141946727510B540087BBD3 /* UIImage.swift */,
 				9141946B275234E40087BBD3 /* UIButton.swift */,
 				913351A52754ADC60044CEC1 /* ProductIDs.swift */,
+				916FCCA827551ACA002CD0F5 /* CreateNotFreeRound.swift */,
 			);
 			path = HelpClasses;
 			sourceTree = "<group>";
@@ -2467,6 +2470,7 @@
 				91C88D902709E38200F9DD46 /* WinView.swift in Sources */,
 				10D22A0C26B3294E0063433E /* GameView.swift in Sources */,
 				913351B22754AEB70044CEC1 /* ModalLockedRoundDelegates.swift in Sources */,
+				916FCCA927551ACA002CD0F5 /* CreateNotFreeRound.swift in Sources */,
 				91CAA0662747E5E7002CA6E1 /* ModalLockedRoundViewController.swift in Sources */,
 				913351AC2754AE4D0044CEC1 /* ModalLockedRoundView.swift in Sources */,
 				10D22A0B26B3294C0063433E /* CardView.swift in Sources */,

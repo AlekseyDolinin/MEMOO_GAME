@@ -7,10 +7,9 @@ class ModalLockedRoundViewController: UIViewController {
         return (view as! ModalLockedRoundView)
     }
     
-    var selectRound: Round!
     var countCell = 20
     var storeManager = StoreManager()
-    var roundID: String!
+    var round: Round!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +20,9 @@ class ModalLockedRoundViewController: UIViewController {
 
     ///
     @IBAction func buyRound(_ sender: UIButton) {
-        storeManager.buyInApp(inAppID: roundID ?? "")
+        print(round.name)
+        print(round.idRound)
+        storeManager.buyInApp(inAppID: round.idRound ?? "")
     }
     
     ///

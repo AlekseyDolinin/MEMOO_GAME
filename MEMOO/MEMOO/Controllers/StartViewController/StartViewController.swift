@@ -56,23 +56,11 @@ class StartViewController: UIViewController {
     
     ///
     func createNotFreeRoundes(arrayNamedRound: [String]) {
-        
-        for (index, nameRound) in arrayNamedRound.enumerated() {
-            
-            var productIDs: [String] = ProductIDs.allCases.map { $0.rawValue }
-            productIDs.removeFirst()
-            let productID: String = productIDs[index]
-            /// здесь проверять в дефолте покупку раунда
-            let state: RoundState = .notBuy
-            
-            print(productID)
-            print(nameRound)
-            
-            
-            listRounds.append(Round(idRound: productID, name: nameRound, state: state))
-        }
-        DispatchQueue.main.async {
-            self.viewSelf.collectionRound.reloadData()
+        CreateNotFreeRound.create(paidListRound: paidListRound) { round in
+            listRounds.append(round)
+            DispatchQueue.main.async {
+                self.viewSelf.collectionRound.reloadData()
+            }
         }
     }
     
@@ -86,7 +74,7 @@ class StartViewController: UIViewController {
     ///
     func openModalLockedRound() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ModalLockedRoundViewController") as! ModalLockedRoundViewController
-        vc.selectRound = StartViewController.selectRound
+        vc.round = StartViewController.selectRound
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
