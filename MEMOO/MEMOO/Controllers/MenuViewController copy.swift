@@ -19,6 +19,10 @@ class MenuViewController: UIViewController {
         storeManager.buyInApp(inAppID: ProductIDs.unlockAllContentID.rawValue)
     }
     
+    @IBAction func restore(_ sender: UIButton) {
+        storeManager.restorePurchase()
+    }
+    
     ///
     @IBAction func close(_ sender: UIButton) {
         dismiss(animated: false)

@@ -18,10 +18,10 @@ class StartView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
+        setAnimationClouds()
         setAnimationMagic()
         setAnimationLeftFire()
         setAnimationRightFire()
-        setAnimationClouds()
         setAnimationRightSmoke()
         setAnimationLeftSmoke()
     }

@@ -12,14 +12,6 @@ class StoreManager: NSObject {
         return UserDefaults.standard.bool(forKey: "FullVersion")
     }
     
-//    /// запись после покупки полной версии
-//    class func didBuyFullVersion() {
-//        UserDefaults.standard.set(true, forKey: "FullVersion")
-//        UserDefaults.standard.synchronize()
-//        print("Покупка выполнена")
-//        NotificationCenter.default.post(name: nTransactionComplate, object: nil)
-//    }
-    
     ///
     func buyInApp(inAppID: String) {
         if !SKPaymentQueue.canMakePayments() {

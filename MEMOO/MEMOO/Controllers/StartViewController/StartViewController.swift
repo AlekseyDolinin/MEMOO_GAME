@@ -22,8 +22,7 @@ class StartViewController: UIViewController {
         viewSelf.collectionRound.dataSource = self
         
         /// получение цен покупок
-        let productIDs = Set<String>(ProductIDs.allCases.map { $0.rawValue })
-        priceManager.getPricesForInApps(inAppsIDs: productIDs)
+        getPriceProducts()
         
         ///
         self.createRoundes(nameList: freeListRound)
@@ -36,11 +35,19 @@ class StartViewController: UIViewController {
         
         ///
         NotificationCenter.default.addObserver(forName: nTransactionComplate, object: nil, queue: nil) { notification in
-            DispatchQueue.main.async {
-                self.viewSelf.collectionRound.reloadData()
-            }
+            self.dismiss(animated: true)
+            self.listRounds.removeAll()
+            self.createRoundes(nameList: self.freeListRound)
+            self.createRoundes(nameList: self.paidListRound)
         }
     }
+    
+    func getPriceProducts() {
+        /// получение цен покупок
+        let productIDs = Set<String>(ProductIDs.allCases.map { $0.rawValue })
+        priceManager.getPricesForInApps(inAppsIDs: productIDs)
+    }
+    
     
     ///
     override func viewWillAppear(_ animated: Bool) {
