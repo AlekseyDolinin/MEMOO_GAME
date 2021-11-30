@@ -87,9 +87,7 @@ extension StoreManager: SKPaymentTransactionObserver {
 extension StoreManager {
     ///
     func savePurchased(productID: String) {
-        UserDefaults.standard.set(true, forKey: productID)
-        UserDefaults.standard.synchronize()
-        print("Покупка \(productID) выполнена")
+        UserDefaults.standard.set(true, forKey: "\(productID)_buy")
         NotificationCenter.default.post(name: nTransactionComplate, object: nil)
     }
 }
