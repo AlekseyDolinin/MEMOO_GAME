@@ -16,13 +16,21 @@ class ModalLockedRoundViewController: UIViewController {
 
         viewSelf.previewCardCollection.delegate = self
         viewSelf.previewCardCollection.dataSource = self
+        
+        ///
+        NotificationCenter.default.addObserver(forName: nTransactionComplate, object: nil, queue: nil) { notification in
+            self.dismiss(animated: true)
+        }
     }
 
     ///
     @IBAction func buyRound(_ sender: UIButton) {
-        print(round.name)
-        print(round.idRound)
         storeManager.buyInApp(inAppID: round.idRound ?? "")
+        viewSelf.lockContent()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            self.viewSelf.unlockContent()
+        }
+        
     }
     
     ///

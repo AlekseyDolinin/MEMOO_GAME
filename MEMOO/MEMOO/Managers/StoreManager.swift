@@ -12,13 +12,13 @@ class StoreManager: NSObject {
         return UserDefaults.standard.bool(forKey: "FullVersion")
     }
     
-    /// запись после покупки полной версии
-    class func didBuyFullVersion() {
-        UserDefaults.standard.set(true, forKey: "FullVersion")
-        UserDefaults.standard.synchronize()
-        print("Покупка выполнена")
-        NotificationCenter.default.post(name: nTransactionComplate, object: nil)
-    }
+//    /// запись после покупки полной версии
+//    class func didBuyFullVersion() {
+//        UserDefaults.standard.set(true, forKey: "FullVersion")
+//        UserDefaults.standard.synchronize()
+//        print("Покупка выполнена")
+//        NotificationCenter.default.post(name: nTransactionComplate, object: nil)
+//    }
     
     ///
     func buyInApp(inAppID: String) {
@@ -65,14 +65,14 @@ extension StoreManager: SKPaymentTransactionObserver {
             case .purchased:
                 print("purchased")
                 queue.finishTransaction(transaction)
-                StoreManager.didBuyFullVersion()
+                savePurchased(productID: transaction.payment.productIdentifier)
             case .failed:
                 queue.finishTransaction(transaction)
             case .restored:
                 print("restored")
                 print("модалка благодарности за возврат")
                 queue.finishTransaction(transaction)
-                StoreManager.didBuyFullVersion()
+                savePurchased(productID: transaction.payment.productIdentifier)
             case .deferred:
                 print("deferred")
             default:
@@ -80,5 +80,16 @@ extension StoreManager: SKPaymentTransactionObserver {
                 break
             }
         }
+    }
+}
+
+
+extension StoreManager {
+    ///
+    func savePurchased(productID: String) {
+        UserDefaults.standard.set(true, forKey: productID)
+        UserDefaults.standard.synchronize()
+        print("Покупка \(productID) выполнена")
+        NotificationCenter.default.post(name: nTransactionComplate, object: nil)
     }
 }

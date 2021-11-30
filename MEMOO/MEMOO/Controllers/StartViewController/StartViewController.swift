@@ -33,6 +33,13 @@ class StartViewController: UIViewController {
             print("Обновление цен")
             self.createRoundes(nameList: self.paidListRound)
         }
+        
+        ///
+        NotificationCenter.default.addObserver(forName: nTransactionComplate, object: nil, queue: nil) { notification in
+            DispatchQueue.main.async {
+                self.viewSelf.collectionRound.reloadData()
+            }
+        }
     }
     
     ///

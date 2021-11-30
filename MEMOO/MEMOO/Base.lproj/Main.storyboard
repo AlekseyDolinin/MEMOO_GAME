@@ -517,7 +517,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-cE-8CO">
-                                <rect key="frame" x="24" y="68" width="327" height="396"/>
+                                <rect key="frame" x="24" y="68" width="327" height="490"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="BUY-yb-NiV">
                                     <size key="itemSize" width="166" height="166"/>
@@ -577,10 +577,10 @@
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-e8-QwM">
-                                <rect key="frame" x="37.666666666666657" y="480" width="300" height="258"/>
+                                <rect key="frame" x="37.666666666666657" y="574" width="300" height="164"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-wc-Qg9">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-wc-Qg9">
+                                        <rect key="frame" x="0.0" y="-70" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="APV-0V-b41"/>
                                         </constraints>
@@ -591,7 +591,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diH-kG-Jy5">
-                                        <rect key="frame" x="0.0" y="94" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="WY6-2L-tev"/>
                                         </constraints>
@@ -605,7 +605,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTH-9d-ewp">
-                                        <rect key="frame" x="0.0" y="188" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="94" width="300" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-n7-F0X">
                                                 <rect key="frame" x="115" y="0.0" width="70" height="70"/>
@@ -636,15 +636,21 @@
                                     <constraint firstAttribute="width" constant="300" id="9f8-xH-Qbo"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-iI-HI0">
+                                <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                                <color key="color" name="DarkGray_"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ool-v0-IWZ"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="top" secondItem="Ool-v0-IWZ" secondAttribute="top" constant="24" id="AOp-sv-8Fe"/>
+                            <constraint firstItem="Wbr-iI-HI0" firstAttribute="centerX" secondItem="8OX-Bc-r18" secondAttribute="centerX" id="HmY-JJ-IZP"/>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="leading" secondItem="Ool-v0-IWZ" secondAttribute="leading" constant="24" id="ShO-ef-7sg"/>
                             <constraint firstItem="wU3-wH-ro7" firstAttribute="trailing" secondItem="Ool-v0-IWZ" secondAttribute="trailing" id="Tjt-b6-Xlu"/>
                             <constraint firstItem="wU3-wH-ro7" firstAttribute="leading" secondItem="Ool-v0-IWZ" secondAttribute="leading" id="Y2T-P4-Nmw"/>
                             <constraint firstItem="Ool-v0-IWZ" firstAttribute="bottom" secondItem="Rge-e8-QwM" secondAttribute="bottom" constant="40" id="Zav-kV-Fhd"/>
+                            <constraint firstItem="Wbr-iI-HI0" firstAttribute="centerY" secondItem="8OX-Bc-r18" secondAttribute="centerY" id="Zf5-4v-pDg"/>
                             <constraint firstItem="Rge-e8-QwM" firstAttribute="centerX" secondItem="8OX-Bc-r18" secondAttribute="centerX" id="aHG-RO-0Cb"/>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="trailing" secondItem="Ool-v0-IWZ" secondAttribute="trailing" constant="-24" id="eoG-wh-u3V"/>
                             <constraint firstItem="wU3-wH-ro7" firstAttribute="top" secondItem="8OX-Bc-r18" secondAttribute="top" id="qmJ-xV-rNc"/>
@@ -652,7 +658,12 @@
                             <constraint firstItem="Rge-e8-QwM" firstAttribute="top" secondItem="1GL-cE-8CO" secondAttribute="bottom" constant="16" id="vd1-V6-E81"/>
                         </constraints>
                         <connections>
+                            <outlet property="backButton" destination="tnH-n7-F0X" id="Meb-cu-d4n"/>
+                            <outlet property="buttonStack" destination="Rge-e8-QwM" id="Vvn-qJ-BN9"/>
+                            <outlet property="loader" destination="Wbr-iI-HI0" id="x3L-Iw-Cmb"/>
                             <outlet property="previewCardCollection" destination="1GL-cE-8CO" id="W4e-qa-V6v"/>
+                            <outlet property="seeADButton" destination="ffU-wc-Qg9" id="leh-H6-QTJ"/>
+                            <outlet property="unlockRoundButton" destination="diH-kG-Jy5" id="CCv-IL-gOC"/>
                         </connections>
                     </view>
                 </viewController>
