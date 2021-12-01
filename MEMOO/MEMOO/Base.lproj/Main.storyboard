@@ -166,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-nK-CvZ">
-                                <rect key="frame" x="52.666666666666657" y="277" width="270" height="258"/>
+                                <rect key="frame" x="52.666666666666657" y="183" width="270" height="446"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kri-f5-NPb">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
@@ -175,15 +175,43 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Music Off" image="btnEmpty">
+                                            <color key="titleColor" name="white_"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicAction:" destination="ed2-kc-aor" eventType="touchUpInside" id="Q3n-FP-G62"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-bX-BAb">
+                                        <rect key="frame" x="0.0" y="94" width="270" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="LVk-Ii-r6O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
+                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sound Off" image="btnEmpty">
+                                            <color key="titleColor" name="white_"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="soundAction:" destination="ed2-kc-aor" eventType="touchUpInside" id="KgJ-p8-FQb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-ZS-E5R">
+                                        <rect key="frame" x="0.0" y="188" width="270" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="MjM-Ie-Vbw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
+                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Back to game" image="btnEmpty">
                                             <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
-                                            <action selector="backToGame:" destination="ed2-kc-aor" eventType="touchUpInside" id="YD1-XP-PSS"/>
+                                            <action selector="backToGame:" destination="ed2-kc-aor" eventType="touchUpInside" id="JVt-7s-45Y"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-aE-UpK">
-                                        <rect key="frame" x="0.0" y="94" width="270" height="70"/>
+                                        <rect key="frame" x="0.0" y="282" width="270" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="puh-6h-XGW"/>
                                         </constraints>
@@ -197,7 +225,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJy-bc-die">
-                                        <rect key="frame" x="0.0" y="188" width="270" height="70"/>
+                                        <rect key="frame" x="0.0" y="376" width="270" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="94f-6w-4N6"/>
                                         </constraints>
@@ -223,6 +251,10 @@
                             <constraint firstItem="mWy-nK-CvZ" firstAttribute="centerY" secondItem="NZ4-pM-qmi" secondAttribute="centerY" id="DwG-iJ-3XQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="musicButton" destination="kri-f5-NPb" id="EFO-pf-dLo"/>
+                        <outlet property="soundButton" destination="aLh-bX-BAb" id="1ML-Hi-oyr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lax-Sv-kNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
