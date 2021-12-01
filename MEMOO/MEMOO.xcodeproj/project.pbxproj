@@ -77,6 +77,10 @@
 		916FCD6427574862002CD0F5 /* artefact_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD3C27574862002CD0F5 /* artefact_37.png */; };
 		916FCD6527574862002CD0F5 /* artefact_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD3D27574862002CD0F5 /* artefact_1.png */; };
 		916FCD6627574862002CD0F5 /* artefact_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD3E27574862002CD0F5 /* artefact_10.png */; };
+		916FCD6F275748B7002CD0F5 /* click_sound_5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD69275748B6002CD0F5 /* click_sound_5.mp3 */; };
+		916FCD72275748B7002CD0F5 /* shimmer_1.flac in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD6C275748B6002CD0F5 /* shimmer_1.flac */; };
+		916FCD73275748B7002CD0F5 /* WoodlandFantasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */; };
+		916FCD7527574A02002CD0F5 /* GameSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916FCD7427574A02002CD0F5 /* GameSound.swift */; };
 		918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7BE827523DD300E1F230 /* MenuViewController copy.swift */; };
 		918E7C3C27524B0C00E1F230 /* Artefact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7C3B27524B0C00E1F230 /* Artefact.swift */; };
 		9190F8C5274E427B0097F5E4 /* alfred_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83D274E427A0097F5E4 /* alfred_18.png */; };
@@ -587,6 +591,10 @@
 		916FCD3C27574862002CD0F5 /* artefact_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_37.png; sourceTree = "<group>"; };
 		916FCD3D27574862002CD0F5 /* artefact_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_1.png; sourceTree = "<group>"; };
 		916FCD3E27574862002CD0F5 /* artefact_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_10.png; sourceTree = "<group>"; };
+		916FCD69275748B6002CD0F5 /* click_sound_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click_sound_5.mp3; sourceTree = "<group>"; };
+		916FCD6C275748B6002CD0F5 /* shimmer_1.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = shimmer_1.flac; sourceTree = "<group>"; };
+		916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WoodlandFantasy.mp3; sourceTree = "<group>"; };
+		916FCD7427574A02002CD0F5 /* GameSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSound.swift; sourceTree = "<group>"; };
 		918E7BE827523DD300E1F230 /* MenuViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController copy.swift"; sourceTree = "<group>"; };
 		918E7C3B27524B0C00E1F230 /* Artefact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artefact.swift; sourceTree = "<group>"; };
 		9190F83D274E427A0097F5E4 /* alfred_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_18.png; sourceTree = "<group>"; };
@@ -1086,6 +1094,7 @@
 		10D229E826B328510063433E /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				916FCD6727574889002CD0F5 /* Sound */,
 				918E7BEA275248D200E1F230 /* artefacts */,
 				91F080162750A8F400BFCDCB /* posters */,
 				912152AE274E3BF200507FE4 /* Rounds */,
@@ -1154,6 +1163,7 @@
 				10D229F826B328840063433E /* GameViewController.swift */,
 				10D229FA26B328840063433E /* GameViewControllerDelegates.swift */,
 				10D229F926B328840063433E /* Random.swift */,
+				916FCD7427574A02002CD0F5 /* GameSound.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1231,6 +1241,16 @@
 				913351B12754AEB70044CEC1 /* ModalLockedRoundDelegates.swift */,
 			);
 			path = ModalLockedRound;
+			sourceTree = "<group>";
+		};
+		916FCD6727574889002CD0F5 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				916FCD69275748B6002CD0F5 /* click_sound_5.mp3 */,
+				916FCD6C275748B6002CD0F5 /* shimmer_1.flac */,
+				916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		918E7BEA275248D200E1F230 /* artefacts */ = {
@@ -2075,6 +2095,7 @@
 				9190F8EF274E427B0097F5E4 /* farm_9.png in Resources */,
 				9190FA9A274E89C40097F5E4 /* sport_7.png in Resources */,
 				10D229E126B0D4A60063433E /* LaunchScreen.storyboard in Resources */,
+				916FCD73275748B7002CD0F5 /* WoodlandFantasy.mp3 in Resources */,
 				9190F9D9274E89920097F5E4 /* letter_6.png in Resources */,
 				9190F8DC274E427B0097F5E4 /* animalll_7.png in Resources */,
 				9190F916274E427B0097F5E4 /* animall_12.png in Resources */,
@@ -2235,12 +2256,14 @@
 				9190F9D5274E89920097F5E4 /* letter_11.png in Resources */,
 				9190F963274E896C0097F5E4 /* fauna_10.png in Resources */,
 				9190FB6E274E8B730097F5E4 /* animal_4.png in Resources */,
+				916FCD72275748B7002CD0F5 /* shimmer_1.flac in Resources */,
 				9190FB6B274E8B730097F5E4 /* animal_17.png in Resources */,
 				9190F8CA274E427B0097F5E4 /* alfred_11.png in Resources */,
 				9190FAEF274E89CF0097F5E4 /* toy_16.png in Resources */,
 				9190FAF2274E89CF0097F5E4 /* toy_10.png in Resources */,
 				91F080322750A90B00BFCDCB /* animal.png in Resources */,
 				9190F983274E89780097F5E4 /* flower_13.png in Resources */,
+				916FCD6F275748B7002CD0F5 /* click_sound_5.mp3 in Resources */,
 				9190F8DA274E427B0097F5E4 /* animalll_18.png in Resources */,
 				9190FB3A274E89DC0097F5E4 /* vegetable_12.png in Resources */,
 				9190F9AB274E89880097F5E4 /* fruit_8.png in Resources */,
@@ -2453,6 +2476,7 @@
 				9141946827510B540087BBD3 /* UIImage.swift in Sources */,
 				913351AA2754AE380044CEC1 /* ArtefactView.swift in Sources */,
 				9190F93E274E85500097F5E4 /* PreviewArtefactViewController.swift in Sources */,
+				916FCD7527574A02002CD0F5 /* GameSound.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
 				9109E422274BD408006784FC /* ArtefactCell.swift in Sources */,
 				913351AF2754AE8E0044CEC1 /* ArtefactDelegates.swift in Sources */,

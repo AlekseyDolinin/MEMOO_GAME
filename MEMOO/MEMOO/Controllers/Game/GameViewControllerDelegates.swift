@@ -22,14 +22,15 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
             arrayCard[indexPath.row].showCard = true
             tempIndexPath = indexPath
             cell.show()
+            Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
             return
         }
-
+        
         ///
         if arrayCard[indexPath.row].showCard != true {
             cell.show()
+            Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
             arrayCard[indexPath.row].showCard = true
-            
             ///
             if arrayCard[tempIndexPath.row].id != arrayCard[indexPath.row].id {
                 guard let cell = collectionView.cellForItem(at: tempIndexPath) as? CardCell else { return }
@@ -40,6 +41,7 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 print("match")
                 tempIndexPath = nil
                 countMatch()
+                Sound.playSound(nameResource: "shimmer_1", typeFile: "flac")
             }
         }
     }

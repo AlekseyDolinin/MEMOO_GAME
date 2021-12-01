@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 
 let nRestart: NSNotification.Name = NSNotification.Name(rawValue: "nRestart")
 let nBack: NSNotification.Name = NSNotification.Name(rawValue: "nBack")
@@ -9,7 +10,7 @@ class GameViewController: UIViewController {
         guard isViewLoaded else {return nil}
         return (view as! GameView)
     }
-    
+     
     var countCell = 20
     var arrayCard = [Card]()
     var matchCount: Int = 0
@@ -34,12 +35,17 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         restart()
+        Sound.playBackgroundSound()
     }
     
     ///
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         viewSelf.showTopBar()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        Sound.removePlayers()
     }
     
     ///
