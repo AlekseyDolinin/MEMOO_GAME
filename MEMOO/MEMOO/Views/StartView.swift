@@ -12,7 +12,6 @@ class StartView: UIView {
     @IBOutlet weak var viewRightFire: SKView!
     @IBOutlet weak var viewRightSmoke: SKView!
     @IBOutlet weak var viewLeftSmoke: SKView!
-    
     @IBOutlet weak var showCollectionButton: UIButton!
     
     override func awakeFromNib() {
@@ -25,7 +24,6 @@ class StartView: UIView {
         setAnimationRightSmoke()
         setAnimationLeftSmoke()
     }
-
 }
 
 extension StartView {

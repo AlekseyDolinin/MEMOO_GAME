@@ -119,7 +119,7 @@
                                 <rect key="frame" x="87.666666666666686" y="729" width="200" height="72"/>
                                 <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                 <state key="normal" title="Menu">
-                                    <color key="titleColor" name="DarkGray_"/>
+                                    <color key="titleColor" name="white_"/>
                                 </state>
                                 <connections>
                                     <action selector="showMenu:" destination="fu1-rO-RQc" eventType="touchUpInside" id="7Ni-9L-bwY"/>
@@ -176,7 +176,7 @@
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Back to game" image="btnEmpty">
-                                            <color key="titleColor" name="DarkGray_"/>
+                                            <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
                                             <action selector="backToGame:" destination="ed2-kc-aor" eventType="touchUpInside" id="YD1-XP-PSS"/>
@@ -190,7 +190,7 @@
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Restart round" image="btnEmpty">
-                                            <color key="titleColor" name="DarkGray_"/>
+                                            <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
                                             <action selector="restartRound:" destination="ed2-kc-aor" eventType="touchUpInside" id="nob-e6-l2Y"/>
@@ -204,7 +204,7 @@
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Out game" image="btnEmpty">
-                                            <color key="titleColor" name="DarkGray_"/>
+                                            <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
                                             <action selector="finishRound:" destination="ed2-kc-aor" eventType="touchUpInside" id="ggO-6O-vR6"/>
@@ -422,13 +422,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCs-5M-58w">
-                                <rect key="frame" x="289" y="60" width="70" height="80"/>
+                                <rect key="frame" x="309" y="60" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="4G7-bg-am1"/>
-                                    <constraint firstAttribute="height" constant="80" id="7dp-vh-Uzo"/>
+                                    <constraint firstAttribute="width" constant="50" id="4G7-bg-am1"/>
+                                    <constraint firstAttribute="height" constant="50" id="7dp-vh-Uzo"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="artefactBtn"/>
+                                <state key="normal" image="btnMenu"/>
                                 <connections>
                                     <action selector="showMenu:" destination="0DP-EJ-cld" eventType="touchUpInside" id="J2L-c4-UA6"/>
                                 </connections>
@@ -598,7 +598,7 @@
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Unlock the round" image="btnEmpty">
-                                            <color key="titleColor" name="DarkGray_"/>
+                                            <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
                                             <action selector="buyRound:" destination="jyT-Bg-dgG" eventType="touchUpInside" id="E75-kV-xwe"/>
@@ -865,7 +865,7 @@
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Sound On" image="btnEmpty">
-                                            <color key="titleColor" name="DarkGray_"/>
+                                            <color key="titleColor" name="white_"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-tL-2uj">
@@ -876,7 +876,7 @@
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Unlock all rounds" image="btnEmpty">
-                                            <color key="titleColor" name="DarkGray_"/>
+                                            <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
                                             <action selector="unlockAllRoundsAction:" destination="jXb-qI-sDm" eventType="touchUpInside" id="zYW-oz-cGx"/>
@@ -890,7 +890,7 @@
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Restore purchase" image="btnEmpty">
-                                            <color key="titleColor" name="DarkGray_"/>
+                                            <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
                                             <action selector="restore:" destination="jXb-qI-sDm" eventType="touchUpInside" id="xBe-4I-cKT"/>
@@ -948,10 +948,10 @@
     </scenes>
     <resources>
         <image name="alfred.png" width="300" height="300"/>
-        <image name="artefactBtn" width="201" height="201"/>
         <image name="bgGame" width="641" height="1138"/>
-        <image name="btnClose" width="121" height="121"/>
-        <image name="btnEmpty" width="521" height="131"/>
+        <image name="btnClose" width="241" height="227"/>
+        <image name="btnEmpty" width="1041" height="321"/>
+        <image name="btnMenu" width="241" height="235"/>
         <image name="chest" width="485" height="255"/>
         <image name="ground" width="1548" height="220"/>
         <image name="layer_1" width="7200" height="1139"/>
@@ -960,6 +960,9 @@
         <image name="layer_4" width="7200" height="1139"/>
         <namedColor name="DarkGray_">
             <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white_">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
