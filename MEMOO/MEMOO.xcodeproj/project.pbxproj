@@ -81,7 +81,7 @@
 		916FCD72275748B7002CD0F5 /* shimmer_1.flac in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD6C275748B6002CD0F5 /* shimmer_1.flac */; };
 		916FCD73275748B7002CD0F5 /* WoodlandFantasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */; };
 		916FCD7527574A02002CD0F5 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916FCD7427574A02002CD0F5 /* Sound.swift */; };
-		918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7BE827523DD300E1F230 /* MenuViewController copy.swift */; };
+		918E7BE927523DD300E1F230 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7BE827523DD300E1F230 /* MenuViewController.swift */; };
 		918E7C3C27524B0C00E1F230 /* Artefact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7C3B27524B0C00E1F230 /* Artefact.swift */; };
 		9190F8C5274E427B0097F5E4 /* alfred_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83D274E427A0097F5E4 /* alfred_18.png */; };
 		9190F8C6274E427B0097F5E4 /* alfred_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83E274E427A0097F5E4 /* alfred_8.png */; };
@@ -595,7 +595,7 @@
 		916FCD6C275748B6002CD0F5 /* shimmer_1.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = shimmer_1.flac; sourceTree = "<group>"; };
 		916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WoodlandFantasy.mp3; sourceTree = "<group>"; };
 		916FCD7427574A02002CD0F5 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
-		918E7BE827523DD300E1F230 /* MenuViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController copy.swift"; sourceTree = "<group>"; };
+		918E7BE827523DD300E1F230 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		918E7C3B27524B0C00E1F230 /* Artefact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artefact.swift; sourceTree = "<group>"; };
 		9190F83D274E427A0097F5E4 /* alfred_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_18.png; sourceTree = "<group>"; };
 		9190F83E274E427A0097F5E4 /* alfred_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_8.png; sourceTree = "<group>"; };
@@ -1150,7 +1150,7 @@
 				913351B02754AEAA0044CEC1 /* ModalLockedRound */,
 				104DD30526BF2AA40042A324 /* StartViewController */,
 				1046E7C926C1DB0D00624CAA /* GameMenuViewController.swift */,
-				918E7BE827523DD300E1F230 /* MenuViewController copy.swift */,
+				918E7BE827523DD300E1F230 /* MenuViewController.swift */,
 				91C88D8D2709E33D00F9DD46 /* WinViewController.swift */,
 				9190F93D274E85500097F5E4 /* PreviewArtefactViewController.swift */,
 			);
@@ -2470,7 +2470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D22A1526B329940063433E /* StartDelegates.swift in Sources */,
-				918E7BE927523DD300E1F230 /* MenuViewController copy.swift in Sources */,
+				918E7BE927523DD300E1F230 /* MenuViewController.swift in Sources */,
 				9141946C275234E40087BBD3 /* UIButton.swift in Sources */,
 				918E7C3C27524B0C00E1F230 /* Artefact.swift in Sources */,
 				9141946827510B540087BBD3 /* UIImage.swift in Sources */,

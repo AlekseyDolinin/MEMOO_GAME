@@ -14,22 +14,32 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-        
         /// нет открытой карты
         if tempIndexPath == nil && arrayCard[indexPath.row].showCard == false {
             arrayCard[indexPath.row].showCard = true
             tempIndexPath = indexPath
             cell.show()
-            Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
+            if Sound.isUserChangeSettings() == false {
+                Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
+            } else {
+                if Sound.isSoundOn() {
+                    Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
+                }
+            }
             return
         }
         
         ///
         if arrayCard[indexPath.row].showCard != true {
             cell.show()
-            Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
+            if Sound.isUserChangeSettings() == false {
+                Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
+            } else {
+                if Sound.isSoundOn() {
+                    Sound.playSound(nameResource: "click_sound_5", typeFile: "mp3")
+                }
+            }
             arrayCard[indexPath.row].showCard = true
             ///
             if arrayCard[tempIndexPath.row].id != arrayCard[indexPath.row].id {
@@ -41,7 +51,13 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 print("match")
                 tempIndexPath = nil
                 countMatch()
-                Sound.playSound(nameResource: "shimmer_1", typeFile: "flac")
+                if Sound.isUserChangeSettings() == false {
+                    Sound.playSound(nameResource: "shimmer_1", typeFile: "flac")
+                } else {
+                    if Sound.isSoundOn() {
+                        Sound.playSound(nameResource: "shimmer_1", typeFile: "flac")
+                    }
+                }
             }
         }
     }

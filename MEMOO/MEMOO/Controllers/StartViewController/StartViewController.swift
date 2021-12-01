@@ -40,6 +40,12 @@ class StartViewController: UIViewController {
             self.createRoundes(nameList: self.freeListRound)
             self.createRoundes(nameList: self.paidListRound)
         }
+        
+        /// проверка изменял ли настройки звука прользователь
+        /// если не изменял - звуки включены
+        /// если изменял - настройки пользавателя
+        ///
+        Sound.allSoundOn()
     }
     
     func getPriceProducts() {

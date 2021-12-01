@@ -7,6 +7,18 @@ class GameMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if Sound.isMusicOn() {
+            musicButton.setTitle("Music Off", for: .normal)
+        } else {
+            musicButton.setTitle("Music On", for: .normal)
+        }
+        
+        if Sound.isSoundOn() {
+            soundButton.setTitle("Sound Off", for: .normal)
+        } else {
+            soundButton.setTitle("Sound On", for: .normal)
+        }
     }
     
     ///
@@ -30,23 +42,27 @@ class GameMenuViewController: UIViewController {
     
     ///
     @IBAction func soundAction(_ sender: UIButton) {
+        Sound.changeSettings()
         let title = soundButton.titleLabel?.text == "Sound Off" ? "Sound On" : "Sound Off"
         soundButton.setTitle(title, for: .normal)
         if title == "Sound Off" {
-            Sound.playerSoundEffect?.pause()
+            Sound.soundAction(action: true)
         } else {
-            Sound.playerSoundEffect?.play()
+            Sound.soundAction(action: false)
         }
     }
     
     ///
     @IBAction func musicAction(_ sender: UIButton) {
+        Sound.changeSettings()
         let title = musicButton.titleLabel?.text == "Music Off" ? "Music On" : "Music Off"
         musicButton.setTitle(title, for: .normal)
         if title == "Music Off" {
-            Sound.playerBackgroundMusic?.play()
+            Sound.playBackgroundSound()
+            Sound.musicAction(action: true)
         } else {
             Sound.playerBackgroundMusic?.pause()
+            Sound.musicAction(action: false)
         }
     }
 }
