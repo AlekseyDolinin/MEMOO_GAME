@@ -11,7 +11,6 @@ class PreviewArtefactViewController: UIViewController {
         super.viewDidLoad()
         artefactImage.image = tempartefactimage
     }
-    
 
     ///
     @IBAction func close(_ sender: UIButton) {

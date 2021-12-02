@@ -35,12 +35,8 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         restart()
-        if Sound.isUserChangeSettings() == false {
+        if Sound.isSoundOn() {
             Sound.playBackgroundSound()
-        } else {
-            if Sound.isMusicOn() {
-                Sound.playBackgroundSound()
-            }
         }
     }
     

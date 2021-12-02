@@ -7,12 +7,8 @@ class GameMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        if Sound.isMusicOn() {
-//            musicButton.setTitle("Music Off", for: .normal)
-//        } else {
-//            musicButton.setTitle("Music On", for: .normal)
-//        }
+        let nameIconSound = Sound.isSoundOn() ? "btnSoundOff" : "btnSoundOn"
+        soundButton.setImage(UIImage(named: nameIconSound), for: .normal)
         widthButtonConstraint.constant = view.frame.width / 4
     }
     
@@ -37,27 +33,8 @@ class GameMenuViewController: UIViewController {
     
     ///
     @IBAction func soundAction(_ sender: UIButton) {
-        Sound.changeSettings()
-        let title = soundButton.titleLabel?.text == "Sound Off" ? "Sound On" : "Sound Off"
-        soundButton.setTitle(title, for: .normal)
-        if title == "Sound Off" {
-            Sound.soundAction(action: true)
-        } else {
-            Sound.soundAction(action: false)
-        }
-    }
-    
-    ///
-    @IBAction func musicAction(_ sender: UIButton) {
-        Sound.changeSettings()
-//        let title = musicButton.titleLabel?.text == "Music Off" ? "Music On" : "Music Off"
-//        musicButton.setTitle(title, for: .normal)
-        if title == "Music Off" {
-            Sound.playBackgroundSound()
-            Sound.musicAction(action: true)
-        } else {
-            Sound.playerBackgroundMusic?.pause()
-            Sound.musicAction(action: false)
-        }
+        let nameIconSound = Sound.isSoundOn() ? "btnSoundOn" : "btnSoundOff"
+        soundButton.setImage(UIImage(named: nameIconSound), for: .normal)
+        Sound.soundAction(action: !Sound.isSoundOn())
     }
 }

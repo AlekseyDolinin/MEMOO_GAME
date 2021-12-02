@@ -190,7 +190,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" image="btnSoundOff">
+                                        <state key="normal">
                                             <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
@@ -979,7 +979,6 @@
         <image name="btnHome" width="241" height="241"/>
         <image name="btnMenu" width="241" height="241"/>
         <image name="btnReloadRound" width="241" height="241"/>
-        <image name="btnSoundOff" width="241" height="241"/>
         <image name="chest" width="485" height="255"/>
         <image name="ground" width="1548" height="220"/>
         <image name="layer_1" width="7200" height="1139"/>

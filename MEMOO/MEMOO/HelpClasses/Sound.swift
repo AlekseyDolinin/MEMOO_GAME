@@ -6,46 +6,17 @@ class Sound {
     static var playerBackgroundMusic: AVAudioPlayer?
     static var playerSoundEffect: AVAudioPlayer?
     
-    class func changeSettings() {
-        UserDefaults.standard.set(true, forKey: "ChangeSettings")
-    }
-    
-    class func isUserChangeSettings() -> Bool {
-        return UserDefaults.standard.bool(forKey: "ChangeSettings")
-    }
-    
-    class func allSoundOn() {
-        UserDefaults.standard.set(true, forKey: "Sound")
-        UserDefaults.standard.set(true, forKey: "Music")
-    }
-    
     class func isSoundOn() -> Bool {
         return UserDefaults.standard.bool(forKey: "Sound")
     }
     
-    class func isMusicOn() -> Bool {
-        return UserDefaults.standard.bool(forKey: "Music")
-    }
-    
-    class func musicAction(action: Bool) {
-        if action == true {
-            print("музыка включена")
-        } else {
-            print("музыка выключена")
-        }
-        UserDefaults.standard.set(action, forKey: "Music")
-    }
-    
     class func soundAction(action: Bool) {
-        if action == true {
-            print("звуки выключены")
-        } else {
-            print("звуки включены")
-        }
+        action == true ? print("звуки включены") : print("звуки выключены")
         UserDefaults.standard.set(action, forKey: "Sound")
     }
     
     class func playSound(nameResource: String, typeFile: String) {
+        if !Sound.isSoundOn() { return }
         guard let url = Bundle.main.url(forResource: nameResource, withExtension: typeFile) else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -59,6 +30,7 @@ class Sound {
     }
     
     class func playBackgroundSound() {
+        if !Sound.isSoundOn() { return }
         guard let url = Bundle.main.url(forResource: "WoodlandFantasy", withExtension: "mp3") else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
