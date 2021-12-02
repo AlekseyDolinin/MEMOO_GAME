@@ -13,10 +13,21 @@ class ModalLockedRoundViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewSelf.round = self.round
         viewSelf.previewCardCollection.delegate = self
         viewSelf.previewCardCollection.dataSource = self
+        
+        ///
+        NotificationCenter.default.addObserver(forName: nTransactionFailed, object: nil, queue: nil) { notification in
+            self.viewSelf.unlockContent()
+        }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewSelf.setupUI()
+    }
+    
     ///
     @IBAction func buyRound(_ sender: UIButton) {
         storeManager.buyInApp(inAppID: round.idRound ?? "")

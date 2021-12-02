@@ -9,16 +9,18 @@ class ModalLockedRoundView: UIView {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     
+    var round: Round!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupUI()
     }
     
     func lockContent() {
         loader.startAnimating()
         UIView.animate(withDuration: 0.3) {
             self.previewCardCollection.alpha = 0.4
-            self.buttonStack.alpha = 0.4
+            self.unlockRoundButton.alpha = 0.4
+            self.backButton.alpha = 0.4
         }
         unlockRoundButton.isEnabled = false
         backButton.isEnabled = false
@@ -28,7 +30,8 @@ class ModalLockedRoundView: UIView {
         loader.stopAnimating()
         UIView.animate(withDuration: 0.3) {
             self.previewCardCollection.alpha = 1.0
-            self.buttonStack.alpha = 1.0
+            self.unlockRoundButton.alpha = 1.0
+            self.backButton.alpha = 1.0
         }
         unlockRoundButton.isEnabled = true
         backButton.isEnabled = true
@@ -36,6 +39,10 @@ class ModalLockedRoundView: UIView {
     
     func setupUI() {
         loader.stopAnimating()
-        
+        guard let idRound = round.idRound else {return}
+        guard let priceUnlockRound = UserDefaults.standard.string(forKey: String(idRound)) else {
+            return
+        }
+        unlockRoundButton.setTitle("Unlock the round (\(priceUnlockRound))", for: .normal)
     }
 }

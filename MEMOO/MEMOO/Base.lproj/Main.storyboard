@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-1l-dAC">
-                                <rect key="frame" x="6" y="108" width="363" height="514"/>
+                                <rect key="frame" x="6" y="124" width="363" height="514"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qbe-1l-dAC" secondAttribute="height" multiplier="77:109" id="3iH-ce-Ukc"/>
@@ -105,20 +105,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="ahH-GA-Imv">
-                                <rect key="frame" x="87.666666666666686" y="741" width="200" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2eO-Dm-tjR"/>
-                                    <constraint firstAttribute="width" constant="200" id="nTX-7x-U4k"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Is7-0S-Vb4">
-                                <rect key="frame" x="0.0" y="753" width="375" height="63"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q5-uf-NzG">
-                                <rect key="frame" x="87.666666666666686" y="729" width="200" height="72"/>
+                                <rect key="frame" x="309" y="60" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9f0-MG-FHk"/>
+                                    <constraint firstAttribute="width" constant="50" id="DZ3-Tz-SmJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
-                                <state key="normal" title="Menu">
+                                <state key="normal" image="btnMenu">
                                     <color key="titleColor" name="white_"/>
                                 </state>
                                 <connections>
@@ -129,23 +123,15 @@
                         <viewLayoutGuide key="safeArea" id="eHO-Xd-MB2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0Q5-uf-NzG" firstAttribute="top" secondItem="ahH-GA-Imv" secondAttribute="top" constant="-12" id="0QF-B0-ejB"/>
                             <constraint firstItem="Coo-jF-bnj" firstAttribute="trailing" secondItem="eHO-Xd-MB2" secondAttribute="trailing" id="3l5-0I-aMx"/>
-                            <constraint firstItem="Is7-0S-Vb4" firstAttribute="width" secondItem="Is7-0S-Vb4" secondAttribute="height" multiplier="125:21" id="5gg-iJ-ou6"/>
-                            <constraint firstItem="qbe-1l-dAC" firstAttribute="top" secondItem="eHO-Xd-MB2" secondAttribute="top" constant="64" id="CqK-jF-G4H"/>
-                            <constraint firstItem="0Q5-uf-NzG" firstAttribute="bottom" secondItem="ahH-GA-Imv" secondAttribute="bottom" id="FUK-0r-IrB"/>
-                            <constraint firstItem="0Q5-uf-NzG" firstAttribute="trailing" secondItem="ahH-GA-Imv" secondAttribute="trailing" id="Jez-4o-S66"/>
+                            <constraint firstItem="qbe-1l-dAC" firstAttribute="top" secondItem="eHO-Xd-MB2" secondAttribute="top" constant="80" id="CqK-jF-G4H"/>
                             <constraint firstItem="Coo-jF-bnj" firstAttribute="leading" secondItem="eHO-Xd-MB2" secondAttribute="leading" id="Jjx-Rz-Q6b"/>
                             <constraint firstItem="qbe-1l-dAC" firstAttribute="leading" secondItem="eHO-Xd-MB2" secondAttribute="leading" constant="6" id="P6G-NG-ctL"/>
-                            <constraint firstItem="ahH-GA-Imv" firstAttribute="centerX" secondItem="A0p-GR-AZc" secondAttribute="centerX" id="R9f-i8-pYN"/>
-                            <constraint firstItem="0Q5-uf-NzG" firstAttribute="leading" secondItem="ahH-GA-Imv" secondAttribute="leading" id="dbi-a7-tGL"/>
-                            <constraint firstItem="Is7-0S-Vb4" firstAttribute="trailing" secondItem="eHO-Xd-MB2" secondAttribute="trailing" id="gGY-3K-m3U"/>
-                            <constraint firstItem="ahH-GA-Imv" firstAttribute="top" secondItem="Is7-0S-Vb4" secondAttribute="top" constant="-12" id="gQg-ga-j0g"/>
+                            <constraint firstItem="eHO-Xd-MB2" firstAttribute="trailing" secondItem="0Q5-uf-NzG" secondAttribute="trailing" constant="16" id="RmN-a7-aSF"/>
                             <constraint firstItem="Coo-jF-bnj" firstAttribute="top" secondItem="A0p-GR-AZc" secondAttribute="top" id="iaR-uu-htU"/>
-                            <constraint firstItem="Is7-0S-Vb4" firstAttribute="leading" secondItem="eHO-Xd-MB2" secondAttribute="leading" id="ke8-iT-5T0"/>
                             <constraint firstItem="qbe-1l-dAC" firstAttribute="trailing" secondItem="eHO-Xd-MB2" secondAttribute="trailing" constant="-6" id="p5S-v3-fs6"/>
                             <constraint firstItem="Coo-jF-bnj" firstAttribute="bottom" secondItem="A0p-GR-AZc" secondAttribute="bottom" id="pHd-we-Lfj"/>
-                            <constraint firstAttribute="bottom" secondItem="Is7-0S-Vb4" secondAttribute="bottom" constant="-4" id="wPZ-Jh-3Rg"/>
+                            <constraint firstItem="0Q5-uf-NzG" firstAttribute="top" secondItem="eHO-Xd-MB2" secondAttribute="top" constant="16" id="wEc-To-dY9"/>
                         </constraints>
                         <connections>
                             <outlet property="cardCollection" destination="qbe-1l-dAC" id="hzA-WA-8oa"/>
@@ -165,95 +151,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-nK-CvZ">
-                                <rect key="frame" x="52.666666666666657" y="183" width="270" height="446"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-nK-CvZ">
+                                <rect key="frame" x="73.666666666666686" y="376" width="228" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kri-f5-NPb">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="4E5-No-TYf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
-                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Music Off" image="btnEmpty">
-                                            <color key="titleColor" name="white_"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="musicAction:" destination="ed2-kc-aor" eventType="touchUpInside" id="Q3n-FP-G62"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-bX-BAb">
-                                        <rect key="frame" x="0.0" y="94" width="270" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="LVk-Ii-r6O"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
-                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Sound Off" image="btnEmpty">
-                                            <color key="titleColor" name="white_"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="soundAction:" destination="ed2-kc-aor" eventType="touchUpInside" id="KgJ-p8-FQb"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-ZS-E5R">
-                                        <rect key="frame" x="0.0" y="188" width="270" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="MjM-Ie-Vbw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
-                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Back to game" image="btnEmpty">
-                                            <color key="titleColor" name="white_"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="backToGame:" destination="ed2-kc-aor" eventType="touchUpInside" id="JVt-7s-45Y"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-aE-UpK">
-                                        <rect key="frame" x="0.0" y="282" width="270" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="puh-6h-XGW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
-                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Restart round" image="btnEmpty">
-                                            <color key="titleColor" name="white_"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="restartRound:" destination="ed2-kc-aor" eventType="touchUpInside" id="nob-e6-l2Y"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJy-bc-die">
-                                        <rect key="frame" x="0.0" y="376" width="270" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="94f-6w-4N6"/>
+                                            <constraint firstAttribute="width" secondItem="AJy-bc-die" secondAttribute="height" multiplier="1:1" id="654-8h-uiC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Out game" image="btnEmpty">
+                                        <state key="normal" image="btnHome">
                                             <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
                                             <action selector="finishRound:" destination="ed2-kc-aor" eventType="touchUpInside" id="ggO-6O-vR6"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-aE-UpK">
+                                        <rect key="frame" x="83.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iGR-aE-UpK" secondAttribute="height" multiplier="1:1" id="qmq-eJ-Bbv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
+                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="btnReloadRound">
+                                            <color key="titleColor" name="white_"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restartRound:" destination="ed2-kc-aor" eventType="touchUpInside" id="nob-e6-l2Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-bX-BAb">
+                                        <rect key="frame" x="168" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="HQN-Dl-TXU"/>
+                                            <constraint firstAttribute="width" secondItem="aLh-bX-BAb" secondAttribute="height" multiplier="1:1" id="d4g-Q1-amC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
+                                        <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="btnSoundOff">
+                                            <color key="titleColor" name="white_"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="soundAction:" destination="ed2-kc-aor" eventType="touchUpInside" id="KgJ-p8-FQb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="8Ja-hz-rVV"/>
+                                    <constraint firstItem="AJy-bc-die" firstAttribute="width" secondItem="aLh-bX-BAb" secondAttribute="width" id="DLy-ws-sYO"/>
+                                    <constraint firstItem="iGR-aE-UpK" firstAttribute="width" secondItem="aLh-bX-BAb" secondAttribute="width" id="i08-eJ-tlx"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-ZS-E5R">
+                                <rect key="frame" x="157.66666666666666" y="516" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Wek-QW-gp3"/>
+                                    <constraint firstAttribute="height" constant="60" id="qtO-DF-P9Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="btnClose">
+                                    <color key="titleColor" name="white_"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToGame:" destination="ed2-kc-aor" eventType="touchUpInside" id="JVt-7s-45Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i8u-sU-B8t"/>
                         <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mWy-nK-CvZ" firstAttribute="centerX" secondItem="NZ4-pM-qmi" secondAttribute="centerX" id="C8d-jI-gsQ"/>
-                            <constraint firstItem="mWy-nK-CvZ" firstAttribute="centerY" secondItem="NZ4-pM-qmi" secondAttribute="centerY" id="DwG-iJ-3XQ"/>
+                            <constraint firstItem="mWy-nK-CvZ" firstAttribute="centerX" secondItem="NZ4-pM-qmi" secondAttribute="centerX" id="RKG-gT-An3"/>
+                            <constraint firstItem="c4I-ZS-E5R" firstAttribute="top" secondItem="mWy-nK-CvZ" secondAttribute="bottom" constant="80" id="hoB-qj-DHw"/>
+                            <constraint firstItem="c4I-ZS-E5R" firstAttribute="centerX" secondItem="NZ4-pM-qmi" secondAttribute="centerX" id="p6H-Qw-vlQ"/>
+                            <constraint firstItem="mWy-nK-CvZ" firstAttribute="centerY" secondItem="NZ4-pM-qmi" secondAttribute="centerY" id="s4T-g8-b06"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="musicButton" destination="kri-f5-NPb" id="EFO-pf-dLo"/>
-                        <outlet property="soundButton" destination="aLh-bX-BAb" id="1ML-Hi-oyr"/>
+                        <outlet property="soundButton" destination="aLh-bX-BAb" id="zWc-8T-Lv4"/>
+                        <outlet property="widthButtonConstraint" destination="HQN-Dl-TXU" id="7aW-3y-ju2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lax-Sv-kNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -293,10 +270,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okf-Mv-UFS">
-                                <rect key="frame" x="152.66666666666666" y="570.33333333333337" width="70" height="70"/>
+                                <rect key="frame" x="157.66666666666666" y="570.33333333333337" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="iyn-iK-068"/>
-                                    <constraint firstAttribute="height" constant="70" id="nFG-TZ-MIr"/>
+                                    <constraint firstAttribute="width" constant="60" id="iyn-iK-068"/>
+                                    <constraint firstAttribute="height" constant="60" id="nFG-TZ-MIr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                 <inset key="titleEdgeInsets" minX="-200" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -549,7 +526,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-cE-8CO">
-                                <rect key="frame" x="24" y="68" width="327" height="490"/>
+                                <rect key="frame" x="24" y="68" width="327" height="396"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="BUY-yb-NiV">
                                     <size key="itemSize" width="166" height="166"/>
@@ -609,10 +586,25 @@
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-e8-QwM">
-                                <rect key="frame" x="37.666666666666657" y="574" width="300" height="164"/>
+                                <rect key="frame" x="37.666666666666657" y="480" width="300" height="258"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8s-DT-MK4">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                                        <subviews>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-iI-HI0">
+                                                <rect key="frame" x="131.33333333333334" y="16.666666666666686" width="37" height="37"/>
+                                                <color key="color" name="DarkGray_"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Wbr-iI-HI0" firstAttribute="centerX" secondItem="n8s-DT-MK4" secondAttribute="centerX" id="9hZ-7K-46F"/>
+                                            <constraint firstAttribute="height" constant="70" id="EML-o9-Zen"/>
+                                            <constraint firstItem="Wbr-iI-HI0" firstAttribute="centerY" secondItem="n8s-DT-MK4" secondAttribute="centerY" id="sMG-xL-BTY"/>
+                                        </constraints>
+                                    </view>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-wc-Qg9">
-                                        <rect key="frame" x="0.0" y="-70" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="82" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="APV-0V-b41"/>
                                         </constraints>
@@ -623,13 +615,13 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diH-kG-Jy5">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="94" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="WY6-2L-tev"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Unlock the round" image="btnEmpty">
+                                        <state key="normal" title="Label" image="btnEmpty">
                                             <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
@@ -637,7 +629,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTH-9d-ewp">
-                                        <rect key="frame" x="0.0" y="94" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="188" width="300" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-n7-F0X">
                                                 <rect key="frame" x="115" y="0.0" width="70" height="70"/>
@@ -668,21 +660,15 @@
                                     <constraint firstAttribute="width" constant="300" id="9f8-xH-Qbo"/>
                                 </constraints>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-iI-HI0">
-                                <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
-                                <color key="color" name="DarkGray_"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ool-v0-IWZ"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="top" secondItem="Ool-v0-IWZ" secondAttribute="top" constant="24" id="AOp-sv-8Fe"/>
-                            <constraint firstItem="Wbr-iI-HI0" firstAttribute="centerX" secondItem="8OX-Bc-r18" secondAttribute="centerX" id="HmY-JJ-IZP"/>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="leading" secondItem="Ool-v0-IWZ" secondAttribute="leading" constant="24" id="ShO-ef-7sg"/>
                             <constraint firstItem="wU3-wH-ro7" firstAttribute="trailing" secondItem="Ool-v0-IWZ" secondAttribute="trailing" id="Tjt-b6-Xlu"/>
                             <constraint firstItem="wU3-wH-ro7" firstAttribute="leading" secondItem="Ool-v0-IWZ" secondAttribute="leading" id="Y2T-P4-Nmw"/>
                             <constraint firstItem="Ool-v0-IWZ" firstAttribute="bottom" secondItem="Rge-e8-QwM" secondAttribute="bottom" constant="40" id="Zav-kV-Fhd"/>
-                            <constraint firstItem="Wbr-iI-HI0" firstAttribute="centerY" secondItem="8OX-Bc-r18" secondAttribute="centerY" id="Zf5-4v-pDg"/>
                             <constraint firstItem="Rge-e8-QwM" firstAttribute="centerX" secondItem="8OX-Bc-r18" secondAttribute="centerX" id="aHG-RO-0Cb"/>
                             <constraint firstItem="1GL-cE-8CO" firstAttribute="trailing" secondItem="Ool-v0-IWZ" secondAttribute="trailing" constant="-24" id="eoG-wh-u3V"/>
                             <constraint firstItem="wU3-wH-ro7" firstAttribute="top" secondItem="8OX-Bc-r18" secondAttribute="top" id="qmJ-xV-rNc"/>
@@ -889,17 +875,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="kQP-yu-NfI">
                                 <rect key="frame" x="37.666666666666657" y="230" width="300" height="352"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-64-cXu">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-lu-YIX">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                                        <subviews>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="CcS-jF-ccc">
+                                                <rect key="frame" x="131.33333333333334" y="16.666666666666657" width="37" height="37"/>
+                                                <color key="color" name="white_"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="vCA-4g-Hdg"/>
+                                            <constraint firstItem="CcS-jF-ccc" firstAttribute="centerX" secondItem="3aX-lu-YIX" secondAttribute="centerX" id="7CF-Te-c0o"/>
+                                            <constraint firstItem="CcS-jF-ccc" firstAttribute="centerY" secondItem="3aX-lu-YIX" secondAttribute="centerY" id="Sso-k1-w1I"/>
+                                            <constraint firstAttribute="height" constant="70" id="qau-0f-fqF"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
-                                        <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Sound On" image="btnEmpty">
-                                            <color key="titleColor" name="white_"/>
-                                        </state>
-                                    </button>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-tL-2uj">
                                         <rect key="frame" x="0.0" y="94" width="300" height="70"/>
                                         <constraints>
@@ -969,7 +959,10 @@
                             <constraint firstItem="kQP-yu-NfI" firstAttribute="centerY" secondItem="16L-qM-N09" secondAttribute="centerY" id="pUn-Fl-Cyr"/>
                         </constraints>
                         <connections>
-                            <outlet property="unlockAllRounds" destination="hxe-tL-2uj" id="rdZ-9D-wMi"/>
+                            <outlet property="loader" destination="CcS-jF-ccc" id="S8j-KH-zUp"/>
+                            <outlet property="restoreButton" destination="hSs-5Z-lzw" id="hFH-Av-ufk"/>
+                            <outlet property="stackbutton" destination="kQP-yu-NfI" id="OQL-7K-kVy"/>
+                            <outlet property="unlockButton" destination="hxe-tL-2uj" id="i1k-ce-Z40"/>
                         </connections>
                     </view>
                 </viewController>
@@ -981,9 +974,12 @@
     <resources>
         <image name="alfred.png" width="300" height="300"/>
         <image name="bgGame" width="641" height="1138"/>
-        <image name="btnClose" width="241" height="227"/>
+        <image name="btnClose" width="241" height="241"/>
         <image name="btnEmpty" width="1041" height="321"/>
-        <image name="btnMenu" width="241" height="235"/>
+        <image name="btnHome" width="241" height="241"/>
+        <image name="btnMenu" width="241" height="241"/>
+        <image name="btnReloadRound" width="241" height="241"/>
+        <image name="btnSoundOff" width="241" height="241"/>
         <image name="chest" width="485" height="255"/>
         <image name="ground" width="1548" height="220"/>
         <image name="layer_1" width="7200" height="1139"/>

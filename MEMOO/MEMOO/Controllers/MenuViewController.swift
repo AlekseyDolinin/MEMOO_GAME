@@ -12,15 +12,21 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ///
+        NotificationCenter.default.addObserver(forName: nTransactionFailed, object: nil, queue: nil) { notification in
+            self.viewSelf.unlockContent()
+        }
     }
     
     
     @IBAction func unlockAllRoundsAction(_ sender: UIButton) {
         storeManager.buyInApp(inAppID: ProductIDs.unlockAllContentID.rawValue)
+        viewSelf.lockContent()
     }
     
     @IBAction func restore(_ sender: UIButton) {
         storeManager.restorePurchase()
+        viewSelf.lockContent()
     }
     
     ///

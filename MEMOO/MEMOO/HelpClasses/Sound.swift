@@ -66,6 +66,7 @@ class Sound {
             playerBackgroundMusic = try AVAudioPlayer(contentsOf: url, fileTypeHint: "mp3")
             guard let player = playerBackgroundMusic else { return }
             player.play()
+            player.numberOfLoops = -1
         } catch let error {
             print(error.localizedDescription)
         }

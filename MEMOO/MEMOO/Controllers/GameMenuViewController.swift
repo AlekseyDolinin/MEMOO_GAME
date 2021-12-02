@@ -2,23 +2,18 @@ import UIKit
 
 class GameMenuViewController: UIViewController {
     
-    @IBOutlet weak var musicButton: UIButton!
     @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var widthButtonConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Sound.isMusicOn() {
-            musicButton.setTitle("Music Off", for: .normal)
-        } else {
-            musicButton.setTitle("Music On", for: .normal)
-        }
-        
-        if Sound.isSoundOn() {
-            soundButton.setTitle("Sound Off", for: .normal)
-        } else {
-            soundButton.setTitle("Sound On", for: .normal)
-        }
+//        if Sound.isMusicOn() {
+//            musicButton.setTitle("Music Off", for: .normal)
+//        } else {
+//            musicButton.setTitle("Music On", for: .normal)
+//        }
+        widthButtonConstraint.constant = view.frame.width / 4
     }
     
     ///
@@ -55,8 +50,8 @@ class GameMenuViewController: UIViewController {
     ///
     @IBAction func musicAction(_ sender: UIButton) {
         Sound.changeSettings()
-        let title = musicButton.titleLabel?.text == "Music Off" ? "Music On" : "Music Off"
-        musicButton.setTitle(title, for: .normal)
+//        let title = musicButton.titleLabel?.text == "Music Off" ? "Music On" : "Music Off"
+//        musicButton.setTitle(title, for: .normal)
         if title == "Music Off" {
             Sound.playBackgroundSound()
             Sound.musicAction(action: true)

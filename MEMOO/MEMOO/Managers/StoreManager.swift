@@ -2,6 +2,7 @@ import UIKit
 import StoreKit
 
 let nTransactionComplate: NSNotification.Name = NSNotification.Name(rawValue: "nTransactionComplate")
+let nTransactionFailed: NSNotification.Name = NSNotification.Name(rawValue: "nTransactionFailed")
 
 class StoreManager: NSObject {
     ///
@@ -60,6 +61,8 @@ extension StoreManager: SKPaymentTransactionObserver {
                 savePurchased(productID: transaction.payment.productIdentifier)
             case .failed:
                 queue.finishTransaction(transaction)
+                NotificationCenter.default.post(name: nTransactionFailed, object: nil)
+                print("failed")
             case .restored:
                 print("restored")
                 print("модалка благодарности за возврат")
