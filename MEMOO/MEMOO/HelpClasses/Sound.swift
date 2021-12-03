@@ -10,10 +10,29 @@ class Sound {
         return UserDefaults.standard.bool(forKey: "Sound")
     }
     
-    class func soundAction(action: Bool) {
+    ///
+    class func changeStateSound(action: Bool) {
         action == true ? print("звуки включены") : print("звуки выключены")
         UserDefaults.standard.set(action, forKey: "Sound")
+        ///
+        soundAction(action: action)
     }
+    
+    ///
+    class func soundAction(action: Bool) {
+        if action == false {
+            playerBackgroundMusic?.pause()
+            return
+        }
+        playerBackgroundMusic?.isPlaying == false ? playBGSound() : playBackgroundSound()
+    }
+    
+    
+    
+    class func playBGSound() {
+        Sound.playerBackgroundMusic?.play()
+    }
+    
     
     class func playSound(nameResource: String, typeFile: String) {
         if !Sound.isSoundOn() { return }

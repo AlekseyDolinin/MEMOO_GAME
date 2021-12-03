@@ -7,6 +7,7 @@ class GameMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Sound.isSoundOn(): \(Sound.isSoundOn())")
         let nameIconSound = Sound.isSoundOn() ? "btnSoundOff" : "btnSoundOn"
         soundButton.setImage(UIImage(named: nameIconSound), for: .normal)
         widthButtonConstraint.constant = view.frame.width / 4
@@ -35,6 +36,6 @@ class GameMenuViewController: UIViewController {
     @IBAction func soundAction(_ sender: UIButton) {
         let nameIconSound = Sound.isSoundOn() ? "btnSoundOn" : "btnSoundOff"
         soundButton.setImage(UIImage(named: nameIconSound), for: .normal)
-        Sound.soundAction(action: !Sound.isSoundOn())
+        Sound.changeStateSound(action: !Sound.isSoundOn())
     }
 }

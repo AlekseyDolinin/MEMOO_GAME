@@ -42,19 +42,19 @@ class StartViewController: UIViewController {
         }
     }
     
-    func getPriceProducts() {
-        /// получение цен покупок
-        let productIDs = Set<String>(ProductIDs.allCases.map { $0.rawValue })
-        priceManager.getPricesForInApps(inAppsIDs: productIDs)
-    }
-    
-    
     ///
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         let widthCell = view.frame.width - 140
         let leftInset = (view.frame.width - widthCell) / 3
         viewSelf.collectionRound.contentInset = UIEdgeInsets(top: 0, left: leftInset, bottom: 0, right: leftInset)
+    }
+    
+    ///
+    func getPriceProducts() {
+        /// получение цен покупок
+        let productIDs = Set<String>(ProductIDs.allCases.map { $0.rawValue })
+        priceManager.getPricesForInApps(inAppsIDs: productIDs)
     }
     
     ///
