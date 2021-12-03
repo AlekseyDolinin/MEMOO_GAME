@@ -36,7 +36,6 @@ class GameViewController: UIViewController {
         super.viewWillAppear(true)
         ///
         restart()
-        print("isSoundOn: \(Sound.isSoundOn())")
         if Sound.isSoundOn() {
             Sound.playBackgroundSound()
         } else {

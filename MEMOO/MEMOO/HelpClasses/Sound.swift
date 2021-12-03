@@ -4,7 +4,8 @@ import AVFoundation
 class Sound {
     
     static var playerBackgroundMusic: AVAudioPlayer?
-    static var playerSoundEffect: AVAudioPlayer?
+    static var playerSoundOpenCard: AVAudioPlayer?
+    static var playerSoundMath: AVAudioPlayer?
     
     class func isSoundOn() -> Bool {
         return UserDefaults.standard.bool(forKey: "Sound")
@@ -26,28 +27,43 @@ class Sound {
         }
         playerBackgroundMusic?.isPlaying == false ? playBGSound() : playBackgroundSound()
     }
-    
-    
-    
+        
+    ///
     class func playBGSound() {
         Sound.playerBackgroundMusic?.play()
     }
     
-    
-    class func playSound(nameResource: String, typeFile: String) {
+    ///
+    class func playSoundOpenCard() {
         if !Sound.isSoundOn() { return }
-        guard let url = Bundle.main.url(forResource: nameResource, withExtension: typeFile) else { return }
+        guard let url = Bundle.main.url(forResource: "click_sound_5", withExtension: "mp3") else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
-            playerSoundEffect = try AVAudioPlayer(contentsOf: url, fileTypeHint: typeFile)
-            guard let player = playerSoundEffect else { return }
+            playerSoundOpenCard = try AVAudioPlayer(contentsOf: url, fileTypeHint: "mp3")
+            guard let player = playerSoundOpenCard else { return }
             player.play()
         } catch let error {
             print(error.localizedDescription)
         }
     }
     
+    ///
+    class func playSoundMath() {
+        if !Sound.isSoundOn() { return }
+        guard let url = Bundle.main.url(forResource: "shimmer_1", withExtension: "flac") else { return }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            playerSoundMath = try AVAudioPlayer(contentsOf: url, fileTypeHint: "flac")
+            guard let player = playerSoundMath else { return }
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    ///
     class func playBackgroundSound() {
         if !Sound.isSoundOn() { return }
         guard let url = Bundle.main.url(forResource: "WoodlandFantasy", withExtension: "mp3") else { return }
@@ -63,10 +79,13 @@ class Sound {
         }
     }
     
+    ///
     class func removePlayers() {
         playerBackgroundMusic?.stop()
-        playerSoundEffect?.stop()
         playerBackgroundMusic = nil
-        playerSoundEffect = nil
+        playerSoundOpenCard?.stop()
+        playerSoundOpenCard = nil
+        playerSoundMath?.stop()
+        playerSoundMath = nil
     }
 }
