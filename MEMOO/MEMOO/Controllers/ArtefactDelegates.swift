@@ -3,12 +3,12 @@ import UIKit
 extension ArtefactViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return countCell
+        return artefactsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let artefactCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtefactCell", for: indexPath) as! ArtefactCell
-        artefactCell.index = indexPath.row
+        artefactCell.artefact = artefactsArray[indexPath.row]
         artefactCell.setCell()
         return artefactCell
     }
@@ -16,7 +16,7 @@ extension ArtefactViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "PreviewArtefactViewController") as! PreviewArtefactViewController
         vc.modalPresentationStyle = .overFullScreen
-        vc.tempartefactimage = UIImage(named: "artefact_\(indexPath.row + 1)")
+        vc.artefact = artefactsArray[indexPath.row]
         present(vc, animated: true)
     }
     

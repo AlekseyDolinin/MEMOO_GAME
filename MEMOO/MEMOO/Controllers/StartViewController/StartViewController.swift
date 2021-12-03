@@ -87,7 +87,6 @@ class StartViewController: UIViewController {
     ///
     @IBAction func openArtefactCollection() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ArtefactViewController") as! ArtefactViewController
-        vc.selectRound = StartViewController.selectRound
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }

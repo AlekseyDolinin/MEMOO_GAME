@@ -7,14 +7,23 @@ class ArtefactViewController: UIViewController {
         return (view as! ArtefactView)
     }
     
-    var selectRound: Round!
-    var countCell = 40
+    var artefactsArray = [Artefact]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         viewSelf.artefactCollection.delegate = self
         viewSelf.artefactCollection.dataSource = self
+        
+        for i in 1...40 {
+            let artefact = Artefact(id: 0,
+                                    image: UIImage(named: "artefact_\(i)") ?? UIImage(),
+                                    nameArtefact: "nameArtefact",
+                                    descriptionArtefact: "descriptionArtefact")
+            artefactsArray.append(artefact)
+            
+            viewSelf.artefactCollection.reloadData()
+        }
     }
 
     ///

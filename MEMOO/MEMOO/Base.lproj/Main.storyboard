@@ -713,19 +713,44 @@
         <scene sceneID="mAn-aT-Wbq">
             <objects>
                 <viewController storyboardIdentifier="PreviewArtefactViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zac-JF-Cg3" customClass="PreviewArtefactViewController" customModule="MEMOO" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9lU-yT-pil">
+                    <view key="view" contentMode="scaleToFill" id="9lU-yT-pil" customClass="PreviewArtefactView" customModule="MEMOO" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhp-B4-63P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gxB-Q9-Eka">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8sg-MC-lg8">
-                                <rect key="frame" x="40" y="68" width="295" height="295"/>
+                                <rect key="frame" x="64" y="68" width="247" height="247"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8sg-MC-lg8" secondAttribute="height" multiplier="1:1" id="WU4-Cd-o5z"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Epz-FB-8mx">
+                                <rect key="frame" x="16" y="355" width="343" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mka-g7-XkM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="24"/>
+                                        <color key="textColor" name="white_"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSf-Vx-0og">
+                                        <rect key="frame" x="0.0" y="45" width="343" height="17"/>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="14"/>
+                                        <color key="textColor" name="white_"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZg-1w-ikx">
-                                <rect key="frame" x="152.66666666666666" y="463" width="70" height="70"/>
+                                <rect key="frame" x="152.66666666666666" y="668" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="ZZx-A1-Msa"/>
                                     <constraint firstAttribute="height" constant="70" id="Ze1-nx-6Js"/>
@@ -742,22 +767,31 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p8X-T9-Gwk"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.70431498344370858" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NZg-1w-ikx" firstAttribute="centerX" secondItem="9lU-yT-pil" secondAttribute="centerX" id="Lxl-Bp-bj1"/>
-                            <constraint firstItem="p8X-T9-Gwk" firstAttribute="trailing" secondItem="8sg-MC-lg8" secondAttribute="trailing" constant="40" id="Ngh-UY-ebY"/>
+                            <constraint firstItem="p8X-T9-Gwk" firstAttribute="trailing" secondItem="8sg-MC-lg8" secondAttribute="trailing" constant="64" id="Ngh-UY-ebY"/>
+                            <constraint firstItem="Epz-FB-8mx" firstAttribute="leading" secondItem="p8X-T9-Gwk" secondAttribute="leading" constant="16" id="OHT-AV-8oz"/>
                             <constraint firstItem="8sg-MC-lg8" firstAttribute="top" secondItem="p8X-T9-Gwk" secondAttribute="top" constant="24" id="Sxj-Do-aWR"/>
-                            <constraint firstItem="8sg-MC-lg8" firstAttribute="leading" secondItem="p8X-T9-Gwk" secondAttribute="leading" constant="40" id="VVb-8n-Aya"/>
-                            <constraint firstItem="NZg-1w-ikx" firstAttribute="top" secondItem="8sg-MC-lg8" secondAttribute="bottom" constant="100" id="z5N-g4-JqI"/>
+                            <constraint firstAttribute="trailing" secondItem="Bhp-B4-63P" secondAttribute="trailing" id="Uir-7I-lru"/>
+                            <constraint firstItem="8sg-MC-lg8" firstAttribute="leading" secondItem="p8X-T9-Gwk" secondAttribute="leading" constant="64" id="VVb-8n-Aya"/>
+                            <constraint firstItem="Bhp-B4-63P" firstAttribute="top" secondItem="9lU-yT-pil" secondAttribute="top" id="YGw-4E-dbk"/>
+                            <constraint firstItem="Bhp-B4-63P" firstAttribute="leading" secondItem="p8X-T9-Gwk" secondAttribute="leading" id="ct9-mf-b81"/>
+                            <constraint firstItem="Epz-FB-8mx" firstAttribute="top" secondItem="8sg-MC-lg8" secondAttribute="bottom" constant="40" id="dMa-ZF-0qP"/>
+                            <constraint firstAttribute="bottom" secondItem="Bhp-B4-63P" secondAttribute="bottom" id="iXx-Zf-PGS"/>
+                            <constraint firstItem="p8X-T9-Gwk" firstAttribute="bottom" secondItem="NZg-1w-ikx" secondAttribute="bottom" constant="40" id="kQb-u3-b74"/>
+                            <constraint firstItem="p8X-T9-Gwk" firstAttribute="trailing" secondItem="Epz-FB-8mx" secondAttribute="trailing" constant="16" id="uG2-ny-gFf"/>
                         </constraints>
+                        <connections>
+                            <outlet property="artefactImage" destination="8sg-MC-lg8" id="KWV-oQ-kqf"/>
+                            <outlet property="descriptionArtefact" destination="dSf-Vx-0og" id="uc1-oy-zM7"/>
+                            <outlet property="nameArtefact" destination="mka-g7-XkM" id="Zh5-wd-nW2"/>
+                        </connections>
                     </view>
-                    <connections>
-                        <outlet property="artefactImage" destination="8sg-MC-lg8" id="T4B-vi-TRO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olE-Mq-tJU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-935" y="-413"/>
+            <point key="canvasLocation" x="-935.20000000000005" y="-413.05418719211826"/>
         </scene>
         <!--Artefact View Controller-->
         <scene sceneID="oZU-In-qoZ">
