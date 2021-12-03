@@ -269,29 +269,49 @@
                                     <constraint firstAttribute="width" secondItem="v7k-Mt-cga" secondAttribute="height" multiplier="1:0.8" id="1Aj-Yw-A5W"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okf-Mv-UFS">
-                                <rect key="frame" x="157.66666666666666" y="570.33333333333337" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="iyn-iK-068"/>
-                                    <constraint firstAttribute="height" constant="60" id="nFG-TZ-MIr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
-                                <inset key="titleEdgeInsets" minX="-200" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" image="btnClose">
-                                    <color key="titleColor" name="DarkGray_"/>
-                                </state>
-                                <connections>
-                                    <action selector="close:" destination="rC4-cU-JIw" eventType="touchUpInside" id="5yX-5Y-dsl"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-a9-mqS">
+                                <rect key="frame" x="115.66666666666669" y="570.33333333333337" width="144" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okf-Mv-UFS">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="iyn-iK-068"/>
+                                            <constraint firstAttribute="height" constant="60" id="nFG-TZ-MIr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
+                                        <inset key="titleEdgeInsets" minX="-200" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="btnHome">
+                                            <color key="titleColor" name="DarkGray_"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backHome:" destination="rC4-cU-JIw" eventType="touchUpInside" id="7dR-ST-uLZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1H-aK-KSb">
+                                        <rect key="frame" x="83.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="K1F-v8-Cla"/>
+                                            <constraint firstAttribute="height" constant="60" id="aOv-7I-BHT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
+                                        <inset key="titleEdgeInsets" minX="-200" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="btnReloadRound">
+                                            <color key="titleColor" name="DarkGray_"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reloadRound:" destination="rC4-cU-JIw" eventType="touchUpInside" id="qDa-YU-6HS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gSi-bq-ocG"/>
                         <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="v7k-Mt-cga" firstAttribute="leading" secondItem="gSi-bq-ocG" secondAttribute="leading" constant="32" id="LMu-aJ-gAX"/>
-                            <constraint firstItem="okf-Mv-UFS" firstAttribute="top" secondItem="v7k-Mt-cga" secondAttribute="bottom" constant="40" id="Vro-XN-i8a"/>
-                            <constraint firstItem="okf-Mv-UFS" firstAttribute="centerX" secondItem="kM3-FD-PWJ" secondAttribute="centerX" id="cdL-q0-EWK"/>
                             <constraint firstItem="gSi-bq-ocG" firstAttribute="trailing" secondItem="v7k-Mt-cga" secondAttribute="trailing" constant="32" id="gap-Tb-bgH"/>
+                            <constraint firstItem="qNK-a9-mqS" firstAttribute="centerX" secondItem="kM3-FD-PWJ" secondAttribute="centerX" id="koH-Tf-Vew"/>
+                            <constraint firstItem="qNK-a9-mqS" firstAttribute="top" secondItem="v7k-Mt-cga" secondAttribute="bottom" constant="40" id="lDY-1k-yWe"/>
                             <constraint firstItem="v7k-Mt-cga" firstAttribute="centerY" secondItem="kM3-FD-PWJ" secondAttribute="centerY" id="nvP-EL-8bY"/>
                         </constraints>
                     </view>

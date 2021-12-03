@@ -12,9 +12,16 @@ class WinViewController: UIViewController {
     }
     
     ///
-    @IBAction func close(_ sender: UIButton) {
+    @IBAction func reloadRound(_ sender: UIButton) {
         dismiss(animated: false) {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "back"), object: self)
+            NotificationCenter.default.post(name: nReloadRound, object: self)
+        }
+    }
+    
+    ///
+    @IBAction func backHome(_ sender: UIButton) {
+        dismiss(animated: false) {
+            NotificationCenter.default.post(name: nBackHome, object: self)
         }
     }
 }

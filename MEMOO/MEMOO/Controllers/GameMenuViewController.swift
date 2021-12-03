@@ -20,14 +20,14 @@ class GameMenuViewController: UIViewController {
     ///
     @IBAction func restartRound(_ sender: UIButton) {
         dismiss(animated: false) {
-            NotificationCenter.default.post(name: nRestart, object: nil)
+            NotificationCenter.default.post(name: nReloadRound, object: nil)
         }
     }
     
     ///
     @IBAction func finishRound(_ sender: UIButton) {
         dismiss(animated: false) {
-            NotificationCenter.default.post(name: nBack, object: nil)
+            NotificationCenter.default.post(name: nBackHome, object: nil)
         }
     }
     

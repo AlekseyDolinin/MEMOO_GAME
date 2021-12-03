@@ -1,8 +1,8 @@
 import UIKit
 import AVFoundation
 
-let nRestart: NSNotification.Name = NSNotification.Name(rawValue: "nRestart")
-let nBack: NSNotification.Name = NSNotification.Name(rawValue: "nBack")
+let nReloadRound: NSNotification.Name = NSNotification.Name(rawValue: "nReloadRound")
+let nBackHome: NSNotification.Name = NSNotification.Name(rawValue: "nBackHome")
 
 class GameViewController: UIViewController {
     
@@ -22,11 +22,11 @@ class GameViewController: UIViewController {
         viewSelf.cardCollection.delegate = self
         viewSelf.cardCollection.dataSource = self
                 
-        NotificationCenter.default.addObserver(forName: nRestart, object: nil, queue: nil) { notification in
+        NotificationCenter.default.addObserver(forName: nReloadRound, object: nil, queue: nil) { notification in
             self.restart()
         }
         
-        NotificationCenter.default.addObserver(forName: nBack, object: nil, queue: nil) { notification in
+        NotificationCenter.default.addObserver(forName: nBackHome, object: nil, queue: nil) { notification in
             self.outGame()
         }
     }
