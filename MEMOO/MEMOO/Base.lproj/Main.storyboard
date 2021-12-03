@@ -106,10 +106,10 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q5-uf-NzG">
-                                <rect key="frame" x="309" y="60" width="50" height="50"/>
+                                <rect key="frame" x="289" y="60" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9f0-MG-FHk"/>
-                                    <constraint firstAttribute="width" constant="50" id="DZ3-Tz-SmJ"/>
+                                    <constraint firstAttribute="height" constant="70" id="9f0-MG-FHk"/>
+                                    <constraint firstAttribute="width" constant="70" id="DZ3-Tz-SmJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                 <state key="normal" image="btnMenu">
@@ -152,10 +152,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-nK-CvZ">
-                                <rect key="frame" x="73.666666666666686" y="376" width="228" height="60"/>
+                                <rect key="frame" x="58.666666666666657" y="371" width="258" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJy-bc-die">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="AJy-bc-die" secondAttribute="height" multiplier="1:1" id="654-8h-uiC"/>
                                         </constraints>
@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-aE-UpK">
-                                        <rect key="frame" x="83.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                        <rect key="frame" x="94" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iGR-aE-UpK" secondAttribute="height" multiplier="1:1" id="qmq-eJ-Bbv"/>
                                         </constraints>
@@ -183,9 +183,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-bX-BAb">
-                                        <rect key="frame" x="168" y="0.0" width="60" height="60"/>
+                                        <rect key="frame" x="188" y="0.0" width="70" height="70"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="HQN-Dl-TXU"/>
+                                            <constraint firstAttribute="width" constant="70" id="HQN-Dl-TXU"/>
                                             <constraint firstAttribute="width" secondItem="aLh-bX-BAb" secondAttribute="height" multiplier="1:1" id="d4g-Q1-amC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
@@ -204,10 +204,10 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-ZS-E5R">
-                                <rect key="frame" x="157.66666666666666" y="516" width="60" height="60"/>
+                                <rect key="frame" x="152.66666666666666" y="521" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="Wek-QW-gp3"/>
-                                    <constraint firstAttribute="height" constant="60" id="qtO-DF-P9Y"/>
+                                    <constraint firstAttribute="width" constant="70" id="Wek-QW-gp3"/>
+                                    <constraint firstAttribute="height" constant="70" id="qtO-DF-P9Y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                 <inset key="titleEdgeInsets" minX="-270" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -270,13 +270,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-a9-mqS">
-                                <rect key="frame" x="115.66666666666669" y="570.33333333333337" width="144" height="60"/>
+                                <rect key="frame" x="105.66666666666669" y="570.33333333333337" width="164" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okf-Mv-UFS">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="iyn-iK-068"/>
-                                            <constraint firstAttribute="height" constant="60" id="nFG-TZ-MIr"/>
+                                            <constraint firstAttribute="width" constant="70" id="iyn-iK-068"/>
+                                            <constraint firstAttribute="height" constant="70" id="nFG-TZ-MIr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-200" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -288,10 +288,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1H-aK-KSb">
-                                        <rect key="frame" x="83.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                        <rect key="frame" x="94" y="0.0" width="70" height="70"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="K1F-v8-Cla"/>
-                                            <constraint firstAttribute="height" constant="60" id="aOv-7I-BHT"/>
+                                            <constraint firstAttribute="width" constant="70" id="K1F-v8-Cla"/>
+                                            <constraint firstAttribute="height" constant="70" id="aOv-7I-BHT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-200" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -451,10 +451,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCs-5M-58w">
-                                <rect key="frame" x="309" y="60" width="50" height="50"/>
+                                <rect key="frame" x="289" y="60" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="4G7-bg-am1"/>
-                                    <constraint firstAttribute="height" constant="50" id="7dp-vh-Uzo"/>
+                                    <constraint firstAttribute="width" constant="70" id="4G7-bg-am1"/>
+                                    <constraint firstAttribute="height" constant="70" id="7dp-vh-Uzo"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="btnMenu"/>
@@ -830,10 +830,10 @@
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnClose" translatesAutoresizingMaskIntoConstraints="NO" id="F0s-Xu-fCq">
-                                <rect key="frame" x="147.66666666666666" y="721" width="80" height="80"/>
+                                <rect key="frame" x="152.66666666666666" y="721" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="LS6-ek-zsU"/>
-                                    <constraint firstAttribute="width" constant="80" id="VKy-ED-WLi"/>
+                                    <constraint firstAttribute="height" constant="70" id="LS6-ek-zsU"/>
+                                    <constraint firstAttribute="width" constant="70" id="VKy-ED-WLi"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="cd2-UZ-WT3">
@@ -843,7 +843,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8Y-Gy-xj2">
-                                <rect key="frame" x="147.66666666666666" y="709" width="80" height="92"/>
+                                <rect key="frame" x="152.66666666666666" y="709" width="70" height="82"/>
                                 <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                 <state key="normal">
                                     <color key="titleColor" name="DarkGray_"/>
