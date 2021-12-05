@@ -746,17 +746,17 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Epz-FB-8mx">
-                                <rect key="frame" x="16" y="355" width="343" height="62"/>
+                                <rect key="frame" x="16" y="355" width="343" height="78.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mka-g7-XkM">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
-                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="38.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="32"/>
                                         <color key="textColor" name="white_"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSf-Vx-0og">
-                                        <rect key="frame" x="0.0" y="45" width="343" height="17"/>
-                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="54.666666666666686" width="343" height="24"/>
+                                        <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="20"/>
                                         <color key="textColor" name="white_"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -821,44 +821,57 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="cJI-Fr-pHA">
-                                    <size key="itemSize" width="166" height="166"/>
+                                    <size key="itemSize" width="166" height="204"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="24" minY="64" maxX="24" maxY="120"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArtefactCell" id="0ot-ZX-5lR" customClass="ArtefactCell" customModule="MEMOO" customModuleProvider="target">
-                                        <rect key="frame" x="104.66666666666667" y="64" width="166" height="166"/>
+                                        <rect key="frame" x="104.66666666666667" y="64" width="166" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="166" height="204"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcL-dL-I2A">
-                                                    <rect key="frame" x="2" y="2" width="162" height="162"/>
+                                                    <rect key="frame" x="2" y="2" width="162" height="200"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9b-XV-Ev9">
                                                             <rect key="frame" x="4" y="4" width="154" height="154"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-28-5DE" customClass="CardView" customModule="MEMOO" customModuleProvider="target">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-28-5DE" customClass="CardView" customModule="MEMOO" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstItem="0aa-28-5DE" firstAttribute="top" secondItem="i9b-XV-Ev9" secondAttribute="top" id="8ho-xq-0pl"/>
+                                                                <constraint firstAttribute="width" secondItem="i9b-XV-Ev9" secondAttribute="height" multiplier="1:1" id="EzT-lt-6yX"/>
                                                                 <constraint firstItem="0aa-28-5DE" firstAttribute="leading" secondItem="i9b-XV-Ev9" secondAttribute="leading" id="RZO-pz-a5A"/>
                                                                 <constraint firstAttribute="trailing" secondItem="0aa-28-5DE" secondAttribute="trailing" id="w9j-Vf-AN2"/>
                                                                 <constraint firstAttribute="bottom" secondItem="0aa-28-5DE" secondAttribute="bottom" id="wSK-hq-IRM"/>
                                                             </constraints>
                                                         </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_____" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALU-aV-IaY">
+                                                            <rect key="frame" x="4" y="158" width="154" height="38"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="18" id="Hh7-n0-5kC"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="18"/>
+                                                            <color key="textColor" name="grey_darken_5"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="i9b-XV-Ev9" secondAttribute="bottom" constant="4" id="Oyu-vB-GYt"/>
+                                                        <constraint firstItem="ALU-aV-IaY" firstAttribute="leading" secondItem="EcL-dL-I2A" secondAttribute="leading" constant="4" id="7Rr-Gj-XEX"/>
+                                                        <constraint firstItem="ALU-aV-IaY" firstAttribute="top" secondItem="i9b-XV-Ev9" secondAttribute="bottom" id="eyt-eo-DRK"/>
                                                         <constraint firstItem="i9b-XV-Ev9" firstAttribute="top" secondItem="EcL-dL-I2A" secondAttribute="top" constant="4" id="iPX-1k-RNu"/>
                                                         <constraint firstAttribute="trailing" secondItem="i9b-XV-Ev9" secondAttribute="trailing" constant="4" id="lmd-Ud-FJq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ALU-aV-IaY" secondAttribute="bottom" constant="4" id="mme-Sc-hke"/>
                                                         <constraint firstItem="i9b-XV-Ev9" firstAttribute="leading" secondItem="EcL-dL-I2A" secondAttribute="leading" constant="4" id="xeT-IV-OLM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ALU-aV-IaY" secondAttribute="trailing" constant="4" id="yfX-yb-Qgi"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -870,8 +883,10 @@
                                             <constraint firstItem="EcL-dL-I2A" firstAttribute="top" secondItem="0ot-ZX-5lR" secondAttribute="top" constant="2" id="sZc-i9-qlN"/>
                                             <constraint firstAttribute="bottom" secondItem="EcL-dL-I2A" secondAttribute="bottom" constant="2" id="xYr-fY-K6E"/>
                                         </constraints>
+                                        <size key="customSize" width="166" height="204"/>
                                         <connections>
                                             <outlet property="artefactImage" destination="0aa-28-5DE" id="rDJ-uv-mD8"/>
+                                            <outlet property="nameArtefact" destination="ALU-aV-IaY" id="Lar-av-1Aj"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1054,6 +1069,9 @@
         <image name="layer_4" width="7200" height="1139"/>
         <namedColor name="DarkGray_">
             <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey_darken_5">
+            <color red="0.10199999809265137" green="0.10199999809265137" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white_">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

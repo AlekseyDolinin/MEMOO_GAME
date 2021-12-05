@@ -3,6 +3,7 @@ import UIKit
 class ArtefactCell: UICollectionViewCell {
     
     @IBOutlet weak var artefactImage: CardView!
+    @IBOutlet weak var nameArtefact: UILabel!
     
     var artefact: Artefact!
     
@@ -13,6 +14,7 @@ class ArtefactCell: UICollectionViewCell {
     
     func setCell() {
         artefactImage.image = artefact.image
+        nameArtefact.text = artefact.nameArtefact
     }
 
 }

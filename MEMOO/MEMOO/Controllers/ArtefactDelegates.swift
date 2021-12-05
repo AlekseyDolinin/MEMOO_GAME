@@ -22,6 +22,6 @@ extension ArtefactViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let widthCell = (collectionView.frame.width / 3 - 20)
-        return CGSize(width: widthCell, height: widthCell)
+        return CGSize(width: widthCell, height: widthCell + 18)
     }
 }

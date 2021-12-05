@@ -508,6 +508,7 @@
 		91B68385275CBAA00033711B /* Win sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91B68384275CBAA00033711B /* Win sound.wav */; };
 		91B68387275CBAA40033711B /* sfx-victory1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91B68386275CBAA40033711B /* sfx-victory1.mp3 */; };
 		91B68389275CBDBA0033711B /* firework.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91B68388275CBDBA0033711B /* firework.sks */; };
+		91B6838B275CC7D30033711B /* ArtefactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6838A275CC7D30033711B /* ArtefactList.swift */; };
 		91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8D2709E33D00F9DD46 /* WinViewController.swift */; };
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
 		91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05427463696002CA6E1 /* RoundCell.swift */; };
@@ -1026,6 +1027,7 @@
 		91B68384275CBAA00033711B /* Win sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Win sound.wav"; path = "../../../../../../../Downloads/Win sound.wav"; sourceTree = "<group>"; };
 		91B68386275CBAA40033711B /* sfx-victory1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-victory1.mp3"; sourceTree = "<group>"; };
 		91B68388275CBDBA0033711B /* firework.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = firework.sks; sourceTree = "<group>"; };
+		91B6838A275CC7D30033711B /* ArtefactList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtefactList.swift; sourceTree = "<group>"; };
 		91C88D8D2709E33D00F9DD46 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		91CAA05427463696002CA6E1 /* RoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
@@ -1180,6 +1182,7 @@
 		10D22A0226B328900063433E /* HelpClasses */ = {
 			isa = PBXGroup;
 			children = (
+				91B6838A275CC7D30033711B /* ArtefactList.swift */,
 				916FCD7427574A02002CD0F5 /* Sound.swift */,
 				10D229F426B328800063433E /* CardView.swift */,
 				10D22A0326B328900063433E /* UIColor.swift */,
@@ -2508,6 +2511,7 @@
 				10D22A0926B329470063433E /* StartView.swift in Sources */,
 				10D22A0726B329420063433E /* CardCell.swift in Sources */,
 				91C88D902709E38200F9DD46 /* WinView.swift in Sources */,
+				91B6838B275CC7D30033711B /* ArtefactList.swift in Sources */,
 				10D22A0C26B3294E0063433E /* GameView.swift in Sources */,
 				913351B22754AEB70044CEC1 /* ModalLockedRoundDelegates.swift in Sources */,
 				916FCCA927551ACA002CD0F5 /* CreateRound.swift in Sources */,

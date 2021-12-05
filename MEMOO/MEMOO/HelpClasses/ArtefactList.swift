@@ -18,7 +18,11 @@ class ArtefactList {
         "Aole ino",
         "Kiai holoholona", 
         "Ho-olohe", 
-        "Ho-oikaika"
+        "Ho-oikaika",
+        "_____",
+        "_____",
+        "_____",
+        "_____"
         ]
 
     static let listRoundArtefactsNames = [
