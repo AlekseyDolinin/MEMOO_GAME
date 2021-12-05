@@ -5,6 +5,10 @@ class CreateRound {
     ///
     class func create(nameRound: String, freeListRound: [String], completion: (Round) -> ()) {
         let idRound = parseID(name: nameRound)
+        /// если куплен весь контент
+        
+        
+        
         let isRoundBuy = freeListRound.contains(nameRound) ? true : UserDefaults.standard.bool(forKey: "\(idRound)_buy")
 //        print("\(nameRound) --- \(isRoundBuy)")
         let state: RoundState = isRoundBuy == true ? .buy : .notBuy

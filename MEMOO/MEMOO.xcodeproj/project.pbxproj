@@ -505,6 +505,9 @@
 		9190FB6D274E8B730097F5E4 /* animal_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190FB59274E8B730097F5E4 /* animal_18.png */; };
 		9190FB6E274E8B730097F5E4 /* animal_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190FB5A274E8B730097F5E4 /* animal_4.png */; };
 		91B68381275A77710033711B /* Artefacts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B68380275A77710033711B /* Artefacts.strings */; };
+		91B68385275CBAA00033711B /* Win sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91B68384275CBAA00033711B /* Win sound.wav */; };
+		91B68387275CBAA40033711B /* sfx-victory1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91B68386275CBAA40033711B /* sfx-victory1.mp3 */; };
+		91B68389275CBDBA0033711B /* firework.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91B68388275CBDBA0033711B /* firework.sks */; };
 		91C88D8E2709E33D00F9DD46 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8D2709E33D00F9DD46 /* WinViewController.swift */; };
 		91C88D902709E38200F9DD46 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C88D8F2709E38200F9DD46 /* WinView.swift */; };
 		91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAA05427463696002CA6E1 /* RoundCell.swift */; };
@@ -1020,6 +1023,9 @@
 		9190FB59274E8B730097F5E4 /* animal_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal_18.png; sourceTree = "<group>"; };
 		9190FB5A274E8B730097F5E4 /* animal_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal_4.png; sourceTree = "<group>"; };
 		91B68380275A77710033711B /* Artefacts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Artefacts.strings; sourceTree = "<group>"; };
+		91B68384275CBAA00033711B /* Win sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Win sound.wav"; path = "../../../../../../../Downloads/Win sound.wav"; sourceTree = "<group>"; };
+		91B68386275CBAA40033711B /* sfx-victory1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-victory1.mp3"; sourceTree = "<group>"; };
+		91B68388275CBDBA0033711B /* firework.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = firework.sks; sourceTree = "<group>"; };
 		91C88D8D2709E33D00F9DD46 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		91C88D8F2709E38200F9DD46 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		91CAA05427463696002CA6E1 /* RoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
@@ -1106,6 +1112,7 @@
 				91CAA056274646A7002CA6E1 /* magic.sks */,
 				91F080452750B8CE00BFCDCB /* fire.sks */,
 				91F080412750B33500BFCDCB /* smoke.sks */,
+				91B68388275CBDBA0033711B /* firework.sks */,
 				91B68380275A77710033711B /* Artefacts.strings */,
 			);
 			path = Resourses;
@@ -1269,6 +1276,8 @@
 		916FCD6727574889002CD0F5 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				91B68386275CBAA40033711B /* sfx-victory1.mp3 */,
+				91B68384275CBAA00033711B /* Win sound.wav */,
 				916FCD69275748B6002CD0F5 /* click_sound_5.mp3 */,
 				916FCD6C275748B6002CD0F5 /* shimmer_1.flac */,
 				916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */,
@@ -1973,6 +1982,7 @@
 				9190FAA0274E89C40097F5E4 /* sport_6.png in Resources */,
 				9190F987274E89780097F5E4 /* flower_7.png in Resources */,
 				9190F9B2274E89880097F5E4 /* fruit_6.png in Resources */,
+				91B68387275CBAA40033711B /* sfx-victory1.mp3 in Resources */,
 				9190FB41274E89DC0097F5E4 /* vegetable_1.png in Resources */,
 				9190F91F274E427B0097F5E4 /* animall_4.png in Resources */,
 				9190FA1D274E89A80097F5E4 /* ninja_16.png in Resources */,
@@ -2388,6 +2398,7 @@
 				9190F8DE274E427B0097F5E4 /* animalll_4.png in Resources */,
 				9190F8F0274E427B0097F5E4 /* farm_14.png in Resources */,
 				9190F8E8274E427B0097F5E4 /* animalll_15.png in Resources */,
+				91B68385275CBAA00033711B /* Win sound.wav in Resources */,
 				9190FA73274E89B50097F5E4 /* space_3.png in Resources */,
 				918ED65727589D810005C4D3 /* artefact_4.png in Resources */,
 				9190FB5B274E8B730097F5E4 /* animal_13.png in Resources */,
@@ -2402,6 +2413,7 @@
 				9190F958274E896C0097F5E4 /* fauna_14.png in Resources */,
 				9190FB5F274E8B730097F5E4 /* animal_8.png in Resources */,
 				9190FA70274E89B50097F5E4 /* space_17.png in Resources */,
+				91B68389275CBDBA0033711B /* firework.sks in Resources */,
 				9190F928274E427B0097F5E4 /* animall_1.png in Resources */,
 				9190F906274E427B0097F5E4 /* dog_9.png in Resources */,
 				9190FA74274E89B50097F5E4 /* space_7.png in Resources */,

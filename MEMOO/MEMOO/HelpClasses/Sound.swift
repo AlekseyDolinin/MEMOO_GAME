@@ -6,6 +6,7 @@ class Sound {
     static var playerBackgroundMusic: AVAudioPlayer?
     static var playerSoundOpenCard: AVAudioPlayer?
     static var playerSoundMath: AVAudioPlayer?
+    static var playerSoundWin: AVAudioPlayer?
     
     class func isSoundOn() -> Bool {
         return UserDefaults.standard.bool(forKey: "Sound")
@@ -80,6 +81,21 @@ class Sound {
     }
     
     ///
+    class func playSoundWin() {
+        if !Sound.isSoundOn() { return }
+        guard let url = Bundle.main.url(forResource: "sfx-victory1", withExtension: "mp3") else { return }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            playerBackgroundMusic = try AVAudioPlayer(contentsOf: url, fileTypeHint: "wav")
+            guard let player = playerBackgroundMusic else { return }
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    ///
     class func removePlayers() {
         playerBackgroundMusic?.stop()
         playerBackgroundMusic = nil
@@ -87,5 +103,7 @@ class Sound {
         playerSoundOpenCard = nil
         playerSoundMath?.stop()
         playerSoundMath = nil
+        playerSoundWin?.stop()
+        playerSoundWin = nil
     }
 }

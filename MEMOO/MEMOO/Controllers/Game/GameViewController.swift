@@ -87,7 +87,8 @@ class GameViewController: UIViewController {
     
     ///
     func gameWin() {
-        DispatchQueue.main.async {
+        Sound.playSoundWin()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "WinViewController") as! WinViewController
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true)
@@ -123,8 +124,8 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func showMenu(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "GameMenuViewController") as! GameMenuViewController
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: false)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameMenuViewController") as! GameMenuViewController
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: false)
     }
 }

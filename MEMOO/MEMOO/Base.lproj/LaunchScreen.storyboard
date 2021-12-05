@@ -16,19 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgg" translatesAutoresizingMaskIntoConstraints="NO" id="8qj-EA-Qrk">
-                                <rect key="frame" x="-3995" y="-326" width="5889" height="1138"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashBG" translatesAutoresizingMaskIntoConstraints="NO" id="LuS-Oh-539">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashFront" translatesAutoresizingMaskIntoConstraints="NO" id="SES-vF-8UK">
+                                <rect key="frame" x="48" y="296.66666666666663" width="279" height="418.66666666666663"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="8qj-EA-Qrk" secondAttribute="height" multiplier="5889:1138" id="3Wz-Cu-2jo"/>
+                                    <constraint firstAttribute="width" secondItem="SES-vF-8UK" secondAttribute="height" multiplier="1:1.5" id="OKg-JL-WnG"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8qj-EA-Qrk" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="aL8-M8-Ax8"/>
-                            <constraint firstAttribute="trailing" secondItem="8qj-EA-Qrk" secondAttribute="trailing" constant="-1519" id="sSR-wg-PWt"/>
-                            <constraint firstItem="8qj-EA-Qrk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-3995" id="tra-iY-dlI"/>
+                            <constraint firstItem="SES-vF-8UK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="100" id="64E-n2-h6a"/>
+                            <constraint firstItem="LuS-Oh-539" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="730-cG-H68"/>
+                            <constraint firstAttribute="bottom" secondItem="LuS-Oh-539" secondAttribute="bottom" id="FSC-U5-mB0"/>
+                            <constraint firstItem="SES-vF-8UK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="NQo-IX-FqK"/>
+                            <constraint firstItem="LuS-Oh-539" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="l6X-nl-D3d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SES-vF-8UK" secondAttribute="trailing" constant="48" id="lAx-Lj-dYE"/>
+                            <constraint firstAttribute="trailing" secondItem="LuS-Oh-539" secondAttribute="trailing" id="q1M-ve-Lma"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +45,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bgg" width="7200" height="1138"/>
+        <image name="splashBG" width="1125" height="2001"/>
+        <image name="splashFront" width="852" height="1212"/>
     </resources>
 </document>
