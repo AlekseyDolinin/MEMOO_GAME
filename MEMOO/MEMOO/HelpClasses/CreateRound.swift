@@ -4,14 +4,19 @@ class CreateRound {
     
     ///
     class func create(nameRound: String, freeListRound: [String], completion: (Round) -> ()) {
+        
+        var state: RoundState!
         let idRound = parseID(name: nameRound)
+        
         /// если куплен весь контент
-        
-        
-        
-        let isRoundBuy = freeListRound.contains(nameRound) ? true : UserDefaults.standard.bool(forKey: "\(idRound)_buy")
-//        print("\(nameRound) --- \(isRoundBuy)")
-        let state: RoundState = isRoundBuy == true ? .buy : .notBuy
+        if StoreManager.isUnlockAllContent() == true {
+            state = .buy
+        } else {
+            /// если не куплен весь контент - проверка какой куплен
+            let isRoundBuy = freeListRound.contains(nameRound) ? true : UserDefaults.standard.bool(forKey: "\(idRound)_buy")
+            state = isRoundBuy == true ? .buy : .notBuy
+            // print("\(nameRound) --- \(isRoundBuy)")
+        }
         let round = Round(idRound: idRound, name: nameRound, state: state)
         completion(round)
     }

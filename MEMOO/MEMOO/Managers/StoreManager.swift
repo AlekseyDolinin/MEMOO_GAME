@@ -6,11 +6,11 @@ let nTransactionFailed: NSNotification.Name = NSNotification.Name(rawValue: "nTr
 
 class StoreManager: NSObject {
     ///
-    class func isFullVersion() -> Bool {
+    class func isUnlockAllContent() -> Bool {
         #if DEBUG
-        print("is full version: \(UserDefaults.standard.bool(forKey: "FullVersion"))")
+        print("is Unlock All Content: \(UserDefaults.standard.bool(forKey: "unlockAllContentID_buy"))")
         #endif
-        return UserDefaults.standard.bool(forKey: "FullVersion")
+        return UserDefaults.standard.bool(forKey: "unlockAllContentID_buy")
     }
     
     ///
