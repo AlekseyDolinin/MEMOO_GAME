@@ -827,7 +827,7 @@
                                     <inset key="sectionInset" minX="24" minY="64" maxX="24" maxY="120"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArtefactCell" id="0ot-ZX-5lR" customClass="ArtefactCell" customModule="MEMOO" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArtefactCell" id="0ot-ZX-5lR" customClass="ArtefactCell" customModule="MEMOO" customModuleProvider="target">
                                         <rect key="frame" x="104.66666666666667" y="64" width="166" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -854,7 +854,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_____" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALU-aV-IaY">
-                                                            <rect key="frame" x="4" y="158" width="154" height="38"/>
+                                                            <rect key="frame" x="4" y="158" width="154" height="34"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="Hh7-n0-5kC"/>
                                                             </constraints>
@@ -869,9 +869,28 @@
                                                         <constraint firstItem="ALU-aV-IaY" firstAttribute="top" secondItem="i9b-XV-Ev9" secondAttribute="bottom" id="eyt-eo-DRK"/>
                                                         <constraint firstItem="i9b-XV-Ev9" firstAttribute="top" secondItem="EcL-dL-I2A" secondAttribute="top" constant="4" id="iPX-1k-RNu"/>
                                                         <constraint firstAttribute="trailing" secondItem="i9b-XV-Ev9" secondAttribute="trailing" constant="4" id="lmd-Ud-FJq"/>
-                                                        <constraint firstAttribute="bottom" secondItem="ALU-aV-IaY" secondAttribute="bottom" constant="4" id="mme-Sc-hke"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ALU-aV-IaY" secondAttribute="bottom" constant="8" id="mme-Sc-hke"/>
                                                         <constraint firstItem="i9b-XV-Ev9" firstAttribute="leading" secondItem="EcL-dL-I2A" secondAttribute="leading" constant="4" id="xeT-IV-OLM"/>
                                                         <constraint firstAttribute="trailing" secondItem="ALU-aV-IaY" secondAttribute="trailing" constant="4" id="yfX-yb-Qgi"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDm-yh-Yas">
+                                                    <rect key="frame" x="134" y="2" width="30" height="20"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-d3-aHt">
+                                                            <rect key="frame" x="8" y="0.0" width="14" height="20"/>
+                                                            <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="14"/>
+                                                            <color key="textColor" name="white_"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="green_"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="0e4-59-DSH"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2Ic-d3-aHt" secondAttribute="bottom" id="1og-XL-TYB"/>
+                                                        <constraint firstItem="2Ic-d3-aHt" firstAttribute="leading" secondItem="XDm-yh-Yas" secondAttribute="leading" constant="8" id="1tY-Wt-L3i"/>
+                                                        <constraint firstItem="2Ic-d3-aHt" firstAttribute="top" secondItem="XDm-yh-Yas" secondAttribute="top" id="paN-yv-Ssp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2Ic-d3-aHt" secondAttribute="trailing" constant="8" id="tdT-gR-KLQ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -879,6 +898,8 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="EcL-dL-I2A" secondAttribute="trailing" constant="2" id="3EU-0J-Ydd"/>
+                                            <constraint firstItem="XDm-yh-Yas" firstAttribute="trailing" secondItem="EcL-dL-I2A" secondAttribute="trailing" id="4a3-h1-PTX"/>
+                                            <constraint firstItem="XDm-yh-Yas" firstAttribute="top" secondItem="EcL-dL-I2A" secondAttribute="top" id="G4Y-OC-hPP"/>
                                             <constraint firstItem="EcL-dL-I2A" firstAttribute="leading" secondItem="0ot-ZX-5lR" secondAttribute="leading" constant="2" id="Pe4-jH-hRn"/>
                                             <constraint firstItem="EcL-dL-I2A" firstAttribute="top" secondItem="0ot-ZX-5lR" secondAttribute="top" constant="2" id="sZc-i9-qlN"/>
                                             <constraint firstAttribute="bottom" secondItem="EcL-dL-I2A" secondAttribute="bottom" constant="2" id="xYr-fY-K6E"/>
@@ -886,6 +907,8 @@
                                         <size key="customSize" width="166" height="204"/>
                                         <connections>
                                             <outlet property="artefactImage" destination="0aa-28-5DE" id="rDJ-uv-mD8"/>
+                                            <outlet property="countBack" destination="XDm-yh-Yas" id="GPe-Px-Y6q"/>
+                                            <outlet property="countLabel" destination="2Ic-d3-aHt" id="8uT-5x-puM"/>
                                             <outlet property="nameArtefact" destination="ALU-aV-IaY" id="Lar-av-1Aj"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1069,6 +1092,9 @@
         <image name="layer_4" width="7200" height="1139"/>
         <namedColor name="DarkGray_">
             <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green_">
+            <color red="0.41200000047683716" green="0.72200000286102295" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="grey_darken_5">
             <color red="0.10199999809265137" green="0.10199999809265137" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -18,7 +18,8 @@ class ArtefactViewController: UIViewController {
             let artefact = Artefact(id: 0,
                                     image: UIImage(named: "artefact_\(i + 1)") ?? UIImage(),
                                     nameArtefact: allNamesArtefacts[i],
-                                    descriptionArtefact: ArtefactList.listDescriptionArtefacts[allNamesArtefacts[i]] ?? "")
+                                    descriptionArtefact: ArtefactList.listDescriptionArtefacts[allNamesArtefacts[i]] ?? "",
+                                    countCompleted: checkCountCompletedTask())
             artefactsArray.append(artefact)
             viewSelf.artefactCollection.reloadData()
         }
@@ -27,5 +28,12 @@ class ArtefactViewController: UIViewController {
     ///
     @IBAction func close(_ sender: UIButton) {
         dismiss(animated: true)
+    }
+}
+
+extension ArtefactViewController {
+    
+    func checkCountCompletedTask() -> Int {
+        return 99
     }
 }
