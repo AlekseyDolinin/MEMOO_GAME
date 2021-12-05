@@ -7,6 +7,10 @@ class ArtefactViewController: UIViewController {
         return (view as! ArtefactView)
     }
     
+
+let allNamesArtefacts = ArtefactList.listTaskArtefactsNames + ArtefactList.listRoundArtefactsNames
+
+    
     var artefactsArray = [Artefact]()
     
     override func viewDidLoad() {
@@ -18,8 +22,8 @@ class ArtefactViewController: UIViewController {
         for i in 1...40 {
             let artefact = Artefact(id: 0,
                                     image: UIImage(named: "artefact_\(i)") ?? UIImage(),
-                                    nameArtefact: "nameArtefact",
-                                    descriptionArtefact: "descriptionArtefact")
+                                    nameArtefact: allNamesArtefacts[i],
+                                    descriptionArtefact: ArtefactList.listDescriptionArtefacts["allNamesArtefacts[i]"])
             artefactsArray.append(artefact)
             
             viewSelf.artefactCollection.reloadData()
