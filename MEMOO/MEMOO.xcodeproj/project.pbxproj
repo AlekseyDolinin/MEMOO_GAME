@@ -83,26 +83,6 @@
 		918ED65B27589D810005C4D3 /* artefact_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED63327589D810005C4D3 /* artefact_40.png */; };
 		918ED65C27589D810005C4D3 /* artefact_34.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED63427589D810005C4D3 /* artefact_34.png */; };
 		918ED65D27589D810005C4D3 /* artefact_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED63527589D810005C4D3 /* artefact_15.png */; };
-		918ED67227589F2E0005C4D3 /* alfred.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED65E27589F2D0005C4D3 /* alfred.png */; };
-		918ED67327589F2E0005C4D3 /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED65F27589F2D0005C4D3 /* space.png */; };
-		918ED67427589F2E0005C4D3 /* ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66027589F2D0005C4D3 /* ninja.png */; };
-		918ED67527589F2E0005C4D3 /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66127589F2D0005C4D3 /* sport.png */; };
-		918ED67627589F2E0005C4D3 /* fruit.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66227589F2E0005C4D3 /* fruit.png */; };
-		918ED67727589F2E0005C4D3 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66327589F2E0005C4D3 /* dog.png */; };
-		918ED67827589F2E0005C4D3 /* mandala.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66427589F2E0005C4D3 /* mandala.png */; };
-		918ED67927589F2E0005C4D3 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66527589F2E0005C4D3 /* flower.png */; };
-		918ED67A27589F2E0005C4D3 /* farm.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66627589F2E0005C4D3 /* farm.png */; };
-		918ED67B27589F2E0005C4D3 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66727589F2E0005C4D3 /* flag.png */; };
-		918ED67C27589F2E0005C4D3 /* animalll.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66827589F2E0005C4D3 /* animalll.png */; };
-		918ED67D27589F2E0005C4D3 /* fauna.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66927589F2E0005C4D3 /* fauna.png */; };
-		918ED67E27589F2E0005C4D3 /* origami.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66A27589F2E0005C4D3 /* origami.png */; };
-		918ED67F27589F2E0005C4D3 /* summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66B27589F2E0005C4D3 /* summer.png */; };
-		918ED68027589F2E0005C4D3 /* vegetable.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66C27589F2E0005C4D3 /* vegetable.png */; };
-		918ED68127589F2E0005C4D3 /* toyy.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66D27589F2E0005C4D3 /* toyy.png */; };
-		918ED68227589F2E0005C4D3 /* animal.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66E27589F2E0005C4D3 /* animal.png */; };
-		918ED68327589F2E0005C4D3 /* animall.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED66F27589F2E0005C4D3 /* animall.png */; };
-		918ED68427589F2E0005C4D3 /* letter.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED67027589F2E0005C4D3 /* letter.png */; };
-		918ED68527589F2E0005C4D3 /* toy.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED67127589F2E0005C4D3 /* toy.png */; };
 		9190F8C5274E427B0097F5E4 /* alfred_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83D274E427A0097F5E4 /* alfred_18.png */; };
 		9190F8C6274E427B0097F5E4 /* alfred_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83E274E427A0097F5E4 /* alfred_8.png */; };
 		9190F8C7274E427B0097F5E4 /* alfred_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F83F274E427A0097F5E4 /* alfred_9.png */; };
@@ -264,26 +244,6 @@
 		9190F98C274E89780097F5E4 /* flower_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F978274E89780097F5E4 /* flower_2.png */; };
 		9190F98D274E89780097F5E4 /* flower_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F979274E89780097F5E4 /* flower_16.png */; };
 		9190F98E274E89780097F5E4 /* flower_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F97A274E89780097F5E4 /* flower_14.png */; };
-		9190F9A3274E89880097F5E4 /* fruit_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F98F274E89870097F5E4 /* fruit_10.png */; };
-		9190F9A4274E89880097F5E4 /* fruit_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F990274E89870097F5E4 /* fruit_18.png */; };
-		9190F9A5274E89880097F5E4 /* fruit_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F991274E89870097F5E4 /* fruit_17.png */; };
-		9190F9A6274E89880097F5E4 /* fruit_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F992274E89870097F5E4 /* fruit_3.png */; };
-		9190F9A7274E89880097F5E4 /* fruit_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F993274E89870097F5E4 /* fruit_13.png */; };
-		9190F9A8274E89880097F5E4 /* fruit_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F994274E89870097F5E4 /* fruit_2.png */; };
-		9190F9A9274E89880097F5E4 /* fruit_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F995274E89870097F5E4 /* fruit_11.png */; };
-		9190F9AA274E89880097F5E4 /* fruit_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F996274E89870097F5E4 /* fruit_1.png */; };
-		9190F9AB274E89880097F5E4 /* fruit_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F997274E89870097F5E4 /* fruit_8.png */; };
-		9190F9AC274E89880097F5E4 /* fruit_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F998274E89870097F5E4 /* fruit_5.png */; };
-		9190F9AD274E89880097F5E4 /* fruit_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F999274E89870097F5E4 /* fruit_7.png */; };
-		9190F9AE274E89880097F5E4 /* fruit_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F99A274E89870097F5E4 /* fruit_9.png */; };
-		9190F9AF274E89880097F5E4 /* fruit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F99B274E89870097F5E4 /* fruit_15.png */; };
-		9190F9B0274E89880097F5E4 /* fruit_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F99C274E89880097F5E4 /* fruit_16.png */; };
-		9190F9B1274E89880097F5E4 /* fruit_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F99D274E89880097F5E4 /* fruit_19.png */; };
-		9190F9B2274E89880097F5E4 /* fruit_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F99E274E89880097F5E4 /* fruit_6.png */; };
-		9190F9B3274E89880097F5E4 /* fruit_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F99F274E89880097F5E4 /* fruit_12.png */; };
-		9190F9B4274E89880097F5E4 /* fruit_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F9A0274E89880097F5E4 /* fruit_4.png */; };
-		9190F9B5274E89880097F5E4 /* fruit_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F9A1274E89880097F5E4 /* fruit_14.png */; };
-		9190F9B6274E89880097F5E4 /* fruit_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F9A2274E89880097F5E4 /* fruit_20.png */; };
 		9190F9CB274E89920097F5E4 /* letter_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F9B7274E89900097F5E4 /* letter_4.png */; };
 		9190F9CC274E89920097F5E4 /* letter_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F9B8274E89910097F5E4 /* letter_5.png */; };
 		9190F9CD274E89920097F5E4 /* letter_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190F9B9274E89910097F5E4 /* letter_17.png */; };
@@ -504,6 +464,46 @@
 		9190FB6C274E8B730097F5E4 /* animal_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190FB58274E8B730097F5E4 /* animal_19.png */; };
 		9190FB6D274E8B730097F5E4 /* animal_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190FB59274E8B730097F5E4 /* animal_18.png */; };
 		9190FB6E274E8B730097F5E4 /* animal_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9190FB5A274E8B730097F5E4 /* animal_4.png */; };
+		91948E86275E23C500733C5A /* fruit.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E72275E23C500733C5A /* fruit.png */; };
+		91948E87275E23C500733C5A /* toy.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E73275E23C500733C5A /* toy.png */; };
+		91948E88275E23C500733C5A /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E74275E23C500733C5A /* flower.png */; };
+		91948E89275E23C500733C5A /* summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E75275E23C500733C5A /* summer.png */; };
+		91948E8A275E23C500733C5A /* toyy.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E76275E23C500733C5A /* toyy.png */; };
+		91948E8B275E23C500733C5A /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E77275E23C500733C5A /* dog.png */; };
+		91948E8C275E23C500733C5A /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E78275E23C500733C5A /* flag.png */; };
+		91948E8D275E23C500733C5A /* alfred.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E79275E23C500733C5A /* alfred.png */; };
+		91948E8E275E23C500733C5A /* farm.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E7A275E23C500733C5A /* farm.png */; };
+		91948E8F275E23C500733C5A /* animalll.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E7B275E23C500733C5A /* animalll.png */; };
+		91948E90275E23C500733C5A /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E7C275E23C500733C5A /* sport.png */; };
+		91948E91275E23C500733C5A /* origami.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E7D275E23C500733C5A /* origami.png */; };
+		91948E92275E23C500733C5A /* fauna.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E7E275E23C500733C5A /* fauna.png */; };
+		91948E93275E23C500733C5A /* letter.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E7F275E23C500733C5A /* letter.png */; };
+		91948E94275E23C500733C5A /* mandala.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E80275E23C500733C5A /* mandala.png */; };
+		91948E95275E23C500733C5A /* ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E81275E23C500733C5A /* ninja.png */; };
+		91948E96275E23C500733C5A /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E82275E23C500733C5A /* space.png */; };
+		91948E97275E23C500733C5A /* vegetable.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E83275E23C500733C5A /* vegetable.png */; };
+		91948E98275E23C500733C5A /* animall.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E84275E23C500733C5A /* animall.png */; };
+		91948E99275E23C500733C5A /* animal.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E85275E23C500733C5A /* animal.png */; };
+		91948EAE275E244B00733C5A /* fruit_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E9A275E244B00733C5A /* fruit_3.png */; };
+		91948EAF275E244B00733C5A /* fruit_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E9B275E244B00733C5A /* fruit_18.png */; };
+		91948EB0275E244B00733C5A /* fruit_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E9C275E244B00733C5A /* fruit_1.png */; };
+		91948EB1275E244B00733C5A /* fruit_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E9D275E244B00733C5A /* fruit_13.png */; };
+		91948EB2275E244B00733C5A /* fruit_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E9E275E244B00733C5A /* fruit_19.png */; };
+		91948EB3275E244B00733C5A /* fruit_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948E9F275E244B00733C5A /* fruit_11.png */; };
+		91948EB4275E244B00733C5A /* fruit_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA0275E244B00733C5A /* fruit_7.png */; };
+		91948EB5275E244B00733C5A /* fruit_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA1275E244B00733C5A /* fruit_8.png */; };
+		91948EB6275E244B00733C5A /* fruit_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA2275E244B00733C5A /* fruit_2.png */; };
+		91948EB7275E244B00733C5A /* fruit_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA3275E244B00733C5A /* fruit_16.png */; };
+		91948EB8275E244B00733C5A /* fruit_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA4275E244B00733C5A /* fruit_5.png */; };
+		91948EB9275E244B00733C5A /* fruit_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA5275E244B00733C5A /* fruit_20.png */; };
+		91948EBA275E244B00733C5A /* fruit_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA6275E244B00733C5A /* fruit_6.png */; };
+		91948EBB275E244B00733C5A /* fruit_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA7275E244B00733C5A /* fruit_9.png */; };
+		91948EBC275E244B00733C5A /* fruit_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA8275E244B00733C5A /* fruit_10.png */; };
+		91948EBD275E244B00733C5A /* fruit_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EA9275E244B00733C5A /* fruit_4.png */; };
+		91948EBE275E244B00733C5A /* fruit_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAA275E244B00733C5A /* fruit_12.png */; };
+		91948EBF275E244B00733C5A /* fruit_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAB275E244B00733C5A /* fruit_14.png */; };
+		91948EC0275E244B00733C5A /* fruit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAC275E244B00733C5A /* fruit_15.png */; };
+		91948EC1275E244B00733C5A /* fruit_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAD275E244B00733C5A /* fruit_17.png */; };
 		91B68381275A77710033711B /* Artefacts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B68380275A77710033711B /* Artefacts.strings */; };
 		91B68385275CBAA00033711B /* Win sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91B68384275CBAA00033711B /* Win sound.wav */; };
 		91B68387275CBAA40033711B /* sfx-victory1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91B68386275CBAA40033711B /* sfx-victory1.mp3 */; };
@@ -602,26 +602,6 @@
 		918ED63327589D810005C4D3 /* artefact_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_40.png; sourceTree = "<group>"; };
 		918ED63427589D810005C4D3 /* artefact_34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_34.png; sourceTree = "<group>"; };
 		918ED63527589D810005C4D3 /* artefact_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_15.png; sourceTree = "<group>"; };
-		918ED65E27589F2D0005C4D3 /* alfred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred.png; sourceTree = "<group>"; };
-		918ED65F27589F2D0005C4D3 /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space.png; sourceTree = "<group>"; };
-		918ED66027589F2D0005C4D3 /* ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninja.png; sourceTree = "<group>"; };
-		918ED66127589F2D0005C4D3 /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sport.png; sourceTree = "<group>"; };
-		918ED66227589F2E0005C4D3 /* fruit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit.png; sourceTree = "<group>"; };
-		918ED66327589F2E0005C4D3 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
-		918ED66427589F2E0005C4D3 /* mandala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mandala.png; sourceTree = "<group>"; };
-		918ED66527589F2E0005C4D3 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
-		918ED66627589F2E0005C4D3 /* farm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farm.png; sourceTree = "<group>"; };
-		918ED66727589F2E0005C4D3 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
-		918ED66827589F2E0005C4D3 /* animalll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalll.png; sourceTree = "<group>"; };
-		918ED66927589F2E0005C4D3 /* fauna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fauna.png; sourceTree = "<group>"; };
-		918ED66A27589F2E0005C4D3 /* origami.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = origami.png; sourceTree = "<group>"; };
-		918ED66B27589F2E0005C4D3 /* summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summer.png; sourceTree = "<group>"; };
-		918ED66C27589F2E0005C4D3 /* vegetable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegetable.png; sourceTree = "<group>"; };
-		918ED66D27589F2E0005C4D3 /* toyy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toyy.png; sourceTree = "<group>"; };
-		918ED66E27589F2E0005C4D3 /* animal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal.png; sourceTree = "<group>"; };
-		918ED66F27589F2E0005C4D3 /* animall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animall.png; sourceTree = "<group>"; };
-		918ED67027589F2E0005C4D3 /* letter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter.png; sourceTree = "<group>"; };
-		918ED67127589F2E0005C4D3 /* toy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy.png; sourceTree = "<group>"; };
 		9190F83D274E427A0097F5E4 /* alfred_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_18.png; sourceTree = "<group>"; };
 		9190F83E274E427A0097F5E4 /* alfred_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_8.png; sourceTree = "<group>"; };
 		9190F83F274E427A0097F5E4 /* alfred_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred_9.png; sourceTree = "<group>"; };
@@ -783,26 +763,6 @@
 		9190F978274E89780097F5E4 /* flower_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower_2.png; sourceTree = "<group>"; };
 		9190F979274E89780097F5E4 /* flower_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower_16.png; sourceTree = "<group>"; };
 		9190F97A274E89780097F5E4 /* flower_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower_14.png; sourceTree = "<group>"; };
-		9190F98F274E89870097F5E4 /* fruit_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_10.png; sourceTree = "<group>"; };
-		9190F990274E89870097F5E4 /* fruit_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_18.png; sourceTree = "<group>"; };
-		9190F991274E89870097F5E4 /* fruit_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_17.png; sourceTree = "<group>"; };
-		9190F992274E89870097F5E4 /* fruit_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_3.png; sourceTree = "<group>"; };
-		9190F993274E89870097F5E4 /* fruit_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_13.png; sourceTree = "<group>"; };
-		9190F994274E89870097F5E4 /* fruit_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_2.png; sourceTree = "<group>"; };
-		9190F995274E89870097F5E4 /* fruit_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_11.png; sourceTree = "<group>"; };
-		9190F996274E89870097F5E4 /* fruit_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_1.png; sourceTree = "<group>"; };
-		9190F997274E89870097F5E4 /* fruit_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_8.png; sourceTree = "<group>"; };
-		9190F998274E89870097F5E4 /* fruit_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_5.png; sourceTree = "<group>"; };
-		9190F999274E89870097F5E4 /* fruit_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_7.png; sourceTree = "<group>"; };
-		9190F99A274E89870097F5E4 /* fruit_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_9.png; sourceTree = "<group>"; };
-		9190F99B274E89870097F5E4 /* fruit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_15.png; sourceTree = "<group>"; };
-		9190F99C274E89880097F5E4 /* fruit_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_16.png; sourceTree = "<group>"; };
-		9190F99D274E89880097F5E4 /* fruit_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_19.png; sourceTree = "<group>"; };
-		9190F99E274E89880097F5E4 /* fruit_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_6.png; sourceTree = "<group>"; };
-		9190F99F274E89880097F5E4 /* fruit_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_12.png; sourceTree = "<group>"; };
-		9190F9A0274E89880097F5E4 /* fruit_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_4.png; sourceTree = "<group>"; };
-		9190F9A1274E89880097F5E4 /* fruit_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_14.png; sourceTree = "<group>"; };
-		9190F9A2274E89880097F5E4 /* fruit_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_20.png; sourceTree = "<group>"; };
 		9190F9B7274E89900097F5E4 /* letter_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_4.png; sourceTree = "<group>"; };
 		9190F9B8274E89910097F5E4 /* letter_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_5.png; sourceTree = "<group>"; };
 		9190F9B9274E89910097F5E4 /* letter_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_17.png; sourceTree = "<group>"; };
@@ -1023,6 +983,46 @@
 		9190FB58274E8B730097F5E4 /* animal_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal_19.png; sourceTree = "<group>"; };
 		9190FB59274E8B730097F5E4 /* animal_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal_18.png; sourceTree = "<group>"; };
 		9190FB5A274E8B730097F5E4 /* animal_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal_4.png; sourceTree = "<group>"; };
+		91948E72275E23C500733C5A /* fruit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit.png; sourceTree = "<group>"; };
+		91948E73275E23C500733C5A /* toy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy.png; sourceTree = "<group>"; };
+		91948E74275E23C500733C5A /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
+		91948E75275E23C500733C5A /* summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summer.png; sourceTree = "<group>"; };
+		91948E76275E23C500733C5A /* toyy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toyy.png; sourceTree = "<group>"; };
+		91948E77275E23C500733C5A /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		91948E78275E23C500733C5A /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		91948E79275E23C500733C5A /* alfred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfred.png; sourceTree = "<group>"; };
+		91948E7A275E23C500733C5A /* farm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farm.png; sourceTree = "<group>"; };
+		91948E7B275E23C500733C5A /* animalll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalll.png; sourceTree = "<group>"; };
+		91948E7C275E23C500733C5A /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sport.png; sourceTree = "<group>"; };
+		91948E7D275E23C500733C5A /* origami.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = origami.png; sourceTree = "<group>"; };
+		91948E7E275E23C500733C5A /* fauna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fauna.png; sourceTree = "<group>"; };
+		91948E7F275E23C500733C5A /* letter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter.png; sourceTree = "<group>"; };
+		91948E80275E23C500733C5A /* mandala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mandala.png; sourceTree = "<group>"; };
+		91948E81275E23C500733C5A /* ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninja.png; sourceTree = "<group>"; };
+		91948E82275E23C500733C5A /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space.png; sourceTree = "<group>"; };
+		91948E83275E23C500733C5A /* vegetable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegetable.png; sourceTree = "<group>"; };
+		91948E84275E23C500733C5A /* animall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animall.png; sourceTree = "<group>"; };
+		91948E85275E23C500733C5A /* animal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal.png; sourceTree = "<group>"; };
+		91948E9A275E244B00733C5A /* fruit_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_3.png; sourceTree = "<group>"; };
+		91948E9B275E244B00733C5A /* fruit_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_18.png; sourceTree = "<group>"; };
+		91948E9C275E244B00733C5A /* fruit_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_1.png; sourceTree = "<group>"; };
+		91948E9D275E244B00733C5A /* fruit_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_13.png; sourceTree = "<group>"; };
+		91948E9E275E244B00733C5A /* fruit_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_19.png; sourceTree = "<group>"; };
+		91948E9F275E244B00733C5A /* fruit_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_11.png; sourceTree = "<group>"; };
+		91948EA0275E244B00733C5A /* fruit_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_7.png; sourceTree = "<group>"; };
+		91948EA1275E244B00733C5A /* fruit_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_8.png; sourceTree = "<group>"; };
+		91948EA2275E244B00733C5A /* fruit_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_2.png; sourceTree = "<group>"; };
+		91948EA3275E244B00733C5A /* fruit_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_16.png; sourceTree = "<group>"; };
+		91948EA4275E244B00733C5A /* fruit_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_5.png; sourceTree = "<group>"; };
+		91948EA5275E244B00733C5A /* fruit_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_20.png; sourceTree = "<group>"; };
+		91948EA6275E244B00733C5A /* fruit_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_6.png; sourceTree = "<group>"; };
+		91948EA7275E244B00733C5A /* fruit_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_9.png; sourceTree = "<group>"; };
+		91948EA8275E244B00733C5A /* fruit_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_10.png; sourceTree = "<group>"; };
+		91948EA9275E244B00733C5A /* fruit_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_4.png; sourceTree = "<group>"; };
+		91948EAA275E244B00733C5A /* fruit_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_12.png; sourceTree = "<group>"; };
+		91948EAB275E244B00733C5A /* fruit_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_14.png; sourceTree = "<group>"; };
+		91948EAC275E244B00733C5A /* fruit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_15.png; sourceTree = "<group>"; };
+		91948EAD275E244B00733C5A /* fruit_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_17.png; sourceTree = "<group>"; };
 		91B68380275A77710033711B /* Artefacts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Artefacts.strings; sourceTree = "<group>"; };
 		91B68384275CBAA00033711B /* Win sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Win sound.wav"; path = "../../../../../../../Downloads/Win sound.wav"; sourceTree = "<group>"; };
 		91B68386275CBAA40033711B /* sfx-victory1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-victory1.mp3"; sourceTree = "<group>"; };
@@ -1104,9 +1104,9 @@
 		10D229E826B328510063433E /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				91948E71275E23A800733C5A /* Posters */,
 				916FCD6727574889002CD0F5 /* Sound */,
 				918E7BEA275248D200E1F230 /* artefacts */,
-				91F080162750A8F400BFCDCB /* posters */,
 				912152AE274E3BF200507FE4 /* Rounds */,
 				10D229DD26B0D4A60063433E /* Assets.xcassets */,
 				91E5588E273D2ABF009DCB68 /* Colors.xcassets */,
@@ -1205,26 +1205,6 @@
 		912152AE274E3BF200507FE4 /* Rounds */ = {
 			isa = PBXGroup;
 			children = (
-				918ED65E27589F2D0005C4D3 /* alfred.png */,
-				918ED66E27589F2E0005C4D3 /* animal.png */,
-				918ED66F27589F2E0005C4D3 /* animall.png */,
-				918ED66827589F2E0005C4D3 /* animalll.png */,
-				918ED66327589F2E0005C4D3 /* dog.png */,
-				918ED66627589F2E0005C4D3 /* farm.png */,
-				918ED66927589F2E0005C4D3 /* fauna.png */,
-				918ED66727589F2E0005C4D3 /* flag.png */,
-				918ED66527589F2E0005C4D3 /* flower.png */,
-				918ED66227589F2E0005C4D3 /* fruit.png */,
-				918ED67027589F2E0005C4D3 /* letter.png */,
-				918ED66427589F2E0005C4D3 /* mandala.png */,
-				918ED66027589F2D0005C4D3 /* ninja.png */,
-				918ED66A27589F2E0005C4D3 /* origami.png */,
-				918ED65F27589F2D0005C4D3 /* space.png */,
-				918ED66127589F2D0005C4D3 /* sport.png */,
-				918ED66B27589F2E0005C4D3 /* summer.png */,
-				918ED67127589F2E0005C4D3 /* toy.png */,
-				918ED66D27589F2E0005C4D3 /* toyy.png */,
-				918ED66C27589F2E0005C4D3 /* vegetable.png */,
 				9190F83C274E427A0097F5E4 /* alfred */,
 				9190F86B274E427A0097F5E4 /* animal */,
 				9190F896274E427A0097F5E4 /* animall */,
@@ -1338,26 +1318,26 @@
 		9190F839274E427A0097F5E4 /* fruit */ = {
 			isa = PBXGroup;
 			children = (
-				9190F996274E89870097F5E4 /* fruit_1.png */,
-				9190F994274E89870097F5E4 /* fruit_2.png */,
-				9190F992274E89870097F5E4 /* fruit_3.png */,
-				9190F9A0274E89880097F5E4 /* fruit_4.png */,
-				9190F998274E89870097F5E4 /* fruit_5.png */,
-				9190F99E274E89880097F5E4 /* fruit_6.png */,
-				9190F999274E89870097F5E4 /* fruit_7.png */,
-				9190F997274E89870097F5E4 /* fruit_8.png */,
-				9190F99A274E89870097F5E4 /* fruit_9.png */,
-				9190F98F274E89870097F5E4 /* fruit_10.png */,
-				9190F995274E89870097F5E4 /* fruit_11.png */,
-				9190F99F274E89880097F5E4 /* fruit_12.png */,
-				9190F993274E89870097F5E4 /* fruit_13.png */,
-				9190F9A1274E89880097F5E4 /* fruit_14.png */,
-				9190F99B274E89870097F5E4 /* fruit_15.png */,
-				9190F99C274E89880097F5E4 /* fruit_16.png */,
-				9190F991274E89870097F5E4 /* fruit_17.png */,
-				9190F990274E89870097F5E4 /* fruit_18.png */,
-				9190F99D274E89880097F5E4 /* fruit_19.png */,
-				9190F9A2274E89880097F5E4 /* fruit_20.png */,
+				91948E9C275E244B00733C5A /* fruit_1.png */,
+				91948EA2275E244B00733C5A /* fruit_2.png */,
+				91948E9A275E244B00733C5A /* fruit_3.png */,
+				91948EA9275E244B00733C5A /* fruit_4.png */,
+				91948EA4275E244B00733C5A /* fruit_5.png */,
+				91948EA6275E244B00733C5A /* fruit_6.png */,
+				91948EA0275E244B00733C5A /* fruit_7.png */,
+				91948EA1275E244B00733C5A /* fruit_8.png */,
+				91948EA7275E244B00733C5A /* fruit_9.png */,
+				91948EA8275E244B00733C5A /* fruit_10.png */,
+				91948E9F275E244B00733C5A /* fruit_11.png */,
+				91948EAA275E244B00733C5A /* fruit_12.png */,
+				91948E9D275E244B00733C5A /* fruit_13.png */,
+				91948EAB275E244B00733C5A /* fruit_14.png */,
+				91948EAC275E244B00733C5A /* fruit_15.png */,
+				91948EA3275E244B00733C5A /* fruit_16.png */,
+				91948EAD275E244B00733C5A /* fruit_17.png */,
+				91948E9B275E244B00733C5A /* fruit_18.png */,
+				91948E9E275E244B00733C5A /* fruit_19.png */,
+				91948EA5275E244B00733C5A /* fruit_20.png */,
 			);
 			path = fruit;
 			sourceTree = "<group>";
@@ -1875,6 +1855,33 @@
 			path = space;
 			sourceTree = "<group>";
 		};
+		91948E71275E23A800733C5A /* Posters */ = {
+			isa = PBXGroup;
+			children = (
+				91948E79275E23C500733C5A /* alfred.png */,
+				91948E85275E23C500733C5A /* animal.png */,
+				91948E84275E23C500733C5A /* animall.png */,
+				91948E7B275E23C500733C5A /* animalll.png */,
+				91948E77275E23C500733C5A /* dog.png */,
+				91948E7A275E23C500733C5A /* farm.png */,
+				91948E7E275E23C500733C5A /* fauna.png */,
+				91948E78275E23C500733C5A /* flag.png */,
+				91948E74275E23C500733C5A /* flower.png */,
+				91948E72275E23C500733C5A /* fruit.png */,
+				91948E7F275E23C500733C5A /* letter.png */,
+				91948E80275E23C500733C5A /* mandala.png */,
+				91948E81275E23C500733C5A /* ninja.png */,
+				91948E7D275E23C500733C5A /* origami.png */,
+				91948E82275E23C500733C5A /* space.png */,
+				91948E7C275E23C500733C5A /* sport.png */,
+				91948E75275E23C500733C5A /* summer.png */,
+				91948E73275E23C500733C5A /* toy.png */,
+				91948E76275E23C500733C5A /* toyy.png */,
+				91948E83275E23C500733C5A /* vegetable.png */,
+			);
+			path = Posters;
+			sourceTree = "<group>";
+		};
 		91CAA05827468D2C002CA6E1 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1882,13 +1889,6 @@
 				91CAA05A27468D3C002CA6E1 /* StoreManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		91F080162750A8F400BFCDCB /* posters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = posters;
 			sourceTree = "<group>";
 		};
 		C57C399C672A492C3D8B9BD4 /* Pods */ = {
@@ -1962,9 +1962,9 @@
 			files = (
 				9190FA53274E89AF0097F5E4 /* origami_18.png in Resources */,
 				918ED65D27589D810005C4D3 /* artefact_15.png in Resources */,
-				9190F9A5274E89880097F5E4 /* fruit_17.png in Resources */,
 				9190FAE4274E89CF0097F5E4 /* toy_19.png in Resources */,
 				9190FB40274E89DC0097F5E4 /* vegetable_19.png in Resources */,
+				91948EB3275E244B00733C5A /* fruit_11.png in Resources */,
 				9190F8CC274E427B0097F5E4 /* alfred_10.png in Resources */,
 				9190F902274E427B0097F5E4 /* dog_12.png in Resources */,
 				9190FB1B274E89D50097F5E4 /* toyy_14.png in Resources */,
@@ -1975,7 +1975,6 @@
 				9190F90A274E427B0097F5E4 /* dog_17.png in Resources */,
 				9190FB61274E8B730097F5E4 /* animal_2.png in Resources */,
 				9190F92C274E427B0097F5E4 /* flag_4.png in Resources */,
-				918ED67C27589F2E0005C4D3 /* animalll.png in Resources */,
 				91F080462750B8CE00BFCDCB /* fire.sks in Resources */,
 				918ED65827589D810005C4D3 /* artefact_24.png in Resources */,
 				9190F9DD274E89920097F5E4 /* letter_20.png in Resources */,
@@ -1983,8 +1982,8 @@
 				9190F92B274E427B0097F5E4 /* flag_1.png in Resources */,
 				9190FB16274E89D50097F5E4 /* toyy_20.png in Resources */,
 				9190FAA0274E89C40097F5E4 /* sport_6.png in Resources */,
+				91948EBB275E244B00733C5A /* fruit_9.png in Resources */,
 				9190F987274E89780097F5E4 /* flower_7.png in Resources */,
-				9190F9B2274E89880097F5E4 /* fruit_6.png in Resources */,
 				91B68387275CBAA40033711B /* sfx-victory1.mp3 in Resources */,
 				9190FB41274E89DC0097F5E4 /* vegetable_1.png in Resources */,
 				9190F91F274E427B0097F5E4 /* animall_4.png in Resources */,
@@ -1992,6 +1991,7 @@
 				9190F93C274E427B0097F5E4 /* flag_9.png in Resources */,
 				9190FA29274E89A80097F5E4 /* ninja_11.png in Resources */,
 				9190FAC0274E89CA0097F5E4 /* summer_12.png in Resources */,
+				91948EBA275E244B00733C5A /* fruit_6.png in Resources */,
 				9190F93A274E427B0097F5E4 /* flag_13.png in Resources */,
 				9190F927274E427B0097F5E4 /* animall_3.png in Resources */,
 				9190FB3E274E89DC0097F5E4 /* vegetable_10.png in Resources */,
@@ -2003,6 +2003,7 @@
 				918ED65927589D810005C4D3 /* artefact_1.png in Resources */,
 				9190FA2D274E89A80097F5E4 /* ninja_3.png in Resources */,
 				9190FAC2274E89CA0097F5E4 /* summer_15.png in Resources */,
+				91948E8B275E23C500733C5A /* dog.png in Resources */,
 				9190FAC1274E89CA0097F5E4 /* summer_14.png in Resources */,
 				9190FB63274E8B730097F5E4 /* animal_3.png in Resources */,
 				91E5588F273D2BBE009DCB68 /* Colors.xcassets in Resources */,
@@ -2012,7 +2013,6 @@
 				9190FA7C274E89B50097F5E4 /* space_1.png in Resources */,
 				9190F9D0274E89920097F5E4 /* letter_10.png in Resources */,
 				9190F9D8274E89920097F5E4 /* letter_3.png in Resources */,
-				918ED68027589F2E0005C4D3 /* vegetable.png in Resources */,
 				9190F8E9274E427B0097F5E4 /* animalll_11.png in Resources */,
 				9190F8FD274E427B0097F5E4 /* farm_19.png in Resources */,
 				9190F8F4274E427B0097F5E4 /* farm_10.png in Resources */,
@@ -2024,6 +2024,7 @@
 				9190F8F1274E427B0097F5E4 /* farm_15.png in Resources */,
 				9190F900274E427B0097F5E4 /* farm_7.png in Resources */,
 				9190FA48274E89AF0097F5E4 /* origami_9.png in Resources */,
+				91948EC1275E244B00733C5A /* fruit_17.png in Resources */,
 				9190F922274E427B0097F5E4 /* animall_7.png in Resources */,
 				9190FA7B274E89B50097F5E4 /* space_10.png in Resources */,
 				9190FAA2274E89C40097F5E4 /* sport_16.png in Resources */,
@@ -2038,23 +2039,22 @@
 				9190F97E274E89780097F5E4 /* flower_5.png in Resources */,
 				9190F980274E89780097F5E4 /* flower_18.png in Resources */,
 				918ED63727589D810005C4D3 /* artefact_18.png in Resources */,
-				9190F9A4274E89880097F5E4 /* fruit_18.png in Resources */,
 				9190FA50274E89AF0097F5E4 /* origami_6.png in Resources */,
 				9190FA4C274E89AF0097F5E4 /* origami_10.png in Resources */,
 				9128A0302752397B0030359C /* Shadow_regular.ttf in Resources */,
 				9190F91B274E427B0097F5E4 /* animall_16.png in Resources */,
 				9190FABF274E89CA0097F5E4 /* summer_9.png in Resources */,
+				91948EBD275E244B00733C5A /* fruit_4.png in Resources */,
 				9190FB44274E89DC0097F5E4 /* vegetable_4.png in Resources */,
 				9190FA2B274E89A80097F5E4 /* ninja_5.png in Resources */,
-				9190F9AE274E89880097F5E4 /* fruit_9.png in Resources */,
 				9190FA47274E89AF0097F5E4 /* origami_11.png in Resources */,
 				9190F938274E427B0097F5E4 /* flag_10.png in Resources */,
 				9190F9F8274E89980097F5E4 /* mandala_6.png in Resources */,
 				9128A0322752397B0030359C /* RF-Krabuler-Regular.otf in Resources */,
 				9190FB0E274E89D50097F5E4 /* toyy_13.png in Resources */,
+				91948E99275E23C500733C5A /* animal.png in Resources */,
 				9190FA21274E89A80097F5E4 /* ninja_18.png in Resources */,
 				9190FB34274E89DC0097F5E4 /* vegetable_15.png in Resources */,
-				9190F9A9274E89880097F5E4 /* fruit_11.png in Resources */,
 				9190FA96274E89C40097F5E4 /* sport_13.png in Resources */,
 				9190F8FA274E427B0097F5E4 /* farm_1.png in Resources */,
 				9190F90D274E427B0097F5E4 /* dog_19.png in Resources */,
@@ -2072,14 +2072,16 @@
 				9190F8F6274E427B0097F5E4 /* farm_13.png in Resources */,
 				9190FAEC274E89CF0097F5E4 /* toy_13.png in Resources */,
 				9190F90F274E427B0097F5E4 /* dog_4.png in Resources */,
+				91948EB8275E244B00733C5A /* fruit_5.png in Resources */,
 				9190FB39274E89DC0097F5E4 /* vegetable_8.png in Resources */,
+				91948E98275E23C500733C5A /* animall.png in Resources */,
 				9190FA56274E89AF0097F5E4 /* origami_7.png in Resources */,
 				9190FB17274E89D50097F5E4 /* toyy_1.png in Resources */,
 				9190F9D6274E89920097F5E4 /* letter_12.png in Resources */,
 				9190FAF0274E89CF0097F5E4 /* toy_5.png in Resources */,
 				9190FA2C274E89A80097F5E4 /* ninja_10.png in Resources */,
-				918ED67F27589F2E0005C4D3 /* summer.png in Resources */,
 				918ED65227589D810005C4D3 /* artefact_28.png in Resources */,
+				91948E96275E23C500733C5A /* space.png in Resources */,
 				9190F9F3274E89980097F5E4 /* mandala_14.png in Resources */,
 				9190F914274E427B0097F5E4 /* dog_2.png in Resources */,
 				9190FA6F274E89B50097F5E4 /* space_14.png in Resources */,
@@ -2092,7 +2094,6 @@
 				91F080422750B33500BFCDCB /* smoke.sks in Resources */,
 				9190FA77274E89B50097F5E4 /* space_18.png in Resources */,
 				9190F911274E427B0097F5E4 /* dog_20.png in Resources */,
-				918ED67927589F2E0005C4D3 /* flower.png in Resources */,
 				9190F90C274E427B0097F5E4 /* dog_7.png in Resources */,
 				9190FABE274E89CA0097F5E4 /* summer_3.png in Resources */,
 				9190F8EF274E427B0097F5E4 /* farm_9.png in Resources */,
@@ -2101,18 +2102,16 @@
 				916FCD73275748B7002CD0F5 /* WoodlandFantasy.mp3 in Resources */,
 				9190F9D9274E89920097F5E4 /* letter_6.png in Resources */,
 				9190F8DC274E427B0097F5E4 /* animalll_7.png in Resources */,
-				918ED67327589F2E0005C4D3 /* space.png in Resources */,
 				918ED64F27589D810005C4D3 /* artefact_11.png in Resources */,
 				9190F916274E427B0097F5E4 /* animall_12.png in Resources */,
-				9190F9AF274E89880097F5E4 /* fruit_15.png in Resources */,
 				918ED64C27589D810005C4D3 /* artefact_6.png in Resources */,
-				918ED67E27589F2E0005C4D3 /* origami.png in Resources */,
 				9190FA93274E89C40097F5E4 /* sport_1.png in Resources */,
 				918ED64B27589D810005C4D3 /* artefact_22.png in Resources */,
 				918ED63627589D810005C4D3 /* artefact_39.png in Resources */,
 				918ED64927589D810005C4D3 /* artefact_25.png in Resources */,
 				918ED63F27589D810005C4D3 /* artefact_32.png in Resources */,
 				9190FB3F274E89DC0097F5E4 /* vegetable_9.png in Resources */,
+				91948EC0275E244B00733C5A /* fruit_15.png in Resources */,
 				9190FACE274E89CA0097F5E4 /* summer_20.png in Resources */,
 				9190F95E274E896C0097F5E4 /* fauna_6.png in Resources */,
 				9190FA7D274E89B50097F5E4 /* space_8.png in Resources */,
@@ -2120,6 +2119,7 @@
 				9190FA45274E89AF0097F5E4 /* origami_13.png in Resources */,
 				9190F8C9274E427B0097F5E4 /* alfred_20.png in Resources */,
 				9190FA49274E89AF0097F5E4 /* origami_20.png in Resources */,
+				91948E8D275E23C500733C5A /* alfred.png in Resources */,
 				9190F8ED274E427B0097F5E4 /* farm_17.png in Resources */,
 				9190FACA274E89CA0097F5E4 /* summer_19.png in Resources */,
 				918ED65B27589D810005C4D3 /* artefact_40.png in Resources */,
@@ -2134,39 +2134,37 @@
 				9190FAE6274E89CF0097F5E4 /* toy_17.png in Resources */,
 				9190FA44274E89AF0097F5E4 /* origami_14.png in Resources */,
 				9190FA00274E89980097F5E4 /* mandala_5.png in Resources */,
+				91948E91275E23C500733C5A /* origami.png in Resources */,
 				9190FA24274E89A80097F5E4 /* ninja_12.png in Resources */,
 				9190FA98274E89C40097F5E4 /* sport_18.png in Resources */,
-				9190F9B0274E89880097F5E4 /* fruit_16.png in Resources */,
 				9190FA2E274E89A80097F5E4 /* ninja_15.png in Resources */,
 				918ED64027589D810005C4D3 /* artefact_36.png in Resources */,
 				9190F8EE274E427B0097F5E4 /* farm_16.png in Resources */,
 				918ED65427589D810005C4D3 /* artefact_23.png in Resources */,
 				9190FB5C274E8B730097F5E4 /* animal_20.png in Resources */,
-				918ED67727589F2E0005C4D3 /* dog.png in Resources */,
 				9190F90E274E427B0097F5E4 /* dog_5.png in Resources */,
+				91948E90275E23C500733C5A /* sport.png in Resources */,
 				9190FB46274E89DC0097F5E4 /* vegetable_2.png in Resources */,
 				9190F9D4274E89920097F5E4 /* letter_18.png in Resources */,
 				9190F933274E427B0097F5E4 /* flag_17.png in Resources */,
 				9190FAF5274E89CF0097F5E4 /* toy_14.png in Resources */,
+				91948EBE275E244B00733C5A /* fruit_12.png in Resources */,
 				9190FA27274E89A80097F5E4 /* ninja_2.png in Resources */,
 				9190FAF1274E89CF0097F5E4 /* toy_12.png in Resources */,
-				9190F9A7274E89880097F5E4 /* fruit_13.png in Resources */,
 				9190F9D3274E89920097F5E4 /* letter_7.png in Resources */,
 				9190F901274E427B0097F5E4 /* dog_13.png in Resources */,
 				9190FB6C274E8B730097F5E4 /* animal_19.png in Resources */,
 				9190FA55274E89AF0097F5E4 /* origami_2.png in Resources */,
 				9190F9FE274E89980097F5E4 /* mandala_12.png in Resources */,
 				9190F8E4274E427B0097F5E4 /* animalll_9.png in Resources */,
+				91948E8A275E23C500733C5A /* toyy.png in Resources */,
 				9190F8C7274E427B0097F5E4 /* alfred_9.png in Resources */,
-				918ED67427589F2E0005C4D3 /* ninja.png in Resources */,
 				9190F9FB274E89980097F5E4 /* mandala_15.png in Resources */,
 				9190F917274E427B0097F5E4 /* animall_10.png in Resources */,
 				9190FAF6274E89CF0097F5E4 /* toy_7.png in Resources */,
 				9190FA7E274E89B50097F5E4 /* space_2.png in Resources */,
-				918ED67527589F2E0005C4D3 /* sport.png in Resources */,
 				9190FA4F274E89AF0097F5E4 /* origami_3.png in Resources */,
 				9190FA9F274E89C40097F5E4 /* sport_11.png in Resources */,
-				9190F9A8274E89880097F5E4 /* fruit_2.png in Resources */,
 				9190F9CC274E89920097F5E4 /* letter_5.png in Resources */,
 				9190FA43274E89AF0097F5E4 /* origami_12.png in Resources */,
 				9190FA1C274E89A80097F5E4 /* ninja_4.png in Resources */,
@@ -2180,10 +2178,12 @@
 				9190F918274E427B0097F5E4 /* animall_11.png in Resources */,
 				9190F8D6274E427B0097F5E4 /* alfred_4.png in Resources */,
 				9190F9F6274E89980097F5E4 /* mandala_20.png in Resources */,
+				91948E97275E23C500733C5A /* vegetable.png in Resources */,
 				9190FB6D274E8B730097F5E4 /* animal_18.png in Resources */,
 				9190FB0B274E89D50097F5E4 /* toyy_6.png in Resources */,
 				9190F959274E896C0097F5E4 /* fauna_16.png in Resources */,
 				9190F925274E427B0097F5E4 /* animall_20.png in Resources */,
+				91948E8C275E23C500733C5A /* flag.png in Resources */,
 				9190F9F4274E89980097F5E4 /* mandala_19.png in Resources */,
 				9190F92A274E427B0097F5E4 /* flag_3.png in Resources */,
 				9190F8F2274E427B0097F5E4 /* farm_8.png in Resources */,
@@ -2193,6 +2193,7 @@
 				9190FA79274E89B50097F5E4 /* space_15.png in Resources */,
 				9190FAC5274E89CA0097F5E4 /* summer_13.png in Resources */,
 				9190FA99274E89C40097F5E4 /* sport_3.png in Resources */,
+				91948E87275E23C500733C5A /* toy.png in Resources */,
 				918ED65127589D810005C4D3 /* artefact_20.png in Resources */,
 				9190FA20274E89A80097F5E4 /* ninja_13.png in Resources */,
 				9190F9CD274E89920097F5E4 /* letter_17.png in Resources */,
@@ -2203,6 +2204,7 @@
 				9190F8CF274E427B0097F5E4 /* alfred_3.png in Resources */,
 				9190F91D274E427B0097F5E4 /* animall_9.png in Resources */,
 				9190FB1C274E89D50097F5E4 /* toyy_5.png in Resources */,
+				91948EAE275E244B00733C5A /* fruit_3.png in Resources */,
 				9190F8E5274E427B0097F5E4 /* animalll_17.png in Resources */,
 				9190FB0F274E89D50097F5E4 /* toyy_16.png in Resources */,
 				9190FAC4274E89CA0097F5E4 /* summer_17.png in Resources */,
@@ -2211,9 +2213,7 @@
 				9190FAE7274E89CF0097F5E4 /* toy_9.png in Resources */,
 				9190FA4D274E89AF0097F5E4 /* origami_19.png in Resources */,
 				9190FA75274E89B50097F5E4 /* space_5.png in Resources */,
-				918ED67D27589F2E0005C4D3 /* fauna.png in Resources */,
 				9190FAED274E89CF0097F5E4 /* toy_20.png in Resources */,
-				9190F9B1274E89880097F5E4 /* fruit_19.png in Resources */,
 				9190F910274E427B0097F5E4 /* dog_18.png in Resources */,
 				9190F936274E427B0097F5E4 /* flag_15.png in Resources */,
 				9190F985274E89780097F5E4 /* flower_17.png in Resources */,
@@ -2228,21 +2228,16 @@
 				9190F95D274E896C0097F5E4 /* fauna_1.png in Resources */,
 				9190F98D274E89780097F5E4 /* flower_16.png in Resources */,
 				9190F9F5274E89980097F5E4 /* mandala_9.png in Resources */,
-				9190F9B5274E89880097F5E4 /* fruit_14.png in Resources */,
 				9190F912274E427B0097F5E4 /* dog_1.png in Resources */,
 				9190F8E0274E427B0097F5E4 /* animalll_1.png in Resources */,
 				9190FAEB274E89CF0097F5E4 /* toy_2.png in Resources */,
 				9190F8D1274E427B0097F5E4 /* alfred_17.png in Resources */,
-				918ED68327589F2E0005C4D3 /* animall.png in Resources */,
 				918ED65A27589D810005C4D3 /* artefact_21.png in Resources */,
 				9190FA28274E89A80097F5E4 /* ninja_14.png in Resources */,
-				9190F9AD274E89880097F5E4 /* fruit_7.png in Resources */,
 				9190FA2A274E89A80097F5E4 /* ninja_7.png in Resources */,
-				918ED68427589F2E0005C4D3 /* letter.png in Resources */,
 				91CAA057274646A7002CA6E1 /* magic.sks in Resources */,
 				9190F91A274E427B0097F5E4 /* animall_14.png in Resources */,
 				9190FB67274E8B730097F5E4 /* animal_11.png in Resources */,
-				918ED67A27589F2E0005C4D3 /* farm.png in Resources */,
 				918ED64A27589D810005C4D3 /* artefact_10.png in Resources */,
 				9190F95C274E896C0097F5E4 /* fauna_20.png in Resources */,
 				918ED63B27589D810005C4D3 /* artefact_13.png in Resources */,
@@ -2250,10 +2245,11 @@
 				9190FAA3274E89C40097F5E4 /* sport_19.png in Resources */,
 				9190FA9D274E89C40097F5E4 /* sport_12.png in Resources */,
 				9190F930274E427B0097F5E4 /* flag_20.png in Resources */,
-				918ED68227589F2E0005C4D3 /* animal.png in Resources */,
 				9190F9DA274E89920097F5E4 /* letter_9.png in Resources */,
 				918ED64E27589D810005C4D3 /* artefact_35.png in Resources */,
 				9190F9CE274E89920097F5E4 /* letter_1.png in Resources */,
+				91948EB2275E244B00733C5A /* fruit_19.png in Resources */,
+				91948EB1275E244B00733C5A /* fruit_13.png in Resources */,
 				9190FA4B274E89AF0097F5E4 /* origami_8.png in Resources */,
 				9190FA94274E89C40097F5E4 /* sport_8.png in Resources */,
 				9190F8D3274E427B0097F5E4 /* alfred_6.png in Resources */,
@@ -2265,13 +2261,14 @@
 				9190F8FB274E427B0097F5E4 /* farm_5.png in Resources */,
 				9190F929274E427B0097F5E4 /* flag_2.png in Resources */,
 				9190F8E7274E427B0097F5E4 /* animalll_14.png in Resources */,
+				91948E8E275E23C500733C5A /* farm.png in Resources */,
 				9190F988274E89780097F5E4 /* flower_4.png in Resources */,
 				9190FA76274E89B50097F5E4 /* space_9.png in Resources */,
 				9190FAA1274E89C40097F5E4 /* sport_2.png in Resources */,
 				9190F954274E896C0097F5E4 /* fauna_15.png in Resources */,
+				91948E8F275E23C500733C5A /* animalll.png in Resources */,
 				9190F909274E427B0097F5E4 /* dog_16.png in Resources */,
 				918ED65527589D810005C4D3 /* artefact_3.png in Resources */,
-				918ED68527589F2E0005C4D3 /* toy.png in Resources */,
 				918ED65C27589D810005C4D3 /* artefact_34.png in Resources */,
 				9190FB10274E89D50097F5E4 /* toyy_7.png in Resources */,
 				9190F8CB274E427B0097F5E4 /* alfred_1.png in Resources */,
@@ -2279,6 +2276,7 @@
 				9190F963274E896C0097F5E4 /* fauna_10.png in Resources */,
 				918ED65327589D810005C4D3 /* artefact_29.png in Resources */,
 				9190FB6E274E8B730097F5E4 /* animal_4.png in Resources */,
+				91948EB0275E244B00733C5A /* fruit_1.png in Resources */,
 				916FCD72275748B7002CD0F5 /* shimmer_1.flac in Resources */,
 				9190FB6B274E8B730097F5E4 /* animal_17.png in Resources */,
 				9190F8CA274E427B0097F5E4 /* alfred_11.png in Resources */,
@@ -2290,10 +2288,12 @@
 				9190F8DA274E427B0097F5E4 /* animalll_18.png in Resources */,
 				9190FB3A274E89DC0097F5E4 /* vegetable_12.png in Resources */,
 				918ED65027589D810005C4D3 /* artefact_8.png in Resources */,
+				91948E92275E23C500733C5A /* fauna.png in Resources */,
 				918ED63C27589D810005C4D3 /* artefact_16.png in Resources */,
-				9190F9AB274E89880097F5E4 /* fruit_8.png in Resources */,
+				91948EB7275E244B00733C5A /* fruit_16.png in Resources */,
 				9190F8E1274E427B0097F5E4 /* animalll_2.png in Resources */,
 				9190FA4A274E89AF0097F5E4 /* origami_5.png in Resources */,
+				91948EBF275E244B00733C5A /* fruit_14.png in Resources */,
 				9190F939274E427B0097F5E4 /* flag_12.png in Resources */,
 				9190F9FC274E89980097F5E4 /* mandala_18.png in Resources */,
 				9190FB3D274E89DC0097F5E4 /* vegetable_20.png in Resources */,
@@ -2301,8 +2301,8 @@
 				9190F8D4274E427B0097F5E4 /* alfred_16.png in Resources */,
 				9190FA78274E89B50097F5E4 /* space_6.png in Resources */,
 				9190FA6C274E89B50097F5E4 /* space_16.png in Resources */,
+				91948E88275E23C500733C5A /* flower.png in Resources */,
 				918ED63A27589D810005C4D3 /* artefact_12.png in Resources */,
-				9190F9B4274E89880097F5E4 /* fruit_4.png in Resources */,
 				9190FA7A274E89B50097F5E4 /* space_4.png in Resources */,
 				9190F97D274E89780097F5E4 /* flower_12.png in Resources */,
 				9190FABC274E89CA0097F5E4 /* summer_5.png in Resources */,
@@ -2311,17 +2311,16 @@
 				918ED64827589D810005C4D3 /* artefact_19.png in Resources */,
 				9190F8DB274E427B0097F5E4 /* animalll_19.png in Resources */,
 				9190FA4E274E89AF0097F5E4 /* origami_16.png in Resources */,
-				918ED67627589F2E0005C4D3 /* fruit.png in Resources */,
 				9190F913274E427B0097F5E4 /* dog_3.png in Resources */,
 				9190FAEE274E89CF0097F5E4 /* toy_3.png in Resources */,
+				91948E86275E23C500733C5A /* fruit.png in Resources */,
 				918ED63927589D810005C4D3 /* artefact_33.png in Resources */,
+				91948E89275E23C500733C5A /* summer.png in Resources */,
 				9190FA6D274E89B50097F5E4 /* space_20.png in Resources */,
 				9190F934274E427B0097F5E4 /* flag_16.png in Resources */,
 				9190F92F274E427B0097F5E4 /* flag_6.png in Resources */,
-				9190F9A6274E89880097F5E4 /* fruit_3.png in Resources */,
 				9190FB68274E8B730097F5E4 /* animal_5.png in Resources */,
 				9190F95A274E896C0097F5E4 /* fauna_9.png in Resources */,
-				918ED67827589F2E0005C4D3 /* mandala.png in Resources */,
 				9190FB3C274E89DC0097F5E4 /* vegetable_14.png in Resources */,
 				9190FA02274E89980097F5E4 /* mandala_2.png in Resources */,
 				9190FACB274E89CA0097F5E4 /* summer_11.png in Resources */,
@@ -2335,8 +2334,11 @@
 				9190F8D5274E427B0097F5E4 /* alfred_14.png in Resources */,
 				9190F924274E427B0097F5E4 /* animall_18.png in Resources */,
 				9190F8D9274E427B0097F5E4 /* animalll_20.png in Resources */,
+				91948EB4275E244B00733C5A /* fruit_7.png in Resources */,
 				9190F921274E427B0097F5E4 /* animall_19.png in Resources */,
+				91948EB5275E244B00733C5A /* fruit_8.png in Resources */,
 				9190F9CF274E89920097F5E4 /* letter_13.png in Resources */,
+				91948EB6275E244B00733C5A /* fruit_2.png in Resources */,
 				9190FB5E274E8B730097F5E4 /* animal_7.png in Resources */,
 				9190F964274E896C0097F5E4 /* fauna_3.png in Resources */,
 				9190FA71274E89B50097F5E4 /* space_19.png in Resources */,
@@ -2361,33 +2363,33 @@
 				91B68381275A77710033711B /* Artefacts.strings in Resources */,
 				9190F90B274E427B0097F5E4 /* dog_6.png in Resources */,
 				9190F8EC274E427B0097F5E4 /* animalll_13.png in Resources */,
-				9190F9B3274E89880097F5E4 /* fruit_12.png in Resources */,
 				9190F8F7274E427B0097F5E4 /* farm_3.png in Resources */,
 				9190F92E274E427B0097F5E4 /* flag_7.png in Resources */,
 				9190FB69274E8B730097F5E4 /* animal_15.png in Resources */,
 				9190FB1E274E89D50097F5E4 /* toyy_2.png in Resources */,
-				918ED67B27589F2E0005C4D3 /* flag.png in Resources */,
 				9190FA03274E89980097F5E4 /* mandala_3.png in Resources */,
 				9190F97F274E89780097F5E4 /* flower_8.png in Resources */,
 				9190F960274E896C0097F5E4 /* fauna_13.png in Resources */,
 				9190F989274E89780097F5E4 /* flower_1.png in Resources */,
 				9190F95B274E896C0097F5E4 /* fauna_4.png in Resources */,
 				9190FAC7274E89CA0097F5E4 /* summer_18.png in Resources */,
+				91948EB9275E244B00733C5A /* fruit_20.png in Resources */,
 				9190FB15274E89D50097F5E4 /* toyy_19.png in Resources */,
 				9190F908274E427B0097F5E4 /* dog_14.png in Resources */,
 				9190FA51274E89AF0097F5E4 /* origami_4.png in Resources */,
 				9190F937274E427B0097F5E4 /* flag_11.png in Resources */,
+				91948E95275E23C500733C5A /* ninja.png in Resources */,
 				10D229DE26B0D4A60063433E /* Assets.xcassets in Resources */,
 				9190FB35274E89DC0097F5E4 /* vegetable_13.png in Resources */,
 				9190F97B274E89780097F5E4 /* flower_11.png in Resources */,
 				9190F905274E427B0097F5E4 /* dog_15.png in Resources */,
 				9190FA06274E89980097F5E4 /* mandala_1.png in Resources */,
-				918ED68127589F2E0005C4D3 /* toyy.png in Resources */,
+				91948EAF275E244B00733C5A /* fruit_18.png in Resources */,
 				9190FB37274E89DC0097F5E4 /* vegetable_11.png in Resources */,
 				9190F8FC274E427B0097F5E4 /* farm_18.png in Resources */,
 				9190F8FE274E427B0097F5E4 /* farm_4.png in Resources */,
-				9190F9A3274E89880097F5E4 /* fruit_10.png in Resources */,
 				9190F9F7274E89980097F5E4 /* mandala_17.png in Resources */,
+				91948EBC275E244B00733C5A /* fruit_10.png in Resources */,
 				9190FB5D274E8B730097F5E4 /* animal_10.png in Resources */,
 				9190FB66274E8B730097F5E4 /* animal_9.png in Resources */,
 				9190FA9E274E89C40097F5E4 /* sport_5.png in Resources */,
@@ -2405,7 +2407,6 @@
 				9190FA73274E89B50097F5E4 /* space_3.png in Resources */,
 				918ED65727589D810005C4D3 /* artefact_4.png in Resources */,
 				9190FB5B274E8B730097F5E4 /* animal_13.png in Resources */,
-				9190F9AA274E89880097F5E4 /* fruit_1.png in Resources */,
 				9190F8DF274E427B0097F5E4 /* animalll_5.png in Resources */,
 				9190F920274E427B0097F5E4 /* animall_5.png in Resources */,
 				9190FA95274E89C40097F5E4 /* sport_10.png in Resources */,
@@ -2421,18 +2422,17 @@
 				9190F906274E427B0097F5E4 /* dog_9.png in Resources */,
 				9190FA74274E89B50097F5E4 /* space_7.png in Resources */,
 				9190F953274E896C0097F5E4 /* fauna_2.png in Resources */,
+				91948E93275E23C500733C5A /* letter.png in Resources */,
 				9190FB11274E89D50097F5E4 /* toyy_12.png in Resources */,
+				91948E94275E23C500733C5A /* mandala.png in Resources */,
 				9190F8C5274E427B0097F5E4 /* alfred_18.png in Resources */,
 				9190FA23274E89A80097F5E4 /* ninja_17.png in Resources */,
-				9190F9AC274E89880097F5E4 /* fruit_5.png in Resources */,
 				9190F9D7274E89920097F5E4 /* letter_2.png in Resources */,
 				9190F98A274E89780097F5E4 /* flower_3.png in Resources */,
 				9190F926274E427B0097F5E4 /* animall_2.png in Resources */,
 				9190FB1D274E89D50097F5E4 /* toyy_15.png in Resources */,
 				9190F9FA274E89980097F5E4 /* mandala_8.png in Resources */,
-				9190F9B6274E89880097F5E4 /* fruit_20.png in Resources */,
 				9190FB64274E8B730097F5E4 /* animal_12.png in Resources */,
-				918ED67227589F2E0005C4D3 /* alfred.png in Resources */,
 				9190FA1B274E89A80097F5E4 /* ninja_20.png in Resources */,
 				9190FA9B274E89C40097F5E4 /* sport_4.png in Resources */,
 				9190F98C274E89780097F5E4 /* flower_2.png in Resources */,

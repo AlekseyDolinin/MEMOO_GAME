@@ -264,17 +264,23 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z8-Pg-kxk" customClass="SKView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="victory" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-eZ-sGT">
+                                        <rect key="frame" x="40" y="178.66666666666663" width="295" height="295"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4pY-eZ-sGT" secondAttribute="height" multiplier="1:1" id="CAH-Qv-2JI"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7k-Mt-cga">
-                                <rect key="frame" x="32" y="281.66666666666669" width="311" height="248.66666666666669"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="v7k-Mt-cga" secondAttribute="height" multiplier="1:0.8" id="1Aj-Yw-A5W"/>
+                                    <constraint firstAttribute="trailing" secondItem="4pY-eZ-sGT" secondAttribute="trailing" constant="40" id="KTd-J7-iVo"/>
+                                    <constraint firstItem="4pY-eZ-sGT" firstAttribute="centerY" secondItem="4z8-Pg-kxk" secondAttribute="centerY" constant="-80" id="LbC-UO-fcs"/>
+                                    <constraint firstItem="4pY-eZ-sGT" firstAttribute="leading" secondItem="4z8-Pg-kxk" secondAttribute="leading" constant="40" id="mEH-bx-GQJ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-a9-mqS">
-                                <rect key="frame" x="105.66666666666669" y="570.33333333333337" width="164" height="70"/>
+                                <rect key="frame" x="105.66666666666669" y="513.66666666666663" width="164" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okf-Mv-UFS">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -314,12 +320,9 @@
                         <constraints>
                             <constraint firstItem="4z8-Pg-kxk" firstAttribute="leading" secondItem="kM3-FD-PWJ" secondAttribute="leading" id="2Bq-aH-j3H"/>
                             <constraint firstAttribute="trailing" secondItem="4z8-Pg-kxk" secondAttribute="trailing" id="FSe-wE-EPz"/>
-                            <constraint firstItem="v7k-Mt-cga" firstAttribute="leading" secondItem="gSi-bq-ocG" secondAttribute="leading" constant="32" id="LMu-aJ-gAX"/>
                             <constraint firstItem="4z8-Pg-kxk" firstAttribute="top" secondItem="kM3-FD-PWJ" secondAttribute="top" id="OOy-w8-aLc"/>
-                            <constraint firstItem="gSi-bq-ocG" firstAttribute="trailing" secondItem="v7k-Mt-cga" secondAttribute="trailing" constant="32" id="gap-Tb-bgH"/>
+                            <constraint firstItem="qNK-a9-mqS" firstAttribute="top" secondItem="4pY-eZ-sGT" secondAttribute="bottom" constant="40" id="aqA-GI-Ie1"/>
                             <constraint firstItem="qNK-a9-mqS" firstAttribute="centerX" secondItem="kM3-FD-PWJ" secondAttribute="centerX" id="koH-Tf-Vew"/>
-                            <constraint firstItem="qNK-a9-mqS" firstAttribute="top" secondItem="v7k-Mt-cga" secondAttribute="bottom" constant="40" id="lDY-1k-yWe"/>
-                            <constraint firstItem="v7k-Mt-cga" firstAttribute="centerY" secondItem="kM3-FD-PWJ" secondAttribute="centerY" id="nvP-EL-8bY"/>
                             <constraint firstAttribute="bottom" secondItem="4z8-Pg-kxk" secondAttribute="bottom" id="qOP-or-gia"/>
                         </constraints>
                         <connections>
@@ -1090,6 +1093,7 @@
         <image name="layer_2" width="7200" height="1139"/>
         <image name="layer_3" width="7200" height="1139"/>
         <image name="layer_4" width="7200" height="1139"/>
+        <image name="victory" width="900" height="615"/>
         <namedColor name="DarkGray_">
             <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
