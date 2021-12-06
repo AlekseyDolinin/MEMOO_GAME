@@ -525,6 +525,7 @@
                             <constraint firstAttribute="bottom" secondItem="GTe-Un-1g1" secondAttribute="bottom" id="zR3-QZ-5u3"/>
                         </constraints>
                         <connections>
+                            <outlet property="chestImage" destination="AT9-ep-mv9" id="obG-Rm-xtj"/>
                             <outlet property="collectionRound" destination="6ed-OT-vB7" id="1nD-fi-689"/>
                             <outlet property="layer_1" destination="tfM-ou-CM8" id="uqi-hF-PWi"/>
                             <outlet property="layer_2" destination="G6K-7n-tDg" id="XQg-R2-xJi"/>

@@ -13,16 +13,24 @@ class StartView: UIView {
     @IBOutlet weak var viewRightSmoke: SKView!
     @IBOutlet weak var viewLeftSmoke: SKView!
     @IBOutlet weak var showCollectionButton: UIButton!
+    @IBOutlet weak var chestImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
         setAnimationClouds()
         setAnimationMagic()
-        setAnimationLeftFire()
-        setAnimationRightFire()
-        setAnimationRightSmoke()
-        setAnimationLeftSmoke()
+//        setAnimationLeftFire()
+//        setAnimationRightFire()
+//        setAnimationRightSmoke()
+//        setAnimationLeftSmoke()
+        
+        viewLeftFire.isHidden = true
+        viewRightFire.isHidden = true
+        viewRightSmoke.isHidden = true
+        viewLeftSmoke.isHidden = true
+        showCollectionButton.isHidden = true
+        chestImage.isHidden = true
     }
 }
 
