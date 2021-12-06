@@ -504,6 +504,7 @@
 		91948EBF275E244B00733C5A /* fruit_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAB275E244B00733C5A /* fruit_14.png */; };
 		91948EC0275E244B00733C5A /* fruit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAC275E244B00733C5A /* fruit_15.png */; };
 		91948EC1275E244B00733C5A /* fruit_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAD275E244B00733C5A /* fruit_17.png */; };
+		91948EC3275E27E200733C5A /* ADSDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91948EC2275E27E200733C5A /* ADSDelegates.swift */; };
 		91B68381275A77710033711B /* Artefacts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B68380275A77710033711B /* Artefacts.strings */; };
 		91B68385275CBAA00033711B /* Win sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91B68384275CBAA00033711B /* Win sound.wav */; };
 		91B68387275CBAA40033711B /* sfx-victory1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91B68386275CBAA40033711B /* sfx-victory1.mp3 */; };
@@ -1023,6 +1024,7 @@
 		91948EAB275E244B00733C5A /* fruit_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_14.png; sourceTree = "<group>"; };
 		91948EAC275E244B00733C5A /* fruit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_15.png; sourceTree = "<group>"; };
 		91948EAD275E244B00733C5A /* fruit_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_17.png; sourceTree = "<group>"; };
+		91948EC2275E27E200733C5A /* ADSDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSDelegates.swift; sourceTree = "<group>"; };
 		91B68380275A77710033711B /* Artefacts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Artefacts.strings; sourceTree = "<group>"; };
 		91B68384275CBAA00033711B /* Win sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Win sound.wav"; path = "../../../../../../../Downloads/Win sound.wav"; sourceTree = "<group>"; };
 		91B68386275CBAA40033711B /* sfx-victory1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-victory1.mp3"; sourceTree = "<group>"; };
@@ -1061,6 +1063,7 @@
 			children = (
 				10D229FF26B328840063433E /* StartViewController.swift */,
 				10D22A0126B328840063433E /* StartDelegates.swift */,
+				91948EC2275E27E200733C5A /* ADSDelegates.swift */,
 			);
 			path = StartViewController;
 			sourceTree = "<group>";
@@ -2495,6 +2498,7 @@
 				9141946827510B540087BBD3 /* UIImage.swift in Sources */,
 				913351AA2754AE380044CEC1 /* ArtefactView.swift in Sources */,
 				9190F93E274E85500097F5E4 /* PreviewArtefactViewController.swift in Sources */,
+				91948EC3275E27E200733C5A /* ADSDelegates.swift in Sources */,
 				916FCD7527574A02002CD0F5 /* Sound.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
 				9109E422274BD408006784FC /* ArtefactCell.swift in Sources */,

@@ -1,6 +1,7 @@
 import UIKit
+import GoogleMobileAds
 
-class StartViewController: UIViewController {
+class StartViewController: UIViewController, GADFullScreenContentDelegate {
     
     var viewSelf: StartView! {
         guard isViewLoaded else {return nil}
@@ -15,11 +16,15 @@ class StartViewController: UIViewController {
     var paidListRound = ["alfred", "animall", "mandala", "ninja", "sport", "summer", "toy", "dog", "toyy", "vegetable", "space", "letter", "origami", "animalll", "flower", "fauna"]
     var listRounds = [Round]()
     let priceManager = PriceManager()
-    
+    var rewardedAd: GADRewardedAd?
+
     override func viewDidLoad() {
         super.viewDidLoad() 
         viewSelf.collectionRound.delegate = self
         viewSelf.collectionRound.dataSource = self
+        
+        ///
+        self.gadRequest()
         
         /// получение цен покупок
         getPriceProducts()
@@ -71,9 +76,13 @@ class StartViewController: UIViewController {
     
     ///
     func openGame() {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+        print("openGame")
+//        dismiss(animated: false) {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true)
+//        }
+
     }
     
     ///
