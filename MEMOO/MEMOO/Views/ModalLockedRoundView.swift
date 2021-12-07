@@ -39,8 +39,7 @@ class ModalLockedRoundView: UIView {
     
     func setupUI() {
         loader.stopAnimating()
-        guard let idRound = round.idRound else {return}
-        guard let priceUnlockRound = UserDefaults.standard.string(forKey: String(idRound)) else {
+        guard let priceUnlockRound = UserDefaults.standard.string(forKey: String(round.idRound)) else {
             return
         }
         unlockRoundButton.setTitle("Unlock the round (\(priceUnlockRound))", for: .normal)

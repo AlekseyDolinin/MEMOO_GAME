@@ -20,7 +20,7 @@ extension StartViewController {
             if let error = error {
                 print("Rewarded ad failed to load with error: \(error.localizedDescription)")
                 /// Открытие раунда если реклама не загрузилась
-                self.openRound()
+//                self.openRound()
                 return
             }
             self.rewardedAd = ad

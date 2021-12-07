@@ -3,22 +3,32 @@ import UIKit
 class CreateRound {
     
     ///
-    class func create(nameRound: String, freeListRound: [String], completion: (Round) -> ()) {
-        
-        var state: RoundState!
-        let idRound = parseID(name: nameRound)
-        
-        /// если куплен весь контент
-        if StoreManager.isUnlockAllContent() == true {
-            state = .buy
-        } else {
-            /// если не куплен весь контент - проверка какой куплен
-            let isRoundBuy = freeListRound.contains(nameRound) ? true : UserDefaults.standard.bool(forKey: "\(idRound)_buy")
-            state = isRoundBuy == true ? .buy : .notBuy
-            // print("\(nameRound) --- \(isRoundBuy)")
+    class func createFreeRound(namesRound: [String], completion: (Round) -> ()) {
+        for nameRound in namesRound {
+            completion(Round(idRound: parseID(name: nameRound),
+                             name: nameRound,
+                             roundFree: true,
+                             roundBuy: false))
         }
-        let round = Round(idRound: idRound, name: nameRound, state: state)
-        completion(round)
+    }
+    
+    ///
+    class func createNotFreeRound(namesRound: [String], completion: (Round) -> ()) {
+        var roundBuy = false
+                
+        if StoreManager.isUnlockAllContent() == true {
+            roundBuy = true
+        }
+        
+        for nameRound in namesRound {
+            if UserDefaults.standard.bool(forKey: "\(parseID(name: nameRound))_buy") == true {
+                roundBuy = true
+            }
+            completion(Round(idRound: parseID(name: nameRound),
+                             name: nameRound,
+                             roundFree: false,
+                             roundBuy: roundBuy))
+        }
     }
     
     ///

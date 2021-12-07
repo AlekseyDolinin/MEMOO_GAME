@@ -18,7 +18,7 @@ class RoundCell: UICollectionViewCell {
     
     ///
     func setImage() {
-        if round.state == .buy {
+        if round.roundFree || round.roundBuy || StoreManager.isUnlockAllContent() {
             imageRound.image = UIImage(named: round.name)
         } else {
             imageRound.image = UIImage(named: round.name)?.noir

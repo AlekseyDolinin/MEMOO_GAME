@@ -50,7 +50,11 @@ class GameViewController: UIViewController {
         viewSelf.showTopBar()
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+//    override func viewWillDisappear(_ animated: Bool) {
+//        Sound.removePlayers()
+//    }
+    
+    deinit {
         Sound.removePlayers()
     }
     
