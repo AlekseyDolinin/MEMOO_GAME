@@ -3,19 +3,23 @@ import UIKit
 class CreateRound {
     
     ///
-    class func createFreeRound(namesRound: [String], completion: (Round) -> ()) {
+    class func createFreeRound(namesRound: [String], completion: ([Round]) -> ()) {
+        var temp = [Round]()
         for nameRound in namesRound {
-            completion(Round(idRound: parseID(name: nameRound),
-                             name: nameRound,
-                             roundFree: true,
-                             roundBuy: false))
+            temp.append(Round(idRound: parseID(name: nameRound),
+                              name: nameRound,
+                              roundFree: true,
+                              roundBuy: false))
+        }
+        if temp.count == namesRound.count {
+            completion(temp)
         }
     }
     
     ///
-    class func createNotFreeRound(namesRound: [String], completion: (Round) -> ()) {
+    class func createNotFreeRound(namesRound: [String], completion: ([Round]) -> ()) {
+        var temp = [Round]()
         var roundBuy = false
-                
         if StoreManager.isUnlockAllContent() == true {
             roundBuy = true
         }
@@ -24,10 +28,13 @@ class CreateRound {
             if UserDefaults.standard.bool(forKey: "\(parseID(name: nameRound))_buy") == true {
                 roundBuy = true
             }
-            completion(Round(idRound: parseID(name: nameRound),
-                             name: nameRound,
-                             roundFree: false,
-                             roundBuy: roundBuy))
+            temp.append(Round(idRound: parseID(name: nameRound),
+                              name: nameRound,
+                              roundFree: false,
+                              roundBuy: roundBuy))
+        }
+        if temp.count == namesRound.count {
+            completion(temp)
         }
     }
     

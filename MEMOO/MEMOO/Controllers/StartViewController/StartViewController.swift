@@ -32,18 +32,17 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         getPriceProducts()
         
         ///
-        CreateRound.createFreeRound(namesRound: freeListRound) { round in
-            listRounds.append(round)
-            checkHaveBuyContent()
+        CreateRound.createFreeRound(namesRound: freeListRound) { rounds in
+            listRounds = []
+            listRounds = listRounds + rounds
             viewSelf.collectionRound.reloadData()
         }
         
         ///
         NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
             print("Обновление цен")
-            CreateRound.createNotFreeRound(namesRound: self.paidListRound) { round in
-                self.listRounds.append(round)
-                self.checkHaveBuyContent()
+            CreateRound.createNotFreeRound(namesRound: self.paidListRound) { rounds in
+                self.listRounds = self.listRounds + rounds
                 DispatchQueue.main.async {
                     self.viewSelf.collectionRound.reloadData()
                 }
@@ -52,18 +51,22 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         
         ///
         NotificationCenter.default.addObserver(forName: nTransactionComplate, object: nil, queue: nil) { notification in
+            print("nTransactionComplate")
             self.dismiss(animated: true)
-            self.listRounds.removeAll()
             ///
-            CreateRound.createFreeRound(namesRound: self.freeListRound) { round in
-                self.listRounds.append(round)
-                CreateRound.createNotFreeRound(namesRound: self.paidListRound) { round in
-                    self.listRounds.append(round)
-                    self.checkHaveBuyContent()
-                    self.viewSelf.collectionRound.reloadData()
+            CreateRound.createFreeRound(namesRound: self.freeListRound) { rounds in
+                self.listRounds = []
+                self.listRounds = self.listRounds + rounds
+                CreateRound.createNotFreeRound(namesRound: self.paidListRound) { rounds in
+                    self.listRounds = self.listRounds + rounds
+                    DispatchQueue.main.async {
+                        self.viewSelf.collectionRound.reloadData()
+                    }
                 }
             }
         }
+        
+        self.checkHaveBuyContent()
     }
     
     ///
@@ -80,26 +83,6 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         let productIDs = Set<String>(ProductIDs.allCases.map { $0.rawValue })
         priceManager.getPricesForInApps(inAppsIDs: productIDs)
     }
-    
-//    ///
-//    func createRoundes(nameList: [String]) {
-//        for name in nameList {
-//            /// бесплатный раунд
-//            if freeListRound.contains(name) {
-//                CreateRound.createFreeRound(nameRound: name) { round in
-//                    listRounds.append(round)
-//                }
-//            } else {
-//                CreateRound.createNotFreeRound(nameRound: name) { round in
-//                    listRounds.append(round)
-//                }
-//            }
-//        }
-//        DispatchQueue.main.async {
-//            self.checkHaveBuyContent()
-//            self.viewSelf.collectionRound.reloadData()
-//        }
-//    }
     
     /// проверка есть ли купленый контент
     func checkHaveBuyContent() {
