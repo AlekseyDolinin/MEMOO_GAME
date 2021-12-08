@@ -21,40 +21,19 @@ class StartViewController: UIViewController {
         super.viewDidLoad() 
         viewSelf.collectionRound.delegate = self
         viewSelf.collectionRound.dataSource = self
-        
         /// получение цен покупок
         getPriceProducts()
-        
         ///
-        CreateRound.createFreeRound(namesRound: self.freeListRound) { rounds in
-            self.listRounds = []
-            self.listRounds = self.listRounds + rounds
-            CreateRound.createNotFreeRound(namesRound: self.paidListRound) { rounds in
-                self.listRounds = self.listRounds + rounds
-                DispatchQueue.main.async {
-                    self.viewSelf.collectionRound.reloadData()
-                }
-            }
-        }
-        
+        self.createRounds()
+        ///
+        self.checkHaveBuyContent()
         ///
         NotificationCenter.default.addObserver(forName: nTransactionComplate, object: nil, queue: nil) { notification in
             print("nTransactionComplate")
             self.dismiss(animated: true)
-            ///
-            CreateRound.createFreeRound(namesRound: self.freeListRound) { rounds in
-                self.listRounds = []
-                self.listRounds = self.listRounds + rounds
-                CreateRound.createNotFreeRound(namesRound: self.paidListRound) { rounds in
-                    self.listRounds = self.listRounds + rounds
-                    DispatchQueue.main.async {
-                        self.viewSelf.collectionRound.reloadData()
-                    }
-                }
-            }
+            self.createRounds()
+            self.checkHaveBuyContent()
         }
-        
-        self.checkHaveBuyContent()
     }
     
     ///
@@ -70,6 +49,20 @@ class StartViewController: UIViewController {
         /// получение цен покупок
         let productIDs = Set<String>(ProductIDs.allCases.map { $0.rawValue })
         priceManager.getPricesForInApps(inAppsIDs: productIDs)
+    }
+    
+    ///
+    func createRounds() {
+        CreateRound.createFreeRound(namesRound: self.freeListRound) { rounds in
+            self.listRounds = []
+            self.listRounds = self.listRounds + rounds
+            CreateRound.createNotFreeRound(namesRound: self.paidListRound) { rounds in
+                self.listRounds = self.listRounds + rounds
+                DispatchQueue.main.async {
+                    self.viewSelf.collectionRound.reloadData()
+                }
+            }
+        }
     }
     
     /// проверка есть ли купленый контент

@@ -42,6 +42,7 @@ class ModalLockedRoundView: UIView {
         guard let priceUnlockRound = UserDefaults.standard.string(forKey: String(round.idRound)) else {
             return
         }
-        unlockRoundButton.setTitle("Unlock the round (\(priceUnlockRound))", for: .normal)
+        unlockRoundButton.titleLabel?.textAlignment = .center
+        unlockRoundButton.setTitle("Unlock the round\nand remove AD (\(priceUnlockRound))", for: .normal)
     }
 }

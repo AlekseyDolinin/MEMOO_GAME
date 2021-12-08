@@ -38,6 +38,7 @@ extension MenuView {
         loader.stopAnimating()
         let productID = UserDefaults.standard.string(forKey: ProductIDs.unlockAllContentID.rawValue)
         guard let priceUnlockAllRounds = productID else {return}
-        unlockButton.setTitle("Unlock all rounds (\(priceUnlockAllRounds))", for: .normal)
+        unlockButton.titleLabel?.textAlignment = .center
+        unlockButton.setTitle("Unlock all rounds\nand remove AD(\(priceUnlockAllRounds))", for: .normal)
     }
 }

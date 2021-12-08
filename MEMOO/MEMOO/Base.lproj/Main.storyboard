@@ -652,7 +652,7 @@
                                             <color key="titleColor" name="DarkGray_"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diH-kG-Jy5">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="diH-kG-Jy5">
                                         <rect key="frame" x="0.0" y="94" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="WY6-2L-tev"/>
@@ -999,7 +999,7 @@
                                             <constraint firstAttribute="height" constant="70" id="qau-0f-fqF"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-tL-2uj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-tL-2uj">
                                         <rect key="frame" x="0.0" y="94" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="qEZ-vT-YbD"/>
