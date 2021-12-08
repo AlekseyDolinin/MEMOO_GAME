@@ -50,12 +50,9 @@ class GameViewController: UIViewController {
         super.viewDidAppear(animated)
         viewSelf.showTopBar()
     }
-
-//    override func viewWillDisappear(_ animated: Bool) {
-//        Sound.removePlayers()
-//    }
     
     deinit {
+        print("deinit GameViewController")
         Sound.removePlayers()
     }
     
@@ -69,8 +66,7 @@ class GameViewController: UIViewController {
     
     ///
     func outGame() {
-        self.dismiss(animated: true) {
-        }
+        self.dismiss(animated: true)
     }
     
     ///

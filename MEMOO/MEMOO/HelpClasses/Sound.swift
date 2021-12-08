@@ -87,8 +87,8 @@ class Sound {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
-            playerBackgroundMusic = try AVAudioPlayer(contentsOf: url, fileTypeHint: "wav")
-            guard let player = playerBackgroundMusic else { return }
+            playerSoundWin = try AVAudioPlayer(contentsOf: url, fileTypeHint: "wav")
+            guard let player = playerSoundWin else { return }
             player.play()
         } catch let error {
             print(error.localizedDescription)

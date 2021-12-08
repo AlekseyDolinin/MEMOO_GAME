@@ -14,18 +14,12 @@ class MenuView: UIView {
     
     func lockContent() {
         loader.startAnimating()
-//        UIView.animate(withDuration: 0.3) {
-//            self.stackbutton.alpha = 0.4
-//        }
         unlockButton.isEnabled = false
         restoreButton.isEnabled = false
     }
     
     func unlockContent() {
         loader.stopAnimating()
-//        UIView.animate(withDuration: 0.3) {
-//            self.stackbutton.alpha = 1.0
-//        }
         unlockButton.isEnabled = true
         restoreButton.isEnabled = true
     }
