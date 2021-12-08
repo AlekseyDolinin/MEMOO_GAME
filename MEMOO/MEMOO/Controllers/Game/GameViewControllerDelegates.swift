@@ -14,34 +14,37 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
-        /// нет открытой карты
-        if tempIndexPath == nil && arrayCard[indexPath.row].showCard == false {
-            arrayCard[indexPath.row].showCard = true
-            tempIndexPath = indexPath
-            cell.show()
-            Sound.playSoundOpenCard()
-            return
-        }
         
-        ///
-        if arrayCard[indexPath.row].showCard != true {
-            cell.show()
-            Sound.playSoundOpenCard()
-            arrayCard[indexPath.row].showCard = true
-            ///
-            if arrayCard[tempIndexPath.row].id != arrayCard[indexPath.row].id {
-                guard let cell = collectionView.cellForItem(at: tempIndexPath) as? CardCell else { return }
-                cell.hide()
-                arrayCard[tempIndexPath.row].showCard = false
-                tempIndexPath = indexPath
-            } else {
-                print("match")
-                tempIndexPath = nil
-                countMatch()
-                Sound.playSoundMath()
-            }
-        }
+        gameWin()
+        
+//        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
+//        /// нет открытой карты
+//        if tempIndexPath == nil && arrayCard[indexPath.row].showCard == false {
+//            arrayCard[indexPath.row].showCard = true
+//            tempIndexPath = indexPath
+//            cell.show()
+//            Sound.playSoundOpenCard()
+//            return
+//        }
+//
+//        ///
+//        if arrayCard[indexPath.row].showCard != true {
+//            cell.show()
+//            Sound.playSoundOpenCard()
+//            arrayCard[indexPath.row].showCard = true
+//            ///
+//            if arrayCard[tempIndexPath.row].id != arrayCard[indexPath.row].id {
+//                guard let cell = collectionView.cellForItem(at: tempIndexPath) as? CardCell else { return }
+//                cell.hide()
+//                arrayCard[tempIndexPath.row].showCard = false
+//                tempIndexPath = indexPath
+//            } else {
+//                print("match")
+//                tempIndexPath = nil
+//                countMatch()
+//                Sound.playSoundMath()
+//            }
+//        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

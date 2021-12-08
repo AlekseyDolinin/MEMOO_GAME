@@ -309,7 +309,7 @@
                                             <color key="titleColor" name="DarkGray_"/>
                                         </state>
                                         <connections>
-                                            <action selector="reloadRound:" destination="rC4-cU-JIw" eventType="touchUpInside" id="qDa-YU-6HS"/>
+                                            <action selector="restartRound:" destination="rC4-cU-JIw" eventType="touchUpInside" id="RJl-a8-8ex"/>
                                         </connections>
                                     </button>
                                 </subviews>
