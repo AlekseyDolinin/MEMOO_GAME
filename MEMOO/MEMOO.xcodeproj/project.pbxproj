@@ -41,6 +41,7 @@
 		916FCD72275748B7002CD0F5 /* shimmer_1.flac in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD6C275748B6002CD0F5 /* shimmer_1.flac */; };
 		916FCD73275748B7002CD0F5 /* WoodlandFantasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */; };
 		916FCD7527574A02002CD0F5 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916FCD7427574A02002CD0F5 /* Sound.swift */; };
+		918846422760C454004572C9 /* ADSDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918846412760C453004572C9 /* ADSDelegates.swift */; };
 		918E7BE927523DD300E1F230 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7BE827523DD300E1F230 /* MenuViewController.swift */; };
 		918E7C3C27524B0C00E1F230 /* Artefact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E7C3B27524B0C00E1F230 /* Artefact.swift */; };
 		918ED63627589D810005C4D3 /* artefact_39.png in Resources */ = {isa = PBXBuildFile; fileRef = 918ED60E27589D800005C4D3 /* artefact_39.png */; };
@@ -560,6 +561,7 @@
 		916FCD6C275748B6002CD0F5 /* shimmer_1.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = shimmer_1.flac; sourceTree = "<group>"; };
 		916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WoodlandFantasy.mp3; sourceTree = "<group>"; };
 		916FCD7427574A02002CD0F5 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		918846412760C453004572C9 /* ADSDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSDelegates.swift; sourceTree = "<group>"; };
 		918E7BE827523DD300E1F230 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		918E7C3B27524B0C00E1F230 /* Artefact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artefact.swift; sourceTree = "<group>"; };
 		918ED60E27589D800005C4D3 /* artefact_39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artefact_39.png; sourceTree = "<group>"; };
@@ -1159,9 +1161,9 @@
 			children = (
 				913351AD2754AE7B0044CEC1 /* ArtefactViewController */,
 				10D229F726B328840063433E /* Game */,
+				918846432760C45E004572C9 /* GameMenuViewController */,
 				913351B02754AEAA0044CEC1 /* ModalLockedRound */,
 				104DD30526BF2AA40042A324 /* StartViewController */,
-				1046E7C926C1DB0D00624CAA /* GameMenuViewController.swift */,
 				918E7BE827523DD300E1F230 /* MenuViewController.swift */,
 				91C88D8D2709E33D00F9DD46 /* WinViewController.swift */,
 				9190F93D274E85500097F5E4 /* PreviewArtefactViewController.swift */,
@@ -1266,6 +1268,15 @@
 				916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		918846432760C45E004572C9 /* GameMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1046E7C926C1DB0D00624CAA /* GameMenuViewController.swift */,
+				918846412760C453004572C9 /* ADSDelegates.swift */,
+			);
+			path = GameMenuViewController;
 			sourceTree = "<group>";
 		};
 		918E7BEA275248D200E1F230 /* artefacts */ = {
@@ -1929,7 +1940,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Aleksey Dolinin";
 				TargetAttributes = {
 					10D229D226B0D4A50063433E = {
@@ -2495,6 +2506,7 @@
 				9141946827510B540087BBD3 /* UIImage.swift in Sources */,
 				913351AA2754AE380044CEC1 /* ArtefactView.swift in Sources */,
 				9190F93E274E85500097F5E4 /* PreviewArtefactViewController.swift in Sources */,
+				918846422760C454004572C9 /* ADSDelegates.swift in Sources */,
 				916FCD7527574A02002CD0F5 /* Sound.swift in Sources */,
 				91CAA068274A78A8002CA6E1 /* PreviewRoundCell.swift in Sources */,
 				9109E422274BD408006784FC /* ArtefactCell.swift in Sources */,
@@ -2576,6 +2588,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2637,6 +2650,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

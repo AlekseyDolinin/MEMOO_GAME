@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  MEMOO
-//
-//  Created by Aleksey Dolinin on 28.07.2021.
-//  Copyright © 2021 Aleksey Dolinin. All rights reserved.
-//
-
 import UIKit
 import GoogleMobileAds
 

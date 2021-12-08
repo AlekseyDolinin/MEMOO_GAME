@@ -8,7 +8,7 @@ class StartViewController: UIViewController {
     }
 
     static var selectRound: Round!
-//    static var haveBuyContent = false
+    static var haveBuyContent = false
     
     ///  смещение колекции (для паралакса)
     var lastContentOffset: CGFloat = 0
@@ -26,15 +26,9 @@ class StartViewController: UIViewController {
         getPriceProducts()
         
         ///
-        CreateRound.createFreeRound(namesRound: freeListRound) { rounds in
-            listRounds = []
-            listRounds = listRounds + rounds
-            viewSelf.collectionRound.reloadData()
-        }
-        
-        ///
-        NotificationCenter.default.addObserver(forName: nPricesUpdated, object: nil, queue: nil) { notification in
-            print("Обновление цен")
+        CreateRound.createFreeRound(namesRound: self.freeListRound) { rounds in
+            self.listRounds = []
+            self.listRounds = self.listRounds + rounds
             CreateRound.createNotFreeRound(namesRound: self.paidListRound) { rounds in
                 self.listRounds = self.listRounds + rounds
                 DispatchQueue.main.async {
@@ -60,7 +54,7 @@ class StartViewController: UIViewController {
             }
         }
         
-//        self.checkHaveBuyContent()
+        self.checkHaveBuyContent()
     }
     
     ///
@@ -78,22 +72,22 @@ class StartViewController: UIViewController {
         priceManager.getPricesForInApps(inAppsIDs: productIDs)
     }
     
-//    /// проверка есть ли купленый контент
-//    func checkHaveBuyContent() {
-//        /// куплена полная версия
-//        if StoreManager.isUnlockAllContent() == true {
-//            StartViewController.haveBuyContent = true
-//        } else {
-//            print("полная версия не куплена, проверка есть ли купленый раунд")
-//            /// проход по платным раундам
-//            for round in listRounds {
-//                if round.roundFree == false && round.roundBuy == true {
-//                    print("есть купленый контент")
-//                    StartViewController.haveBuyContent = true
-//                }
-//            }
-//        }
-//    }
+    /// проверка есть ли купленый контент
+    func checkHaveBuyContent() {
+        /// куплена полная версия
+        if StoreManager.isUnlockAllContent() == true {
+            StartViewController.haveBuyContent = true
+        } else {
+            print("полная версия не куплена, проверка есть ли купленый раунд")
+            /// проход по платным раундам
+            for round in listRounds {
+                if round.roundFree == false && round.roundBuy == true {
+                    print("есть купленый контент")
+                    StartViewController.haveBuyContent = true
+                }
+            }
+        }
+    }
     
     ///
     func checkRound() {

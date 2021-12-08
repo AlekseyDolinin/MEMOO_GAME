@@ -10,7 +10,8 @@ class GameViewController: UIViewController {
         guard isViewLoaded else {return nil}
         return (view as! GameView)
     }
-     
+    
+    var round: Round!
     var countCell = 20
     var arrayCard = [Card]()
     var matchCount: Int = 0
@@ -128,8 +129,8 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func showMenu(_ sender: UIButton) {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameMenuViewController") as! GameMenuViewController
-            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: false)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameMenuViewController") as! GameMenuViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: false)
     }
 }

@@ -30,11 +30,8 @@ class ModalLockedRoundViewController: UIViewController {
     
     ///
     @IBAction func buyRound(_ sender: UIButton) {
-        storeManager.buyInApp(inAppID: round.idRound ?? "")
+        storeManager.buyInApp(inAppID: round.idRound)
         viewSelf.lockContent()
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-//            self.viewSelf.unlockContent()
-//        }
     }
     
     ///
