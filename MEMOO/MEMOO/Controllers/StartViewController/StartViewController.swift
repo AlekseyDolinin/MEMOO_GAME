@@ -1,7 +1,6 @@
 import UIKit
-import GoogleMobileAds
 
-class StartViewController: UIViewController, GADFullScreenContentDelegate {
+class StartViewController: UIViewController {
     
     var viewSelf: StartView! {
         guard isViewLoaded else {return nil}
@@ -9,7 +8,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     }
 
     static var selectRound: Round!
-    static var haveBuyContent = false
+//    static var haveBuyContent = false
     
     ///  смещение колекции (для паралакса)
     var lastContentOffset: CGFloat = 0
@@ -17,16 +16,11 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
     var paidListRound = ["alfred", "animall", "mandala", "ninja", "sport", "summer", "toy", "dog", "toyy", "vegetable", "space", "letter", "origami", "animalll", "flower", "fauna"]
     var listRounds = [Round]()
     let priceManager = PriceManager()
-    var rewardedAd: GADRewardedAd?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad() 
         viewSelf.collectionRound.delegate = self
         viewSelf.collectionRound.dataSource = self
-        
-        ///
-        self.gadRequest()
         
         /// получение цен покупок
         getPriceProducts()
@@ -66,7 +60,7 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
             }
         }
         
-        self.checkHaveBuyContent()
+//        self.checkHaveBuyContent()
     }
     
     ///
@@ -84,46 +78,30 @@ class StartViewController: UIViewController, GADFullScreenContentDelegate {
         priceManager.getPricesForInApps(inAppsIDs: productIDs)
     }
     
-    /// проверка есть ли купленый контент
-    func checkHaveBuyContent() {
-        /// куплена полная версия
-        if StoreManager.isUnlockAllContent() == true {
-            StartViewController.haveBuyContent = true
-        } else {
-            print("полная версия не куплена, проверка есть ли купленый раунд")
-            /// проход по платным раундам
-            for round in listRounds {
-                if round.roundFree == false && round.roundBuy == true {
-                    print("есть купленый контент")
-                    StartViewController.haveBuyContent = true
-                }
-            }
-        }
-    }
+//    /// проверка есть ли купленый контент
+//    func checkHaveBuyContent() {
+//        /// куплена полная версия
+//        if StoreManager.isUnlockAllContent() == true {
+//            StartViewController.haveBuyContent = true
+//        } else {
+//            print("полная версия не куплена, проверка есть ли купленый раунд")
+//            /// проход по платным раундам
+//            for round in listRounds {
+//                if round.roundFree == false && round.roundBuy == true {
+//                    print("есть купленый контент")
+//                    StartViewController.haveBuyContent = true
+//                }
+//            }
+//        }
+//    }
     
     ///
     func checkRound() {
-        
         if StartViewController.selectRound.roundFree {
-            StartViewController.haveBuyContent ? openRound() : showADS()
+            openRound()
         } else {
             StartViewController.selectRound.roundBuy ? openRound() : openModalLockedRound()
         }
-        
-        
-//        /// выбран бесплатный раунд
-//        if (0...3).contains(index) {
-//            StartViewController.haveBuyContent == true ? openRound() : showADS()
-//        } else {
-//            /// выбран платный раунд
-//            /// проверка куплен ли весь контент?
-//            if StoreManager.isUnlockAllContent() {
-//                openRound()
-//            } else {
-//                /// проверка куплен ли выбраный раунд
-//                StartViewController.selectRound.state == .buy ? openRound() : openModalLockedRound()
-//            }
-//        }
     }
     
     ///
