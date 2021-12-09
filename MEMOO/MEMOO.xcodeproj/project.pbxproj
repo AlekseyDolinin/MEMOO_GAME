@@ -508,7 +508,6 @@
 		91948EC0275E244B00733C5A /* fruit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAC275E244B00733C5A /* fruit_15.png */; };
 		91948EC1275E244B00733C5A /* fruit_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 91948EAD275E244B00733C5A /* fruit_17.png */; };
 		91B68381275A77710033711B /* Artefacts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B68380275A77710033711B /* Artefacts.strings */; };
-		91B68385275CBAA00033711B /* Win sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91B68384275CBAA00033711B /* Win sound.wav */; };
 		91B68387275CBAA40033711B /* sfx-victory1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91B68386275CBAA40033711B /* sfx-victory1.mp3 */; };
 		91B68389275CBDBA0033711B /* firework.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91B68388275CBDBA0033711B /* firework.sks */; };
 		91B6838B275CC7D30033711B /* ArtefactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6838A275CC7D30033711B /* ArtefactList.swift */; };
@@ -1030,7 +1029,6 @@
 		91948EAC275E244B00733C5A /* fruit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_15.png; sourceTree = "<group>"; };
 		91948EAD275E244B00733C5A /* fruit_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_17.png; sourceTree = "<group>"; };
 		91B68380275A77710033711B /* Artefacts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Artefacts.strings; sourceTree = "<group>"; };
-		91B68384275CBAA00033711B /* Win sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Win sound.wav"; path = "../../../../../../../Downloads/Win sound.wav"; sourceTree = "<group>"; };
 		91B68386275CBAA40033711B /* sfx-victory1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-victory1.mp3"; sourceTree = "<group>"; };
 		91B68388275CBDBA0033711B /* firework.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = firework.sks; sourceTree = "<group>"; };
 		91B6838A275CC7D30033711B /* ArtefactList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtefactList.swift; sourceTree = "<group>"; };
@@ -1276,7 +1274,6 @@
 			isa = PBXGroup;
 			children = (
 				91B68386275CBAA40033711B /* sfx-victory1.mp3 */,
-				91B68384275CBAA00033711B /* Win sound.wav */,
 				916FCD69275748B6002CD0F5 /* click_sound_5.mp3 */,
 				916FCD6C275748B6002CD0F5 /* shimmer_1.flac */,
 				916FCD6D275748B7002CD0F5 /* WoodlandFantasy.mp3 */,
@@ -2428,7 +2425,6 @@
 				9190F8DE274E427B0097F5E4 /* animalll_4.png in Resources */,
 				9190F8F0274E427B0097F5E4 /* farm_14.png in Resources */,
 				9190F8E8274E427B0097F5E4 /* animalll_15.png in Resources */,
-				91B68385275CBAA00033711B /* Win sound.wav in Resources */,
 				9190FA73274E89B50097F5E4 /* space_3.png in Resources */,
 				918ED65727589D810005C4D3 /* artefact_4.png in Resources */,
 				9190FB5B274E8B730097F5E4 /* animal_13.png in Resources */,
@@ -2702,13 +2698,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MKHF2R38BL;
 				INFOPLIST_FILE = MEMOO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseydolinin.memoo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -2722,13 +2719,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MKHF2R38BL;
 				INFOPLIST_FILE = MEMOO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseydolinin.memoo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
