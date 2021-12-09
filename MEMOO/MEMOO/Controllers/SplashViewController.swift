@@ -3,9 +3,12 @@ import UIKit
 
 class SplashViewController: UIViewController {
 
+    @IBOutlet weak var versionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        versionLabel.text = getVersionApp()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -16,5 +19,9 @@ class SplashViewController: UIViewController {
         }
     }
 
-
+    func getVersionApp() -> String {
+        let nsObject: AnyObject? = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as AnyObject
+        let version = nsObject as! String
+        return "Version \(version)"
+    }
 }
