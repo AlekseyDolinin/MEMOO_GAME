@@ -27,6 +27,7 @@
 		9109E420274BD18D006784FC /* ArtefactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E41F274BD18D006784FC /* ArtefactViewController.swift */; };
 		9109E422274BD408006784FC /* ArtefactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109E421274BD408006784FC /* ArtefactCell.swift */; };
 		911559FD2760E5D30038D904 /* WinADSDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911559FC2760E5D30038D904 /* WinADSDelegates.swift */; };
+		91155A052761EEC50038D904 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91155A042761EEC50038D904 /* SplashViewController.swift */; };
 		9128A0302752397B0030359C /* Shadow_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02D2752397B0030359C /* Shadow_regular.ttf */; };
 		9128A0322752397B0030359C /* RF-Krabuler-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */; };
 		913351A62754ADC60044CEC1 /* ProductIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913351A52754ADC60044CEC1 /* ProductIDs.swift */; };
@@ -548,6 +549,7 @@
 		9109E41F274BD18D006784FC /* ArtefactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactViewController.swift; sourceTree = "<group>"; };
 		9109E421274BD408006784FC /* ArtefactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactCell.swift; sourceTree = "<group>"; };
 		911559FC2760E5D30038D904 /* WinADSDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinADSDelegates.swift; sourceTree = "<group>"; };
+		91155A042761EEC50038D904 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		9128A02D2752397B0030359C /* Shadow_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shadow_regular.ttf; sourceTree = "<group>"; };
 		9128A02F2752397B0030359C /* RF-Krabuler-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RF-Krabuler-Regular.otf"; sourceTree = "<group>"; };
 		913351A52754ADC60044CEC1 /* ProductIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductIDs.swift; sourceTree = "<group>"; };
@@ -1169,6 +1171,7 @@
 				918E7BE827523DD300E1F230 /* MenuViewController.swift */,
 				911559FE2760E5DB0038D904 /* WinViewController */,
 				9190F93D274E85500097F5E4 /* PreviewArtefactViewController.swift */,
+				91155A042761EEC50038D904 /* SplashViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -2549,6 +2552,7 @@
 				91CAA05C27468DED002CA6E1 /* StoreManager.swift in Sources */,
 				91CAA05527463696002CA6E1 /* RoundCell.swift in Sources */,
 				91DC1874273E6E59000D1CBB /* Round.swift in Sources */,
+				91155A052761EEC50038D904 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

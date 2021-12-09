@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="84n-eV-bHk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f1O-Rs-62a">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s01-C7-K1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="274.13793103448279"/>
+            <point key="canvasLocation" x="1466.4000000000001" y="274.13793103448279"/>
         </scene>
         <!--Game Menu View Controller-->
         <scene sceneID="klW-fD-w22">
@@ -235,24 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lax-Sv-kNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1266" y="277"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eTA-tM-7ur">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="84n-eV-bHk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1a7-Fl-fQ0">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0DP-EJ-cld" kind="relationship" relationship="rootViewController" id="9Ef-Rp-5LS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cfc-nH-iMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-934.85915492957747" y="277.5"/>
+            <point key="canvasLocation" x="2207.1999999999998" y="276.35467980295567"/>
         </scene>
         <!--Win View Controller-->
         <scene sceneID="ChL-NX-w8o">
@@ -332,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvB-s0-4MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2018" y="277"/>
+            <point key="canvasLocation" x="2959.1999999999998" y="276.35467980295567"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="mcg-Hx-Jb3">
@@ -542,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6P-py-56E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-199.19999999999999" y="274.13793103448279"/>
+            <point key="canvasLocation" x="743.20000000000005" y="274.13793103448279"/>
         </scene>
         <!--Modal Locked Round View Controller-->
         <scene sceneID="6RL-nb-2eo">
@@ -624,7 +607,7 @@
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-e8-QwM">
-                                <rect key="frame" x="37.666666666666657" y="480" width="300" height="258"/>
+                                <rect key="frame" x="37.666666666666657" y="450" width="300" height="288"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8s-DT-MK4">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
@@ -653,13 +636,13 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="diH-kG-Jy5">
-                                        <rect key="frame" x="0.0" y="94" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="94" width="300" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="WY6-2L-tev"/>
+                                            <constraint firstAttribute="height" constant="100" id="WY6-2L-tev"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Label" image="btnEmpty">
+                                        <state key="normal" title="Label" image="btnEmptyTwo">
                                             <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
@@ -667,7 +650,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTH-9d-ewp">
-                                        <rect key="frame" x="0.0" y="188" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="218" width="300" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-n7-F0X">
                                                 <rect key="frame" x="115" y="0.0" width="70" height="70"/>
@@ -724,7 +707,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7F-Ce-5aO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="-413.05418719211826"/>
+            <point key="canvasLocation" x="1466.4000000000001" y="-413.05418719211826"/>
         </scene>
         <!--Preview Artefact View Controller-->
         <scene sceneID="mAn-aT-Wbq">
@@ -750,16 +733,16 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Epz-FB-8mx">
-                                <rect key="frame" x="16" y="355" width="343" height="78.666666666666686"/>
+                                <rect key="frame" x="16" y="355" width="343" height="76.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mka-g7-XkM">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="38.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="37.333333333333336"/>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="32"/>
                                         <color key="textColor" name="white_"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSf-Vx-0og">
-                                        <rect key="frame" x="0.0" y="54.666666666666686" width="343" height="24"/>
+                                        <rect key="frame" x="0.0" y="53.333333333333321" width="343" height="23.333333333333336"/>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="20"/>
                                         <color key="textColor" name="white_"/>
                                         <nil key="highlightedColor"/>
@@ -808,7 +791,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olE-Mq-tJU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-935.20000000000005" y="-413.05418719211826"/>
+            <point key="canvasLocation" x="7.2000000000000002" y="-413.05418719211826"/>
         </scene>
         <!--Artefact View Controller-->
         <scene sceneID="oZU-In-qoZ">
@@ -879,10 +862,10 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDm-yh-Yas">
-                                                    <rect key="frame" x="134" y="2" width="30" height="20"/>
+                                                    <rect key="frame" x="132.33333333333334" y="2" width="31.666666666666657" height="20"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-d3-aHt">
-                                                            <rect key="frame" x="8" y="0.0" width="14" height="20"/>
+                                                            <rect key="frame" x="7.9999999999999991" y="0.0" width="15.666666666666664" height="20"/>
                                                             <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="14"/>
                                                             <color key="textColor" name="white_"/>
                                                             <nil key="highlightedColor"/>
@@ -971,7 +954,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDN-p6-DVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-183.19999999999999" y="-413.05418719211826"/>
+            <point key="canvasLocation" x="759.20000000000005" y="-413.05418719211826"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="RAK-oB-xsv">
@@ -982,7 +965,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="kQP-yu-NfI">
-                                <rect key="frame" x="37.666666666666657" y="230" width="300" height="352"/>
+                                <rect key="frame" x="37.666666666666657" y="215" width="300" height="382"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-lu-YIX">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
@@ -1000,13 +983,13 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-tL-2uj">
-                                        <rect key="frame" x="0.0" y="94" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="94" width="300" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="qEZ-vT-YbD"/>
+                                            <constraint firstAttribute="height" constant="100" id="qEZ-vT-YbD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RFKrabuler-Regular" family="RF Krabuler" pointSize="27"/>
                                         <inset key="titleEdgeInsets" minX="-300" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Unlock all rounds" image="btnEmpty">
+                                        <state key="normal" title="Unlock all rounds" image="btnEmptyTwo">
                                             <color key="titleColor" name="white_"/>
                                         </state>
                                         <connections>
@@ -1014,7 +997,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSs-5Z-lzw">
-                                        <rect key="frame" x="0.0" y="188" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="218" width="300" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="4GS-30-p4F"/>
                                         </constraints>
@@ -1028,7 +1011,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXF-2Q-KhS">
-                                        <rect key="frame" x="0.0" y="282" width="300" height="70"/>
+                                        <rect key="frame" x="0.0" y="312" width="300" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCr-Fu-VrT">
                                                 <rect key="frame" x="115" y="0.0" width="70" height="70"/>
@@ -1077,7 +1060,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLF-iE-sAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="-413"/>
+            <point key="canvasLocation" x="2207.1999999999998" y="-413.05418719211826"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="oZM-ab-Kgr">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H4S-It-ZZY" customClass="SplashViewController" customModule="MEMOO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m9r-n2-PsC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashBG" translatesAutoresizingMaskIntoConstraints="NO" id="nBj-gT-IQ7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashFront" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-uJ-eE9">
+                                <rect key="frame" x="48" y="296.66666666666663" width="279" height="418.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iEQ-uJ-eE9" secondAttribute="height" multiplier="1:1.5" id="c1F-85-Nfe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7gw-qc-ez7"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nBj-gT-IQ7" secondAttribute="bottom" id="3jB-3J-JOP"/>
+                            <constraint firstAttribute="trailing" secondItem="nBj-gT-IQ7" secondAttribute="trailing" id="5TK-4G-ef0"/>
+                            <constraint firstItem="nBj-gT-IQ7" firstAttribute="top" secondItem="m9r-n2-PsC" secondAttribute="top" id="6Xa-Or-O3F"/>
+                            <constraint firstItem="7gw-qc-ez7" firstAttribute="trailing" secondItem="iEQ-uJ-eE9" secondAttribute="trailing" constant="48" id="Rsn-Xb-CxD"/>
+                            <constraint firstItem="nBj-gT-IQ7" firstAttribute="leading" secondItem="m9r-n2-PsC" secondAttribute="leading" id="gqF-ea-ZgA"/>
+                            <constraint firstItem="iEQ-uJ-eE9" firstAttribute="leading" secondItem="7gw-qc-ez7" secondAttribute="leading" constant="48" id="no3-fT-f7S"/>
+                            <constraint firstItem="iEQ-uJ-eE9" firstAttribute="centerY" secondItem="m9r-n2-PsC" secondAttribute="centerY" constant="100" id="snA-SE-6Xr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F6z-Bo-9bd"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKt-ht-jCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="276"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z8r-lO-nen">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="f1O-Rs-62a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="thO-QY-4gU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H4S-It-ZZY" kind="relationship" relationship="rootViewController" id="LDV-fX-5aP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgU-qU-feb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="276"/>
         </scene>
     </scenes>
     <resources>
@@ -1085,6 +1123,7 @@
         <image name="bgGame" width="641" height="1138"/>
         <image name="btnClose" width="241" height="241"/>
         <image name="btnEmpty" width="1041" height="321"/>
+        <image name="btnEmptyTwo" width="780" height="330"/>
         <image name="btnHome" width="241" height="241"/>
         <image name="btnMenu" width="241" height="241"/>
         <image name="btnReloadRound" width="241" height="241"/>
@@ -1094,6 +1133,8 @@
         <image name="layer_2" width="7200" height="1139"/>
         <image name="layer_3" width="7200" height="1139"/>
         <image name="layer_4" width="7200" height="1139"/>
+        <image name="splashBG" width="1125" height="2001"/>
+        <image name="splashFront" width="852" height="1212"/>
         <image name="victory" width="900" height="615"/>
         <namedColor name="DarkGray_">
             <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
