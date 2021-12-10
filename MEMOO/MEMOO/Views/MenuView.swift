@@ -33,6 +33,6 @@ extension MenuView {
         let productID = UserDefaults.standard.string(forKey: ProductIDs.unlockAllContentID.rawValue)
         guard let priceUnlockAllRounds = productID else {return}
         unlockButton.titleLabel?.textAlignment = .center
-        unlockButton.setTitle("Unlock all rounds\nand remove AD(\(priceUnlockAllRounds))", for: .normal)
+        unlockButton.setTitle("Unlock all rounds\nand remove AD (\(priceUnlockAllRounds))", for: .normal)
     }
 }
