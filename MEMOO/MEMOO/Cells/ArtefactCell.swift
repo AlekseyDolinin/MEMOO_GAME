@@ -15,23 +15,36 @@ class ArtefactCell: UICollectionViewCell {
     }
     
     func setCell() {
-        artefactImage.image = artefact.image
         nameArtefact.text = artefact.nameArtefact
+        setCount()
     }
     
     func setCount() {
-        countBack.isHidden = artefact.countCompleted > 0 ? false : true
-        countLabel.text = "\(artefact.countCompleted)"
+        /// пройден первый раунд
+        if artefact.id == 1 {
+            if UserDefaults.standard.bool(forKey: "artefact_1") == true {
+                countLabel.text = "✓"
+                artefactImage.image = artefact.image
+            } else {
+                countBack.isHidden = true
+                artefactImage.image = artefact.image.noir
+            }
+            
+        } else {
+            let countComplate = UserDefaults.standard.integer(forKey: "artefact_\(artefact.id)")
+            if countComplate > 0 {
+                countLabel.text = String(countComplate)
+                artefactImage.image = artefact.image
+            } else {
+                countBack.isHidden = true
+                artefactImage.image = artefact.image.noir
+            }
+        }
     }
-    
-
 }
 
 extension ArtefactCell {
     func setUI() {
-        /// color
-        
-
         ///
         countBack.layer.cornerRadius = countBack.frame.height / 2
     }

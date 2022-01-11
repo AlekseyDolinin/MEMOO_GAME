@@ -11,7 +11,7 @@ class GameViewController: UIViewController {
         return (view as! GameView)
     }
     
-    var round: Round!
+//    var round: Round!
     var countCell = 20
     var arrayCard = [Card]()
     var matchCount: Int = 0
@@ -58,6 +58,7 @@ class GameViewController: UIViewController {
     
     ///
     func restart() {
+        StartViewController.selectRound.countErrors = 0
         hideAllCards()
         loadCards {
             startGame()
@@ -89,6 +90,11 @@ class GameViewController: UIViewController {
     ///
     func gameWin() {
         Sound.playSoundWin()
+        
+        /// проверка достижений раунда
+        SaveResult.checkStateRound()
+        
+        /// показ финального экрана
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "WinViewController") as! WinViewController
             vc.modalPresentationStyle = .overFullScreen
@@ -96,6 +102,7 @@ class GameViewController: UIViewController {
         }
     }
     
+    ///
     func startGame() {
         showAllCards()
         DispatchQueue.main.asyncAfter(deadline: .now() + timeDelayHideContent) {
@@ -104,6 +111,7 @@ class GameViewController: UIViewController {
         matchCount = 0
     }
     
+    ///
     func hideAllCards() {
         for i in 0..<self.arrayCard.count {
             self.arrayCard[i].showCard = false
@@ -111,12 +119,14 @@ class GameViewController: UIViewController {
         viewSelf.cardCollection.reloadData()
     }
     
+    ///
     func showAllCards() {
         for i in 0..<self.arrayCard.count {
             self.arrayCard[i].showCard = true
         }
     }
     
+    ///
     func countMatch() {
         matchCount += 1
         if matchCount == (countCell / 2) {
@@ -124,6 +134,10 @@ class GameViewController: UIViewController {
         }
     }
     
+    func countErrors() {
+        StartViewController.selectRound.countErrors += 1
+    }
+    ///
     @IBAction func showMenu(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameMenuViewController") as! GameMenuViewController
         vc.modalPresentationStyle = .overFullScreen

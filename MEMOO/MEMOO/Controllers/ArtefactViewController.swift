@@ -15,25 +15,23 @@ class ArtefactViewController: UIViewController {
         viewSelf.artefactCollection.delegate = self
         viewSelf.artefactCollection.dataSource = self
         for i in 0...39 {
-            let artefact = Artefact(id: 0,
+            let artefact = Artefact(id: i + 1,
                                     image: UIImage(named: "artefact_\(i + 1)") ?? UIImage(),
                                     nameArtefact: allNamesArtefacts[i],
                                     descriptionArtefact: ArtefactList.listDescriptionArtefacts[allNamesArtefacts[i]] ?? "",
-                                    countCompleted: checkCountCompletedTask())
+                                    countCompleted: checkCountCompletedTask(id: i + 1))
             artefactsArray.append(artefact)
             viewSelf.artefactCollection.reloadData()
         }
     }
 
     ///
+    func checkCountCompletedTask(id: Int) -> Int {
+        return UserDefaults.standard.integer(forKey: "artefact_\(id)")
+    }
+    
+    ///
     @IBAction func close(_ sender: UIButton) {
         dismiss(animated: true)
-    }
-}
-
-extension ArtefactViewController {
-    
-    func checkCountCompletedTask() -> Int {
-        return 99
     }
 }

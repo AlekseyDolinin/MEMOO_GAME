@@ -35,6 +35,10 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 cell.hide()
                 arrayCard[tempIndexPath.row].showCard = false
                 tempIndexPath = indexPath
+                
+                /// подсчет ошибок
+                countErrors()
+                
             } else {
                 print("match")
                 tempIndexPath = nil

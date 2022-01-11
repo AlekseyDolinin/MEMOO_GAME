@@ -20,17 +20,17 @@ class StartView: UIView {
         setUI()
         setAnimationClouds()
         setAnimationMagic()
-//        setAnimationLeftFire()
-//        setAnimationRightFire()
-//        setAnimationRightSmoke()
-//        setAnimationLeftSmoke()
+        setAnimationLeftFire()
+        setAnimationRightFire()
+        setAnimationRightSmoke()
+        setAnimationLeftSmoke()
         
-        viewLeftFire.isHidden = true
-        viewRightFire.isHidden = true
-        viewRightSmoke.isHidden = true
-        viewLeftSmoke.isHidden = true
-        showCollectionButton.isHidden = true
-        chestImage.isHidden = true
+//        viewLeftFire.isHidden = true
+//        viewRightFire.isHidden = true
+//        viewRightSmoke.isHidden = true
+//        viewLeftSmoke.isHidden = true
+//        showCollectionButton.isHidden = true
+//        chestImage.isHidden = true
     }
 }
 

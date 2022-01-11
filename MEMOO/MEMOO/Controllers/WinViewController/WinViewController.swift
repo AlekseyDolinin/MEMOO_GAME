@@ -1,5 +1,6 @@
 import UIKit
 import GoogleMobileAds
+
 class WinViewController: UIViewController, GADFullScreenContentDelegate {
 
     var viewSelf: WinView! {
