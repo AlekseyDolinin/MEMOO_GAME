@@ -6,10 +6,8 @@ class CreateRound {
     class func createFreeRound(namesRound: [String], completion: ([Round]) -> ()) {
         var temp = [Round]()
         for nameRound in namesRound {
-            temp.append(Round(idRound: parseID(name: nameRound),
-                              name: nameRound,
-                              roundFree: true,
-                              roundBuy: false))
+            let round = (Round(idRound: parseID(name: nameRound), name: nameRound, roundFree: true, roundBuy: false))
+            temp.append(round)
         }
         if temp.count == namesRound.count {
             completion(temp)
@@ -28,10 +26,12 @@ class CreateRound {
             if UserDefaults.standard.bool(forKey: "\(parseID(name: nameRound))_buy") == true {
                 roundBuy = true
             }
-            temp.append(Round(idRound: parseID(name: nameRound),
-                              name: nameRound,
-                              roundFree: false,
-                              roundBuy: roundBuy))
+            let round = (Round(idRound: parseID(name: nameRound), name: nameRound, roundFree: false, roundBuy: roundBuy))
+            temp.append(round)
+            
+            print(parseID(name: nameRound))
+            print(nameRound)
+            print("_______")
         }
         if temp.count == namesRound.count {
             completion(temp)

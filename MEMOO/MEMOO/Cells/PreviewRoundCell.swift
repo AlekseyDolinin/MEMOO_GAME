@@ -24,8 +24,6 @@ class PreviewRoundCell: UICollectionViewCell {
 
 extension PreviewRoundCell {
     func setUI() {
-
         backView.layer.cornerRadius = 6
-        
     }
 }

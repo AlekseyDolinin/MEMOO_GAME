@@ -22,7 +22,7 @@ class ArtefactCell: UICollectionViewCell {
     func setCount() {
         /// пройден первый раунд
         if artefact.id == 1 {
-            if UserDefaults.standard.bool(forKey: "artefact_1") == true {
+            if UserDefaults.standard.bool(forKey: "FirstRoundDone") == true {
                 countLabel.text = "✓"
                 artefactImage.image = artefact.image
             } else {
