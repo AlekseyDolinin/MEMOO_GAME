@@ -8,10 +8,14 @@ class WinViewController: UIViewController, GADFullScreenContentDelegate {
         return (view as! WinView)
     }
     var rewardedAd: GADRewardedAd?
+    var countSecondToRound = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.gadRequest()
+        /// проверка достижений раунда
+        SaveResult.checkStateRound()
+        
     }
     
     ///

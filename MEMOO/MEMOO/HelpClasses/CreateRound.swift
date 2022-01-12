@@ -29,9 +29,9 @@ class CreateRound {
             let round = (Round(idRound: parseID(name: nameRound), name: nameRound, roundFree: false, roundBuy: roundBuy))
             temp.append(round)
             
-            print(parseID(name: nameRound))
-            print(nameRound)
-            print("_______")
+//            print(parseID(name: nameRound))
+//            print(nameRound)
+//            print("_______")
         }
         if temp.count == namesRound.count {
             completion(temp)
@@ -43,7 +43,7 @@ class CreateRound {
         switch name {
         case "alfred":
             return ProductIDs.unlockalfredID.rawValue
-        case "animall":
+        case "zoo":
             return ProductIDs.unlockanimallID.rawValue
         case "mandala":
             return ProductIDs.unlockmandalaID.rawValue
@@ -57,7 +57,7 @@ class CreateRound {
             return ProductIDs.unlocktoyID.rawValue
         case "dog":
             return ProductIDs.unlockdogID.rawValue
-        case "toyy":
+        case "toddler":
             return ProductIDs.unlocktoyyID.rawValue
         case "vegetable":
             return ProductIDs.unlockvegetableID.rawValue
@@ -67,7 +67,7 @@ class CreateRound {
             return ProductIDs.unlockletterID.rawValue
         case "origami":
             return ProductIDs.unlockorigamiID.rawValue
-        case "animalll":
+        case "сute":
             return ProductIDs.unlockanimalllID.rawValue
         case "flower":
             return ProductIDs.unlockflowerID.rawValue

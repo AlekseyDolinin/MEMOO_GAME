@@ -14,6 +14,10 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+//        gameWin()
+//        return
+        
         guard let cell = collectionView.cellForItem(at: indexPath) as? CardCell else { return }
         /// нет открытой карты
         if tempIndexPath == nil && arrayCard[indexPath.row].showCard == false {

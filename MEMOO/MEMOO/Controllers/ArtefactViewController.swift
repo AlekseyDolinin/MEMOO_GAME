@@ -14,7 +14,8 @@ class ArtefactViewController: UIViewController {
         super.viewDidLoad()
         viewSelf.artefactCollection.delegate = self
         viewSelf.artefactCollection.dataSource = self
-        for i in 0...39 {
+        let countArtefacts = ArtefactList.listTaskArtefactsNames.count + ArtefactList.listRoundArtefactsNames.count
+        for i in 0..<countArtefacts {
             let artefact = Artefact(id: i + 1,
                                     image: UIImage(named: "artefact_\(i + 1)") ?? UIImage(),
                                     nameArtefact: allNamesArtefacts[i],

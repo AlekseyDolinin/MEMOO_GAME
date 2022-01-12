@@ -45,11 +45,13 @@ class GameMenuViewController: UIViewController, GADFullScreenContentDelegate {
     
     ///
     @IBAction func restartRound(_ sender: UIButton) {
+        TimerRound.stopTimer()
         checkStatusRound()
     }
     
     ///
     @IBAction func finishRound(_ sender: UIButton) {
+        TimerRound.stopTimer()
         dismiss(animated: false) {
             NotificationCenter.default.post(name: nBackHome, object: nil)
         }

@@ -13,7 +13,7 @@ class StartViewController: UIViewController {
     ///  смещение колекции (для паралакса)
     var lastContentOffset: CGFloat = 0
     var freeListRound = ["fruit", "flag", "farm", "animal"]
-    var paidListRound = ["alfred", "animall", "mandala", "ninja", "sport", "summer", "toy", "dog", "toyy", "vegetable", "space", "letter", "origami", "animalll", "flower", "fauna"]
+    var paidListRound = ["alfred", "zoo", "mandala", "ninja", "sport", "summer", "toy", "dog", "toddler", "vegetable", "space", "letter", "origami", "сute", "flower", "fauna"]
     var listRounds = [Round]()
     let priceManager = PriceManager()
     
