@@ -28,10 +28,6 @@ class CreateRound {
             }
             let round = (Round(idRound: parseID(name: nameRound), name: nameRound, roundFree: false, roundBuy: roundBuy))
             temp.append(round)
-            
-//            print(parseID(name: nameRound))
-//            print(nameRound)
-//            print("_______")
         }
         if temp.count == namesRound.count {
             completion(temp)

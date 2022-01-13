@@ -12,7 +12,6 @@ class PreviewArtefactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(artefact.image)
         viewSelf.artefact = artefact
         viewSelf.configure()
     }

@@ -44,7 +44,7 @@ extension GameViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 countErrors()
                 
             } else {
-                print("match")
+//                print("match")
                 tempIndexPath = nil
                 countMatch()
                 Sound.playSoundMath()

@@ -12,7 +12,6 @@ class TimerRound {
         
         timerRound =  Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { Timer in
             TimerRound.countSecondToRound += 1
-            print(TimerRound.countSecondToRound)
         })
     }
     
